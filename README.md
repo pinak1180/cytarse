@@ -1,3 +1,7 @@
+## Cytarse
+
+Dyma'r cod ar gyfer gwefan newydd dorfol Gymreig. Fe'i gyrir gan broject Catarse.me, sef injan ariannu busnes dorfol yn wreiddiol o Frasil.
+
 # Catarse 
 
 The first crowdfunding platform from Brazil
