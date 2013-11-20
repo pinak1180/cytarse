@@ -1,0 +1,5 @@
+cy:
+  will_paginate:
+    next: "Nesaf »"
+    page_gap: "..."
+    previous: "« Cynt"
