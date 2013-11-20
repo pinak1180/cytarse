@@ -112,7 +112,7 @@ cy:
       expiring: "Discover expiring projects"
       recents: "Discover recent projects"
       near: "Discover projects near you"
-    banner: "10 million turned into actions. Thank you!"
+    banner: "10 miliwn project llwyddianus. Diolch!"
   sidebar:
     titles:
       blog: blog
@@ -265,9 +265,9 @@ cy:
       quick_explore: "Quick search"
       recent: Recent
       recommended: Recommended
-      subtitle: "Explore the projects, find the ones that touch you, and make them happen!"
+      subtitle: "Pori drwy'r projectau, gweld rhai sy'n agos at dy galon, ymuno gyda nhw!"
       successful: Successful
-      title: "Discover amazing projects"
+      title: "Darganfod projectau anhygoel"
     title: "Explore the projects"
     project:
       empty: "Hey, we didn't find any project with the text you searched. Wanna try some new words? =D"
@@ -331,12 +331,12 @@ cy:
     header:
       blog: Blog
       help: Help
-      signup: "Sign up"
-      signin: Login
-      discover: Discover
-      submit: Submit your project
-      profile: "My profile"
-      account: "My account"
+      signup: "Ymuno"
+      signin: Mewngofnodi
+      discover: Darganfod
+      submit: Dechrau Project
+      profile: "Proffil"
+      account: "Cyfrif"
     user:
       logout: Logout
       my_credits: "My credit"
