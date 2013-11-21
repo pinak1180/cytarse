@@ -1,23 +1,23 @@
 cy:
   not_found:
-    title: "Sorry, we couldn't find this address :("
-    text: "You may have mistyped the address or the page may have moved."
+    title: "Sori, methu ffeindio'r dudalen hon :("
+    text: "Efallai dy fod wedi camdeipio'r URL neu bod y dudalen wedi symud."
   controllers:
     updates:
       create:
-        notice: 'Update was successfully created!'
-  failure_title: 'Please, fix the errors bellow:'
+        notice: 'Crewyd y diweddariad yn llwyddianus!'
+  failure_title: 'Plis trwsia'r gwallau isod:'
   uservoice_gadget:
     user:
-      name: 'User'
-      location: 'City / State'
+      name: 'Defnyddiwr'
+      location: 'Tref / Sir'
       confirmed_backers: 'Confirmed backs'
       created_projects: 'Created projects'
   site:
-    title: "Ariannu Busnes Torfol"
+    title: "ArianByw"
     meta_title:  "%{title} · %{company_name}"
-    description: "disgrifiad o'r project ayyb"
-    keywords: ""
+    description: "Cyllid Cymunedol Cymraeg"
+    keywords: "torfoli, torfol, cyllid torfol, ariannu, pres, codi arian, codi pres, cyllido, buddsoddi, cymuned, cymunedol, crowdfunding, crowdfund, Cymraeg, Gymraeg"
 
   login:
     forgot_password:
@@ -34,192 +34,192 @@ cy:
       password: "Cyfrinair"
 
   backer_report_to_project_owner:
-    reward_description: 'Reward description'
-    confirmed_at: 'Payment confirmed at'
-    value: 'Back value'
-    service_fee: 'Catarse fee'
-    user_name: 'Backer name'
-    user_email: 'Catarse user profile e-mail'
-    payer_email: 'Payment gateway user e-mail'
-    payment_method: 'Payment method'
-    address_street: 'Street'
+    reward_description: 'Disgrifiad gwobr'
+    confirmed_at: 'Taliad wedi'i gadarnhau am'
+    value: 'Gwerth dy gefnogaeth'
+    service_fee: 'Ffi ArianByw'
+    user_name: 'Enw cefnogwr'
+    user_email: 'Ebost defnyddiwr proffil Catarse'
+    payer_email: 'Ebost defnyddiwr dy system dalu'
+    payment_method: 'Dull talu'
+    address_street: 'Stryd'
     address_complement: 'Complement'
-    address_number: 'Number'
-    address_neighbourhood: 'Neighbourhood'
-    address_city: 'City'
-    address_state: 'State'
-    address_zip_code: 'Zip code'
-    anonymous: 'Anonymous'
-  edit_project: 'Edit this project'
+    address_number: 'Rhif'
+    address_neighbourhood: 'Ardal'
+    address_city: 'Tref/Dinas'
+    address_state: 'Sir'
+    address_zip_code: 'Côd post'
+    anonymous: 'Dienw'
+  edit_project: 'Golyga'r prosiect'
   facebook_locale: 'en_GB'
-  or: or
-  'no': "No"
-  'yes': "Yes"
-  newsletter_ok_header: "You are subscribed to the newsletter!"
-  newsletter_ok_body: "Your email is now in our newsletter list, thanks for subscribing!"
-  newsletter_error_header: "Woops! There was an error."
-  newsletter_error_body: "Your email could not be added to our newsletter list, please try again later!"
-  newsletter_subscribe: "subscribe"
+  or: neu
+  'no': "Nac ydw"
+  'yes': "Ydw"
+  newsletter_ok_header: "Rwyt ti wedi tanysgrifio i'r cylchlythyr!"
+  newsletter_ok_body: "Mae dy ebost nawr yn ein rhestr cylchlythyr, diolch am danysgrifio!"
+  newsletter_error_header: "Wps! Roedd 'na broblem."
+  newsletter_error_body: "Doedd hi ddim yn bosib rhoi dy ebost yn y rhestr, plis tria eto nes mlaen!"
+  newsletter_subscribe: "tanysgrifio"
   views:
     pagination:
-      next: next
-      last: last
+      next: nesaf
+      last: olaf
       truncate: "..."
   statistics:
     backers:
-      subtitle: backers
+      subtitle: cefnogwyr
     goal:
-      subtitle: "total of %{total}"
-  project_by: "project by"
-  tell_about_this_back: "Tell the world about your support!"
-  share_my_backs: "See the projects that I support in Catarse!"
-  tell_about_this_project: "Tell the world about your project!"
-  share_my_projects: "See my projects in Catarse!"
-  count_backed_projects: "backed %{total} projects"
+      subtitle: "cyfanswm o %{total}"
+  project_by: "prosiect gan"
+  tell_about_this_back: "Dwed wrth y byd am dy gefnogaeth!"
+  share_my_backs: "Edrychwch ar y prosiectau dwi'n gefnogi ar Catarse!"
+  tell_about_this_project: "Dwed wrth y byd am dy brosiect!"
+  share_my_projects: "Edrychwch ar fy mhrosiectau Catarse!"
+  count_backed_projects: "wedi cefnogi %{total} prosiect"
   footer:
     titles:
-      about: "Amdanom"
+      about: "Beth? Pwy?"
       social: "Cymdeithasol"
       sitemap: "Pori"
-      newsletter: "Ymuno a'r cylchlythyr"
-      contact: "Cadw Cyswllt"
+      newsletter: "Derbyn cylchlythyr"
+      contact: "Cysylltu"
     links:
-      about: "Who we are"
+      about: "Pwy ydyn ni"
       faq: "Help"
-      feedback: "Feedback"
-      support: "Support"
-      terms: "Terms"
-      privacy: "Privacy"
-      press: "Press"
+      feedback: "Adborth"
+      support: "Cefnogaeth"
+      terms: "Telerau"
+      privacy: "Preifatrwydd"
+      press: "Y Wasg"
       twitter: "Twitter"
       facebook: "Facebook"
       instagram: "Instagram"
       github: "Github"
       blog: "Blog"
-      contact: "Contact"
-      recommended: "Recommended"
-      near: "Near me"
-      expiring: "Expiring"
-      recents: "Recent"
-      submit: "Submit your project"
-      discover: "Discover projects"
+      contact: "Cysylltu"
+      recommended: "Argymhellion"
+      near: "Agos i fi"
+      expiring: "Dod i ben"
+      recents: "Diweddar"
+      submit: "Dechrau dy brosiect"
+      discover: "Darganfod prosiectau"
     texts:
       copyleft: "Gwnaed a chariad."
   main:
     links:
-      channels: "Discover Asas Channel"
-      recommended: "Discover recommended projects"
-      expiring: "Discover expiring projects"
-      recents: "Discover recent projects"
-      near: "Discover projects near you"
-    banner: "10 miliwn project llwyddianus. Diolch!"
+      channels: "Darganfod Sianel Asas"
+      recommended: "Darganfod argymhellion prosiect"
+      expiring: "Darganfod prosiectau sy'n dod i ben"
+      recents: "Darganfod prosiectau diweddar"
+      near: "Darganfod prosiectau gerllaw"
+    banner: "Croeso i ffordd newydd sbon o wireddu dy syniadau!"
   sidebar:
     titles:
       blog: blog
-      facebook: "have you liked our facebook page yet?"
-      newsletter: "subscribe to our news"
-      faq: "have any doubt?"
-      schedule: calendar
+      facebook: "wyt ti wedi hoffi'n tudalen facebook eto?"
+      newsletter: "tanysgrifia i'n newddion"
+      faq: "oes cwestiwn gen ti?"
+      schedule: calendr
     placeholders:
-      email: "Enter your email"
+      email: "Rho dy ebost"
     buttons:
-      newsletter: Submit
+      newsletter: Anfon
   sections:
     near:
-      title: Near me
+      title: Gerllaw
     recommended:
-      title: Recommended
+      title: Argymhellwyd
     expiring:
-      title: Expiring
+      title: Dod i ben
     recents:
-      title: Recent
+      title: Diweddar
     channels:
-      title: "Asas Channel"
-  accept_terms_html: "I have read and accepted the %{link}."
+      title: "Sianel Asas"
+  accept_terms_html: "Dwi wedi darllen a derbyn y %{link}."
   activerecord:
     errors:
       models:
         project:
           attributes:
             permalink:
-              invalid: "Invalid project permalink"
+              invalid: "Dolen barhaol annilys ar gyfer y prosiect"
     attributes:
       unsubscribe:
-        update: "Receive project updates"
+        update: "Derbyn diweddariadau prosiect"
       backer:
-        value: Value
+        value: Gwerth
       project:
-        category: Category
-        expires_at: Deadline
-        online_days: Days of the air campaign
-        headline: Headline
-        image_url: "Image URL"
-        name: Name
-        user_id: "User ID"
-        video_url: "Video URL"
-        permalink: 'Project URL'
-        how_know: "How did you hear about Catarse?"
-        more_links: 'Where can we find more about you and your project?'
+        category: Categori
+        expires_at: Dyddiad cau
+        online_days: Diwrnodau ar ôl
+        headline: Pennawd
+        image_url: "URL y ddelwedd"
+        name: Enw
+        user_id: "ID defnyddiwr"
+        video_url: "URL y fideo"
+        permalink: 'URL y prosiect'
+        how_know: "Sut glywes ti am ArianByw?"
+        more_links: 'Lle alla i wybod mwy amdanat ti a dy brosiect?'
       reward:
-        description: Description
-        maximum_backers: "Maximum backers"
-        minimum_value: "Minimum value"
+        description: Disgrifiad
+        maximum_backers: "Uchafswm cefnogwyr"
+        minimum_value: "Isafswm gwerth"
       user:
-        address_city: City
+        address_city: Tref / Dinas
         address_complement: Complement
         address_neighbourhood: Neighbourhood
-        address_number: Number
-        address_state: State
-        address_street: Street
-        address_zip_code: "Zip code"
+        address_number: Rhif
+        address_state: Sir
+        address_street: Stryd
+        address_zip_code: "Côd post"
         cpf: 'CPF / CNPJ '
         cpf_hint_title: 'Nota Fiscal será emitida para esse documento'
         cpf_hint: '(?)'
         state_inscription: 'State Inscription'
         moip_login: 'MoIP Login'
         moip_login_hint: '(How to create an account)'
-        current_password: "Current password"
-        email: Email
-        full_name: "Full name / Company Name"
-        bio: 'Mini Bio'
-        name: "Nickname"
-        password: Password
-        password_confirmation: "Password Confirmation"
-        phone_number: "Mobile phone number"
-        newsletter: 'I want receive news about Catarse'
+        current_password: "Cyfrinair presennol"
+        email: Ebost
+        full_name: "Enw llawn / Enw Cwmni"
+        bio: 'Bio Byr'
+        name: "Llysenw"
+        password: Cyfrinair
+        password_confirmation: "Cadarnhau Cyfrinair"
+        phone_number: "Rhif ffôn symudol"
+        newsletter: 'Dwi eisiau derbyn newyddion am ArianByw'
     models:
-      backer: Backer
-      category: Category
-      project: Project
-      reward: Reward
+      backer: Cefnogwr
+      category: Categori
+      project: Prosiect
+      reward: Gwobr
   backer:
-    display_confirmed_at: "%{time_ago} ago"
-    reward_must_be_from_project: "must be from the same project"
-    should_not_back_if_maximum_backers_been_reached: "has reached its maximum backers"
-    value_must_be_at_least_rewards_value: "must be at least %{minimum_value} for the selected reward"
-    project_should_be_online: "You cannot back a project that is not online"
-  backer_plural: backers
-  project_plural: projects
-  project_singular: project
-  backer_singular: backer
-  click_here: "Click here"
-  clicking_here: "clicking here"
-  click_term: 'terms'
+    display_confirmed_at: "%{time_ago} yn ôl"
+    reward_must_be_from_project: "rhaid ei fod o'r un prosiect"
+    should_not_back_if_maximum_backers_been_reached: "mae wedi cyrraedd yr uchafswm cefnogwyr"
+    value_must_be_at_least_rewards_value: "rhaid iddo fod o leiaf %{minimum_value} ar gyfer y wobr ddewisaist ti"
+    project_should_be_online: "Alli di ddim cefnogi prosiect sydd ddim arlein"
+  backer_plural: cefnogwyr
+  project_plural: prosiectau
+  project_singular: prosiect
+  backer_singular: cefnogwr
+  click_here: "Clic yma"
+  clicking_here: "clicio yma"
+  click_term: 'telerau'
   comment:
-    display_time: "%{time_ago} ago"
+    display_time: "%{time_ago} yn ôl"
   credits:
     modal:
-      title: "Do you want to confirm your refund request?"
-      text: "Check out how our refund process works:"
-      link: "See how the refund works"
-      reject_btn: "I want to keep my credits"
-      accept_btn: "I want to request the refund"
+      title: "Wyt ti eisiau cadarnhau dy gais am ad-daliad?"
+      text: "Edrycha sut mae'n proses ad-dalu'n gweithio:"
+      link: "Gweld sut mae'r ad-daliad yn gweithio"
+      reject_btn: "Dwi eisiau cadw nghredydau"
+      accept_btn: "Dwi eisiau gofyn am ad-daliad"
     index:
-      back_date: "Back date"
-      current_credits_html: "Your current balance is <span id=\"current_credits\">%{credits}</span> in credits."
-      important_html: "If you ask for a refund, the value of your payment will be deducted from your credits."
-      project: Project
-      refund_expiration_date_html: "Deadline to request refund (<a target='__blank' href='http://suporte.catarse.me/knowledgebase/articles/164746-regras-e-funcionamento-dos-reembolsos-estornos'>?</a>)"
+      back_date: "Dyddiad cefnogi"
+      current_credits_html: "Dy falans cyfredol yw <span id=\"current_credits\">%{credits}</span> mewn credydau."
+      important_html: "Os wyt ti'n gofyn am ad-daliad, bydd gwerth y taliad yn cael ei dynnu oddi wrth dy gredydau."
+      project: Prosiect
+      refund_expiration_date_html: "Dyddiad olaf gellir hawlio ad-daliad (<a target='__blank' href='http://suporte.catarse.me/knowledgebase/articles/164746-regras-e-funcionamento-dos-reembolsos-estornos'>?</a>)"
       refunded: "Refund request successfully done. Our team will contact you within two business days."
       insufficient_credits: "You don't have enough credits to request this refund."
       refunds_title: "Payments that can be refunded"
@@ -252,42 +252,43 @@ cy:
       created_at: 'created at'
   curated_pages:
     index:
-      title: "Curated pages"
+      title: "Tudalennau wedi eu curadu"
     show:
-      backed: backed
-      reached: reached
-  error: "Ooops! There was an error. Please try again."
+      backed: cefnogwyd
+      reached: cyrhaeddwyd
+  error: "Wpsi! Roedd na wall. Plis tria eto."
   explore:
     index:
-      near: 'Near me'
-      categories: Categories
-      expiring: "Expiring"
-      quick_explore: "Quick search"
-      recent: Recent
-      recommended: Recommended
-      subtitle: "Pori drwy'r projectau, gweld rhai sy'n agos at dy galon, ymuno gyda nhw!"
-      successful: Successful
-      title: "Darganfod projectau anhygoel"
     title: "Explore the projects"
+      near: 'Gerllaw'
+      categories: Categoriau
+      expiring: "Dod i ben"
+      quick_explore: "Chwiliad cyflym"
+      recent: Diweddar
+      recommended: Argymhellwyd
+      subtitle: "Edrycha drwy'r prosiectau, ffeindia rai sy'n apelio atat ti, a gwiredda nhw!"
+      successful: Llwyddiannus
+      title: "Ffeindia brosiectau anhygoel"
+    title: "Pori'r prosiectau"
     project:
-      empty: "Hey, we didn't find any project with the text you searched. Wanna try some new words? =D"
+      empty: "Bww, wnaethon ni ddim dod o hyd i brosiect gyda'r testun nes ti chwilio amdano. Be am drio un arall?"
   formtastic:
     hints:
       backer:
-        credits: "You have <strong>%{credits}</strong> in credits and can back with up to this amount without needing to make a new payment."
-        value: "You chose the amount ;) starting with R$10, any amount is great."
+        credits: "Mae gen ti <strong>%{credits}</strong> mewn credydau a galli di gefnogi prosiectau hyd at yr uchafswm yma heb orfod gwneud taliad ychwanegol."
+        value: "Dewis di'r swm ;) gan dechrau gyda £1, mae unrhyw swm yn gwneud gwahaniaeth."
       project:
-        video_url_edit: 'Paste here the URL of your Vimeo/Youtube video.'
+        video_url_edit: 'Gluda URL dy fideo Vimeo/Youtube.'
         about: "Tell us about what inspired you to come up with this project . Be objective end charming, present your readers with something that moves them while being very transparent over the expectations on your project!"
         more_links: "Which channels will be used to spread the word about your project? List here your facebook/twitter/blog/site/ and what ever more links you have to help you"
         category: "Before you format your project explore other (successful) projects to inspire yourself!"
         expires_at: "Finally, choose how long you want your campaign to last. Again, this is a strategic choice: if you put a lot of time, people will lose interest along the way; if put too little, you may not reach the minimum in time."
         online_days: "Finally, choose how long you want your campaign to last. Again, this is a strategic choice: if you put a lot of time, people will lose interest along the way; if put too little, you may not reach the minimum in time."
-        goal: "Values in reais (R$)"
+        goal: "Gwerth mewn punnoedd (£)"
         first_backers: "To reach your financial goal it’s indispensable to engage the people who are close to you and the project. So if you can list here who will be your first 20 backers that would be a great sign ;) "
         headline: "Summarize your project in 140 characters. This sentence will be the first contact people will have with your project, before even seeing the video. Be creative, clear and direct :)"
         name: "Be as objective as you can. Leave explanations for the About section."
-        uploaded_image: "Upload a 512x400 image(.jpg)."
+        uploaded_image: "Llwytha ddelwedd 512x400 (.jpg)."
         video_url: "Paste the URL from a <a href=\"http://vimeo.com\" target=\"_blank\">Vimeo</a> video. We recommend Vimeo because it looks better and doesn't have ads. This way, your project will look better too! <strong>Produce your video the best you can and make a video specifically for your campaign</strong>. If there is a single thing that differentiates the projects that reach the goal from the others is the video. Observe ;)"
       reward:
         description: "Describe your reward in a way that arouses people's interest to back the project. Don't be shy!"
@@ -296,62 +297,62 @@ cy:
         days_to_delivery: "Total of days to deliver the reward."
     labels:
       backer:
-        anonymous: "I want my back to be anonymous."
-        credits: "I want to use my credits on this back."
-        reward: "Select your reward"
-        value: "How much do you want to contribute with?"
+        anonymous: "Dwisio nghefnogaeth i fod yn ddienw."
+        credits: "Dwisio defnyddio credydau ar gyfer cefnogi hwn."
+        reward: "Dewis dy wobr"
+        value: "Faint hoffet ti gyfrannu?"
       comment:
-        comment: "Leave your comment about this project"
+        comment: "Sgwenna neges am y prosiect"
       project:
         more_links: "List project related links *"
         how_know: "How did you get to know Catarse?"
         headline: "Punch Line"
-        category: 'Category'
+        category: 'Categori'
         first_backers: "List your first backers *"
         about: "About your project. How will you spend this money?"
         expires_at: "What's the deadline to reach your goal?"
         goal: "How much do you intend to raise? (use only numbers)"
-        name: "Project's Name"
-        online_days: 'How Many Campaign Days?'
-        video_url: Video
-        uploaded_image: "Project thumbnail"
+        name: "Enw'r Prosiect"
+        online_days: 'Sawl Diwrnod Ymgyrch?'
+        video_url: Fideo
+        uploaded_image: "Llun bach y Prosiect"
       reward:
-        maximum_backers: "Maximum backers (optional)"
-        days_to_delivery: "Days to delivery"
-    optional: " (optional)"
+        maximum_backers: "Uchafswm cefnogwyr (dewisol)"
+        days_to_delivery: "Diwrnodau nes bydd yn digwydd"
+    optional: " (dewisol)"
   found_plural: Found
   found_singular: Found
-  here: here
-  i_backed: "I backed the project %{name} on @catarse"
-  i_just_backed: "I just backed the project %{name} on @catarse"
+  here: yma
+  i_backed: "Dwi di cefnogi'r prosiect %{name} ar @arian_byw"
+  i_just_backed: "Dwi newydd gefnogi'r prosiect %{name} ar @arian_byw"
   layouts:
     login:
-      login_with_facebook: "sign in with your facebook account"
-      remember_me: "Remember me and keep me connected."
+      login_with_facebook: "mewngofnoda gyda dy gyfrif Facebook"
+      remember_me: "Cofia fi a chadwa fi wedi nghysylltu."
     header:
       blog: Blog
       help: Help
-      signup: "Ymuno"
+      signup: "Creu cyfrif"
       signin: Mewngofnodi
       discover: Darganfod
-      submit: Dechrau Project
-      profile: "Proffil"
-      account: "Cyfrif"
+      submit: Dechrau dy brosiect
+      profile: "Fy mhroffil"
+      account: "Fy nghyfrif"
     user:
-      logout: Logout
-      my_credits: "My credit"
+      logout: Allgofnodi
+      my_credits: "Fy nghredydau"
   not_informed: "not informed"
-  notify_locale: "We identified your language by your browser. If you prefer another one, click on one of the flags on the right."
+  notify_locale: "Wnaethon ni adnabod dy iaith oddi wrth dy borwr. Os fase'n well gen ti iaith arall, clicia ar un o'r ieithoedd ar y dde."
   on_the_spot:
-    cancel: Cancel
+    cancel: Canslo
     ok: OK
-    tooltip: "Click to edit..."
+    tooltip: "Clic i olygu..."
   passwords:
     edit:
-      label_new_password: "New password"
-      submit: "Change password"
-      title: "Reset password"
-      site_title: "Change password"
+      label_new_password: "Cyfrinair newydd"
+      submit: "Newid cyfrinair"
+      title: "Ailosod cyfrinair"
+      site_title: "Newid cyfrinair"
       subtitle: "You requested to reset your password. Fill your new password below and click \"Change Password\". If you did not request this password reset, just skip this page and your password will remain the same."
     email:
       content_html: " <p>Someone has requested a link to change your password, and you can do this through the link below.</p><p>%{link}</p><p>If you didn't request this, please ignore this email.</p><p>Your password won't change until you access the link above and create a new one.</p> "
@@ -670,27 +671,27 @@ cy:
 
   registrations:
     new:
-      site_title: "Sign up"
-      submit: "Sign Up"
-      title: "Sign up using you email"
+      site_title: "Creu cyfrif"
+      submit: "Creu cyfrif"
+      title: "Creu cyfrif gyda dy ebost"
   remaining_plural: left
   remaining_singular: left
   remove: remove
-  require_admin: "You must be admin to perform this action."
-  require_login: "You must be logged in to perform this action."
-  require_permission: "You don't have permission to perform this action."
+  require_admin: "Rhaid i ti fod yn weinyddwr i wneud hyn."
+  require_login: "Rhaid i ti fod wedi mewngofnodi er mwyn gwneud hyn."
+  require_permission: "Sgen ti ddim caniatad i wneud hyn."
   reward:
-    display_remaining: "%{remaining} of %{maximum} available"
-    dont_want: "I don't want a reward"
-    limited: Limited
-    sold_out: "Sold out"
+    display_remaining: "%{remaining} o %{maximum} ar gael"
+    dont_want: "Dydw i ddim eisiau gwobr"
+    limited: Cyfyngedig
+    sold_out: "Wedi gwerthu mas"
   sessions:
     auth:
-      success: "Successfully logged in. Welcome, %{name}!"
+      success: "Ti wedi mewngofnodi. Croeso, %{name}!"
     destroy:
-      success: "Successfully logged out. See you!"
+      success: "Ti wedi allgofnodi. Hwyl am y tro!"
     failure:
-      error: "There was an error while loggin in. Please try again."
+      error: "Roedd problem wrth fewngofnodi. Plis tria eto."
 
 
   static:
