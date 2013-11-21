@@ -259,7 +259,6 @@ cy:
   error: "Wpsi! Roedd na wall. Plis tria eto."
   explore:
     index:
-    title: "Explore the projects"
       near: "Gerllaw"
       categories: Categoriau
       expiring: "Dod i ben"
