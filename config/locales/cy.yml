@@ -5,14 +5,14 @@ cy:
   controllers:
     updates:
       create:
-        notice: 'Crewyd y diweddariad yn llwyddianus!'
-  failure_title: 'Plis trwsia'r gwallau isod:'
+        notice: "Crewyd y diweddariad yn llwyddianus!"
+  failure_title: "Plis trwsia'r gwallau isod:"
   uservoice_gadget:
     user:
-      name: 'Defnyddiwr'
-      location: 'Tref / Sir'
-      confirmed_backers: 'Confirmed backs'
-      created_projects: 'Created projects'
+      name: "Defnyddiwr"
+      location: "Tref / Sir"
+      confirmed_backers: "Confirmed backs"
+      created_projects: "Created projects"
   site:
     title: "ArianByw"
     meta_title:  "%{title} · %{company_name}"
@@ -21,40 +21,40 @@ cy:
 
   login:
     forgot_password:
-      welcome: 'Ailosod Cyfrinair'
-      label: 'Rho dy ebost yn y blwch i ailosod dy gyfrinair'
-      submit: 'Ailosod'
+      welcome: "Ailosod Cyfrinair"
+      label: "Rho dy ebost yn y blwch i ailosod dy gyfrinair"
+      submit: "Ailosod"
     registrations:
-      welcome: 'Ymuno'
-      password_hint: 'Rhaid cael o leiaf 6 nodyn'
-      show_password: 'Dangos Cyfrinair'
+      welcome: "Ymuno"
+      password_hint: "Rhaid cael o leiaf 6 nodyn"
+      show_password: "Dangos Cyfrinair"
     singin: "Mewngofnodi"
     placeholder:
       email: "Ebost"
       password: "Cyfrinair"
 
   backer_report_to_project_owner:
-    reward_description: 'Disgrifiad gwobr'
-    confirmed_at: 'Taliad wedi'i gadarnhau am'
-    value: 'Gwerth dy gefnogaeth'
-    service_fee: 'Ffi ArianByw'
-    user_name: 'Enw cefnogwr'
-    user_email: 'Ebost defnyddiwr proffil Catarse'
-    payer_email: 'Ebost defnyddiwr dy system dalu'
-    payment_method: 'Dull talu'
-    address_street: 'Stryd'
-    address_complement: 'Complement'
-    address_number: 'Rhif'
-    address_neighbourhood: 'Ardal'
-    address_city: 'Tref/Dinas'
-    address_state: 'Sir'
-    address_zip_code: 'Côd post'
-    anonymous: 'Dienw'
-  edit_project: 'Golyga'r prosiect'
-  facebook_locale: 'en_GB'
+    reward_description: "Disgrifiad gwobr"
+    confirmed_at: "Taliad wedi'i gadarnhau am"
+    value: "Gwerth dy gefnogaeth"
+    service_fee: "Ffi ArianByw"
+    user_name: "Enw cefnogwr"
+    user_email: "Ebost defnyddiwr proffil Catarse"
+    payer_email: "Ebost defnyddiwr dy system dalu"
+    payment_method: "Dull talu"
+    address_street: "Stryd"
+    address_complement: "Complement"
+    address_number: "Rhif"
+    address_neighbourhood: "Ardal"
+    address_city: "Tref/Dinas"
+    address_state: "Sir"
+    address_zip_code: "Côd post"
+    anonymous: "Dienw"
+  edit_project: "Golygar prosiect"
+  facebook_locale: "en_GB"
   or: neu
-  'no': "Nac ydw"
-  'yes': "Ydw"
+  no: "Nac ydw"
+  yes: "Ydw"
   newsletter_ok_header: "Rwyt ti wedi tanysgrifio i'r cylchlythyr!"
   newsletter_ok_body: "Mae dy ebost nawr yn ein rhestr cylchlythyr, diolch am danysgrifio!"
   newsletter_error_header: "Wps! Roedd 'na broblem."
@@ -157,9 +157,9 @@ cy:
         name: Enw
         user_id: "ID defnyddiwr"
         video_url: "URL y fideo"
-        permalink: 'URL y prosiect'
+        permalink: "URL y prosiect"
         how_know: "Sut glywes ti am ArianByw?"
-        more_links: 'Lle alla i wybod mwy amdanat ti a dy brosiect?'
+        more_links: "Lle alla i wybod mwy amdanat ti a dy brosiect?"
       reward:
         description: Disgrifiad
         maximum_backers: "Uchafswm cefnogwyr"
@@ -172,21 +172,21 @@ cy:
         address_state: Sir
         address_street: Stryd
         address_zip_code: "Côd post"
-        cpf: 'CPF / CNPJ '
-        cpf_hint_title: 'Nota Fiscal será emitida para esse documento'
-        cpf_hint: '(?)'
-        state_inscription: 'State Inscription'
-        moip_login: 'MoIP Login'
-        moip_login_hint: '(How to create an account)'
+        cpf: "CPF / CNPJ "
+        cpf_hint_title: "Nota Fiscal será emitida para esse documento"
+        cpf_hint: "(?)"
+        state_inscription: "State Inscription"
+        moip_login: "MoIP Login"
+        moip_login_hint: "(How to create an account)"
         current_password: "Cyfrinair presennol"
         email: Ebost
         full_name: "Enw llawn / Enw Cwmni"
-        bio: 'Bio Byr'
+        bio: "Bio Byr"
         name: "Llysenw"
         password: Cyfrinair
         password_confirmation: "Cadarnhau Cyfrinair"
         phone_number: "Rhif ffôn symudol"
-        newsletter: 'Dwi eisiau derbyn newyddion am ArianByw'
+        newsletter: "Dwi eisiau derbyn newyddion am ArianByw"
     models:
       backer: Cefnogwr
       category: Categori
@@ -194,7 +194,7 @@ cy:
       reward: Gwobr
   backer:
     display_confirmed_at: "%{time_ago} yn ôl"
-    reward_must_be_from_project: "rhaid ei fod o'r un prosiect"
+    reward_must_be_from_project: 'rhaid ei fod o'r un prosiect"
     should_not_back_if_maximum_backers_been_reached: "mae wedi cyrraedd yr uchafswm cefnogwyr"
     value_must_be_at_least_rewards_value: "rhaid iddo fod o leiaf %{minimum_value} ar gyfer y wobr ddewisaist ti"
     project_should_be_online: "Alli di ddim cefnogi prosiect sydd ddim arlein"
@@ -204,7 +204,7 @@ cy:
   backer_singular: cefnogwr
   click_here: "Clic yma"
   clicking_here: "clicio yma"
-  click_term: 'telerau'
+  click_term: 'telerau"
   comment:
     display_time: "%{time_ago} yn ôl"
   credits:
@@ -219,7 +219,7 @@ cy:
       current_credits_html: "Dy falans cyfredol yw <span id=\"current_credits\">%{credits}</span> mewn credydau."
       important_html: "Os wyt ti'n gofyn am ad-daliad, bydd gwerth y taliad yn cael ei dynnu oddi wrth dy gredydau."
       project: Prosiect
-      refund_expiration_date_html: "Dyddiad olaf gellir hawlio ad-daliad (<a target='__blank' href='http://suporte.catarse.me/knowledgebase/articles/164746-regras-e-funcionamento-dos-reembolsos-estornos'>?</a>)"
+      refund_expiration_date_html: "Dyddiad olaf gellir hawlio ad-daliad (<a target='_blank' href='http://suporte.catarse.me/knowledgebase/articles/164746-regras-e-funcionamento-dos-reembolsos-estornos'>?</a>)"
       refunded: "Refund request successfully done. Our team will contact you within two business days."
       insufficient_credits: "You don't have enough credits to request this refund."
       refunds_title: "Payments that can be refunded"
@@ -239,17 +239,17 @@ cy:
     request_refund_from:
       subject: "Refund request from project %{name}"
       subject_html: "User %{name} requested refund for the back %{backer_key} to the project %{backer_project} in the amount of %{backer_value} made by %{backer_payment_service} gateway."
-      user_name: 'User name'
-      user_email: 'User email'
-      payer_email: 'Payment email'
-      payer_name: 'User name used on payment'
-      project: 'Project'
-      backer_key: 'Backer key'
-      payment_id: 'Payment ID'
-      backer_value: 'Backer value'
-      payment_method: 'Payment method'
-      payment_choice: 'Payment choice'
-      created_at: 'created at'
+      user_name: "User name"
+      user_email: "User email"
+      payer_email: "Payment email"
+      payer_name: "User name used on payment"
+      project: "Project"
+      backer_key: "Backer key"
+      payment_id: "Payment ID"
+      backer_value: "Backer value"
+      payment_method: "Payment method"
+      payment_choice: "Payment choice"
+      created_at: "created at"
   curated_pages:
     index:
       title: "Tudalennau wedi eu curadu"
@@ -260,7 +260,7 @@ cy:
   explore:
     index:
     title: "Explore the projects"
-      near: 'Gerllaw'
+      near: "Gerllaw"
       categories: Categoriau
       expiring: "Dod i ben"
       quick_explore: "Chwiliad cyflym"
@@ -278,7 +278,7 @@ cy:
         credits: "Mae gen ti <strong>%{credits}</strong> mewn credydau a galli di gefnogi prosiectau hyd at yr uchafswm yma heb orfod gwneud taliad ychwanegol."
         value: "Dewis di'r swm ;) gan dechrau gyda £1, mae unrhyw swm yn gwneud gwahaniaeth."
       project:
-        video_url_edit: 'Gluda URL dy fideo Vimeo/Youtube.'
+        video_url_edit: "Gluda URL dy fideo Vimeo/Youtube."
         about: "Tell us about what inspired you to come up with this project . Be objective end charming, present your readers with something that moves them while being very transparent over the expectations on your project!"
         more_links: "Which channels will be used to spread the word about your project? List here your facebook/twitter/blog/site/ and what ever more links you have to help you"
         category: "Before you format your project explore other (successful) projects to inspire yourself!"
@@ -307,13 +307,13 @@ cy:
         more_links: "List project related links *"
         how_know: "How did you get to know Catarse?"
         headline: "Punch Line"
-        category: 'Categori'
+        category: "Categori"
         first_backers: "List your first backers *"
         about: "About your project. How will you spend this money?"
         expires_at: "What's the deadline to reach your goal?"
         goal: "How much do you intend to raise? (use only numbers)"
         name: "Enw'r Prosiect"
-        online_days: 'Sawl Diwrnod Ymgyrch?'
+        online_days: "Sawl Diwrnod Ymgyrch?"
         video_url: Fideo
         uploaded_image: "Llun bach y Prosiect"
       reward:
@@ -364,19 +364,19 @@ cy:
   project:
     start:
       email_subject: "Your project has been received by Catarse's team"
-      email_text: "Thanks for trusting your project to Catarse :)<br><br>We know that you expect a quick reply but, to be quite frank, we take up to 4 days to respond, ok? That is because we have a small team working on several projects. Note that the reply can come sooner, so keep attention to your inbox.<br><br>Meanwhile it is worth to get to know the projects that are online (<a href='%{explore_link}' style='color: #E75297 !important;'>%{explore_link}</a>) and - if you like any of them- back it! This is the way to show support for the crowdfunding culture in Brazil and to feed the ecosystem that keeps growing around Catarse.<br><br>Besides that, you will get some inspiration for your own project...<br><br>Stay tuned for updates in <a href='%{facebook}' style='color: #E75297 !important;'>Facebook</a> and get some deeper knowledge about Catarse reading the posts in our <a href='%{blog}' style='color: #E75297 !important;'>blog</a>.<br><br>If you have any doubt, send an email to: %{email}"
+      email_text: "Thanks for trusting your project to Catarse :)<br><br>We know that you expect a quick reply but, to be quite frank, we take up to 4 days to respond, ok? That is because we have a small team working on several projects. Note that the reply can come sooner, so keep attention to your inbox.<br><br>Meanwhile it is worth to get to know the projects that are online (<a href=\"%{explore_link}\" style=\"color: #E75297 !important;\">%{explore_link}</a>) and - if you like any of them- back it! This is the way to show support for the crowdfunding culture in Brazil and to feed the ecosystem that keeps growing around Catarse.<br><br>Besides that, you will get some inspiration for your own project...<br><br>Stay tuned for updates in <a href=\"%{facebook}\" style=\"color: #E75297 !important;\">Facebook</a> and get some deeper knowledge about Catarse reading the posts in our <a href=\"%{blog}\" style=\"color: #E75297 !important;\">blog</a>.<br><br>If you have any doubt, send an email to: %{email}"
       notification_text: "Your project has been received by Catarse's team"
     finish:
       successful:
         email_subject: "Hooray! The project %{project_name} was successful on Catarse!"
-        email_text: "The project %{project_link}, that you have backed, was successfully funded! Let's celebrate o/<br><br>The project has, including you, %{project_total_backers} wonderful backers, raised %{project_pledged} and reached %{project_process}% of its goal =D<br><br>Something that is important to know: Catarse's team takes 3 days to send to the project creator the list with all information of the backers. So, the project creator will only be in touch with you to thank you and talk about the rewards delivery in a few days, ok?<br><br>So why don't you, in this meantime, share with all your friends this success?<br><br><div style='text-align:center;'>%{facebook_button}%{twitter_button}</div><br><br>If you want to get in touch with %{project_owner_name}, send an email to %{project_owner_email}.<br><br>If you have any doubt about Catarse, access our FAQ: <a href='http://www.catarse.me/faq' style='color: #008800';>www.catarse.me/faq</a> or send an email to <a href='mail_to:contato@catarse.me' style='color: #008800;'>contato@catarse.me</a><br>"
-        facebook_text: "Hooray! The project '%{name}', which I backed, was successful on Catarse!"
+        email_text: "The project %{project_link}, that you have backed, was successfully funded! Let's celebrate o/<br><br>The project has, including you, %{project_total_backers} wonderful backers, raised %{project_pledged} and reached %{project_process}% of its goal =D<br><br>Something that is important to know: Catarse's team takes 3 days to send to the project creator the list with all information of the backers. So, the project creator will only be in touch with you to thank you and talk about the rewards delivery in a few days, ok?<br><br>So why don't you, in this meantime, share with all your friends this success?<br><br><div style=\"text-align:center;\">%{facebook_button}%{twitter_button}</div><br><br>If you want to get in touch with %{project_owner_name}, send an email to %{project_owner_email}.<br><br>If you have any doubt about Catarse, access our FAQ: <a href=\"http://www.catarse.me/faq\" style=\"color: #008800\";>www.catarse.me/faq</a> or send an email to <a href=\"mail_to:contato@catarse.me\" style=\"color: #008800;\">contato@catarse.me</a><br>"
+        facebook_text: "Hooray! The project "%{name}", which I backed, was successful on Catarse!"
         notification_text: "Hooray! The project %{link} that you backed was successful! Spread the word!"
         reward_notification_text: "Soon, %{link} will contact you to deliver your reward. Enjoy!"
-        twitter_text: "Hooray! The project '%{name}', which I backed, was successful on @catarse! %{short_url}"
+        twitter_text: "Hooray! The project "%{name}", which I backed, was successful on @catarse! %{short_url}"
       unsuccessful:
         email_subject: "The project %{project_name} wasn't funded on Catarse."
-        email_text: 'Unfortunately the project %{project_link}, that you have backed, did not reached its goal and was not funded at Catarse.<br><br>So, you have received <strong>%{value}</strong> in credits to back other projects. You can meet others %{project_category} projects in %{explore_category_link}.<br><br>You also can ask for your refund by clicking in %{credits_link}. Remember that you signed up in Catarse using %{user_provider}. If you have some difficulty in this process, do not be shame to send an email to financeiro@catarse.me with the subject "Refund - login issue".<br><br>If, for any reason, you want to contact %{project_owner_name}, send an email to %{project_owner_email}.<br><br>If you have any other doubt, access our FAQ or send an email to <a href="mail_to:contato@catarse.me" style="color: #008800;">contato@catarse.me</a>.<br>'
+        email_text: "Unfortunately the project %{project_link}, that you have backed, did not reached its goal and was not funded at Catarse.<br><br>So, you have received <strong>%{value}</strong> in credits to back other projects. You can meet others %{project_category} projects in %{explore_category_link}.<br><br>You also can ask for your refund by clicking in %{credits_link}. Remember that you signed up in Catarse using %{user_provider}. If you have some difficulty in this process, do not be shame to send an email to financeiro@catarse.me with the subject 'Refund - login issue'.<br><br>If, for any reason, you want to contact %{project_owner_name}, send an email to %{project_owner_email}.<br><br>If you have any other doubt, access our FAQ or send an email to <a href='mail_to:contato@catarse.me' style='color: #008800;'>contato@catarse.me</a>.<br>"
         notification_text: "You received %{value} in credits to back other projects. If you prefer, you can request a refund %{link}."
         unsuccessful_text: "The project %{link} that you backed wasn't funded. Maybe next time!"
     video_regex_validation: "only Vimeo URLs are allowed"
@@ -390,7 +390,7 @@ cy:
       reached_goal: funded
       draft: "draft"
   projects:
-    send_to_analysis: 'Your project has sent to our team'
+    send_to_analysis: "Your project has sent to our team"
     box:
       by: by
       when: in
@@ -434,7 +434,7 @@ cy:
         submit: "Review and proceed to checkout"
         title: "Back %{name}"
       edit:
-        brazil_address_title: 'Fill when you back is in Brazil'
+        brazil_address_title: "Fill when you back is in Brazil"
         live_in_brazil: "If you live in Brazil, please check this box"
         credits_notice_html: "This back will be payed with your credits. After the confirmation, you will have <strong>%{credits}</strong> in credits to back other projects."
         error: "Ooops. There was an error while registering your back. Please try again."
@@ -461,7 +461,7 @@ cy:
     update:
       success: "Updated"
     form:
-      permalink_hint: 'Simplify the URL of your project. Think that your sponsor need to remember the address to share your project.'
+      permalink_hint: "Simplify the URL of your project. Think that your sponsor need to remember the address to share your project."
       add_reward: "Add reward"
       important_html: "Please notice that Catarse will charge 13% if your project is successful. Add this values to your budget in order to execute your project with no surprises."
       project_warning:
@@ -533,7 +533,7 @@ cy:
       title: "Title of the update"
       destroy: "Remove update"
       destroy_confirmation: "Do you want to remove the update?"
-      warning: 'Remembering that every new post goes directly to the email of his supporters. Therefore, review your text well before sending it.'
+      warning: "Remembering that every new post goes directly to the email of his supporters. Therefore, review your text well before sending it."
     rewards:
       reward_title: "For %{minimum} or more"
       reward_deliver_time: "Estimated delivery: %{prevision}"
@@ -544,18 +544,18 @@ cy:
     send_mail:
       success: "Your project was successfully sent! We'll soon contact you. Thanks a lot!"
     show:
-      rejected: "This project does not fit our <a href='https://docs.google.com/document/d/1Heh9LlvoSoD0lUfbmV5WlISJ3nqmGpEQiw15TBuCn-0/edit' target='_blank'>selection criteria.</a>"
+      rejected: "This project does not fit our <a href=\"https://docs.google.com/document/d/1Heh9LlvoSoD0lUfbmV5WlISJ3nqmGpEQiw15TBuCn-0/edit\" target=\"_blank\">selection criteria.</a>"
       waiting: "This project is waiting for approval and soon we'll know if it will go online on Catarse ;)"
-      waiting_owner: "To edit the project info, click on 'Edit project' tab. The rewards you can edit on reward column."
+      waiting_owner: "To edit the project info, click on \"Edit project\" tab. The rewards you can edit on reward column."
       about_title: "About this project"
-      no_rewards_warning_title: 'Create here your rewards'
+      no_rewards_warning_title: "Create here your rewards"
       no_rewards_warning: "Don't go nuts! Think about how you're going to deliver them and include those costs in your budget. People are putting their trust in you, don't kid around with that!"
       reports:
         no_backs: "This project don't have any back yet."
-        link_reports: 'Download report of '
-        all_backers: 'all backers'
+        link_reports: "Download report of "
+        all_backers: "all backers"
         all_backers_without_reward: "all backers that don't select any reward"
-        link_reward: 'Download the report of backers that selected the reward'
+        link_reward: "Download the report of backers that selected the reward"
       menu:
         about: About
         backers: Backers
@@ -563,7 +563,7 @@ cy:
         updates: Updates
         edit: Edit
         reports: Reports
-        add_reward: 'Add Rewards'
+        add_reward: "Add Rewards"
       share:
         embed: embed
         embed_title: "Embed this project on your site"
@@ -572,20 +572,20 @@ cy:
         take_a_look: "Check out the project"
         title: "Be part of it and share this project"
     new:
-      legend_html: "After filling in the form below, you will receive a project page in Draft mode. In this draft you will add the rewards for your backers. You may also share the page with your friends to collect feedback and sharpen your project even more.<br><br>The information filled in below is not definitive, but remember that the more consistent you are in your project submission, the faster it will go on air.<br><br><b>Very Important:</b> <i>Catharsis is cured platform, which means that our board will evaluate the focus, the feasibility and consistency of your project during the Draft. If we understand that your project does not comply with our <a href='https://docs.google.com/a/catarse.me/document/d/1wLDS2lphQ6monovg9rEaTIDcxBD3FRZV9dfGKmajyj8/edit' target='_blank' >selection criteria</a>, it may be refused by the team of curators.</i>"
-      permalink_important: 'Try not to use underline, hyphen etc.'
-      permalink_hint: 'Go simple. Your backers should be able to remember the URL to your project ;)'
+      legend_html: "After filling in the form below, you will receive a project page in Draft mode. In this draft you will add the rewards for your backers. You may also share the page with your friends to collect feedback and sharpen your project even more.<br><br>The information filled in below is not definitive, but remember that the more consistent you are in your project submission, the faster it will go on air.<br><br><b>Very Important:</b> <i>Catharsis is cured platform, which means that our board will evaluate the focus, the feasibility and consistency of your project during the Draft. If we understand that your project does not comply with our <a href=\"https://docs.google.com/a/catarse.me/document/d/1wLDS2lphQ6monovg9rEaTIDcxBD3FRZV9dfGKmajyj8/edit\" target=\"_blank\" >selection criteria</a>, it may be refused by the team of curators.</i>"
+      permalink_important: "Try not to use underline, hyphen etc."
+      permalink_hint: "Go simple. Your backers should be able to remember the URL to your project ;)"
       name_important: "Do not exceed  50 characters"
       online_days_important: "60 days is the maximum"
       about_important: "Don't make it too long! Indicate links so people can know more about your work"
-      important_html: 'Keep in mind the 13% fee charged by Catarse in case you reach your financial goal. Just divide your final budget by 0.87 to find the discounted amount.'
+      important_html: "Keep in mind the 13% fee charged by Catarse in case you reach your financial goal. Just divide your final budget by 0.87 to find the discounted amount."
       send_project: "I want to submit my project."
       video_important: "The video must be hosted by Vimeo or Youtube. Paste here the URL!"
       more_links_important: "It's very important to use social medias to spread the word about your project and engage your network into making it a success"
       first_backers_important: "These people are fundamental to the success of your project."
       how_know_important: "Yay! We reached  the final question."
       headline_important: "It's a summary of  your project . 140 characters tops!:D"
-      tags_important: "Check other projects in your category  <a href='%{href}' target='_blank'>here!</a>!."
+      tags_important: "Check other projects in your category  <a href=\"%{href}\" target=\"_blank\">here!</a>!."
       subtitle: "The time to make it happen is now! We really want to know what you're up to..."
       title: "Submit your project"
       about: "Describe your project and how much do you need"
@@ -712,7 +712,7 @@ cy:
       successful_title: "If the project meet or exceed its financial target ..."
       successful: "The project is considered successful! The creator gets the money and contacts all supporters."
       not_success_title: "If the project does not meet the target ..."
-      not_success: "You get the full amount of support in the form of loans (to support another project). If that does not please you, you can request your money back, according to the rules of the <a href='%{terms}' target='_blank'>terms of use</a>."
+      not_success: "You get the full amount of support in the form of loans (to support another project). If that does not please you, you can request your money back, according to the rules of the <a href=\"%{terms}\" target=\"_blank\">terms of use</a>."
       title_not_funded: "If the project does not achieve the goal, how do I use my credits?"
       not_funded: "You will receive credits  on Catarse. The moment you choose to back another project, on the screen to select the reward, there will have a field to use your credits."
       more_questions: "I'm dying to support a project, is there anything else I need to know?"
@@ -807,7 +807,7 @@ cy:
       title_money: "Where does the money to finance projects come from?"
       money: "At least 50% will come from your own network of contacts. In this manner, Catarse is a way for you to get closer to the people that enjoy your work and expand this network through sharing in social networks, newspapers, blogs and, of course, your favorite bar."
       title_work: "Does it take a lot of work?"
-      work: "A loooot! There is no 'easy money on the INTERNET'. You will have to work a lot during your project, but the experience will be worth it - we assure you :D And you will have a much stronger network behind your project after Catarse."
+      work: "A loooot! There is no \"easy money on the INTERNET\". You will have to work a lot during your project, but the experience will be worth it - we assure you :D And you will have a much stronger network behind your project after Catarse."
       title_costs: "How much does it cost to use Catarse?"
       costs: "Submitting your project is free. Now, when your project is approved and has reached its goal, Catarse will apply a 13% fee, this value includes both the Catarse fee and the payment gateway fee."
       why: "Why Catarse?"
@@ -860,9 +860,9 @@ cy:
       requested_refund: "Refund requested"
       waiting_confirmation: "Waiting confirmation"
     set_email:
-      site_title: 'Define your email address'
-      title: 'Define your email address'
-      submit: 'Save my email and proceed'
+      site_title: "Define your email address"
+      title: "Define your email address"
+      submit: "Save my email and proceed"
     show:
       attention: Attention
       tabs:
@@ -888,7 +888,7 @@ cy:
       title: "Choose from which projects you want to receive update notifications:"
       updates: "I want to receive project updates"
     current_user_fields:
-      bio_limit: 'only 140 characters'
+      bio_limit: "only 140 characters"
       updated: "Your information has been updated"
       update_social_info: "Update info"
       social_info: "Contact info"
