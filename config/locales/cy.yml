@@ -194,7 +194,7 @@ cy:
       reward: Gwobr
   backer:
     display_confirmed_at: "%{time_ago} yn ôl"
-    reward_must_be_from_project: 'rhaid ei fod o'r un prosiect"
+    reward_must_be_from_project: "rhaid ei fod o'r un prosiect"
     should_not_back_if_maximum_backers_been_reached: "mae wedi cyrraedd yr uchafswm cefnogwyr"
     value_must_be_at_least_rewards_value: "rhaid iddo fod o leiaf %{minimum_value} ar gyfer y wobr ddewisaist ti"
     project_should_be_online: "Alli di ddim cefnogi prosiect sydd ddim arlein"
@@ -204,7 +204,7 @@ cy:
   backer_singular: cefnogwr
   click_here: "Clic yma"
   clicking_here: "clicio yma"
-  click_term: 'telerau"
+  click_term: "telerau"
   comment:
     display_time: "%{time_ago} yn ôl"
   credits:
