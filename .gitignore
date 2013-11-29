@@ -24,3 +24,6 @@ Cookbooks
 .vagrant
 .project
 .secret.rvmrc
+
+# MG generated routes file
+routes.txt
