@@ -1,4 +1,4 @@
-en:
+cy:
   channels_subscribers:
     created: 'You are now following %{channel}'
     deleted: 'You are no longer following %{channel}'

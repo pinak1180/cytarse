@@ -1,35 +1,35 @@
 cy:
   date:
     abbr_day_names:
-    - Sun
-    - Mon
-    - Tue
-    - Wed
-    - Thu
-    - Fri
-    - Sat
+    - Sul
+    - Llu
+    - Maw
+    - Mer
+    - Iau
+    - Gwe
+    - Sad
     abbr_month_names:
     -
-    - Jan
-    - Feb
-    - Mar
-    - Apr
-    - May
-    - Jun
-    - Jul
-    - Aug
-    - Sep
-    - Oct
-    - Nov
-    - Dec
+    - Ion
+    - Chw
+    - Maw
+    - Ebr
+    - Mai
+    - Meh
+    - Gor
+    - Aws
+    - Med
+    - Hyd
+    - Tac
+    - Rha
     day_names:
-    - Sunday
-    - Monday
-    - Tuesday
-    - Wednesday
-    - Thursday
-    - Friday
-    - Saturday
+    - Dydd Sul
+    - Dydd Llun
+    - Dydd Mawrth
+    - Dydd Mercher
+    - Dydd Iau
+    - Dydd Gwener
+    - Dydd Sadwrn
     formats:
       default: ! '%Y-%m-%d'
       with_time: ! "%Y/%m/%d - %H:%M"
@@ -37,18 +37,18 @@ cy:
       short: ! '%b %d'
     month_names:
     -
-    - January
-    - February
-    - March
-    - April
-    - May
-    - June
-    - July
-    - August
-    - September
-    - October
-    - November
-    - December
+    - Ionawr
+    - Chwefror
+    - Mawrth
+    - Ebrill
+    - Mai
+    - Mehefin
+    - Gorffenaf
+    - Awst
+    - Medi
+    - Hydref
+    - Tachwedd
+    - Rhagfyr
     order:
     - :year
     - :month
@@ -56,46 +56,46 @@ cy:
   datetime:
     distance_in_words:
       about_x_hours:
-        one: about 1 hour
-        other: about %{count} hours
+        one: tua 1 awr
+        other: tua %{count} awr
       about_x_months:
-        one: about 1 month
-        other: about %{count} months
+        one: tua 1 mis
+        other: tua %{count} mis
       about_x_years:
-        one: about 1 year
-        other: about %{count} years
+        one: tua blwyddyn 
+        other: tua %{count} blynedd
       almost_x_years:
-        one: almost 1 year
-        other: almost %{count} years
-      half_a_minute: half a minute
+        one: bron i flwyddyn 
+        other: bron i %{count} flynedd
+      half_a_minute: hanner munud
       less_than_x_minutes:
-        one: less than a minute
-        other: less than %{count} minutes
+        one: llai na munud
+        other: llai na %{count} munud
       less_than_x_seconds:
-        one: less than 1 second
-        other: less than %{count} seconds
+        one: llai na eiliad
+        other: llai na %{count} eiliad
       over_x_years:
-        one: over 1 year
-        other: over %{count} years
+        one: dros flwyddyn 
+        other: dros %{count} flynedd 
       x_days:
-        one: 1 day
-        other: ! '%{count} days'
+        one: 1 diwrnod
+        other: ! '%{count} diwrnod'
       x_minutes:
-        one: 1 minute
-        other: ! '%{count} minutes'
+        one: 1 munud
+        other: ! '%{count} munud'
       x_months:
-        one: 1 month
-        other: ! '%{count} months'
+        one: 1 mis
+        other: ! '%{count} mis'
       x_seconds:
-        one: 1 second
-        other: ! '%{count} seconds'
+        one: 1 eiliad
+        other: ! '%{count} eiliad'
     prompts:
-      day: Day
-      hour: Hour
-      minute: Minute
-      month: Month
-      second: Seconds
-      year: Year
+      day: Diwrnod
+      hour: Awr
+      minute: Munud
+      month: Mis
+      second: Eiliad
+      year: Blwyddyn
   errors: &errors
     format: ! '%{attribute} %{message}'
     messages:

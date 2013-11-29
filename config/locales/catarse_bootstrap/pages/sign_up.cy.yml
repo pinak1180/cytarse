@@ -1,21 +1,21 @@
-en:
+cy:
   pages:
     sign_up:
-      have_account_html: "Have an account? <strong>%{link}</strong>"
+      have_account_html: "Oes gen ti gyfrif? <strong>%{link}</strong>"
       titles:
-        site: 'Sign up'
-        header: 'Sign up'
+        site: 'Cofrestru'
+        header: 'Cofrestru'
       links:
-        login: "Log in"
+        login: "Mewngofnodi"
       form:
         labels:
-          show_password: 'Show password'
-          name: 'Name'
-          password: 'Password'
-          newsletter: 'I want to subscribe to Catarse newsletter'
+          show_password: "Arddangos dy gyfrinair"
+          name: "Enw"
+          password: "Cyfrinair" 
+          newsletter: "Rwyf am dderbyn cylchlythyr Heliwm"
         hint:
-          password_length: 'Must be at least 6 characters.'
+          password_length: "Rhaid bod yn o leiaf 6 nodyn"
         inputs:
-          submit: 'Sign me up'
-          facebook: 'Sign up with Facebook'
+          submit: "Cofrestru"
+          facebook: "Cofrestru gyda Facebook"
 
