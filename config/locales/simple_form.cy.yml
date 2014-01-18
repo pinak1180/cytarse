@@ -1,26 +1,26 @@
 icy
   simple_form:
-    "yes": 'Yes'
-    "no": 'No'
+    "yes": 'Ydw'
+    "no": 'Nac ydw'
     required:
-      text: 'required'
+      text: 'angenrheidiol'
       mark: '*'
       # You can uncomment the line below if you need to overwrite the whole required html.
       # When using html, text and mark won't be used.
       # html: '<abbr title="required">*</abbr>'
     error_notification:
-      default_message: "Please review the problems below:"
+      default_message: "Plis edrych eto ar y problemau isod:"
     # Labels and hints examples
     # labels:
     #   defaults:
-    #     password: 'Password'
+    #     password: 'Cyfrinair'
     #   user:
     #     new:
-    #       email: 'E-mail to sign in.'
+    #       email: 'Ebost i fewngofnodi.'
     #     edit:
-    #       email: 'E-mail.'
+    #       email: 'Ebost.'
     # hints:
     #   defaults:
-    #     username: 'User name to sign in.'
-    #     password: 'No special characters, please.'
+    #     username: 'Enw defnyddiwr i fewngofnodi.'
+    #     password: "Dim cymeriadau arbennig, os gweli di'n dda."
 
