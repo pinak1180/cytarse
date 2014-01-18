@@ -22,7 +22,7 @@ header.header
           = link_to t('layouts.header.blog'), Configuration['blog_url'], target: :_blank, class: 'header-nav-item' if Configuration['blog_url'].present?
 
         li.header-nav-li.locales
-          - I18n.available_locales.map(&:to_s).sort.reverse.each do |locale|
+          - I18n.available_locales.map(&:to_s).each do |locale|
               = link_to locale, params.merge(locale: locale)
 
         - if current_user

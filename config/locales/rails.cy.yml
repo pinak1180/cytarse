@@ -2,7 +2,11 @@ cy:
   date:
     abbr_day_names:
     - Sul
+<<<<<<< HEAD
     - Llun
+=======
+    - Llu
+>>>>>>> d30aa5633419a2328fc23b89ae85dcc27e5138dd
     - Maw
     - Mer
     - Iau
@@ -11,13 +15,18 @@ cy:
     abbr_month_names:
     -
     - Ion
+<<<<<<< HEAD
     - Chwe
+=======
+    - Chw
+>>>>>>> d30aa5633419a2328fc23b89ae85dcc27e5138dd
     - Maw
     - Ebr
     - Mai
     - Meh
     - Gor
     - Aws
+<<<<<<< HEAD
     - MEd
     - Oct
     - Tach
@@ -30,6 +39,20 @@ cy:
     - Iau
     - Gwener
     - Sadwrn
+=======
+    - Med
+    - Hyd
+    - Tac
+    - Rha
+    day_names:
+    - Dydd Sul
+    - Dydd Llun
+    - Dydd Mawrth
+    - Dydd Mercher
+    - Dydd Iau
+    - Dydd Gwener
+    - Dydd Sadwrn
+>>>>>>> d30aa5633419a2328fc23b89ae85dcc27e5138dd
     formats:
       default: ! '%d-%m-%Y'
       with_time: ! "%d/%m/%Y - %H:%M"
@@ -43,7 +66,11 @@ cy:
     - Ebrill
     - Mai
     - Mehefin
+<<<<<<< HEAD
     - Gorffennaf
+=======
+    - Gorffenaf
+>>>>>>> d30aa5633419a2328fc23b89ae85dcc27e5138dd
     - Awst
     - Medi
     - Hydref
@@ -62,16 +89,25 @@ cy:
         one: tua 1 mis
         other: tua %{count} mis
       about_x_years:
+<<<<<<< HEAD
         one: tua blwyddyn
         other: tua %{count} blwyddyn
       almost_x_years:
         one: tua blwyddyn
         other: tua %{count} blwyddyn
+=======
+        one: tua blwyddyn 
+        other: tua %{count} blynedd
+      almost_x_years:
+        one: bron i flwyddyn 
+        other: bron i %{count} flynedd
+>>>>>>> d30aa5633419a2328fc23b89ae85dcc27e5138dd
       half_a_minute: hanner munud
       less_than_x_minutes:
         one: llai na munud
         other: llai na %{count} munud
       less_than_x_seconds:
+<<<<<<< HEAD
         one: llai nac eiliad
         other: llai na %{count} eiliad
       over_x_years:
@@ -88,6 +124,24 @@ cy:
         other: ! '%{count} mis'
       x_seconds:
         one: eiliad
+=======
+        one: llai na eiliad
+        other: llai na %{count} eiliad
+      over_x_years:
+        one: dros flwyddyn 
+        other: dros %{count} flynedd 
+      x_days:
+        one: 1 diwrnod
+        other: ! '%{count} diwrnod'
+      x_minutes:
+        one: 1 munud
+        other: ! '%{count} munud'
+      x_months:
+        one: 1 mis
+        other: ! '%{count} mis'
+      x_seconds:
+        one: 1 eiliad
+>>>>>>> d30aa5633419a2328fc23b89ae85dcc27e5138dd
         other: ! '%{count} eiliad'
     prompts:
       day: Diwrnod

@@ -1,0 +1,13 @@
+cy:
+  activerecord:
+    errors:
+      models:
+        user:
+          attributes:
+            email:
+              not_found: "Nid oes cofnod o'r cyfeiriad ebost yna. Ceisia eto, neu greu cyfrif."
+              taken: "Mae'r ebost eisoes wedi'i gymryd"
+              invalid: "Nid yw'r ebost yn ddilys"
+            password:
+              too_short: "Mae'r cyfrinair yn rhy fyr"
+              confirmation: "Nid yw'r ddau gyfrinair yr un peth"

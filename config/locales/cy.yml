@@ -5,6 +5,7 @@ cy:
   controllers:
     updates:
       create:
+<<<<<<< HEAD
         notice: 'Wedi llwyddo i greu diweddariad!'
   failure_title: "Plis trwsia'r gwallau isod:"
   uservoice_gadget:
@@ -13,6 +14,16 @@ cy:
       location: 'Tref / Sir'
       confirmed_backers: 'Cefnogwyr'
       created_projects: 'Dy Projectau'
+=======
+        notice: "Crewyd y diweddariad yn llwyddianus!"
+  failure_title: "Plis trwsia'r gwallau isod:"
+  uservoice_gadget:
+    user:
+      name: "Defnyddiwr"
+      location: "Tref / Sir"
+      confirmed_backers: "Confirmed backs"
+      created_projects: "Created projects"
+>>>>>>> d30aa5633419a2328fc23b89ae85dcc27e5138dd
   site:
     title: "Heliwm"
     meta_title:  "%{title} · %{company_name}"
@@ -21,19 +32,20 @@ cy:
 
   login:
     forgot_password:
-      welcome: 'Ailosod Cyfrinair'
-      label: 'Rho dy ebost yn y blwch i ailosod dy gyfrinair'
-      submit: 'Ailosod'
+      welcome: "Ailosod Cyfrinair"
+      label: "Rho dy ebost yn y blwch i ailosod dy gyfrinair"
+      submit: "Ailosod"
     registrations:
-      welcome: 'Ymuno'
-      password_hint: 'Rhaid cael o leiaf 6 nodyn'
-      show_password: 'Dangos Cyfrinair'
+      welcome: "Ymuno"
+      password_hint: "Rhaid cael o leiaf 6 nodyn"
+      show_password: "Dangos Cyfrinair"
     singin: "Mewngofnodi"
     placeholder:
       email: "Ebost"
       password: "Cyfrinair"
 
   backer_report_to_project_owner:
+<<<<<<< HEAD
     reward_description: 'Disgrifiad yr anrheg'
     confirmed_at: "Taliad wedi'i gadarnhau am"
     value: 'Gwerth dy gefnogaeth'
@@ -52,9 +64,29 @@ cy:
     anonymous: 'Dienw'
   edit_project: 'Golyga'r project'
   facebook_locale: 'en_GB'
+=======
+    reward_description: "Disgrifiad gwobr"
+    confirmed_at: "Taliad wedi'i gadarnhau am"
+    value: "Gwerth dy gefnogaeth"
+    service_fee: "Ffi ArianByw"
+    user_name: "Enw cefnogwr"
+    user_email: "Ebost defnyddiwr proffil Catarse"
+    payer_email: "Ebost defnyddiwr dy system dalu"
+    payment_method: "Dull talu"
+    address_street: "Stryd"
+    address_complement: "Complement"
+    address_number: "Rhif"
+    address_neighbourhood: "Ardal"
+    address_city: "Tref/Dinas"
+    address_state: "Sir"
+    address_zip_code: "Côd post"
+    anonymous: "Dienw"
+  edit_project: "Golygar prosiect"
+  facebook_locale: "en_GB"
+>>>>>>> d30aa5633419a2328fc23b89ae85dcc27e5138dd
   or: neu
-  'no': "Nac ydw"
-  'yes': "Ydw"
+  no: "Nac ydw"
+  yes: "Ydw"
   newsletter_ok_header: "Rwyt ti wedi tanysgrifio i'r cylchlythyr!"
   newsletter_ok_body: "Mae dy ebost nawr yn ein rhestr cylchlythyr, diolch am danysgrifio!"
   newsletter_error_header: "Wps! Roedd 'na broblem."
@@ -157,9 +189,15 @@ cy:
         name: Enw
         user_id: "ID defnyddiwr"
         video_url: "URL y fideo"
+<<<<<<< HEAD
         permalink: 'URL y project'
         how_know: "Sut glywes ti am Heliwm?"
         more_links: 'Lle alla i wybod mwy amdanat ti a dy brosiect?'
+=======
+        permalink: "URL y prosiect"
+        how_know: "Sut glywes ti am ArianByw?"
+        more_links: "Lle alla i wybod mwy amdanat ti a dy brosiect?"
+>>>>>>> d30aa5633419a2328fc23b89ae85dcc27e5138dd
       reward:
         description: Disgrifiad
         maximum_backers: "Uchafswm cefnogwyr"
@@ -172,21 +210,34 @@ cy:
         address_state: Sir
         address_street: Stryd
         address_zip_code: "Côd post"
+<<<<<<< HEAD
         cpf: 'CPF / CNPJ '
         cpf_hint_title: 'Anfonir anfoneb at y ddogfen hon'
         cpf_hint: '(?)'
         state_inscription: 'State Inscription'
         moip_login: 'Mewngofnodi MoIP'
         moip_login_hint: '(Sut i greu cyfrif)'
+=======
+        cpf: "CPF / CNPJ "
+        cpf_hint_title: "Nota Fiscal será emitida para esse documento"
+        cpf_hint: "(?)"
+        state_inscription: "State Inscription"
+        moip_login: "MoIP Login"
+        moip_login_hint: "(How to create an account)"
+>>>>>>> d30aa5633419a2328fc23b89ae85dcc27e5138dd
         current_password: "Cyfrinair presennol"
         email: Ebost
         full_name: "Enw llawn / Enw Cwmni"
-        bio: 'Bio Byr'
+        bio: "Bio Byr"
         name: "Llysenw"
         password: Cyfrinair
         password_confirmation: "Cadarnhau Cyfrinair"
         phone_number: "Rhif ffôn symudol"
+<<<<<<< HEAD
         newsletter: 'Dwi eisiau derbyn newyddion am Heliwm'
+=======
+        newsletter: "Dwi eisiau derbyn newyddion am ArianByw"
+>>>>>>> d30aa5633419a2328fc23b89ae85dcc27e5138dd
     models:
       backer: Cefnogwr
       category: Categori
@@ -204,7 +255,7 @@ cy:
   backer_singular: cefnogwr
   click_here: "Clic yma"
   clicking_here: "clicio yma"
-  click_term: 'telerau'
+  click_term: "telerau"
   comment:
     display_time: "%{time_ago} yn ôl"
   credits:
@@ -218,6 +269,7 @@ cy:
       back_date: "Dyddiad cefnogi"
       current_credits_html: "Dy falans cyfredol yw <span id=\"current_credits\">%{credits}</span> mewn credydau."
       important_html: "Os wyt ti'n gofyn am ad-daliad, bydd gwerth y taliad yn cael ei dynnu oddi wrth dy gredydau."
+<<<<<<< HEAD
       project: project
       refund_expiration_date_html: "Dyddiad olaf gellir hawlio ad-daliad (<a target='__blank' href='http://suporte.Heliwm.me/knowledgebase/articles/164746-regras-e-funcionamento-dos-reembolsos-estornos'>?</a>)"
       refunded: "Proseswyd yr ad-daliad yn llwyddianus. Bydd ein tîm yn cysylltu gyda thi mewn dau ddiwrnod busnes."
@@ -228,6 +280,18 @@ cy:
       status: Statws
       title: "Fy nghredydau"
       value: Gwerth
+=======
+      project: Prosiect
+      refund_expiration_date_html: "Dyddiad olaf gellir hawlio ad-daliad (<a target=\"_blank\" href=\"http://suporte.catarse.me/knowledgebase/articles/164746-regras-e-funcionamento-dos-reembolsos-estornos\">?</a>)"
+      refunded: "Refund request successfully done. Our team will contact you within two business days."
+      insufficient_credits: "You don't have enough credits to request this refund."
+      refunds_title: "Payments that can be refunded"
+      request_refund: "Request refund"
+      requested_refund: "Requested refund"
+      status: Status
+      title: "My credits"
+      value: Value
+>>>>>>> d30aa5633419a2328fc23b89ae85dcc27e5138dd
     refund:
       cannot_refund: "Ni ellir ad-dalu y taliad hwn."
       error: "Wps. Roedd gwall wrth brosesu dy ad-daliad."
@@ -237,6 +301,7 @@ cy:
     title: "Fy nghredydau"
   credits_mailer:
     request_refund_from:
+<<<<<<< HEAD
       subject: "Hawlio ad-daliad am broject %{name}"
       subject_html: "Hawliodd y defnyddiwr %{name} ad-daliad am eu cefnogaeth %{backer_key} i'r project %{backer_project} am y swm o %{backer_value} drwy %{backer_payment_service}."
       user_name: 'Enw defnyddiwr'
@@ -250,6 +315,21 @@ cy:
       payment_method: 'Dull talu'
       payment_choice: 'Dewis talu'
       created_at: 'crewyd am'
+=======
+      subject: "Refund request from project %{name}"
+      subject_html: "User %{name} requested refund for the back %{backer_key} to the project %{backer_project} in the amount of %{backer_value} made by %{backer_payment_service} gateway."
+      user_name: "User name"
+      user_email: "User email"
+      payer_email: "Payment email"
+      payer_name: "User name used on payment"
+      project: "Project"
+      backer_key: "Backer key"
+      payment_id: "Payment ID"
+      backer_value: "Backer value"
+      payment_method: "Payment method"
+      payment_choice: "Payment choice"
+      created_at: "created at"
+>>>>>>> d30aa5633419a2328fc23b89ae85dcc27e5138dd
   curated_pages:
     index:
       title: "Tudalennau wedi eu curadu"
@@ -259,7 +339,7 @@ cy:
   error: "Wpsi! Roedd na wall. Plis tria eto."
   explore:
     index:
-      near: 'Gerllaw'
+      near: "Gerllaw"
       categories: Categoriau
       expiring: "Dod i ben"
       quick_explore: "Chwiliad cyflym"
@@ -277,12 +357,21 @@ cy:
         credits: "Mae gen ti <strong>%{credits}</strong> mewn credydau a galli di gefnogi projectau hyd at yr uchafswm yma heb orfod gwneud taliad ychwanegol."
         value: "Dewis di'r swm ;) gan dechrau gyda £5, mae unrhyw swm yn gwneud gwahaniaeth."
       project:
+<<<<<<< HEAD
         video_url_edit: 'Gluda URL dy fideo Vimeo/Youtube.'
         about: "Dwed wrthyn ni beth ysbrydolodd chi i greu'r project. Byddwch yn ddi-duedd a diffuant, gan gyflwyno eich darllenwyr gyda rhywbeth sy'n apelio atyn nhw tra'n bod yn onest iawn am obeithion y project!"
         more_links: "Pa sianeli fyddwch chi'n defnyddio er nmwyn hyrwyddo eich project? Rhestrwch eich cyfrifon facebook/twitter/blog/gwefan/ a pha bynnag ddolenni eraill sydd gennych all eich helpu"
         category: "Cyn i chi greu eich project cymrwch gip ar brojectau eraill i'ch ysbrydoli!"
         expires_at: "Yn olaf, dewiswch pa mor hir rydych chi eisiau i'ch ymgyrch i bara. Eto, mae hwn yn ddewis strategol: os rhowch lawer o amser, bydd pobl yn colli diddordeb ar hyd y ffordd; os rhowch rhy ychydig, efallai na fyddwch yn cyrraedd eich targed mewn pryd."
         online_days: "Yn olaf, dewiswch pa mor hir rydych chi eisiau i'ch ymgyrch i bara. Eto, mae hwn yn ddewis strategol: os rhowch lawer o amser, bydd pobl yn colli diddordeb ar hyd y ffordd; os rhowch rhy ychydig, efallai na fyddwch yn cyrraedd yr isafswm mewn pryd."
+=======
+        video_url_edit: "Gluda URL dy fideo Vimeo/Youtube."
+        about: "Tell us about what inspired you to come up with this project . Be objective end charming, present your readers with something that moves them while being very transparent over the expectations on your project!"
+        more_links: "Which channels will be used to spread the word about your project? List here your facebook/twitter/blog/site/ and what ever more links you have to help you"
+        category: "Before you format your project explore other (successful) projects to inspire yourself!"
+        expires_at: "Finally, choose how long you want your campaign to last. Again, this is a strategic choice: if you put a lot of time, people will lose interest along the way; if put too little, you may not reach the minimum in time."
+        online_days: "Finally, choose how long you want your campaign to last. Again, this is a strategic choice: if you put a lot of time, people will lose interest along the way; if put too little, you may not reach the minimum in time."
+>>>>>>> d30aa5633419a2328fc23b89ae85dcc27e5138dd
         goal: "Gwerth mewn punnoedd (£)"
         first_backers: "Er mwyn cyrraedd eich targed ariannol mae'n hollbwysig i sicrhau cefnogaeth y bobl sy'n agos atoch chi a'ch project. Felly os oes mod, gwnewch restr yma o'ch 20 cefnogwr potensial cyntaf. Bydd hyn yn rhoi'r cychwyn gorau i chi!"
         headline: "Rhowch grynodeb o'r project mewn 140 cymeriad. Hwn fydd cyswllt cyntaf pobl gyda'r project, cyn hyd yn oed gweld y fideo. Byddwch yn greadigol, clir ac uniongyrchol."
@@ -303,6 +392,7 @@ cy:
       comment:
         comment: "Sgwenna neges am y project"
       project:
+<<<<<<< HEAD
         more_links: "Rhestra ddolenni cysylltiedig a'r project *"
         how_know: "Sut glywes ti am Heliwm?"
         headline: "Pennawd"
@@ -313,6 +403,18 @@ cy:
         goal: "Faint o arian ydych chieisiau codi? (rhifau yn unig)"
         name: "Enw'r project"
         online_days: 'Sawl Diwrnod Ymgyrch?'
+=======
+        more_links: "List project related links *"
+        how_know: "How did you get to know Catarse?"
+        headline: "Punch Line"
+        category: "Categori"
+        first_backers: "List your first backers *"
+        about: "About your project. How will you spend this money?"
+        expires_at: "What's the deadline to reach your goal?"
+        goal: "How much do you intend to raise? (use only numbers)"
+        name: "Enw'r Prosiect"
+        online_days: "Sawl Diwrnod Ymgyrch?"
+>>>>>>> d30aa5633419a2328fc23b89ae85dcc27e5138dd
         video_url: Fideo
         uploaded_image: "Llun bach y project"
       reward:
@@ -362,6 +464,7 @@ cy:
       site_title: "Cyfrinair wedi ei arbed"
   project:
     start:
+<<<<<<< HEAD
       email_subject: "Mae tîm Heliwm wedi derbyn dy broject"
       email_text: "Thanks for trusting your project to Heliwm :)<br><br>We know that you expect a quick reply but, to be quite frank, we take up to 4 days to respond, ok? That is because we have a small team working on several projects. Note that the reply can come sooner, so keep attention to your inbox.<br><br>Meanwhile it is worth to get to know the projects that are online (<a href='%{explore_link}' style='color: #E75297 !important;'>%{explore_link}</a>) and - if you like any of them- back it! This is the way to show support for the crowdfunding culture in Brazil and to feed the ecosystem that keeps growing around Heliwm.<br><br>Besides that, you will get some inspiration for your own project...<br><br>Stay tuned for updates in <a href='%{facebook}' style='color: #E75297 !important;'>Facebook</a> and get some deeper knowledge about Heliwm reading the posts in our <a href='%{blog}' style='color: #E75297 !important;'>blog</a>.<br><br>If you have any doubt, send an email to: %{email}"
       notification_text: "Mae tîm Heliwm wedi derbyn dy broject!"
@@ -379,6 +482,25 @@ cy:
         notification_text: "Rwyt ti wedi derbyn %{value} mewn credydau er mwyn cefnogi projectau eraill, neu galli di hawlio ad-daliad %{link}."
         unsuccessful_text: "Doedd y project %{link} wnes ti gefnogi ddim yn llwyddianus. Tro nesa gobeithio!"
     video_regex_validation: "dim ond URLau o fideos Vimeo a YouTube ellir eu defnyddio"
+=======
+      email_subject: "Your project has been received by Catarse's team"
+      email_text: "Thanks for trusting your project to Catarse :)<br><br>We know that you expect a quick reply but, to be quite frank, we take up to 4 days to respond, ok? That is because we have a small team working on several projects. Note that the reply can come sooner, so keep attention to your inbox.<br><br>Meanwhile it is worth to get to know the projects that are online (<a href=\"%{explore_link}\" style=\"color: #E75297 !important;\">%{explore_link}</a>) and - if you like any of them- back it! This is the way to show support for the crowdfunding culture in Brazil and to feed the ecosystem that keeps growing around Catarse.<br><br>Besides that, you will get some inspiration for your own project...<br><br>Stay tuned for updates in <a href=\"%{facebook}\" style=\"color: #E75297 !important;\">Facebook</a> and get some deeper knowledge about Catarse reading the posts in our <a href=\"%{blog}\" style=\"color: #E75297 !important;\">blog</a>.<br><br>If you have any doubt, send an email to: %{email}"
+      notification_text: "Your project has been received by Catarse's team"
+    finish:
+      successful:
+        email_subject: "Hooray! The project %{project_name} was successful on Catarse!"
+        email_text: "The project %{project_link}, that you have backed, was successfully funded! Let's celebrate o/<br><br>The project has, including you, %{project_total_backers} wonderful backers, raised %{project_pledged} and reached %{project_process}% of its goal =D<br><br>Something that is important to know: Catarse's team takes 3 days to send to the project creator the list with all information of the backers. So, the project creator will only be in touch with you to thank you and talk about the rewards delivery in a few days, ok?<br><br>So why don't you, in this meantime, share with all your friends this success?<br><br><div style=\"text-align:center;\">%{facebook_button}%{twitter_button}</div><br><br>If you want to get in touch with %{project_owner_name}, send an email to %{project_owner_email}.<br><br>If you have any doubt about Catarse, access our FAQ: <a href=\"http://www.catarse.me/faq\" style=\"color: #008800\";>www.catarse.me/faq</a> or send an email to <a href=\"mail_to:contato@catarse.me\" style=\"color: #008800;\">contato@catarse.me</a><br>"
+        facebook_text: "Hooray! The project \"%{name}\", which I backed, was successful on Catarse!"
+        notification_text: "Hooray! The project %{link} that you backed was successful! Spread the word!"
+        reward_notification_text: "Soon, %{link} will contact you to deliver your reward. Enjoy!"
+        twitter_text: "Hooray! The project \"%{name}\", which I backed, was successful on @catarse! %{short_url}"
+      unsuccessful:
+        email_subject: "The project %{project_name} wasn't funded on Catarse."
+        email_text: "Unfortunately the project %{project_link}, that you have backed, did not reached its goal and was not funded at Catarse.<br><br>So, you have received <strong>%{value}</strong> in credits to back other projects. You can meet others %{project_category} projects in %{explore_category_link}.<br><br>You also can ask for your refund by clicking in %{credits_link}. Remember that you signed up in Catarse using %{user_provider}. If you have some difficulty in this process, do not be shame to send an email to financeiro@catarse.me with the subject 'Refund - login issue'.<br><br>If, for any reason, you want to contact %{project_owner_name}, send an email to %{project_owner_email}.<br><br>If you have any other doubt, access our FAQ or send an email to <a href\"'mail_to:contato@catarse.me\" style=\"color: #008800;\">contato@catarse.me</a>.<br>"
+        notification_text: "You received %{value} in credits to back other projects. If you prefer, you can request a refund %{link}."
+        unsuccessful_text: "The project %{link} that you backed wasn't funded. Maybe next time!"
+    video_regex_validation: "only Vimeo URLs are allowed"
+>>>>>>> d30aa5633419a2328fc23b89ae85dcc27e5138dd
     display_status:
       expired: "weid gorffen"
       failed: "heb ei ariannu"
@@ -389,7 +511,11 @@ cy:
       reached_goal: "wedi ei ariannu"
       draft: "drafft"
   projects:
+<<<<<<< HEAD
     send_to_analysis: "Anfonwyd dy broject at ein tîm"
+=======
+    send_to_analysis: "Your project has sent to our team"
+>>>>>>> d30aa5633419a2328fc23b89ae85dcc27e5138dd
     box:
       by: gan
       when: yn
@@ -433,10 +559,17 @@ cy:
         submit: "Adolygu a symud mlaen i dalu"
         title: "Cefnogi %{name}"
       edit:
+<<<<<<< HEAD
         brazil_address_title: 'Llenwa pan mae dy gefnogiad yn y DU'
         live_in_brazil: "Os ti'n byw yn y DU, yna rho dic yn y blwch"
         credits_notice_html: "Bydd y cefnogiad hwn yn cael ei dalu gyda dy gredydau. Ar ôl cadarnhau bydd gen ti <strong>%{credits}</strong> mewn credydau ar gyfer cefnogi projectau eraill."
         error: "Wps. Roedd yna wall wrth brosesu dy gefnogiad. Plis tria eto."
+=======
+        brazil_address_title: "Fill when you back is in Brazil"
+        live_in_brazil: "If you live in Brazil, please check this box"
+        credits_notice_html: "This back will be payed with your credits. After the confirmation, you will have <strong>%{credits}</strong> in credits to back other projects."
+        error: "Ooops. There was an error while registering your back. Please try again."
+>>>>>>> d30aa5633419a2328fc23b89ae85dcc27e5138dd
         international:
           description: "Galli ddefnyddio PayPal i wneud taliadau rhyngwladol"
           important_html: "<p>The use of PayPal is destined mostly for international payments. That's because you'll have only 60 days to receive an eventual refund without paying any fee.</p><p>In case you can make the regular payment through MoIP, we recommend you to do it.</p><p>But if that's not possible, don't worry: you'll always be able to receive your money back. Only, in case your refund is made more than 60 days after your payment, you'll have to pay PayPal's fee, which is 5,4% + R$0,60 per transaction.</p>"
@@ -460,9 +593,15 @@ cy:
     update:
       success: "Wedi diweddaru"
     form:
+<<<<<<< HEAD
       permalink_hint: 'Symleiddia URL dy broject. Cofia bod angen i gefnogwyr ei gofio er mwyn gallu rhannu dy broject.'
       add_reward: "Ychwanegu anrheg"
       important_html: "Noder y bydd Heliwmyn codi 9% os yw dy broject yn llwyddianus. Ychwanega hwn at gyllideb dy broject er mwyn gweithredu dy broject heb unrhyw broblemau."
+=======
+      permalink_hint: "Simplify the URL of your project. Think that your sponsor need to remember the address to share your project."
+      add_reward: "Add reward"
+      important_html: "Please notice that Catarse will charge 13% if your project is successful. Add this values to your budget in order to execute your project with no surprises."
+>>>>>>> d30aa5633419a2328fc23b89ae85dcc27e5138dd
       project_warning:
         content_html: "Eisiau i dy broject gael ei ddewis? Paid anghofio darllen %{link}."
         help_link: "ein canllawiau"
@@ -526,6 +665,7 @@ cy:
       with_city: "Project mewn %{category_name}, yn %{city}, gan %{author}"
     project_updates:
       empty: "This project didn't have updates yet. But wait and see =D"
+<<<<<<< HEAD
       submit: "Anfon diweddariad"
       comment: "Testun y diweddariad"
       exclusive: "Gweladwy i gefnogwyr yn unig"
@@ -533,6 +673,15 @@ cy:
       destroy: "Tynnu'r diweddariad"
       destroy_confirmation: "Wyt ti eisiau tynnu'r diweddariad?"
       warning: 'Remembering that every new post goes directly to the email of his supporters. Therefore, review your text well before sending it.'
+=======
+      submit: "Send update"
+      comment: "Update text"
+      exclusive: "Visible for backers only"
+      title: "Title of the update"
+      destroy: "Remove update"
+      destroy_confirmation: "Do you want to remove the update?"
+      warning: "Remembering that every new post goes directly to the email of his supporters. Therefore, review your text well before sending it."
+>>>>>>> d30aa5633419a2328fc23b89ae85dcc27e5138dd
     rewards:
       reward_title: "Am %{minimum} neu fwy"
       reward_deliver_time: "Amcan anfon: %{prevision}"
@@ -543,19 +692,29 @@ cy:
     send_mail:
       success: "Your project was successfully sent! We'll soon contact you. Thanks a lot!"
     show:
+<<<<<<< HEAD
       rejected: "This project does not fit our <a href='https://docs.google.com/document/d/1Heh9LlvoSoD0lUfbmV5WlISJ3nqmGpEQiw15TBuCn-0/edit' target='_blank'>selection criteria.</a>"
       waiting: "This project is waiting for approval and soon we'll know if it will go online on Heliwm ;)"
       waiting_owner: "To edit the project info, click on 'Edit project' tab. The rewards you can edit on reward column."
       about_title: "Am y project"
       no_rewards_warning_title: "Creu dy anrhegion yma"
       no_rewards_warning: "Paid mynd dros ben llestri! Meddylia am sut wyt ti am anfon y rhain a chynnwys y costau hynny yn dy gyllideb. Mae pobl yn ymddiried ynddo ti, a alli di ddim chwarae o gwmpas gyda hynny!"
+=======
+      rejected: "This project does not fit our <a href=\"https://docs.google.com/document/d/1Heh9LlvoSoD0lUfbmV5WlISJ3nqmGpEQiw15TBuCn-0/edit\" target=\"_blank\">selection criteria.</a>"
+      waiting: "This project is waiting for approval and soon we'll know if it will go online on Catarse ;)"
+      waiting_owner: "To edit the project info, click on \"Edit project\" tab. The rewards you can edit on reward column."
+      about_title: "About this project"
+      no_rewards_warning_title: "Create here your rewards"
+      no_rewards_warning: "Don't go nuts! Think about how you're going to deliver them and include those costs in your budget. People are putting their trust in you, don't kid around with that!"
+>>>>>>> d30aa5633419a2328fc23b89ae85dcc27e5138dd
       reports:
         no_backs: "This project don't have any back yet."
-        link_reports: 'Download report of '
-        all_backers: 'all backers'
+        link_reports: "Download report of "
+        all_backers: "all backers"
         all_backers_without_reward: "all backers that don't select any reward"
-        link_reward: 'Download the report of backers that selected the reward'
+        link_reward: "Download the report of backers that selected the reward"
       menu:
+<<<<<<< HEAD
         about: Am y Project
         backers: Cefnogwyr
         comments: Sylwadau
@@ -563,6 +722,15 @@ cy:
         edit: Golygu
         reports: Adroddiadau
         add_reward: 'Ychwanegu Anrhegion'
+=======
+        about: About
+        backers: Backers
+        comments: Comments
+        updates: Updates
+        edit: Edit
+        reports: Reports
+        add_reward: "Add Rewards"
+>>>>>>> d30aa5633419a2328fc23b89ae85dcc27e5138dd
       share:
         embed: mewnosod
         embed_title: "Mewnosod y project hwn ar dy wefan"
@@ -571,6 +739,7 @@ cy:
         take_a_look: "Edrych ar y project yma"
         title: "Bydd yn rhan ohono a rhannu'r project"
     new:
+<<<<<<< HEAD
       legend_html: "After filling in the form below, you will receive a project page in Draft mode. In this draft you will add the rewards for your backers. You may also share the page with your friends to collect feedback and sharpen your project even more.<br><br>The information filled in below is not definitive, but remember that the more consistent you are in your project submission, the faster it will go on air.<br><br><b>Very Important:</b> <i>Catharsis is cured platform, which means that our board will evaluate the focus, the feasibility and consistency of your project during the Draft. If we understand that your project does not comply with our <a href='https://docs.google.com/a/Heliwm.me/document/d/1wLDS2lphQ6monovg9rEaTIDcxBD3FRZV9dfGKmajyj8/edit' target='_blank' >selection criteria</a>, it may be refused by the team of curators.</i>"
       permalink_important: 'Try not to use underline, hyphen etc.'
       permalink_hint: 'Go simple. Your backers should be able to remember the URL to your project ;)'
@@ -578,13 +747,22 @@ cy:
       online_days_important: "60 days is the maximum"
       about_important: "Don't make it too long! Indicate links so people can know more about your work"
       important_html: 'Keep in mind the 13% fee charged by Heliwm in case you reach your financial goal. Just divide your final budget by 0.87 to find the discounted amount.'
+=======
+      legend_html: "After filling in the form below, you will receive a project page in Draft mode. In this draft you will add the rewards for your backers. You may also share the page with your friends to collect feedback and sharpen your project even more.<br><br>The information filled in below is not definitive, but remember that the more consistent you are in your project submission, the faster it will go on air.<br><br><b>Very Important:</b> <i>Catharsis is cured platform, which means that our board will evaluate the focus, the feasibility and consistency of your project during the Draft. If we understand that your project does not comply with our <a href=\"https://docs.google.com/a/catarse.me/document/d/1wLDS2lphQ6monovg9rEaTIDcxBD3FRZV9dfGKmajyj8/edit\" target=\"_blank\" >selection criteria</a>, it may be refused by the team of curators.</i>"
+      permalink_important: "Try not to use underline, hyphen etc."
+      permalink_hint: "Go simple. Your backers should be able to remember the URL to your project ;)"
+      name_important: "Do not exceed  50 characters"
+      online_days_important: "60 days is the maximum"
+      about_important: "Don't make it too long! Indicate links so people can know more about your work"
+      important_html: "Keep in mind the 13% fee charged by Catarse in case you reach your financial goal. Just divide your final budget by 0.87 to find the discounted amount."
+>>>>>>> d30aa5633419a2328fc23b89ae85dcc27e5138dd
       send_project: "I want to submit my project."
       video_important: "The video must be hosted by Vimeo or Youtube. Paste here the URL!"
       more_links_important: "It's very important to use social medias to spread the word about your project and engage your network into making it a success"
       first_backers_important: "These people are fundamental to the success of your project."
       how_know_important: "Yay! We reached  the final question."
       headline_important: "It's a summary of  your project . 140 characters tops!:D"
-      tags_important: "Check other projects in your category  <a href='%{href}' target='_blank'>here!</a>!."
+      tags_important: "Check other projects in your category  <a href=\"%{href}\" target=\"_blank\">here!</a>!."
       subtitle: "The time to make it happen is now! We really want to know what you're up to..."
       title: "Submit your project"
       about: "Describe your project and how much do you need"
@@ -707,11 +885,15 @@ cy:
       step_three: "Fill in your information and review it! Then, decide what form of payment best meets your needs."
       title_four: "Spread the word!"
       step_four: "Now you're in the same boat as the project creator. Spread the word on your networks and stay tuned on the updates."
+<<<<<<< HEAD
       title_requirements: "Remember: in Heliwm it’s “all or nothing”"
+=======
+      title_requirements: "Remember: in Catarse it’s \"all or nothing\""
+>>>>>>> d30aa5633419a2328fc23b89ae85dcc27e5138dd
       successful_title: "If the project meet or exceed its financial target ..."
       successful: "The project is considered successful! The creator gets the money and contacts all supporters."
       not_success_title: "If the project does not meet the target ..."
-      not_success: "You get the full amount of support in the form of loans (to support another project). If that does not please you, you can request your money back, according to the rules of the <a href='%{terms}' target='_blank'>terms of use</a>."
+      not_success: "You get the full amount of support in the form of loans (to support another project). If that does not please you, you can request your money back, according to the rules of the <a href=\"%{terms}\" target=\"_blank\">terms of use</a>."
       title_not_funded: "If the project does not achieve the goal, how do I use my credits?"
       not_funded: "You will receive credits  on Heliwm. The moment you choose to back another project, on the screen to select the reward, there will have a field to use your credits."
       more_questions: "I'm dying to support a project, is there anything else I need to know?"
@@ -806,10 +988,17 @@ cy:
       title_money: "Where does the money to finance projects come from?"
       money: "At least 50% will come from your own network of contacts. In this manner, Heliwm is a way for you to get closer to the people that enjoy your work and expand this network through sharing in social networks, newspapers, blogs and, of course, your favorite bar."
       title_work: "Does it take a lot of work?"
+<<<<<<< HEAD
       work: "A loooot! There is no 'easy money on the INTERNET'. You will have to work a lot during your project, but the experience will be worth it - we assure you :D And you will have a much stronger network behind your project after Heliwm."
       title_costs: "How much does it cost to use Heliwm?"
       costs: "Submitting your project is free. Now, when your project is approved and has reached its goal, Heliwm will apply a 13% fee, this value includes both the Heliwm fee and the payment gateway fee."
       why: "Why Heliwm?"
+=======
+      work: "A loooot! There is no \"easy money on the INTERNET\". You will have to work a lot during your project, but the experience will be worth it - we assure you :D And you will have a much stronger network behind your project after Catarse."
+      title_costs: "How much does it cost to use Catarse?"
+      costs: "Submitting your project is free. Now, when your project is approved and has reached its goal, Catarse will apply a 13% fee, this value includes both the Catarse fee and the payment gateway fee."
+      why: "Why Catarse?"
+>>>>>>> d30aa5633419a2328fc23b89ae85dcc27e5138dd
       intro: "First of all, it's good that you know why we believe that this new way to finance projects is phenomenal:"
       why_one: "By creating a very strong bond with your network, this kind of campaign open doors to new projects, partnerships and other unexpected connections."
       why_two: "If the projects are well connected, they can spread, quickly, to a lot of people, expanding your network and strengthening the base of people around your project."
@@ -859,9 +1048,9 @@ cy:
       requested_refund: "Refund requested"
       waiting_confirmation: "Waiting confirmation"
     set_email:
-      site_title: 'Define your email address'
-      title: 'Define your email address'
-      submit: 'Save my email and proceed'
+      site_title: "Define your email address"
+      title: "Define your email address"
+      submit: "Save my email and proceed"
     show:
       attention: Attention
       tabs:
@@ -887,7 +1076,7 @@ cy:
       title: "Choose from which projects you want to receive update notifications:"
       updates: "I want to receive project updates"
     current_user_fields:
-      bio_limit: 'only 140 characters'
+      bio_limit: "only 140 characters"
       updated: "Your information has been updated"
       update_social_info: "Update info"
       social_info: "Contact info"
@@ -934,4 +1123,4 @@ cy:
         text: "Success! <br />Your back has just been confirmed.<br /><br />Check: %{backer_name}<br />%{backer_value}<br />%{reward}<br /><br />%{project_name}"
     updates:
       subject: "If the league! Update of %{project_name} by %{project_owner}: %{update_title}"
-      text: "%{update_title}<br />%{update_text}<br />Comments? Send it on in the project page: <a href='%{project_link}'>%{project_name}</a>."
+      text: "%{update_title}<br />%{update_text}<br />Comments? Send it on in the project page: <a href=\"%{project_link}\">%{project_name}</a>."
