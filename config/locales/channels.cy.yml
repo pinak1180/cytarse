@@ -1,45 +1,45 @@
 cy:
   channels_subscribers:
-    created: 'You are now following %{channel}'
-    deleted: 'You are no longer following %{channel}'
+    created: 'Rwyt ti nawr yn dilyn %{channel}'
+    deleted: 'Dwyt ti ddim yn dilyn %{channel} bellach'
   channels:
-    send_your_project: "Submit your project"
-    send_a_email: "Send a email"
-    follow: "Follow channel"
-    following: "Following"
-    unfollow: "Unfollow"
-    subscribed: "%{count} subscribed to this channel"
-    curator: 'Curator'
+    send_your_project: "Anfon dy broject"
+    send_a_email: "Anfon ebost"
+    follow: "Dilyn y sianel"
+    following: "Yn dilyn"
+    unfollow: "Dad-ddilyn"
+    subscribed: "%{count} wedi tanysgrifio i'r sianel"
+    curator: 'Curadur'
     admin:
-      menu: "Channel moderation"
-      statistics_menu: "Statistics"
-      profile_menu: "Channel profile"
+      menu: "Cymedroli'r sianel"
+      statistics_menu: "Ystadegau"
+      profile_menu: "Proffil y sianel"
       statistics:
-        title: 'Channel statistics'
-        total_subscribers: 'Total subscribers'
+        title: "Ystadegau'r sianel"
+        total_subscribers: 'Cyfanswm tanysgrifwyr'
     projects:
-      send: "Submit your project"
-      see_how_it_works: "See how it works and submit your project."
-      how_it_works: "How it works"
-      progress_html: "<span>%{percent}%</span> funded"
+      send: "Anfon dy broject"
+      see_how_it_works: "Gweld sut mae'n gweithio ac anfon dy broject."
+      how_it_works: "Sut mae'n gweithio"
+      progress_html: "<span>%{percent}%</span> wedi ariannu"
       time_remaining_html:
-        one: "<span>%{count} %{unit}</span> remaining"
-        other: "<span>%{count} %{unit}</span> remaining"
-      pledged_html: "<span>%{value}</span> pledged"
+        one: "<span>%{count} %{unit}</span> ar ôl"
+        other: "<span>%{count} %{unit}</span> ar ôl"
+      pledged_html: "<span>%{value}</span> wedi ei addo"
     how_it_works:
-      title: "How %{channel} works?"
+      title: "Sut mae %{channel} yn gweithio?"
     footer:
-      terms: "Terms of use"
-      privacy_policy: "Privacy Policy"
-      how_it_works: "How %{name} works"
-      how_channels_work: "Understand Catarse channels"
-      contact: "Contact"
+      terms: "Telerau defnydd"
+      privacy_policy: "Polisi Preifatrwydd"
+      how_it_works: "Sut mae %{name} yn gweithio"
+      how_channels_work: "Deall sianeli Heliwm"
+      contact: "Cyswllt"
     accessibility:
-      how_it_works: "Clique para saber como o Canal funciona e enviar o seu projeto"
-      send_your_project: "Click to submit your project"
-      link_to_twitter: "Channel twitter link"
-      link_to_facebook: "Channel facebook link"
-      link_to_website: "Channel website"
+      how_it_works: "Clicia yma i ddeall sut mae Sianeli'n gweithio ac afnon dy broject"
+      send_your_project: "Clicia i anfon dy broject"
+      link_to_twitter: "Dolen Twitter y sianel"
+      link_to_facebook: "Dolen Facebook y sianel"
+      link_to_website: "Gwefan y sianel"
     presentation:
-      link-to-follow: 'Follow channel'
-      followers: 'followers'
+      link-to-follow: 'Dilyn y sianel'
+      followers: 'dilynwyr'

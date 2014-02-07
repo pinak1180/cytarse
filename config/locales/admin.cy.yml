@@ -1,107 +1,107 @@
 cy:
   admin: &admin
-    confirm_dialog: 'You are sure?'
+    confirm_dialog: 'Wyt ti'n siwr?'
     projects:
       index:
-        by_state: 'By state'
-        between_created_at: 'Created at between'
-        submit: 'Filter'
-        send_to_trash: 'Delete'
-        send_to_draft: 'Send to DRAFT!'
-        reject: 'Reject!'
-        approve: 'Approve!'
-        order_asc: 'Goal asc'
-        order_desc: 'Goal desc'
-        order_created_at: 'Submission date'
-        last_modification: 'Last update'
+        by_state: 'Yn ôl sir'
+        between_created_at: 'Crewyd am rhwng'
+        submit: 'Hidlo'
+        send_to_trash: 'Dileu'
+        send_to_draft: 'Afon at DRAFFT!'
+        reject: 'Gwrthod!'
+        approve: 'Derbyn!'
+        order_asc: 'Amcan esg'
+        order_desc: 'Amcan disg'
+        order_created_at: 'Dyddiad derbyn'
+        last_modification: 'Diweddariad dwetha'
     financials:
       index:
-        submit: 'Filter'
-        by_state: 'By state'
-        by_progress: By progress %
+        submit: 'Hidlo'
+        by_state: 'Yn ôl sir'
+        by_progress: Yn ôl lle mae arni %
     users:
       index:
-        title: "Management backers"
-        menu: Users
-        credits: Credits
-        credits_view: "Calculated credits"
+        title: "Rheolaeth cefnogwyr"
+        menu: Defnyddwyr
+        credits: Credydau
+        credits_view: "Credydau wedi eu cyfrif"
         id: ID
-        key: Key
-        submit: Search
-        has_credits_difference: "Discrepancy in credits"
-        total_backed: backed
-        total_backers: backers
-        total_backs: backs
-        total_users: users
-        total_credits: credits
-        total_credits_view: "calculated credits"
-        user: User
-        value: Value
-        provider: Provider
+        key: Allwedd
+        submit: Chwilio
+        has_credits_difference: "Gwahaniaeth rhwng credydau"
+        total_backed: cefnogwyd
+        total_backers: cefnogwyr
+        total_backs: cefnogiadau
+        total_users: defnyddwyr
+        total_credits: credydau
+        total_credits_view: "credydau wedi eu cyfri"
+        user: Defnyddiwr
+        value: Gwerth
+        provider: Darparwr
     backers:
       messages:
         successful:
-          confirm: 'Backer confirmed!'
-          pendent: 'Backer unconfirmed!'
-          refund: 'Backer refunded!'
-          change_reward: 'Reward changed!'
-          hide: 'Backer hidden!'
-          cancel: 'Backer canceled!'
-          push_to_trash: 'Backer deleted!'
+          confirm: 'Cadarnhawyd y cefnogwr!'
+          pendent: 'Cefnogwr wedi ei ddad-wneud!'
+          refund: 'Cefnogwr wedi ei ad-dalu!'
+          change_reward: 'Newidwyd yr Anrheg!'
+          hide: 'Cuddiwyd y cefnogwr!'
+          cancel: 'Canslwyd y cefnogwr!'
+          push_to_trash: 'Dilewyd y cefnogwr!'
       index:
-        push_to_trash: 'Delete backer'
-        cancel: 'Cancel backer'
-        refund_and_hide: 'Refund and hide'
-        backer_info: 'Info of backer %{key}'
-        payment_id: 'Payment ID'
-        payment_method: 'Payment method'
-        payment_fee: 'Payment method fee'
-        payment_choice: 'Payment choice'
-        payer_email: 'Payer email'
-        user_email: 'Catarse user email'
-        pending_to_refund: 'Pending to refund'
-        created_at: 'Created at'
-        title: "Backers management"
-        menu: Backs
-        anonymous: Anonymous?
-        confirmed: Confirmed?
-        credits: "Used credits?"
+        push_to_trash: 'Dileu cefnogwr'
+        cancel: 'Canslo cefnogwr'
+        refund_and_hide: 'Ad-dalu a chuddio'
+        backer_info: 'Gwybodaeth cefnogwr %{key}'
+        payment_id: 'ID Talu'
+        payment_method: 'Dull talu'
+        payment_fee: 'Ffi y dull talu'
+        payment_choice: 'Dewisiad talu'
+        payer_email: 'Ebost talwr'
+        user_email: 'Ebost defnyddiwr Heliwm'
+        pending_to_refund: 'Aros i gael ei ad-dalu'
+        created_at: 'Crewyd ar'
+        title: "Rheoli cefnogwyr"
+        menu: Cefnogwyd
+        anonymous: Di-enw?
+        confirmed: Cadarnhawyd?
+        credits: "Credydau wedi eu defnyddio?"
         id: ID
-        key: Key
-        no_backers: "No backers found."
-        project: Project
-        refunded: Refunded?
-        requested_refund: "Requested refund?"
-        reward: Reward
-        no_reward: "No reward"
-        submit: Search
-        total_backed: backed
-        total_backers: backers
-        total_backs: backs
-        total_users: Users
-        user: User
-        value: Value
+        key: Allwedd
+        no_backers: "Heb ffeindio cefnogwyr."
+        project: Prosiect
+        refunded: Ad-dalwyd?
+        requested_refund: "Wedi gofyn am ad-daliad?"
+        reward: Anrheg
+        no_reward: "Dim anrheg"
+        submit: Chwilio
+        total_backed: cefnogwyd
+        total_backers: cefnogwyr
+        total_backs: cefnogiadau
+        total_users: Defnyddwyr
+        user: Defnyddiwr
+        value: Gwerth
     statistics:
       index:
-        menu: "Statistics"
-        title: "Statistics"
-        total_users: "Users"
-        total_backs: "Backs"
-        total_backers: "Backers"
-        total_backed: "Backed"
-        total_projects: "Projects"
-        total_projects_success: "Successful"
-        total_projects_online: "Online"
+        menu: "Ystadegau"
+        title: "Ystadegau"
+        total_users: "Defnyddwyr"
+        total_backs: "Cefnogwyd"
+        total_backers: "Cefnogwyr"
+        total_backed: "Cefnogiadau"
+        total_projects: "Prosiectau"
+        total_projects_success: "Llwyddianus"
+        total_projects_online: "Arlein"
       projects_by_week:
-        title: "Projects sent per week"
-        current_period: "Last 8 weeks"
-        previous_period: "Previous 8 weeks"
-        last_year: "Last year"
+        title: "Prosiectau anfonwyd yn ôl wythnos"
+        current_period: "8 wythnos dwetha"
+        previous_period: "8 wythnos flaenorol"
+        last_year: "Llynedd"
       backers_by_week:
-        title: "Backed value confirmed per week"
-        current_period: "Last 8 weeks"
-        previous_period: "Previous 8 weeks"
-        last_year: "Last year"
+        title: "Gwerth cefnogiadau wedi cadarnhau yn ôl wythnos"
+        current_period: "8 wythnos dwetha"
+        previous_period: "8 wytynos flaenorol"
+        last_year: "Llynedd"
 
   channels:
     admin:
