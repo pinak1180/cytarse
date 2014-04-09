@@ -15,6 +15,8 @@ summary, time, mark, audio, video {
 
 html {
 }
+
+/* !EDIT */
 body {
 	font-size: 18px;
 	font-family: "Source Sans Pro", sans-serif;
@@ -40,6 +42,11 @@ caption, th, td {
 }
 
 /* !BASE FONT STYLES */
+
+/* !EDIT */
+h1, h2, h3, h4, h5 {
+	text-rendering: optimizeLegibility;
+}
 
 h1 {
 	 font-family: "Source Sans Pro";
@@ -8003,25 +8010,27 @@ body #page_content .container .list-title {
     height: 30px
 }
 
+/* !EDIT */
 body #page_content .container .list-title a {
-    color: #3f4752;
-    font-size: 24px;
+    color: inherit;
+	font-size: inherit;
     font-weight: bold;
     text-decoration: none
 }
 
 body #page_content .container .more-projects {
     float: right;
-    color: #f69219;
-    text-decoration: none;
-    margin: 8px 0;
-    font-size: 13px;
-    font-weight: bold;
-    background: url("/assets/catarse_bootstrap/catarse-assets.png") no-repeat scroll 178px -232px transparent;
-    padding: 0 20px 0 0;
-    text-indent: -25px;
-    text-align: right;
-    width: 200px
+	color: rgba(212, 20, 90, 1);
+	text-decoration: none;
+	margin: 35px 0 0 0;
+	font-size: 13px;
+	font-weight: bold;
+	background: url("/assets/catarse_bootstrap/catarse-assets.png") no-repeat scroll 178px -232px transparent;
+	padding: 0px 20px 0 0;
+	text-indent: -25px;
+	text-align: right;
+	width: 200px;
+	line-height: 1em;
 }
 
 body #page_content .container .more-projects:hover {
@@ -9689,15 +9698,17 @@ body #logos .power a {
     text-shadow: 1px 1px white
 }
 
+/* !EDIT */
 [data-namespace="null"][data-controller="projects"][data-action="show"] #page_content .sidebar #rewards .box em {
-    background: url("/assets/catarse/reward_count_icon18x17.png") left top no-repeat;
+    background: url("/assets/heliwm/svg/fingers-crossed.svg") left 7px no-repeat;
+    background-size: 20px;
     color: #4d535d;
     font-weight: bold;
     font-size: 11px;
     padding: 3px 3px 10px 25px;
     text-transform: uppercase;
     display: block;
-    text-shadow: 1px 1px white
+    text-shadow: 1px 1px white;
 }
 
 [data-namespace="null"][data-controller="projects"][data-action="show"] #page_content .sidebar #rewards .box p,
@@ -9837,17 +9848,22 @@ body #logos .power a {
     text-shadow: 1px 1px white
 }
 
+/* !EDIT */
 [data-namespace="null"][data-controller="projects"][data-action="show"] #page_content .sidebar .info .statistics .item.contributions {
-    background: url("/assets/catarse/sidebar_contributions_icon26x19.png") left center no-repeat
+    background: url("/assets/heliwm/svg/fingers-crossed.svg") left 5px no-repeat;
+	background-size: 40px;
 }
 
 [data-namespace="null"][data-controller="projects"][data-action="show"] #page_content .sidebar .info .statistics .item.goal {
-    background: url("/assets/catarse/goal_icon36x17.png") left center no-repeat
+    background: url("/assets/heliwm/svg/coin-pound.svg") left 5px no-repeat;
+	background-size: 40px;
 }
 
 [data-namespace="null"][data-controller="projects"][data-action="show"] #page_content .sidebar .info .statistics .item.time {
-    background: url("/assets/catarse/time_icon19x30.png") left center no-repeat
+    background: url("/assets/heliwm/svg/timer.svg") left 5px no-repeat;
+	background-size: 40px;
 }
+/**/
 
 [data-namespace="null"][data-controller="projects"][data-action="show"] #page_content .sidebar .info #condition {
     width: 260px;
@@ -9896,10 +9912,12 @@ body #logos .power a {
     background: url("/assets/catarse/submit_back_icon25x22.png") 20px center no-repeat #333
 }
 
+/* !EDIT */
 [data-namespace="null"][data-controller="projects"][data-action="show"] #page_content .sidebar .info #pledge input[type="submit"] {
     display: block;
     margin: 0 auto;
-    background: url("/assets/catarse/submit_back_icon25x22.png") 20px center no-repeat #d4145a;
+    background: url("/assets/heliwm/svg/coin-pound.svg") 20px center no-repeat #d4145a;
+	background-size: 30px;
     width: 260px;
     height: 55px;
     border: none;
@@ -9975,8 +9993,10 @@ body #logos .power a {
 [data-namespace="null"][data-controller="projects"][data-action="show"] #page_content .sidebar .info #creator_profile a:hover {
 }
 
+/* !EDIT */
 [data-namespace="null"][data-controller="projects"][data-action="show"] #page_content .sidebar .info #creator_profile h3 {
-    background: url("/assets/catarse/profile_icon19x14.png") left 4px no-repeat;
+    background: url("/assets/heliwm/svg/person.svg") left 4px no-repeat;
+	background-size: 20px;
     color: #333333;
     font-weight: 700;
     font-size: 18px;
