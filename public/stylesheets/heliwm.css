@@ -9513,6 +9513,7 @@ body #logos .power a {
     float: left;
     width: 70px;
     height: 70px;
+    border-radius: 35px;
     margin-right: 15px
 }
 
@@ -9525,38 +9526,38 @@ body #logos .power a {
 [data-namespace="null"][data-controller="projects"][data-action="show"] #page_content .main #project_contributions .contribution .contribution_info #text .anon {
     font-weight: 700;
     font-size: 18px;
-    color: #444444;
     text-decoration: none;
-    margin-bottom: 15px;
-    display: block
+    display: block;
 }
 
 [data-namespace="null"][data-controller="projects"][data-action="show"] #page_content .main #project_contributions .contribution .contribution_info #text a:hover,
 [data-namespace="null"][data-controller="projects"][data-action="show"] #page_content .main #project_contributions .contribution .contribution_info #text .anon:hover {
-    color: #e75297;
-    text-decoration: underline
+   /* color: #e75297;
+    text-decoration: underline */
 }
 
 [data-namespace="null"][data-controller="projects"][data-action="show"] #page_content .main #project_contributions .contribution .contribution_info #confirmed,
 [data-namespace="null"][data-controller="projects"][data-action="show"] #page_content .main #project_contributions .contribution .contribution_info #contributed {
-    padding-top: 4px;
-    height: 16px;
-    text-indent: 25px;
-    background: url("/assets/catarse/confirmed_icon.png") left top no-repeat
+    padding: 0 0 10px;
+    height: 26px;
+    text-indent: 30px;
+    background: url("../assets/heliwm/svg/timer.svg") left 5px no-repeat;
+	background-size: 21px;
 }
 
 [data-namespace="null"][data-controller="projects"][data-action="show"] #page_content .main #project_contributions .contribution .contribution_info #contributed {
-    background: url("/assets/catarse/contributed_icon.png") left 4px no-repeat;
+    background: url("../assets/heliwm/svg/fingers-crossed.svg") left 8px no-repeat;
+	background-size: 20px;
     width: 125px;
-    line-height: 120%;
+    line-height: 130%;
     text-indent: 0px;
     height: auto;
-    padding-left: 25px
+    padding-left: 30px
 }
 
 [data-namespace="null"][data-controller="projects"][data-action="show"] #page_content .main #project_contributions .contribution .contribution_info #confirmed,
 [data-namespace="null"][data-controller="projects"][data-action="show"] #page_content .main #project_contributions .contribution .contribution_info #contributed {
-    font-size: 12px;
+    font-size: 14px;
     color: #333333
 }
 
@@ -9700,7 +9701,7 @@ body #logos .power a {
 
 /* !EDIT */
 [data-namespace="null"][data-controller="projects"][data-action="show"] #page_content .sidebar #rewards .box em {
-    background: url("/assets/heliwm/svg/fingers-crossed.svg") left 7px no-repeat;
+    background: url("../assets/heliwm/svg/fingers-crossed.svg") left 7px no-repeat;
     background-size: 20px;
     color: #4d535d;
     font-weight: bold;
@@ -9850,17 +9851,17 @@ body #logos .power a {
 
 /* !EDIT */
 [data-namespace="null"][data-controller="projects"][data-action="show"] #page_content .sidebar .info .statistics .item.contributions {
-    background: url("/assets/heliwm/svg/fingers-crossed.svg") left 5px no-repeat;
+    background: url("../assets/heliwm/svg/fingers-crossed.svg") left 5px no-repeat;
 	background-size: 40px;
 }
 
 [data-namespace="null"][data-controller="projects"][data-action="show"] #page_content .sidebar .info .statistics .item.goal {
-    background: url("/assets/heliwm/svg/coin-pound.svg") left 5px no-repeat;
+    background: url("../assets/heliwm/svg/coin-pound.svg") left 5px no-repeat;
 	background-size: 40px;
 }
 
 [data-namespace="null"][data-controller="projects"][data-action="show"] #page_content .sidebar .info .statistics .item.time {
-    background: url("/assets/heliwm/svg/timer.svg") left 5px no-repeat;
+    background: url("../assets/heliwm/svg/timer.svg") left 5px no-repeat;
 	background-size: 40px;
 }
 /**/
@@ -9916,7 +9917,7 @@ body #logos .power a {
 [data-namespace="null"][data-controller="projects"][data-action="show"] #page_content .sidebar .info #pledge input[type="submit"] {
     display: block;
     margin: 0 auto;
-    background: url("/assets/heliwm/svg/coin-pound.svg") 20px center no-repeat #d4145a;
+    background: url("../assets/heliwm/svg/coin-pound.svg") 20px center no-repeat #d4145a;
 	background-size: 30px;
     width: 260px;
     height: 55px;
@@ -9995,7 +9996,7 @@ body #logos .power a {
 
 /* !EDIT */
 [data-namespace="null"][data-controller="projects"][data-action="show"] #page_content .sidebar .info #creator_profile h3 {
-    background: url("/assets/heliwm/svg/person.svg") left 4px no-repeat;
+    background: url("../assets/heliwm/svg/person.svg") left 4px no-repeat;
 	background-size: 20px;
     color: #333333;
     font-weight: 700;
@@ -13161,9 +13162,10 @@ form#edit_reward .inline-hints {
 }
 
 [data-namespace="null"][data-controller="users"][data-action="show"] #user_profile .section_header .profile_image .avatar_wrapper {
-    -webkit-box-shadow: rgba(0, 0, 0, 0.4) 2px 2px 5px;
+/*    -webkit-box-shadow: rgba(0, 0, 0, 0.4) 2px 2px 5px;
     -moz-box-shadow: rgba(0, 0, 0, 0.4) 2px 2px 5px;
-    box-shadow: rgba(0, 0, 0, 0.4) 2px 2px 5px
+    box-shadow: rgba(0, 0, 0, 0.4) 2px 2px 5px; */
+    border-radius: 60px;
 }
 
 [data-namespace="null"][data-controller="users"][data-action="show"] #user_profile .section_header .profile_title {
@@ -13176,11 +13178,11 @@ form#edit_reward .inline-hints {
 }
 
 [data-namespace="null"][data-controller="users"][data-action="show"] #user_profile .section_header .profile_title h1 {
-    color: #333333;
-    font-size: 28px;
-    
-    font-weight: 700;
-    padding: 4px 0 10px
+    color: #00b1a0;
+    font-size: 4em;
+    text-align: left;
+    text-transform: none;
+    padding: 4px 0 10px;
 }
 
 [data-namespace="null"][data-controller="users"][data-action="show"] #user_profile .section_header .profile_title h4 {
