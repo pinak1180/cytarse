@@ -3,6 +3,7 @@ cy:
     confirm_dialog: "Wyt ti'n siwr?"
     projects:
       index:
+        menu: 'Projectau'
         by_state: 'Yn ôl sir'
         between_created_at: 'Crewyd am rhwng'
         submit: 'Hidlo'
@@ -16,6 +17,7 @@ cy:
         last_modification: 'Diweddariad dwetha'
     financials:
       index:
+        menu: 'Ariannol'
         submit: 'Hidlo'
         by_state: 'Yn ôl sir'
         by_progress: Yn ôl lle mae arni %
