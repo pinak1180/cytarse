@@ -81,9 +81,10 @@ h3 {
 
 h4 {
 	 font-size: 1.02em;
+	 letter-spacing: 2px;
 	 line-height: 1.2em;
 	 font-family: "Source Sans Pro";
-	 font-weight: 600;
+	 font-weight: 400;
 	 font-style: normal;
 	 margin: 0px 0px 1.5em 0px;
 	 color: rgba(0, 168, 154, 1);
@@ -9351,7 +9352,8 @@ body #logos .power a {
 }
 
 [data-namespace="null"][data-controller="projects"][data-action="show"] #page_content .section_header h4 a {
-    text-decoration: none
+    text-decoration: none;
+    text-transform: uppercase;
 }
 
 [data-namespace="null"][data-controller="projects"][data-action="show"] #page_content .section_header h4 a:hover {
@@ -9850,7 +9852,7 @@ body #logos .power a {
 }
 
 /* !EDIT */
-[data-namespace="null"][data-controller="projects"][data-action="show"] #page_content .sidebar .info .statistics .item.contributions {
+[data-namespace="null"][data-controller="projects"][data-action="show"] #page_content .sidebar .info .statistics .item.backers {
     background: url("../assets/heliwm/svg/fingers-crossed.svg") left 5px no-repeat;
 	background-size: 40px;
 }
@@ -9915,27 +9917,27 @@ body #logos .power a {
 
 /* !EDIT */
 [data-namespace="null"][data-controller="projects"][data-action="show"] #page_content .sidebar .info #pledge input[type="submit"] {
-    display: block;
-    margin: 0 auto;
-    background: url("../assets/heliwm/svg/coin-pound.svg") 20px center no-repeat #d4145a;
-	background-size: 30px;
-    width: 260px;
-    height: 55px;
-    border: none;
-    text-indent: 30px;
-    -webkit-border-radius: 10px;
-    -moz-border-radius: 10px;
-    -ms-border-radius: 10px;
-    -o-border-radius: 10px;
-    border-radius: 10px;
-    -webkit-transition: all, 0.5s;
-    -moz-transition: all, 0.5s;
-    -o-transition: all, 0.5s;
-    transition: all, 0.5s;
-    text-transform: uppercase;
-    font-weight: bold;
-    font-size: 15px;
-    color: white
+	display: block;
+	margin: 0 auto;
+	background: url("../assets/heliwm/svg/coin-pound.svg") 15px center no-repeat #d4145a;
+	background-size: 20px;
+	width: 260px;
+	height: 55px;
+	border: none;
+	text-indent: 30px;
+	-webkit-border-radius: 10px;
+	-moz-border-radius: 10px;
+	-ms-border-radius: 10px;
+	-o-border-radius: 10px;
+	border-radius: 10px;
+	-webkit-transition: all, 0.5s;
+	-moz-transition: all, 0.5s;
+	-o-transition: all, 0.5s;
+	transition: all, 0.5s;
+	text-transform: uppercase;
+	font-weight: bold;
+	font-size: 15px;
+	color: white
 }
 
 [data-namespace="null"][data-controller="projects"][data-action="show"] #page_content .sidebar .info #pledge input[type="submit"]:hover {
@@ -14259,19 +14261,19 @@ form#edit_reward .inline-hints {
     
     display: inline-block;
     width: 100%;
-    background: white;
+    background: #303030;
     padding: 1em 0;
-    border-bottom: 1px solid #e9e9ec
+    /*border-bottom: 1px solid #e9e9ec*/
 }
 
 .header .logo {
-    background: url("/assets/catarse_bootstrap/catarse-assets.png") repeat scroll -32px -14px transparent;
-    display: block;
-    float: left;
-    height: 50px;
-    text-indent: -9999em;
-    width: 151px;
-    transition: 0.4s all
+	background: url("../assets/heliwm/svg/heliwm-logo-head-light-02.svg") repeat scroll  transparent;
+	display: block;
+	float: left;
+	height: 60px;
+	text-indent: -9999em;
+	width: 197px;
+	transition: 0.4s all
 }
 
 .header .logo:hover {
