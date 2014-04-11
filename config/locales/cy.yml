@@ -5,7 +5,6 @@ cy:
   controllers:
     updates:
       create:
-<<<<<<< HEAD
         notice: 'Wedi llwyddo i greu diweddariad!'
   failure_title: "Plis trwsia'r gwallau isod:"
   uservoice_gadget:
@@ -14,16 +13,6 @@ cy:
       location: 'Tref / Sir'
       confirmed_backers: 'Cefnogwyr'
       created_projects: 'Dy Projectau'
-=======
-        notice: "Crewyd y diweddariad yn llwyddianus!"
-  failure_title: "Plis trwsia'r gwallau isod:"
-  uservoice_gadget:
-    user:
-      name: "Defnyddiwr"
-      location: "Tref / Sir"
-      confirmed_backers: "Confirmed backs"
-      created_projects: "Created projects"
->>>>>>> d30aa5633419a2328fc23b89ae85dcc27e5138dd
   site:
     title: "Heliwm"
     meta_title:  "%{title} · %{company_name}"
