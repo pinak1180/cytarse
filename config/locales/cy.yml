@@ -34,7 +34,6 @@ cy:
       password: "Cyfrinair"
 
   backer_report_to_project_owner:
-<<<<<<< HEAD
     reward_description: 'Disgrifiad yr anrheg'
     confirmed_at: "Taliad wedi'i gadarnhau am"
     value: 'Gwerth dy gefnogaeth'
@@ -53,26 +52,6 @@ cy:
     anonymous: 'Dienw'
   edit_project: 'Golyga'r project'
   facebook_locale: 'en_GB'
-=======
-    reward_description: "Disgrifiad gwobr"
-    confirmed_at: "Taliad wedi'i gadarnhau am"
-    value: "Gwerth dy gefnogaeth"
-    service_fee: "Ffi ArianByw"
-    user_name: "Enw cefnogwr"
-    user_email: "Ebost defnyddiwr proffil Catarse"
-    payer_email: "Ebost defnyddiwr dy system dalu"
-    payment_method: "Dull talu"
-    address_street: "Stryd"
-    address_complement: "Complement"
-    address_number: "Rhif"
-    address_neighbourhood: "Ardal"
-    address_city: "Tref/Dinas"
-    address_state: "Sir"
-    address_zip_code: "Côd post"
-    anonymous: "Dienw"
-  edit_project: "Golygar prosiect"
-  facebook_locale: "en_GB"
->>>>>>> d30aa5633419a2328fc23b89ae85dcc27e5138dd
   or: neu
   no: "Nac ydw"
   yes: "Ydw"
