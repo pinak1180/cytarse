@@ -17,6 +17,7 @@ cy:
       statistics:
         title: "Ystadegau'r sianel"
         total_subscribers: 'Cyfanswm tanysgrifwyr'
+      followers_menu: 'Dilynwyr'
     projects:
       send: "Anfon dy broject"
       see_how_it_works: "Gweld sut mae'n gweithio ac anfon dy broject."

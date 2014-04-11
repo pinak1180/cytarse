@@ -1,13 +1,14 @@
 cy:
   admin: &admin
-    confirm_dialog: 'Wyt ti'n siwr?'
+    confirm_dialog: "Wyt ti'n siwr?"
     projects:
       index:
+        menu: 'Projectau'
         by_state: 'Yn ôl sir'
         between_created_at: 'Crewyd am rhwng'
         submit: 'Hidlo'
         send_to_trash: 'Dileu'
-        send_to_draft: 'Afon at DRAFFT!'
+        send_to_draft: 'Anfon at DRAFFT!'
         reject: 'Gwrthod!'
         approve: 'Derbyn!'
         order_asc: 'Amcan esg'
@@ -16,6 +17,7 @@ cy:
         last_modification: 'Diweddariad dwetha'
     financials:
       index:
+        menu: 'Ariannol'
         submit: 'Hidlo'
         by_state: 'Yn ôl sir'
         by_progress: Yn ôl lle mae arni %

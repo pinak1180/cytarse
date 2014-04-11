@@ -17,7 +17,7 @@ class ProjectsController < ApplicationController
         else
           @title = t("site.title")
           if current_user && current_user.recommended_projects.present?
-            @recommends = current_user.recommended_projects.limit(3)
+            @recommends = current_user.recommended_projects.limit(4)
           else
             @recommends = ProjectsForHome.recommends
           end

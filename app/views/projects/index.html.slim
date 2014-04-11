@@ -18,28 +18,28 @@
         .projects
           == render @recommends
 
-      section.channel_projects.list
+      / section.channel_projects.list
         header
           h2.list-title= t('sections.channels.title')
           = link_to t('main.links.channels'), root_url(subdomain: 'asas'), class: "more-projects"
         .projects
           == render @channel_projects
 
-      section.expiring_projects.list
+      / section.expiring_projects.list
         header
           h2.list-title= t('sections.expiring.title')
           = link_to t('main.links.expiring'), explore_path(anchor: :expiring), class: "more-projects"
         .projects
           == render @expiring
 
-      section.recents_projects.list
+      / section.recents_projects.list
         header
           h2.list-title= t('sections.recents.title')
           = link_to t('main.links.recents'), explore_path(anchor: :recent), class: "more-projects"
         .projects
           == render @recent
 
-    aside.main-sidebar
+    / aside.main-sidebar
       section.main-sidebar-division
         h3.title= t('sidebar.titles.blog')
         ul
