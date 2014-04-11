@@ -12,12 +12,12 @@ cy:
       name: 'Defnyddiwr'
       location: 'Tref / Sir'
       confirmed_backers: 'Cefnogwyr'
-      created_projects: 'Dy Projectau'
+      created_projects: 'Dy Brosiectau'
   site:
     title: "Heliwm"
     meta_title:  "%{title} · %{company_name}"
     description: "Cyllid Cymunedol Cymraeg"
-    keywords: "torfoli, torfol, cyllid torfol, ariannu, pres, codi arian, codi pres, cyllido, buddsoddi, cymuned, cymunedol, crowdfunding, crowdfund, Cymraeg, Gymraeg"
+    keywords: "torfoli, torfol, cyllid torfol, ariannu, pres, codi arian, codi pres, cyllido, buddsoddi, cymuned, cymunedol, crowdfunding, crowdfund, Cymraeg, Gymraeg, Cymru, Wales, Welsh"
 
   login:
     forgot_password:
@@ -34,7 +34,7 @@ cy:
       password: "Cyfrinair"
 
   backer_report_to_project_owner:
-    reward_description: 'Disgrifiad yr anrheg'
+    reward_description: 'Disgrifiad yr anrheg diolch'
     confirmed_at: "Taliad wedi'i gadarnhau am"
     value: 'Gwerth dy gefnogaeth'
     service_fee: 'Ffi Heliwm'
@@ -50,7 +50,7 @@ cy:
     address_state: 'Sir'
     address_zip_code: 'Côd post'
     anonymous: 'Dienw'
-  edit_project: 'Golyga'r project'
+  edit_project: 'Golyga'r prosiect'
   facebook_locale: 'en_GB'
   or: neu
   no: "Nac ydw"
@@ -70,12 +70,12 @@ cy:
       subtitle: cefnogwyr
     goal:
       subtitle: "cyfanswm o %{total}"
-  project_by: "project gan"
+  project_by: "prosiect gan"
   tell_about_this_back: "Dwed wrth y byd am dy gefnogaeth!"
-  share_my_backs: "Edrychwch ar y projectau dwi'n gefnogi ar Heliwm!"
+  share_my_backs: "Edrychwch ar y prosiectau dwi'n gefnogi ar Heliwm!"
   tell_about_this_project: "Dwed wrth y byd am dy brosiect!"
   share_my_projects: "Edrychwch ar fy mhrosiectau Heliwm!"
-  count_backed_projects: "wedi cefnogi %{total} project"
+  count_backed_projects: "wedi cefnogi %{total} prosiect"
   footer:
     titles:
       about: "Beth? Pwy?"
@@ -88,7 +88,7 @@ cy:
       faq: "Help"
       feedback: "Adborth"
       support: "Cefnogaeth"
-      terms: "Telerau"
+      terms: "Telerau Defnydd"
       privacy: "Preifatrwydd"
       press: "Y Wasg"
       twitter: "Twitter"
@@ -102,16 +102,16 @@ cy:
       expiring: "Dod i ben"
       recents: "Diweddar"
       submit: "Dechrau dy brosiect"
-      discover: "Darganfod projectau"
+      discover: "Darganfod prosiectau"
     texts:
       copyleft: "Gwnaed a chariad."
   main:
     links:
       channels: "Darganfod Sianel Asas"
-      recommended: "Darganfod argymhellion project"
-      expiring: "Darganfod projectau sy'n dod i ben"
-      recents: "Darganfod projectau diweddar"
-      near: "Darganfod projectau gerllaw"
+      recommended: "Darganfod argymhellion prosiect"
+      expiring: "Darganfod prosiectau sy'n dod i ben"
+      recents: "Darganfod prosiectau diweddar"
+      near: "Darganfod prosiectau gerllaw"
     banner: "Croeso i ffordd newydd sbon o wireddu dy syniadau!"
   sidebar:
     titles:
@@ -142,10 +142,10 @@ cy:
         project:
           attributes:
             permalink:
-              invalid: "Dolen barhaol annilys ar gyfer y project"
+              invalid: "Dolen barhaol annilys ar gyfer y prosiect"
     attributes:
       unsubscribe:
-        update: "Derbyn diweddariadau project"
+        update: "Derbyn diweddariadau prosiect"
       backer:
         value: Gwerth
       project:
@@ -157,7 +157,7 @@ cy:
         name: Enw
         user_id: "ID defnyddiwr"
         video_url: "URL y fideo"
-        permalink: 'URL y project'
+        permalink: 'URL y prosiect'
         how_know: "Sut glywes ti am Heliwm?"
         more_links: 'Lle alla i wybod mwy amdanat ti a dy brosiect?'
       reward:
@@ -190,17 +190,17 @@ cy:
     models:
       backer: Cefnogwr
       category: Categori
-      project: Project
-      reward: Anrheg
+      project: Prosiect
+      reward: Anrheg diolch
   backer:
     display_confirmed_at: "%{time_ago} yn ôl"
-    reward_must_be_from_project: "rhaid ei fod o'r un project"
+    reward_must_be_from_project: "rhaid ei fod o'r un prosiect"
     should_not_back_if_maximum_backers_been_reached: "mae wedi cyrraedd yr uchafswm cefnogwyr"
     value_must_be_at_least_rewards_value: "rhaid iddo fod o leiaf %{minimum_value} ar gyfer y wobr ddewisaist ti"
-    project_should_be_online: "Alli di ddim cefnogi project sydd ddim arlein"
+    project_should_be_online: "Alli di ddim cefnogi prosiect sydd ddim arlein"
   backer_plural: cefnogwyr
-  project_plural: projectau
-  project_singular: project
+  project_plural: prosiectau
+  project_singular: prosiect
   backer_singular: cefnogwr
   click_here: "Clic yma"
   clicking_here: "clicio yma"
@@ -218,7 +218,7 @@ cy:
       back_date: "Dyddiad cefnogi"
       current_credits_html: "Dy falans cyfredol yw <span id=\"current_credits\">%{credits}</span> mewn credydau."
       important_html: "Os wyt ti'n gofyn am ad-daliad, bydd gwerth y taliad yn cael ei dynnu oddi wrth dy gredydau."
-      project: project
+      project: prosiect
       refund_expiration_date_html: "Dyddiad olaf gellir hawlio ad-daliad (<a target='__blank' href='http://suporte.Heliwm.me/knowledgebase/articles/164746-regras-e-funcionamento-dos-reembolsos-estornos'>?</a>)"
       refunded: "Proseswyd yr ad-daliad yn llwyddianus. Bydd ein tîm yn cysylltu gyda thi mewn dau ddiwrnod busnes."
       insufficient_credits: "Does gen ti ddim digon o gredydau i hawlio'r ad-daliad hwn."
@@ -237,13 +237,13 @@ cy:
     title: "Fy nghredydau"
   credits_mailer:
     request_refund_from:
-      subject: "Hawlio ad-daliad am broject %{name}"
-      subject_html: "Hawliodd y defnyddiwr %{name} ad-daliad am eu cefnogaeth %{backer_key} i'r project %{backer_project} am y swm o %{backer_value} drwy %{backer_payment_service}."
+      subject: "Hawlio ad-daliad am brosiect %{name}"
+      subject_html: "Hawliodd y defnyddiwr %{name} ad-daliad am eu cefnogaeth %{backer_key} i'r prosiect %{backer_project} am y swm o %{backer_value} drwy %{backer_payment_service}."
       user_name: 'Enw defnyddiwr'
       user_email: 'Ebost defnyddiwr'
       payer_email: 'Ebost talu'
       payer_name: 'Enw defnyddiwr ddefnydiwyd ar y taliad'
-      project: 'Project'
+      project: 'Prosiect'
       backer_key: 'Allwedd cefnogwr'
       payment_id: 'ID Taliad'
       backer_value: 'Gwerth cefnogaeth'
@@ -265,56 +265,56 @@ cy:
       quick_explore: "Chwiliad cyflym"
       recent: Diweddar
       recommended: Argymhellwyd
-      subtitle: "Edrycha drwy'r projectau, ffeindia rai sy'n apelio atat ti, a gwiredda nhw!"
+      subtitle: "Edrycha drwy'r prosiectau, ffeindia rai sy'n apelio atat ti, a gwiredda nhw!"
       successful: Llwyddiannus
       title: "Ffeindia brosiectau anhygoel"
-    title: "Pori'r projectau"
+    title: "Pori'r prosiectau"
     project:
       empty: "Bww, wnaethon ni ddim dod o hyd i brosiect gyda'r testun nes ti chwilio amdano. Be am drio un arall?"
   formtastic:
     hints:
       backer:
-        credits: "Mae gen ti <strong>%{credits}</strong> mewn credydau a galli di gefnogi projectau hyd at yr uchafswm yma heb orfod gwneud taliad ychwanegol."
+        credits: "Mae gen ti <strong>%{credits}</strong> mewn credydau a galli di gefnogi prosiectau hyd at yr uchafswm yma heb orfod gwneud taliad ychwanegol."
         value: "Dewis di'r swm ;) gan dechrau gyda £5, mae unrhyw swm yn gwneud gwahaniaeth."
       project:
         video_url_edit: 'Gluda URL dy fideo Vimeo/Youtube.'
-        about: "Dwed wrthyn ni beth ysbrydolodd chi i greu'r project. Byddwch yn ddi-duedd a diffuant, gan gyflwyno eich darllenwyr gyda rhywbeth sy'n apelio atyn nhw tra'n bod yn onest iawn am obeithion y project!"
-        more_links: "Pa sianeli fyddwch chi'n defnyddio er nmwyn hyrwyddo eich project? Rhestrwch eich cyfrifon facebook/twitter/blog/gwefan/ a pha bynnag ddolenni eraill sydd gennych all eich helpu"
-        category: "Cyn i chi greu eich project cymrwch gip ar brojectau eraill i'ch ysbrydoli!"
+        about: "Dwed wrthyn ni beth ysbrydolodd chi i greu'r prosiect. Byddwch yn ddi-duedd a diffuant, gan gyflwyno eich darllenwyr gyda rhywbeth sy'n apelio atyn nhw tra'n bod yn onest iawn am obeithion y prosiect!"
+        more_links: "Pa sianeli fyddwch chi'n defnyddio er nmwyn hyrwyddo eich prosiect? Rhestrwch eich cyfrifon facebook/twitter/blog/gwefan/ a pha bynnag ddolenni eraill sydd gennych all eich helpu"
+        category: "Cyn i chi greu eich prosiect cymrwch gip ar brosiectau eraill i'ch ysbrydoli!"
         expires_at: "Yn olaf, dewiswch pa mor hir rydych chi eisiau i'ch ymgyrch i bara. Eto, mae hwn yn ddewis strategol: os rhowch lawer o amser, bydd pobl yn colli diddordeb ar hyd y ffordd; os rhowch rhy ychydig, efallai na fyddwch yn cyrraedd eich targed mewn pryd."
         online_days: "Yn olaf, dewiswch pa mor hir rydych chi eisiau i'ch ymgyrch i bara. Eto, mae hwn yn ddewis strategol: os rhowch lawer o amser, bydd pobl yn colli diddordeb ar hyd y ffordd; os rhowch rhy ychydig, efallai na fyddwch yn cyrraedd yr isafswm mewn pryd."
         goal: "Gwerth mewn punnoedd (£)"
-        first_backers: "Er mwyn cyrraedd eich targed ariannol mae'n hollbwysig i sicrhau cefnogaeth y bobl sy'n agos atoch chi a'ch project. Felly os oes mod, gwnewch restr yma o'ch 20 cefnogwr potensial cyntaf. Bydd hyn yn rhoi'r cychwyn gorau i chi!"
-        headline: "Rhowch grynodeb o'r project mewn 140 cymeriad. Hwn fydd cyswllt cyntaf pobl gyda'r project, cyn hyd yn oed gweld y fideo. Byddwch yn greadigol, clir ac uniongyrchol."
-        name: "Byddwch mor ddi-duedd ag y gallwch. Gadwch unrhyw esbonio i'r adran Am y Project."
+        first_backers: "Er mwyn cyrraedd eich targed ariannol mae'n hollbwysig i sicrhau cefnogaeth y bobl sy'n agos atoch chi a'ch prosiect. Felly os oes mod, gwnewch restr yma o'ch 20 cefnogwr potensial cyntaf. Bydd hyn yn rhoi'r cychwyn gorau i chi!"
+        headline: "Rhowch grynodeb o'r prosiect mewn 140 cymeriad. Hwn fydd cyswllt cyntaf pobl gyda'r prosiect, cyn hyd yn oed gweld y fideo. Byddwch yn greadigol, clir ac uniongyrchol."
+        name: "Byddwch mor ddi-duedd ag y gallwch. Gadwch unrhyw esbonio i'r adran Am y Prosiect."
         uploaded_image: "Llwytha ddelwedd 512x400 (.jpg)."
-        video_url: "Gluda URL o fideo <a href=\"http://youtube.com\" target=\"_blank\">YouTube</a> neu <a href=\"http://vimeo.com\" target=\"_blank\">Vimeo</a>. Mae gan YouTube rwydwaith well, ond does dim hysbysebion ar Vimeo. Does dim rhyngwyneb Cymraeg ar yr un yn anffodus! <strong>Sicrhewch bod safon cynhyrchu eich fideo mor uchel ag sydd bosib a'ifod wedi ei gynhyrchu yn benodol ar gyfer eich ymgyrch</strong>. Os mae un peth sydd yn nodweddu projectau sydd yn cyrraedd eu targed, yna'r fideo yw hwnnw. Mae hynny'n werth ei ystyried!"
+        video_url: "Gluda URL o fideo <a href=\"http://youtube.com\" target=\"_blank\">YouTube</a> neu <a href=\"http://vimeo.com\" target=\"_blank\">Vimeo</a>. Mae gan YouTube rwydwaith well, ond does dim hysbysebion ar Vimeo. Does dim rhyngwyneb Cymraeg ar yr un yn anffodus! <strong>Sicrhewch bod safon cynhyrchu eich fideo mor uchel ag sydd bosib a'ifod wedi ei gynhyrchu yn benodol ar gyfer eich ymgyrch</strong>. Os mae un peth sydd yn nodweddu prosiectau sydd yn cyrraedd eu targed, yna'r fideo yw hwnnw. Mae hynny'n werth ei ystyried!"
       reward:
-        description: "Disgrifiwch yr anrheg fyddwch chi'n ei roi mewn ffordd fydd yn codi awydd pobl i gefnogi'ch project. Peidiwch bod yn swil!"
-        maximum_backers: "Os ydy nifer eich anrhegion yn gyfyngedig, dwedwch beth yw'r uchafswm cefnogwyr."
-        minimum_value: "Hwn yw'r isafswm er mwyn dewis yr anrheg hwn."
-        days_to_delivery: "Cyfanswm dyddiau i anfon yr anrheg."
+        description: "Disgrifiwch yr anrheg diolch fyddwch chi'n ei roi mewn ffordd fydd yn codi awydd pobl i gefnogi'ch prosiect. Peidiwch bod yn swil!"
+        maximum_backers: "Os ydy nifer eich anrhegion diolch yn gyfyngedig, dwedwch beth yw'r uchafswm cefnogwyr."
+        minimum_value: "Hwn yw'r isafswm er mwyn dewis yr anrheg diolch hwn."
+        days_to_delivery: "Cyfanswm dyddiau i anfon yr anrheg diolch."
     labels:
       backer:
         anonymous: "Dwisio nghefnogaeth i fod yn ddienw."
         credits: "Dwisio defnyddio credydau ar gyfer cefnogi hwn."
-        reward: "Dewis dy anrheg"
+        reward: "Dewis dy anrheg diolch"
         value: "Faint hoffet ti gyfrannu?"
       comment:
-        comment: "Sgwenna neges am y project"
+        comment: "Sgwenna neges am y prosiect"
       project:
-        more_links: "Rhestra ddolenni cysylltiedig a'r project *"
+        more_links: "Rhestra ddolenni cysylltiedig a'r prosiect *"
         how_know: "Sut glywes ti am Heliwm?"
         headline: "Pennawd"
         category: 'Categori'
         first_backers: "Rhestrwch eich cefnogwyr cyntaf *"
-        about: "Am y project. Sut fyddwch chi'n gwario'r arian yma?"
+        about: "Am y prosiect. Sut fyddwch chi'n gwario'r arian yma?"
         expires_at: "Beth yw eich dyddiad terfyn ar gyfer cyrraedd eich targed ariannol?"
         goal: "Faint o arian ydych chieisiau codi? (rhifau yn unig)"
-        name: "Enw'r project"
+        name: "Enw'r prosiect"
         online_days: 'Sawl Diwrnod Ymgyrch?'
         video_url: Fideo
-        uploaded_image: "Llun bach y project"
+        uploaded_image: "Llun bach y prosiect"
       reward:
         maximum_backers: "Uchafswm cefnogwyr (dewisol)"
         days_to_delivery: "Diwrnodau nes bydd yn digwydd"
@@ -322,8 +322,8 @@ cy:
   found_plural: Darganfyddwyd
   found_singular: Darganfyddwyd
   here: yma
-  i_backed: "Dwi di cefnogi'r project %{name} ar @heliwm"
-  i_just_backed: "Dwi newydd gefnogi'r project %{name} ar @heliwm"
+  i_backed: "Dwi di cefnogi'r prosiect %{name} ar @heliwm"
+  i_just_backed: "Dwi newydd gefnogi'r prosiect %{name} ar @heliwm"
   layouts:
     login:
       login_with_facebook: "mewngofnoda gyda dy gyfrif Facebook"
@@ -362,25 +362,27 @@ cy:
       site_title: "Cyfrinair wedi ei arbed"
   project:
     start:
-      email_subject: "Mae tîm Heliwm wedi derbyn dy broject"
-      email_text: "Thanks for trusting your project to Heliwm :)<br><br>We know that you expect a quick reply but, to be quite frank, we take up to 4 days to respond, ok? That is because we have a small team working on several projects. Note that the reply can come sooner, so keep attention to your inbox.<br><br>Meanwhile it is worth to get to know the projects that are online (<a href='%{explore_link}' style='color: #E75297 !important;'>%{explore_link}</a>) and - if you like any of them- back it! This is the way to show support for the crowdfunding culture in Brazil and to feed the ecosystem that keeps growing around Heliwm.<br><br>Besides that, you will get some inspiration for your own project...<br><br>Stay tuned for updates in <a href='%{facebook}' style='color: #E75297 !important;'>Facebook</a> and get some deeper knowledge about Heliwm reading the posts in our <a href='%{blog}' style='color: #E75297 !important;'>blog</a>.<br><br>If you have any doubt, send an email to: %{email}"
-      notification_text: "Mae tîm Heliwm wedi derbyn dy broject!"
+      email_subject: "Mae tîm Heliwm wedi derbyn eich prosiect"
+      email_text: "Diolch am ymddiried yn Heliwm i helpu'ch prosiect.<br><br>Rydyn ni'n gwybod eich bod yn disgwyl ateb sydyn, ond tîm bychan iawn sy'n gweithio ar Heliwm ar hyn o bryd felly gallai gymryd hyd at 3 diwrnod gwaith i ymateb. Gobeithio bod hyn yn iawn! Ond mae'n ddigon posib y daw'r ateb yn gynt na hynny wrth gwrs.<br><br>Yn y cyfamser mae'n werth cael cip ar y prosiectau eraill sydd ar y wefan (<a href='%{explore_link}' style='color: #E75297 !important;'>%{explore_link}</a>) ac - os ydych chi'n hoffi rhai - yna cefnogwch nhw! Rydyn ni'n ceisio creu diwylliant o ariannu prosiectau trwy gyllid torfol yng Nghymru trwy Heliwm ac i wneud hynny rhaid i ni gefnogi'n gilydd hefyd. <br><br> Cymrwch gip ar <a href='%{facebook}' style='color: #E75297 !important;'>Facebook</a> a'n cyfrif <a href='%{twitter}' style='color: #E75297 !important;'>Twitter</a> i weld y diweddaraf am y wefan a phrosiectau eraill hefyd.<br><br>Os oes unrhyw bryder gennych chi am rywbeth, yna ebostiwch ni ar: %{email}"
+      notification_text: "Mae tîm Heliwm wedi derbyn eich prosiect!"
     finish:
       successful:
-        email_subject: "Hwre! The project %{project_name} was successful on Heliwm!"
-        email_text: "The project %{project_link}, that you have backed, was successfully funded! Let's celebrate o/<br><br>The project has, including you, %{project_total_backers} wonderful backers, raised %{project_pledged} and reached %{project_process}% of its goal =D<br><br>Something that is important to know: Heliwm's team takes 3 days to send to the project creator the list with all information of the backers. So, the project creator will only be in touch with you to thank you and talk about the rewards delivery in a few days, ok?<br><br>So why don't you, in this meantime, share with all your friends this success?<br><br><div style='text-align:center;'>%{facebook_button}%{twitter_button}</div><br><br>If you want to get in touch with %{project_owner_name}, send an email to %{project_owner_email}.<br><br>If you have any doubt about Heliwm, access our FAQ: <a href='http://www.Heliwm.me/faq' style='color: #008800';>www.Heliwm.me/faq</a> or send an email to <a href='mail_to:contato@Heliwm.me' style='color: #008800;'>contato@Heliwm.me</a><br>"
-        facebook_text: "Hwre! Roedd y project '%{name}', wnes i ei gefnogi ar Heliwm wedi llwyddo i gyrraedd ei darged!"
-        notification_text: "Hwre! Roedd y project %{link} y gwnes ti ei gefnogi wedi llwyddo i gyrraedd ei darged! Dwed wrth y byd!"
-        reward_notification_text: "Yn fuan bydd %{link} yn cysylltu gyda ti er mwyn anfon dy anrheg. Joia!"
-        twitter_text: "Hwre! Roedd project '%{name}' wnes i gefnogi yn llwyddianus ar @Heliwm! %{short_url}"
+        email_subject: "Hwre! Mae'r prosiect %{project_name} wedi llwyddo ar Heliwm!"
+        email_text: "
+Roedd y prosiect rwyt ti wedi cefnogi wedi bod yn llwyddiant ar Heliwm ac wedi cyrraedd ei darged! Woo! Amser dathlu!<br><br>MAe gan y prosiect, gan dy gynnwys di, %{project_total_backers} o gefnogwyr ffantastig, sydd wedi codi %{project_pledged} a chyrraedd %{project_process}% o'u targed.<br><br>Rhywbeth pwysig i'w wybod yw bod hi'n cymryd 3 diwrnod i Heliwm anfon manylion llawn y cefnogwyr at gynhyrchydd y prosiect. Felly, mae'n bosib na fydd cynhyrchydd y prosiect mewn cyswllt yn syth bin i dy ddiolch a sôn am sut byddant yn danfon yr anrhegion diolch!<br><br>Felly, yn y cyfamser beth am rannu'r llwyddiant hwn gyda dy ffrindiau a dathlu llwyddiant prosiect Cymreig ar Heliwm!<br><br><div style='text-align:center;'>%{facebook_button}%{twitter_button}</div><br><br>Os hoffet ti gysylltu gyda %{project_owner_name}, anfon ebost at %{project_owner_email}.<br><br>Os oes gen ti unrhyw amheuaeth am Heliwm yna plis dos at ein tudalen Cwestiwn ac Ateb: <a href='http://www.Heliwm.com/faq' style='color: #008800';>www.Heliwm.com/faq</a> neu anfon ebost at <a href='mail_to:post.heliwm@gmail.com' style='color: #008800;'>post.heliwm@gmail.com</a><br>"
+        facebook_text: "Hwre! Mae'r prosiect '%{name}', wnes i ei gefnogi ar Heliwm wedi llwyddo i gyrraedd ei darged!"
+        notification_text: "Hwre! Mae'r prosiect %{link} y gwnes ti ei gefnogi wedi llwyddo i gyrraedd ei darged! Dwed wrth y byd!"
+        reward_notification_text: "Yn fuan bydd %{link} yn cysylltu gyda ti er mwyn anfon dy anrheg i ddiolch am dy gefnogaeth. Joia!"
+        twitter_text: "Hwre! Mae'r prosiect '%{name}' wnes i gefnogi wedi llwyddo ar @Heliwm! %{short_url}"
       unsuccessful:
-        email_subject: "Ni ariannwyd y project %{project_name} ar Heliwm."
-        email_text: 'Unfortunately the project %{project_link}, that you have backed, did not reached its goal and was not funded at Heliwm.<br><br>So, you have received <strong>%{value}</strong> in credits to back other projects. You can meet others %{project_category} projects in %{explore_category_link}.<br><br>You also can ask for your refund by clicking in %{credits_link}. Remember that you signed up in Heliwm using %{user_provider}. If you have some difficulty in this process, do not be shame to send an email to financeiro@Heliwm.me with the subject "Refund - login issue".<br><br>If, for any reason, you want to contact %{project_owner_name}, send an email to %{project_owner_email}.<br><br>If you have any other doubt, access our FAQ or send an email to <a href="mail_to:contato@Heliwm.me" style="color: #008800;">contato@Heliwm.me</a>.<br>'
-        notification_text: "Rwyt ti wedi derbyn %{value} mewn credydau er mwyn cefnogi projectau eraill, neu galli di hawlio ad-daliad %{link}."
-        unsuccessful_text: "Doedd y project %{link} wnes ti gefnogi ddim yn llwyddianus. Tro nesa gobeithio!"
+        email_subject: "Ni ariannwyd y prosiect %{project_name} ar Heliwm."
+        email_text: "
+Yn anffodus wnaeth y prosiect %{project_link} wnes ti gefnogi ar Heliwm ddim llwyddo i gyrraedd ei darged ariannol o fewn y cyfnod ymgyrch felly ni chafodd ei ariannu.<br><br>Felly, yn sgil hyn, mae gen ti <strong>%{value}</strong> mewn credydau ar gael i gefnogi prosiectau eraill. Galli di weld prosiectau %{project_category} eraill yn %{explore_category_link}.<br><br>Galli di hefyd ofyn am ad-daliad drwy glicio %{credits_link}. Cofia dy fod ti wedi cofrestru i ddefnyddio Heliwm gyda %{user_provider}. Os gei di broblemau gyda'r broses hon, plis paid oedi mewn anfon ebost at <a href="mail_to:post.heliwm@gmail.com" style="color: #008800;">post.heliwm@gmail.com</a> gyda'r pwnc "Ad-daliad - problem mewngofnodi".<br><br>Os am unrhyw reswm yr hoffet gysylltu â %{project_owner_name}, yna anfon ebost at %{project_owner_email}.<br><br>Os oes gen ti unrhyw broblem arall, yna plis edrych ar ein tudalen Cwestiwn ac Ateb, neu ebostia <a href="mail_to:post.heliwm@gmail.com" style="color: #008800;">post.heliwm@gmail.com</a>.<br>"
+        notification_text: "Rwyt ti wedi derbyn %{value} mewn credydau er mwyn cefnogi prosiectau eraill, neu galli di hawlio ad-daliad %{link}."
+        unsuccessful_text: "Doedd y prosiect %{link} wnes ti gefnogi ddim yn llwyddianus. Tro nesa gobeithio!"
     video_regex_validation: "dim ond URLau o fideos Vimeo a YouTube ellir eu defnyddio"
     display_status:
-      expired: "weid gorffen"
+      expired: "wedi gorffen"
       failed: "heb ei ariannu"
       successful: "wedi ei ariannu"
       waiting_confirmation: yn aros
@@ -389,7 +391,7 @@ cy:
       reached_goal: "wedi ei ariannu"
       draft: "drafft"
   projects:
-    send_to_analysis: "Anfonwyd dy broject at ein tîm"
+    send_to_analysis: "Anfonwyd dy brosiect at ein tîm"
     box:
       by: gan
       when: yn
@@ -397,57 +399,57 @@ cy:
       title: "Meysydd gweinyddol"
     back_project:
       display_status:
-        reached_goal: "Bydd y project hwn yn llwyddianus ac wedi ei ariannu ar %{date}"
-        not_reached_goal: "Fydd y project hwn ond yn cael ei ariannu os ceir cefnogaeth i  fwy na %{goal} erbyn %{date}"
-        failed: "Wnaeth y project hwn ddim cyrraedd y targed o %{goal} tan %{date} a ni chafodd ei ariannu"
-        successful: "Roedd y peoject hwn yn llwyddianus a cafodd ei ariannu ar %{date}"
-        waiting_funds: "Aros am gadarnhad taliadau i wybod os gafodd y project hwn ei ariannu."
-        draft: "Mae'r project hwn mewn drafft ac nid yw'n agored i gefnogwyr eto."
+        reached_goal: "Bydd y prosiect hwn yn llwyddianus ac wedi ei ariannu ar %{date}"
+        not_reached_goal: "Fydd y prosiect hwn ond yn cael ei ariannu os ceir cefnogaeth i  fwy na %{goal} erbyn %{date}"
+        failed: "Wnaeth y prosiect hwn ddim cyrraedd y targed o %{goal} tan %{date} a ni chafodd ei ariannu"
+        successful: "Roedd y prosiect hwn yn llwyddianus a cafodd ei ariannu ar %{date}"
+        waiting_funds: "Aros am gadarnhad taliadau i wybod os gafodd y prosiect hwn ei ariannu."
+        draft: "Mae'r prosiect hwn mewn drafft ac nid yw'n agored i gefnogwyr eto."
       reached_of: "Wedi cyrraedd o"
-      submit: "Cefnoga'r project yma"
+      submit: "Cefnoga'r prosiect yma"
     backers:
       backer:
         anonymous_backer: "Cefnogwr dienw"
         anonymous_description: "Wedi penderfynu aros yn anhysbys"
-        no_reward: "Nid yw'r cefnogwr yma wedi dewis anrheg"
+        no_reward: "Nid yw'r cefnogwr yma wedi dewis anrheg diolch"
       review:
         error: "Wps. Roedd gwall wrth gofrestru dy cefnogiad. Plis tria eto."
       show:
-        error: "Wps. Alli di ond cael mynediad at y dudalen hon ar ôl cefnogi project."
-        moip_message: "Mae dy drosglwyddiad wedi ei 'Awdurdodi' a dy gôd Moip yw “%{code}″.<br>Os oes gen ti unrhyw gwestiwn am y trafodiad ariannol hwn, cysyllt gyda Moip yn uniongyrchol."
-        header_subtitle: "Hebddot ti efallai na fyddai gan y project hwn obaith! Croeso i'r tîm!"
+        error: "Wps. Alli di ond cael mynediad at y dudalen hon ar ôl cefnogi prosiect."
+        moip_message: "Mae dy drosglwyddiad wedi ei 'Awdurdodi' a dy gôd PayPal yw “%{code}″.<br>Os oes gen ti unrhyw gwestiwn am y trafodiad ariannol hwn, cysyllt gyda Moip yn uniongyrchol."
+        header_subtitle: "Hebddot ti efallai na fyddai gan y prosiect hwn obaith! Croeso i'r tîm!"
         header_title: "Diolch! :D"
         text_subtitle: "Dweda wrth bawb beth wyt ti newydd wneud"
-        recommended_projects: "Efallai y gwnei di hoffi'r projectau eraill yma:"
+        recommended_projects: "Efallai y gwnei di hoffi'r prosiectau eraill yma:"
         text_title_html: "Rwyt ti nawr yn rhan o'r grŵp sy'n ceisio'u gorau i wireddu %{link}."
         title: "Diolch yn fawr"
       checkout:
         no_credits: "Does gen ti ddim digon o gredydau i gefnogi'r prosiect yma."
         success: "Roedd dy gefnogiad yn llwyddianus. Diolch yn fawr!"
       new:
-        cannot_back: "Nid oes modd cefnogi'r project hwn nawr. Plsi tria brojectau eraill."
+        cannot_back: "Nid oes modd cefnogi'r prosiect hwn nawr. Plis tria brosiectau eraill."
         header:
-          subtitle: "Rwyt ti gam neu ddwy i ffwrdd o wneud gwahaniaeth mawr a dod yn rhan o'r project yma."
+          subtitle: "Rwyt ti gam neu ddwy i ffwrdd o wneud gwahaniaeth mawr a dod yn rhan o'r prosiect yma."
           title: "O ie!"
-        no_reward: "Diolch. Dwi jest eisiau cefnogi'r project."
+        no_reward: "Diolch. Dwi jest eisiau cefnogi'r prosiect."
         submit: "Adolygu a symud mlaen i dalu"
         title: "Cefnogi %{name}"
       edit:
         brazil_address_title: 'Llenwa pan mae dy gefnogiad yn y DU'
         live_in_brazil: "Os ti'n byw yn y DU, yna rho dic yn y blwch"
-        credits_notice_html: "Bydd y cefnogiad hwn yn cael ei dalu gyda dy gredydau. Ar ôl cadarnhau bydd gen ti <strong>%{credits}</strong> mewn credydau ar gyfer cefnogi projectau eraill."
+        credits_notice_html: "Bydd y cefnogiad hwn yn cael ei dalu gyda dy gredydau. Ar ôl cadarnhau bydd gen ti <strong>%{credits}</strong> mewn credydau ar gyfer cefnogi prosiectau eraill."
         error: "Wps. Roedd yna wall wrth brosesu dy gefnogiad. Plis tria eto."
         international:
-          description: "Galli ddefnyddio PayPal i wneud taliadau rhyngwladol"
-          important_html: "<p>The use of PayPal is destined mostly for international payments. That's because you'll have only 60 days to receive an eventual refund without paying any fee.</p><p>In case you can make the regular payment through MoIP, we recommend you to do it.</p><p>But if that's not possible, don't worry: you'll always be able to receive your money back. Only, in case your refund is made more than 60 days after your payment, you'll have to pay PayPal's fee, which is 5,4% + R$0,60 per transaction.</p>"
+          description: "Galli ddefnyddio PayPal"
+          important_html: "<p>But if that's not possible, don't worry: you'll always be able to receive your money back. Only, in case your refund is made more than 60 days after your payment, you'll have to pay PayPal's fee, which is 5,4% + R$0,60 per transaction.</p>"
           submit: "Talu gyda PayPal"
           title: "Eisiau gwneud taliad?"
-        review_with_reward_html: "Byddi di'n rhoi cefnogaeth o <strong>%{value}</strong> a'n derbyn yr anrheg yma:"
-        review_without_reward_html: "Byddi di'n rhoi cefnogaeth o <strong>%{value}</strong> ond dwyt ti ddim eisiau unrhyw anrheg am hynny."
+        review_with_reward_html: "Byddi di'n rhoi cefnogaeth o <strong>%{value}</strong> a'n derbyn yr anrheg diolch yma:"
+        review_without_reward_html: "Byddi di'n rhoi cefnogaeth o <strong>%{value}</strong> ond dwyt ti ddim eisiau unrhyw anrheg diolch am hynny."
         submit:
           credits: "Cadarnhau"
           moip: "Talu gyda MoIP"
-        subtitle: "Hwn yw'r cam olaf er mwyn cyfrannu at wireddu'r project yma."
+        subtitle: "Hwn yw'r cam olaf er mwyn cyfrannu at wireddu'r prosiect yma."
         title: "Llenwi ac adolygu dy ddata"
         choose_payment: "Sut wyt ti eisiau talu?"
         choose_payment_subtitle: "Dewis un o'r dulliau talu isod"
@@ -456,26 +458,26 @@ cy:
         you_are_about_html: "Rwyt ti ar fin dod yn rhan o grŵp sy'n ceisio'u gorau i wireddu %{link}."
         pay_with: "Talu Gyda"
     create:
-      success: "Rwyt ti wedi llwyddo i greu project! Byddwn yn cysylltu'n fuan. Diolch o galon!"
+      success: "Rwyt ti wedi llwyddo i greu prosiect! Byddwn yn cysylltu'n fuan. Diolch o galon!"
     update:
       success: "Wedi diweddaru"
     form:
-      permalink_hint: 'Symleiddia URL dy broject. Cofia bod angen i gefnogwyr ei gofio er mwyn gallu rhannu dy broject.'
-      add_reward: "Ychwanegu anrheg"
-      important_html: "Noder y bydd Heliwmyn codi 9% os yw dy broject yn llwyddianus. Ychwanega hwn at gyllideb dy broject er mwyn gweithredu dy broject heb unrhyw broblemau."
+      permalink_hint: 'Symleiddia URL dy brosiect. Cofia bod angen i gefnogwyr ei gofio er mwyn gallu rhannu dy brosiect.'
+      add_reward: "Ychwanegu anrheg diolch"
+      important_html: "Noder y bydd Heliwmyn codi 9% os yw dy brosiect yn llwyddianus. Ychwanega hwn at gyllideb dy brosiect er mwyn gweithredu dy brosiect heb unrhyw broblemau."
       project_warning:
-        content_html: "Eisiau i dy broject gael ei ddewis? Paid anghofio darllen %{link}."
+        content_html: "Eisiau i dy brosiect gael ei ddewis? Paid anghofio darllen %{link}."
         help_link: "ein canllawiau"
-      rewards_description: "Rydyn ni'n credu taw'r ffordd orau o ysbrydoli pobl i gefnogi project yw dry gynnig anrhegion gwych a chreadigol. Mae pawb yn hoffi perks , pethau unigryw neu gyfyngedig, neu brofiadau gwefreiddiol. Treulia ychydig amser yn dyfeisio anrhegion creadigol fydd yn cynnau ddiddordeb pobl."
-      rewards_title: Anrhegion
+      rewards_description: "Rydyn ni'n credu taw'r ffordd orau o ysbrydoli pobl i gefnogi prosiect yw dry gynnig anrhegion diolch gwych a chreadigol. Mae pawb yn hoffi perks, pethau unigryw neu gyfyngedig, neu brofiadau gwefreiddiol. Treulia ychydig amser yn dyfeisio anrhegion diolch creadigol fydd yn cynnau ddiddordeb pobl."
+      rewards_title: Anrhegion diolch
       submit: "Cadw drafft"
     index_header:
-      subtitle: "Cydweithia gyda'r gymuned i ariannu projectau a dod yn rhan o rhywbeth mwy! Bydd yn rhan o'r stori hon!"
-      subtitle_html: "Cydweithia gyda'r gymuned i ariannu projectau a dod yn rhan o rhywbeth mwy!<br>Bydd yn rhan o'r stori hon!"
-      title: "Gwiredda'r projectau ti'n credu ynddyn nhw"
+      subtitle: "Cydweithia gyda'r gymuned i ariannu prosiectau a dod yn rhan o rhywbeth mwy! Bydd yn rhan o'r stori hon!"
+      subtitle_html: "Cydweithia gyda'r gymuned i ariannu prosiectau a dod yn rhan o rhywbeth mwy!<br>Bydd yn rhan o'r stori hon!"
+      title: "Gwiredda'r prosiectau ti'n credu ynddyn nhw"
     recommended_header:
       suggest_for_you: "wedi ei awgrymu"
-      highlight_project: "project enghreifftiol"
+      highlight_project: "prosiect enghreifftiol"
       guidelines: "Sut mae'n Gweithio"
       guidelines_subtitle: "Dod i nabod Heliwm"
     pending:
@@ -484,14 +486,14 @@ cy:
       home_page: "Tudalen gartref?"
       id: Id
       name: Enw
-      no_projects: "Heb ddod o hyd i brojectau."
+      no_projects: "Heb ddod o hyd i brosiectau."
       order: Trefn
-      project: Project
+      project: Prosiect
       slug: Slyg
       recommended: "Wedi argymell?"
       rejected: "Wedi gwrthod?"
       submit: Chwilio
-      title: "Rheoli project"
+      title: "Rheoli prosiect"
       user: Defnyddiwr
       visible: "Gweladwy?"
     pending_backers:
@@ -501,10 +503,10 @@ cy:
       id: Id
       key: Allwedd
       no_backers: "Heb ddod o hyd i gefnogwyr."
-      project: Project
+      project: Prosiect
       refunded: "Ad-dalwyd?"
       requested_refund: "Ad-daliad wedi ei hawlio?"
-      reward: Anrheg
+      reward: Anrheg diolch
       submit: Chwilio
       title: "Rheolaeth cefnogwyr"
       total_backed: cefnogwyd
@@ -517,46 +519,46 @@ cy:
       backed: cefnogwyd
       reached: "wedi llwyddo"
     project_backers:
-      empty: "Nobody backed this project so far. How about being the first one?"
+      empty: "Does yna neb wedi cefnogi'r prosiect hwn eto. Be am fod y cyntaf?"
       confirmed: "Wedi cadarnhau"
       pending: "Aros am gadarnhad"
     project_header:
-      subtitle_html: "Project gan %{link}"
-      without_city: "Project mewn"
-      with_city: "Project mewn %{category_name}, yn %{city}, gan %{author}"
+      subtitle_html: "Prosiect gan %{link}"
+      without_city: "Prosiect mewn"
+      with_city: "Prosiect mewn %{category_name}, yn %{city}, gan %{author}"
     project_updates:
-      empty: "This project didn't have updates yet. But wait and see =D"
+      empty: "This prosiect didn't have updates yet. But wait and see =D"
       submit: "Anfon diweddariad"
       comment: "Testun y diweddariad"
       exclusive: "Gweladwy i gefnogwyr yn unig"
       title: "Teitl y diweddariad"
       destroy: "Tynnu'r diweddariad"
       destroy_confirmation: "Wyt ti eisiau tynnu'r diweddariad?"
-      warning: 'Remembering that every new post goes directly to the email of his supporters. Therefore, review your text well before sending it.'
+      warning: 'Mae pob cofnod newydd yn mynd yn syth at ebost cefnogwyr, felly cymer ofal ac adolyga'r testun cyn ei anfon.'
     rewards:
       reward_title: "Am %{minimum} neu fwy"
       reward_deliver_time: "Amcan anfon: %{prevision}"
       backs_to_confirm:
-        one:  "1 backer in time to confirm."
-        other: "%{count} backers in time to confirm."
+        one:  "1 cefnogwr mewn amser i gadarnhau."
+        other: "%{count} cefnogwr mewn amser i gadarnhau."
       title: "Cefnoga a derbyn..."
     send_mail:
-      success: "Your project was successfully sent! We'll soon contact you. Thanks a lot!"
+      success: "Anfonwyd eich prosiect yn llwyddiannus! Byddwn yn cysylltu'n fuan. Diolch yn fawr!"
     show:
-      rejected: "This project does not fit our <a href='https://docs.google.com/document/d/1Heh9LlvoSoD0lUfbmV5WlISJ3nqmGpEQiw15TBuCn-0/edit' target='_blank'>selection criteria.</a>"
-      waiting: "This project is waiting for approval and soon we'll know if it will go online on Heliwm ;)"
-      waiting_owner: "To edit the project info, click on 'Edit project' tab. The rewards you can edit on reward column."
+      rejected: "Nid yw'r prosiect hwn yn cyfateb â'n <a href='http://heliwm.com/faq' target='_blank'>meini prawf</a> ar gyfer cynnwys ar y wefan"
+      waiting: "Mae'r prosiect hwn hwn yn aros i gael ei gymeradwyo a byddwn yn gwybod yn fuan os caiff fynd yn fyw ar Heliwm."
+      waiting_owner: "I olygu gwybodaeth y prosiect, clicia ar y tab 'Golygu prosiect'. Galli di olygu'r anghregion diolch yn y golofn anrhegion."
       about_title: "Am y project"
-      no_rewards_warning_title: "Creu dy anrhegion yma"
+      no_rewards_warning_title: "Creu dy anrhegion diolch yma"
       no_rewards_warning: "Paid mynd dros ben llestri! Meddylia am sut wyt ti am anfon y rhain a chynnwys y costau hynny yn dy gyllideb. Mae pobl yn ymddiried ynddo ti, a alli di ddim chwarae o gwmpas gyda hynny!"
       reports:
-        no_backs: "This project don't have any back yet."
-        link_reports: "Download report of "
-        all_backers: "all backers"
-        all_backers_without_reward: "all backers that don't select any reward"
-        link_reward: "Download the report of backers that selected the reward"
+        no_backs: "Does yna neb yn cefnogi'r prosiect eto."
+        link_reports: "Lawrlwytha adroddiad o "
+        all_backers: "bob cefnogwr"
+        all_backers_without_reward: "bob cefnogwr sydd heb ddewis cael anrheg diolch"
+        link_reward: "Lawrlwytha'r cefnogwyr sydd wedi dewis derbyn anrheg diolch"
       menu:
-        about: Am y Project
+        about: Am y Prosiect
         backers: Cefnogwyr
         comments: Sylwadau
         updates: Diweddariadau
@@ -565,61 +567,62 @@ cy:
         add_reward: 'Ychwanegu Anrhegion'
       share:
         embed: mewnosod
-        embed_title: "Mewnosod y project hwn ar dy wefan"
+        embed_title: "Mewnosod y prosiect hwn ar dy wefan"
         link: Dolen
         link_title: "Rhannu'r ddolen"
-        take_a_look: "Edrych ar y project yma"
-        title: "Bydd yn rhan ohono a rhannu'r project"
+        take_a_look: "Edrych ar y prosiect yma"
+        title: "Bydd yn rhan ohono a rhannu'r prosiect"
     new:
-      legend_html: "After filling in the form below, you will receive a project page in Draft mode. In this draft you will add the rewards for your backers. You may also share the page with your friends to collect feedback and sharpen your project even more.<br><br>The information filled in below is not definitive, but remember that the more consistent you are in your project submission, the faster it will go on air.<br><br><b>Very Important:</b> <i>Catharsis is cured platform, which means that our board will evaluate the focus, the feasibility and consistency of your project during the Draft. If we understand that your project does not comply with our <a href='https://docs.google.com/a/Heliwm.me/document/d/1wLDS2lphQ6monovg9rEaTIDcxBD3FRZV9dfGKmajyj8/edit' target='_blank' >selection criteria</a>, it may be refused by the team of curators.</i>"
-      permalink_important: 'Try not to use underline, hyphen etc.'
-      permalink_hint: 'Go simple. Your backers should be able to remember the URL to your project ;)'
-      name_important: "Do not exceed  50 characters"
-      online_days_important: "60 days is the maximum"
-      about_important: "Don't make it too long! Indicate links so people can know more about your work"
-      important_html: 'Keep in mind the 13% fee charged by Heliwm in case you reach your financial goal. Just divide your final budget by 0.87 to find the discounted amount.'
-      send_project: "I want to submit my project."
-      video_important: "The video must be hosted by Vimeo or Youtube. Paste here the URL!"
-      more_links_important: "It's very important to use social medias to spread the word about your project and engage your network into making it a success"
-      first_backers_important: "These people are fundamental to the success of your project."
-      how_know_important: "Yay! We reached  the final question."
-      headline_important: "It's a summary of  your project . 140 characters tops!:D"
-      tags_important: "Check other projects in your category  <a href=\"%{href}\" target=\"_blank\">here!</a>!."
-      subtitle: "The time to make it happen is now! We really want to know what you're up to..."
-      title: "Submit your project"
-      about: "Describe your project and how much do you need"
-      category: "Project category"
-      how_much_you_need: "How much do you want to raise?"
-      about_hint: "Tell us a little about what you want to do, how much you need and what for. Be brief and punctual, but don't forget to give the readers something that moves them. After all, it's your creation and they need to see your passion taking place!"
-      contact: "Leave us your email address so we can contact you"
-      links: "Where can we find more about you and your project?"
-      links_hint: "Leave us as many links as you have, so we can get to know your work and your project better. Doesn't have to be something formal or fancy, just a few useful links."
-      video: "Your project already have a video?"
-      video_hint: "A Vimeo / Youtube link"
-      twitter: "Have twitter account?"
-      facebook: "Have facebook account?"
-      blog: "Have a blog about the project?"
-      know_us_via: "How did you meet Heliwm?"
-      how_works: "How to mobilize backers to raise $ needed for enforcement?"
+      legend_html: "
+Ar ôl llenwi'r ffurflen isod byddi di'n derbyn tudalen prosiect ar ffurf drafft. Yn y drafft hwn galli di ychwanegu anrhegion diolch ar gyfer dy gefnogwyr fel diolch am gyfrannu arian. Galli hefyd rannu'r dudalen gyda dy ffrindiau er mwyn cael adborth a hogi dy brosiect i fod hyd yn oed yn well.<br><br>Nid yw'r wybodaeth isod yn derfynol, ond cofia, y mwya cyson yw'r wybododaeth yn dy gais i roi dy brosiect ar Heliwm y cyflyma y bydd yn mynd yn fyw.<br><br><b<Pwysig:</b> Mae Heliwm yn lwyfan ariannu torfol wedi ei guradu, felly mae hyn yn golygu y byddwn yn asesu ffocws, potensial a chysondeb dy brosiect yn ystod y Drafft. Os nad ydi'r prosiect yn cyfateb gyda'r <a href='https://heliwm.com/faq' target='_blank' >meini prawf</a>, yna gall gael ei wrthod.</i>"
+      permalink_important: 'Ceisia beidio defnyddio tanlinelliad, cysylltnod neu heiffen ayyb.'
+      permalink_hint: "Cadwa fo'n syml. Dylai cefnogwyr allu cofio URL y prosiect"
+      name_important: "Paid mynd dros 50 cymeriad"
+      online_days_important: "60 diwrnod yw'r uchafswm"
+      about_important: "Paid a'i wneud yn rhy hir! "
+      important_html: 'Cadwch mewn cof y ffi o 7% a godir gan Heliwm wrth gyllidebu. Rhannwch eich cyllideb derfynol gyda 0.93 er mwyn cael eich ffigwr terfynol.'
+      send_project: "Dwi eisiau anfon fy mhrosiect."
+      video_important: "Rhaid i'r fideo gael ei lwytho i Vimeo neu Youtube. Gludwch yr URL yma!"
+      more_links_important: "Mae'n defnyddio cyfryngau cymdeithasol yn hollbwysig o ran llwyddiant prosiectau er mwyn rhannu'r newyddion am eich prosiect a chreu rhwydwaith o gefngogwyr o gwmpas dy brosiect."
+      first_backers_important: "Mae'r bobl hyn yn greiddiol i lwyddiant dy brosiect."
+      how_know_important: "Hwre! Y cwestiwn olaf!"
+      headline_important: "Crynodeb byr o dy brosiect. Dim mwy na 140 cymeriad!"
+      tags_important: "Edrych ar brosiectau eraill yn yr un categori <a href=\"%{href}\" target=\"_blank\">yma!</a>."
+      subtitle: "Reit ta! Dyma'r amser i godi dy syniad oddi ar y ddaear! Dwed wrthyn ni am dy brosiect…"
+      title: "Anfon dy brosiect"
+      about: "Disgrifia dy brosiect a faint wyt ti ei angen"
+      category: "Categori prosiect"
+      how_much_you_need: "Faint o arian wyt ti eisiau ei godi?"
+      about_hint: "Dwed ychydig wrthyn ni am beth wyt ti eisiau ei wneud. Cadwa fo'n fyr, ond cofia hefyd bod darllenwyr yn hoffi bachyn a rhywbeth sy'n apelio atyn nhw'n emosiynol. Wedi'r cyfan, dy greadigaeth di sydd yma ac mae angen i bobl weld yr awch yna i'w wireddu'n dod trwyddo!"
+      contact: "Gad dy gyfeiriad ebost fel y gallwn ni gysylltu â thi"
+      links: "Lle allwn ni weld mwy amdanat ti a dy brosiect?"
+      links_hint: "Gad gymaint o ddolenni ag y mynni fel y gallwn ni ddod i adnabod a deall dy waith a dy brosiect yn well. Does dim rhaid iddo fod yn ffurfiol na dim, jest chydig o ddolenni defnyddiol!"
+      video: "Oes gan dy brosiect fideo yn barod?"
+      video_hint: "Dolen i fideo ar Vimeo / Youtube"
+      twitter: "Cyfrif Twitter?"
+      facebook: "Cyfrif Facebook?"
+      blog: "Oes blog gan y prosiect?"
+      know_us_via: "Sut glywes ti am Heliwm?"
+      how_works: "Sut i gyffroi dy gefnogwyr er mwyn codi £ ar gyfer dy brosiect?"
       project_warning:
-        content_html: "Want to have your project selected? Don't forget to read %{link}."
-        help_link: "our guide"
-      rewards: "What rewards do you want to offer?"
-      rewards_hint: "We believe that the best way to inspire people to back a project is offering excellent – and creative! – rewards. Everybody loves limited editions, unique things and joyful experiences (parties, candies, balloon travelling!). Spend some time devising creative rewards and people will be interested."
-      submit: "Save draft"
-      subtitle: "The time to make it happen is now! We really want to know what you're up to..."
-      title: "Submit your project"
+        content_html: "Wyt ti eisiau i dy brosiect gael ymgyrch ar Heliwm? Paid anghofio darllen %{link}."
+        help_link: "ein canllaw"
+      rewards: "Pa anrhegion fyddwch chi'n eu cynnig er mwyn diolch i gefnogwyr am roi arian?"
+      rewards_hint: "Rydyn ni'n credu taw'r ffordd orau i ysbrydoli pobl i gefnogi prosiect yw cynnig anrhegion diolch gwych a chreadigol! Mae pawb yn hoffi cael rhywbeth sydd yn nifer cyfyngedig, eitemau unigryw a phrofiadau gwych (partion, losin, teithiau balŵn!). Treulia chydig o amser yn meddwl o ddifrif am beth fyddai'n atyniadol fel anrhegion diolch i bobl sydd yn cefnogi a bydd mwy o bobl â diddordeb."
+      submit: "Cadw drafft"
+      subtitle: "Dyma'r amser! Gwiredda dy syniadau! Dwed wrthyn ni beth ti am wneud…"
+      title: "Anfon dy brosiect"
     twitter:
-      take_a_look: "Check out the project %{name} on @Heliwm"
+      take_a_look: "Edrycha ar y prosiect %{name} ar @Heliwm"
     video_embed:
-      a_project_by_html: "A project by %{link} on"
+      a_project_by_html: "Prosiect gan %{link} ar"
   projects_mailer:
     start_project_email:
-      subject: "Project sent by %{name}"
-      subject_html: "Project sent by %{link}"
+      subject: "Anfonwyd y prosiect gan %{name}"
+      subject_html: "Anfonwyd y prosiect gan %{link}"
 
   channels:
-    subscribed: "+ %{count} followers"
+    subscribed: "+ %{count} dilynwr"
     header:
       submit: "Send project"
       how_works: "How works"
@@ -631,7 +634,7 @@ cy:
       signup: "Sign up"
       signin: "Sign in"
     footer:
-      terms: "Telerau"
+      terms: "Telerau Defnydd"
       privacy_policy: "Preifatrwydd"
       how_works: "Sut mae'n gweithio"
       contact: "Cyswllt"
@@ -642,12 +645,12 @@ cy:
         download: "Lawrlwytho rhestr"
       management:
         title: "Rheoli"
-        total: "projectau"
+        total: "prosiectau"
       filter:
         title: "Hidlo"
         by_id: "Yn ôl ID"
         between_created_at: "Crewyd Rhwng"
-        pg_search: "Project"
+        pg_search: "Prosiect"
         with_state: "Gyda sir"
         user_name_contains: "Defnyddiwr"
         order_table: "Order table"
@@ -700,62 +703,62 @@ cy:
       introduction: "Mae Heliwm yn ffordd wych o ymwneud gyda a chegfnogi achos yr ydych chi'n credu ynddo"
       legend_html: "Rydyn ni'n credu bod bod yn rhan o brosiect yn deimlad gwych ac yn beth da yn gymdeithasol hefyd."
       title_one: "Edrych ar y Prosiect"
-      step_one: "Y cam cyntaf yw deall y prosiect. Gwyliwch y fidero, darllenwch y disgrifiad, dilynwch y dolenni. Os ydych chi'n sicr eich bod eisiau i'r prosiect hwn fynd tu hwnt i gynllun ar ddarn o bapur, cymrwch gam ymlaen!"
+      step_one: "Y cam cyntaf yw deall y prosiect. Gwyliwch y fideo, darllenwch y disgrifiad, dilynwch y dolenni. Os ydych chi'n sicr eich bod eisiau i'r prosiect hwn fynd tu hwnt i gynllun ar ddarn o bapur, cymrwch gam ymlaen!"
       title_two: "Penderfynwch faint ydych chi eisiau ei roi i'w gefnogi"
-      step_two: "Ffordd dda o benderfynu hyn yw i edrych ar yr anrhegion sy'n cael eu cynnig mewn cyfnewid am eich cefnogaeth. Hynny a'ch cyfrif banc."
+      step_two: "Ffordd dda o benderfynu hyn yw i edrych ar yr anrhegion diolch sy'n cael eu cynnig mewn cyfnewid am eich cefnogaeth. Hynny a'ch cyfrif banc."
       title_three: "Gorffen eich cefnogaeth"
       step_three: "Llenwch yr wybodaeth a'i adolygu. Yna defnyddiwch PayPal i dalu."
       title_four: "Lledwch y gair am y prosiect!"
       step_four: "Nawr rydych chi yn yr un cwch a chreawdwr y prosiect. Lledwch y gair ar draws eich rhwydweithiau arlein ac oddi ar lein a chadwch lygaid ar y diweddariadau."
       title_requirements: "Cofiwch: gyda Heliwm cewch bopeth neu ddim"
       successful_title: "Os yw'r prosiect yn mynd dros ei darged ariannol ..."
-      successful: "The project is considered successful! The creator gets the money and contacts all supporters."
-      not_success_title: "If the project does not meet the target ..."
-      not_success: "You get the full amount of support in the form of loans (to support another project). If that does not please you, you can request your money back, according to the rules of the <a href=\"%{terms}\" target=\"_blank\">terms of use</a>."
-      title_not_funded: "If the project does not achieve the goal, how do I use my credits?"
-      not_funded: "You will receive credits  on Heliwm. The moment you choose to back another project, on the screen to select the reward, there will have a field to use your credits."
-      more_questions: "I'm dying to support a project, is there anything else I need to know?"
-      title_backer: "How do I know that my support was successful?"
-      backer: "You will receive a confirmation email. And stay tuned on the BACKERS tab at the page of the project you backed."
-      title_rewards: "If the project is funded, how do I get my rewards?"
-      rewards: "It is the duty of the project creator to contact you and arrange how to deliver  the chosen reward. If not, you need to send an email to him/her to claim it! If you get no answer … contact us so we can give them an earful = D"
-      title_credits: "If the project does not achieve the goal, how do I use my credits?"
-      credits: "You will receive credits  on Heliwm. The moment you choose to back another project, on the screen to select the reward, there will have a field to use your credits."
-      title_money: "What if I don't want to use the credits?"
-      money: "No problem! You just need to enter in your profile (My credits) and request a chargeback. If you paid with debit or billet, you’ll need to open an account at MOIP. If you used a credit card the value will be back on your next bill."
-      other_backers: "I WANT MORE! CAN I HELP  IN OTHER WAYS?"
-      intro: "Get to know different ways to help projects you believe in"
-      other_one: "Bring two other friends to back with the same amount you did"
-      other_two: "Spread the word to every one. Tell them how great is the project you backed on Heliwm."
-      other_three: "Do you have a friend who’s a Journalist? Try to have him/her to post something about it on his/her blog."
-      other_four: "Make a backing video to broadcast your believe in the project .Like these guys did:https://vimeo.com/46233018"
-      other_five: "Send an e-mail to the project creator asking how can  you help even more."
-      submit: "VERY COOL!"
-      send_project: "I want to submit my project "
-      explore_curious: "I’M ON BOARD!"
-      explore_projects: "I want to back a project"
+      successful: "Mae'r prosiect yn lwyddiant! Mae cynhyrchydd y prosiect yn derbyn yr arian a'n cysylltu â'r cefnogwyr i gyd."
+      not_success_title: "Os nad yw'r prosiect yn cyrraedd y targed ..."
+      not_success: "Cewch y swm llawn yn ôl fel credydau er mwyn cefnogi prosiectau eraill. Neu fel arall gallwch chi gael ad-daliad o'r credydau yn ôl y rheolau yn y <a href=\"%{terms}\" target=\"_blank\">telerau defnydd</a>."
+      title_not_funded: "Os nad yw'r prosiect yn cyrraedd y targed, sut ydw i'n defnyddio fy nghredydau?"
+      not_funded: "Byddwch yn derbyn credydau ar Heliwm. Y funud byddwch yn penderfynu cefnogi prosiect arall fe welwch  faes ar y sgrin dewis anrheg er mwyn defnyddio'ch credydau."
+      more_questions: "Dwi'n torri mol isie cefnogi prosiect, beth arall sydd angen fi wybod?"
+      title_backer: "Sut ydw i'n gwybod y buodd fy nghefnogaeth yn llwyddiannus"
+      backer: "Byddwch yn derbyn ebost cadarnhad. A gwnewch yn siwr eich bod yn edrych ar y tab cefnogwyr ar dudalen y prosiect rydych chi wedi'i ariannu."
+      rewards: "Cyfrifoldeb cynhyrchydd y prosiect yw cysylltu â chi er mwyn trefnu sut i anfon yr anhreg diolch. Os nad ydyny, yna anfonwch ebost atyn nhw i'w hawlio! Os na chewch ateb ... cysylltwch â nifel y gallwn roi llond pen iddyn nhw!!"
+      title_credits: "Os nad yw'r prosiect yn cyrraedd y targed, sut ydw i'n defnyddio fy nghredydau?"
+      credits: "Byddwch yn derbyn credydau ar Heliwm. Y funud byddwch yn dewis cefnogi prosiect arall, bydd modd defnyddio'r credydau ar y sgrin dewis anrheg."
+      title_money: "Beth os nad ydw i eisiau defnyddio'r credydau?"
+      money: "Dim problem! Yr unig beth sydd raid gwneud yw mynd i'ch proffil (Fy nghredydau) a hawlio ad-daliad. Bydd yn ad-dalu trwy eich cyfrif PayPal"
+      other_backers: "Dwi eisiau mwy! Sut alla i helpu mewn ffyrdd erail?"
+      intro: "Ffyrff gwahanol i helpu prosiectau rydych chi eisiau eu gweld yn digwydd"
+      other_one: "Dewch â dau ffrind arall i gefnogi'r un swm ag y gwnaethoch chi"
+      other_two: "Lledwch y gair i BAWB. Dwedwch wrthyn nhw pa mor wych yw'r prosiect rydych chi wedi ei gefnogi ar Heliwm."
+      other_three: "Oes gennych chi ffrind sy'n newyddiadurwr? Triwch gael nhw i bostio rhywbeth amdano ar Twitter neu ar eu blog!"
+      other_four: "Gwnewch fideo cefnogaeth i gyfathrebu eich crediniaeth yng ngwychder y prosiect! Gall y prosiect ddefnyddio hwnnw wedyn yn eu hymgyrch."
+      other_five: "Anfonwch ebost at gynhyrchydd y prosiect i holi sut y gallwch helpu hyd yn oed yn fwy."
+      submit: "OSSYM!"
+      send_project: "Dwi eisiau anfon fy mhrosiect "
+      explore_curious: "DWI MEWN!"
+      explore_projects: "Dwi eisiau cefnogi prosiect"
     guidelines:
-      title: "How it works"
-      subtitle: "Get to know Heliwm better."
-      introduction_html: "Heliwm is a space of exchange among individuals who together <br >enable the realization of creative projects."
-      legend_html: "We believe that connecting people that share value with respect to a cause; an idea; a project,  is one of the best ways to make them come true. <br><br> Be very welcome! This is your space as much as it is ours, after all, catharsis happens daily from the meeting of people in search of new ways to give life to more initiatives from society itself. We understand this to be an alternative to government resources, the sponsoring companies and bank loans = D"
-      submit: "SUBMITTING A PROJECT"
-      send_project: "Understand how to submit your project"
-      explore_curious: "BACKING A PROJECT"
-      explore_projects: "Understand how to back a project"
+      title: "Sut ma'n gweithio"
+      subtitle: "Dod i nabod Heliwm yn well."
+      introduction_html: "Mae Heliwm yn ofod ar gyfer cyfnewid rhwng unigolion, sydd, gyda'u gilydd yn gwireddu prosiectau creadigol a gwych."
+      legend_html: "
+Rydyn ni'n credu bod cysylltu pobl sy'n rhannu'r un ymroddiad at achos, syniad neu brosiect, yn un o'r ffyrdd gorau i'w gwireddu.<br><br>Gwnewch eich hun yn gartrefol ar Heliwm. Mae hwn yn ofod sy'n perthyn i chi gymaint ag y mae i ni, a gyda'n gilydd gallwn ni roi gwynt yn hwyliau llawer o brosiectau. Ers tro, mae galw wedi bod am ffyrdd amgen o gyllido pethau yng Nghymru heb fynd ar ofyn grantiau, nawdd cwmniau a benthyciadau. Wel, dyma ffordd amgen."
+      submit: "CYFLWYNO PROSIECT"
+      send_project: "Deall sut i gyflwyno prosiect"
+      explore_curious: "CEFNOGI PROSIECT"
+      explore_projects: "Deall sut i gefnogi prosiect"
     about:
-      title: "Who We Are?"
-      subtitle: "Meet the lovely gang that makes this whole thing happen <3"
-      introduction: "Who are they? What do they feed of? How are they networked? You’ll see all of it now on “Who are we?”."
-      name_one: "Luis Otávio Ribeiro"
-      title_one: "Fisher of Killer Projects"
-      text_one: "Uberabense. Laziness enthusiast , is addicted to maintaining creative structures running and promoting encounters between people."
-      name_two: "Diego Reeberg"
-      title_two: "Philosopher who lives in a Barrel"
-      text_two: "Apprentice of poet, musician, tango dancer and addict to Calvino and Saramago, likes to dig beautiful things and talented people in the dusty corners of the internet."
-      name_three: "Luciana Masini"
-      title_three: "Apprentice of Making it happen"
-      text_three: "Color and contrast enthusiast, poet and artist by nature, curious about culture, curator by accident."
+      title: "Pwy ydyn ni?"
+      subtitle: "Dyma pwy sy'n gwneud i'r olwynion droi yn Heliwm"
+      introduction: "Pwy ydyn nhw? Beth sy'n gyrru nhw? Lle ma nhw ar y we? Dyma bawb."
+      name_one: "Rhodri ap Dyfrig"
+      title_one: "Astronot Rhyngrwyd"
+      text_one: "."
+      name_two: "Mei Gwilym"
+      title_two: "[gwybodaeth]"
+      text_two: "[gwybodaeth]"
+      name_three: "Iestyn Lloyd"
+      title_three: "[gwybodaeth]"
+      text_three: "[gwybodaeth]"
       name_four: "Renato Garcia"
       title_four: "Heliwm’s Silvio Santos (a brasilian host and entrepreneur)"
       text_four: "Collectivist. Believes in collaboration one by one, with no authority,  for a fairer world. Football and skateboarding fanatic. All this accompanied by a good samba or nacinal rap soundtrack."
@@ -775,20 +778,20 @@ cy:
       title_nine: "Fireman"
       text_nine: "A fellow crazy about development who lives in Tonland"
     faq:
-      title: "Frequently asked questions"
+      title: "Cwestiwn ac Ateb"
     guidelines_start:
-      accept: "I have read and understand how Heliwm works."
-      explore_curious: "Just looking around!"
-      explore_projects: "I want to explore the projects."
-      submit: "Next step!"
-      send_project: "I want to submit my project."
-      subtitle: "Understand, step-by-step, how to finance your project through Heliwm."
-      title: "How Heliwm works?"
-      introduction: "Heliwm is a different - and collaborative - way to make your projects become reality."
-      legend_html: "Use this guide to decide if Heliwm is the right tool for the job."
-      title_one: "Submit your project"
-      step_one: "Projects are actions! And we receive them with open arms whether they are small, big, funny, serious, traditional, innovative... We love projects that require little money and have a big impact in their communities."
-      title_two: "Review"
+      accept: "Dwi weid darllen a deall sut mae Heliwm yn gweithio."
+      explore_curious: "Jest cael cip rownd y lle!"
+      explore_projects: "Dwi eisiau darganfod prosiectau."
+      submit: "Cam nesaf!"
+      send_project: "Dwi eisiau cyflwyno fy mhrosiect."
+      subtitle: "Dod i ddeall, gam-wrth-gam, sut i gyllido dy brosiect trwy Heliwm."
+      title: "Sut mae Heliwm yn gweithio?"
+      introduction: "Mae Heliwm yn ffordd wahanol - a chydweithredol - o wireddu dy brosiectau."
+      legend_html: "Defnyddia'r canllaw hwn er mwyn penderfynu os taw Heliwm yw'r teclyn gorau ar gyfer y job."
+      title_one: "Cyflwyno dy brosiect"
+      step_one: "Mae prosiectau yn ymgeisiau i WNEUD rhywbeth, a rydyn ni'n caru fo pan mae pobl eisiau gwneud yn lle dweud! Rydyn ni'n croesawu nhw os ydyn nhw'n fach neu fawr, doniol neu ddifrifol, traddodiadol neu arloesol. Rydyn ni'n caru prosiectau sydd ddim angen llawer o arian ond sydd yn cael effaith fawr ar eu cymunedau."
+      title_two: "Adolygu"
       step_two: "After we receive your project, it will be screened by our team of reviewers. The objective here is to give you tips in order to maximize the chances of your project becoming successful, as well as filtering NON-SENSE projects. Remember, we want your project to be successful as much as you do ;)"
       title_three: "Let's go live!?"
       step_three: "When your project is ready, it's time to go live and plan your campaign. During this period, you will need to engage as many people as possible to reach your goal."
