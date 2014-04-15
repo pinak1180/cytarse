@@ -50,7 +50,7 @@ cy:
     address_state: 'Sir'
     address_zip_code: 'Côd post'
     anonymous: 'Dienw'
-  edit_project: 'Golyga'r prosiect'
+  edit_project: "Golyga'r prosiect"
   facebook_locale: 'en_GB'
   or: neu
   no: "Nac ydw"
