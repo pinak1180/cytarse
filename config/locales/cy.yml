@@ -377,7 +377,7 @@ Roedd y prosiect rwyt ti wedi cefnogi wedi bod yn llwyddiant ar Heliwm ac wedi c
       unsuccessful:
         email_subject: "Ni ariannwyd y prosiect %{project_name} ar Heliwm."
         email_text: "
-Yn anffodus wnaeth y prosiect %{project_link} wnes ti gefnogi ar Heliwm ddim llwyddo i gyrraedd ei darged ariannol o fewn y cyfnod ymgyrch felly ni chafodd ei ariannu.<br><br>Felly, yn sgil hyn, mae gen ti <strong>%{value}</strong> mewn credydau ar gael i gefnogi prosiectau eraill. Galli di weld prosiectau %{project_category} eraill yn %{explore_category_link}.<br><br>Galli di hefyd ofyn am ad-daliad drwy glicio %{credits_link}. Cofia dy fod ti wedi cofrestru i ddefnyddio Heliwm gyda %{user_provider}. Os gei di broblemau gyda'r broses hon, plis paid oedi mewn anfon ebost at <a href="mail_to:post.heliwm@gmail.com" style="color: #008800;">post.heliwm@gmail.com</a> gyda'r pwnc "Ad-daliad - problem mewngofnodi".<br><br>Os am unrhyw reswm yr hoffet gysylltu â %{project_owner_name}, yna anfon ebost at %{project_owner_email}.<br><br>Os oes gen ti unrhyw broblem arall, yna plis edrych ar ein tudalen Cwestiwn ac Ateb, neu ebostia <a href="mail_to:post.heliwm@gmail.com" style="color: #008800;">post.heliwm@gmail.com</a>.<br>"
+Yn anffodus wnaeth y prosiect %{project_link} wnes ti gefnogi ar Heliwm ddim llwyddo i gyrraedd ei darged ariannol o fewn y cyfnod ymgyrch felly ni chafodd ei ariannu.<br><br>Felly, yn sgil hyn, mae gen ti <strong>%{value}</strong> mewn credydau ar gael i gefnogi prosiectau eraill. Galli di weld prosiectau %{project_category} eraill yn %{explore_category_link}.<br><br>Galli di hefyd ofyn am ad-daliad drwy glicio %{credits_link}. Cofia dy fod ti wedi cofrestru i ddefnyddio Heliwm gyda %{user_provider}. Os gei di broblemau gyda'r broses hon, plis paid oedi mewn anfon ebost at <a href=\"mail_to:post.heliwm@gmail.com\" style=\"color: #008800;\">post.heliwm@gmail.com</a> gyda'r pwnc \"Ad-daliad - problem mewngofnodi\".<br><br>Os am unrhyw reswm yr hoffet gysylltu â %{project_owner_name}, yna anfon ebost at %{project_owner_email}.<br><br>Os oes gen ti unrhyw broblem arall, yna plis edrych ar ein tudalen Cwestiwn ac Ateb, neu ebostia <a href=\"mail_to:post.heliwm@gmail.com\" style=\"color: #008800;\">post.heliwm@gmail.com</a>.<br>"
         notification_text: "Rwyt ti wedi derbyn %{value} mewn credydau er mwyn cefnogi prosiectau eraill, neu galli di hawlio ad-daliad %{link}."
         unsuccessful_text: "Doedd y prosiect %{link} wnes ti gefnogi ddim yn llwyddianus. Tro nesa gobeithio!"
     video_regex_validation: "dim ond URLau o fideos Vimeo a YouTube ellir eu defnyddio"
@@ -534,7 +534,7 @@ Yn anffodus wnaeth y prosiect %{project_link} wnes ti gefnogi ar Heliwm ddim llw
       title: "Teitl y diweddariad"
       destroy: "Tynnu'r diweddariad"
       destroy_confirmation: "Wyt ti eisiau tynnu'r diweddariad?"
-      warning: 'Mae pob cofnod newydd yn mynd yn syth at ebost cefnogwyr, felly cymer ofal ac adolyga'r testun cyn ei anfon.'
+      warning: "Mae pob cofnod newydd yn mynd yn syth at ebost cefnogwyr, felly cymer ofal ac adolyga'r testun cyn ei anfon."
     rewards:
       reward_title: "Am %{minimum} neu fwy"
       reward_deliver_time: "Amcan anfon: %{prevision}"
@@ -804,7 +804,7 @@ Os nad yw eich prosiect yn cyrraedd y targed cyn bod yterfyn amser yn cyrraedd y
       creative: "Creadigol a gyda therfyn prosiect pendant"
       collective: "Manteision o'r prosiect i'r gymuned ariannu"
       nonprofit: "Anrhegion diolch sydd ddim yn rhai ariannol"
-      donation: "Dim prosiectau elusennol neu "ariannu fy mywyd""
+      donation: "Dim prosiectau elusennol neu \"ariannu fy mywyd\""
       video: "Gwna fideo"
       more_questions: "Iawn, ond dweda fwy wrthai am Heliwm..."
       title_magic: "Ein fformiwla hud"
