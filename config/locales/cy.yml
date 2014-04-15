@@ -534,7 +534,7 @@ Yn anffodus wnaeth y prosiect %{project_link} wnes ti gefnogi ar Heliwm ddim llw
       title: "Teitl y diweddariad"
       destroy: "Tynnu'r diweddariad"
       destroy_confirmation: "Wyt ti eisiau tynnu'r diweddariad?"
-      warning: 'Mae pob cofnod newydd yn mynd yn syth at ebost cefnogwyr, felly cymer ofal ac adolyga'r testun cyn ei anfon.'
+      warning: "Mae pob cofnod newydd yn mynd yn syth at ebost cefnogwyr, felly cymer ofal ac adolyga'r testun cyn ei anfon."
     rewards:
       reward_title: "Am %{minimum} neu fwy"
       reward_deliver_time: "Amcan anfon: %{prevision}"
