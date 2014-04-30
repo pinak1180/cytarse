@@ -98,7 +98,7 @@ cy:
       blog: "Blog"
       contact: "Cysylltu"
       recommended: "Argymhellion"
-      near: "Agos i fi"
+      near: "Gerllaw"
       expiring: "Dod i ben"
       recents: "Diweddar"
       submit: "Dechrau dy brosiect"
@@ -121,7 +121,7 @@ cy:
       faq: "oes cwestiwn gen ti?"
       schedule: calendr
     placeholders:
-      email: "Rho dy ebost"
+      email: "Rho dy ebost yma"
     buttons:
       newsletter: Anfon
   sections:
@@ -524,10 +524,10 @@ Yn anffodus wnaeth y prosiect %{project_link} wnes ti gefnogi ar Heliwm ddim llw
       pending: "Aros am gadarnhad"
     project_header:
       subtitle_html: "Prosiect gan %{link}"
-      without_city: "Prosiect mewn"
-      with_city: "Prosiect mewn %{category_name}, yn %{city}, gan %{author}"
+      without_city: "Prosiect"
+      with_city: "Prosiect %{category_name}, yn %{city}, gan %{author}"
     project_updates:
-      empty: "This prosiect didn't have updates yet. But wait and see =D"
+      empty: "Nid oes gan y prosiect hwn ddiweddariadau eto. Ond efallai daw rhai'n fuan!"
       submit: "Anfon diweddariad"
       comment: "Testun y diweddariad"
       exclusive: "Gweladwy i gefnogwyr yn unig"

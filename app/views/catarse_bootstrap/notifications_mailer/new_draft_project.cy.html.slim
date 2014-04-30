@@ -2,26 +2,26 @@
 | Hey!
 br
 br
-| Mais um projeto foi criado no #{Configuration[:company_name]}!
-== " por #{link_to project.user.name, user_url(project.user)}"
+| Crewyd prosiect arall yn #{Configuration[:company_name]}!
+== " gan #{link_to project.user.name, user_url(project.user)}"
 br
-== "Email do realizador: #{mail_to project.user.email}"
-br
-br
-| Detalhes do projeto abaixo:
+== "Ebostia gynhyrchydd y prosiect: #{mail_to project.user.email}"
 br
 br
-b Nome:
+| Manylion y prosiect isod:
+br
+br
+b Enw:
 = " #{project.name}"
 br
-b Meta:
+b Targed:
 = " #{project.display_goal}"
 br
-b Lista de Links relacionados:
+b Rhestr dolenni perthnasol:
 br
 = simple_format(project.more_links)
 br
-b Primeiros apoiadores:
+b Cefnogwyr cyntaf:
 br
 = simple_format(project.first_backers)
 br
@@ -30,5 +30,5 @@ br
 = simple_format(project.how_know)
 br
 br
-= link_to 'Veja mais sobre o projeto', project_by_slug_url(permalink: project.permalink)
+= link_to 'Gweld mwy am y prosiect hwn', project_by_slug_url(permalink: project.permalink)
 
