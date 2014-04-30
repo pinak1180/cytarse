@@ -2,10 +2,10 @@
 |Helo, <strong>#{user.display_name}</strong> !
 br
 br
-|We spotted that you have £ #{user.credits} in credits at Catarse. What about backing another cool project right now?
+|Rydyn ni wedi sylwi bod gen ti £ #{user.credits} mewn credydau ar Heliwm. Beth am gefnogi prosiect arall efallai?
 br
 br
-|We have selected below some project suggestions specially for you:
+|Rydyn ni wedi nodi rhai awgrymiadau isod ar dy gyfer:
 br
 br
 -user.recommended_projects.limit(3).each do |project|
@@ -16,26 +16,25 @@ br
   br
 br
 br
-|Here goes step-by-step so you won’t have any troubles using your credits ;)
+|Dyma sut mae gwneud o gam-wrth-gam fel na chei di drafferth defnyddio dy gredydau!
 br
 br
-|1 - #{link_to('Choose the project you want to back;', explore_url)}
+|1 - #{link_to('Dewis y prosiect rwyt ti eisiau ei gefnogi;', explore_url)}
 br
-|2 - Click on the 'Back This Project' button;
+|2 - Clicia ar y botwm 'Cefnogi'r Prosiect hwn';
 br
-|3 -Tell us how much you want to pledge and make sure you check the box saying you want to use your credits for that..
+|3 -Dwed wrthym ni faint wyt ti eisiau ei roi a sicrhau dy fod yn rhoi tic yn y blwch sy'n dweud dy fod eisiau defnyddio dy gredydau i wneud hynny..
 br
-|4 - Click on Review and Proceed to Check Out;
+|4 - Clicia ar Adolygu a Pharhau i Dalu;
 br
-|5 -Done! Your pledge will be confirmed =)
-br
-br
-|If you rather ask for a refund, first logon to your Catarse account and then click #{link_to("here", "#{Configuration[:base_url]}/users/#{user.to_param}#credits")}.
-|#{link_to('This article', 'http://suporte.catarse.me/knowledgebase/articles/164746-regras-e-funcionamento-dos-reembolsos-estornos')} aboud refunds will solve most of  your doubts.
+|5 -Dyna ni! Caiff dy rodd ei gadarnhau :D
 br
 br
-|If you have any other doubts please get in touch with us through our support area: suporte.catarse.me.
+|Os oes well gen ti gael ad-daliad, yna mewngofnoda i dy gyfrif Heliwm a chlicia #{link_to("yma", "#{Configuration[:base_url]}/users/#{user.to_param}#credits")}. 
 br
 br
-|Best regards,
-|Catarse's team
+|Os oes unrhyw bryderon eraill gen ti yna cysyllt â ni ar post.heliwm@gmail.com .
+br
+br
+|Cofion,
+|Tîm Heliwm
