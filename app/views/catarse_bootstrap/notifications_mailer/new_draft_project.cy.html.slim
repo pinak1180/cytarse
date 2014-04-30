@@ -1,14 +1,14 @@
 - project = @notification.project
-| Helo,
+| Iawn!
 br
 br
-| Crewyd prosiect arall yn #{Configuration[:company_name]}!
-== " gan #{link_to project.user.name, user_url(project.user)}"
+| Mae prosiect arall wedi cael ei greu ar #{Configuration[:company_name]}!
+== " por #{link_to project.user.name, user_url(project.user)}"
 br
-== "Ebostia gynhyrchydd y prosiect: #{mail_to project.user.email}"
+== "Email y cynhyrchydd: #{mail_to project.user.email}"
 br
 br
-| Manylion y prosiect isod:
+| Manylion y prosiect:
 br
 br
 b Enw:
@@ -25,10 +25,10 @@ b Cefnogwyr cyntaf:
 br
 = simple_format(project.first_backers)
 br
-b Como conheceu o #{Configuration[:company_name].downcase}:
+b Sut glywson nhw am #{Configuration[:company_name].downcase}:
 br
 = simple_format(project.how_know)
 br
 br
-= link_to 'Gweld mwy am y prosiect hwn', project_by_slug_url(permalink: project.permalink)
+= link_to 'Gweld rhagor am y prosiect', project_by_slug_url(permalink: project.permalink)
 
