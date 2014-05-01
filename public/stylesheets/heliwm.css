@@ -552,7 +552,7 @@ div.project .box .follow_project:hover {
     float: left;
     margin-left: 10px;
     margin-right: 10px;
-    width: 280px
+    width: auto;
 }
 
 .project_land .project_infos .title, .small_project_land .project_infos .title {
@@ -580,7 +580,7 @@ div.project .box .follow_project:hover {
 }
 
 .project_land .project_infos h4 a:hover, .small_project_land .project_infos h4 a:hover {
-    color: #59af6d
+    color: #d4145a;
 }
 
 .project_land .project_infos .author, .small_project_land .project_infos .author {
@@ -596,23 +596,17 @@ div.project .box .follow_project:hover {
     width: 202px;
     height: 10px;
     overflow: hidden;
-    border: 1px #cccccc solid;
-    -webkit-border-radius: 5px;
-    -moz-border-radius: 5px;
-    -ms-border-radius: 5px;
-    -o-border-radius: 5px;
-    border-radius: 5px
+    height: 8px;
+border-top-right-radius: 4px;
+border-bottom-right-radius: 4px;
+border-top-left-radius: 0;
+border-bottom-left-radius: 0;
+background: #ccc;
 }
 
 .project_land .project_infos .status_bar .progress, .small_project_land .project_infos .status_bar .progress {
-    -webkit-border-radius: 4px;
-    -moz-border-radius: 4px;
-    -ms-border-radius: 4px;
-    -o-border-radius: 4px;
-    border-radius: 4px;
-    background-color: #64cb64;
+    background: #d4145a;
     height: 10px;
-    overflow: hidden
 }
 
 .project_land .project_infos .info_bar, .small_project_land .project_infos .info_bar {
@@ -623,7 +617,7 @@ div.project .box .follow_project:hover {
 }
 
 .project_land .project_infos ul, .small_project_land .project_infos ul {
-    padding-top: 10px;
+/*    padding-top: 10px; */
     display: block
 }
 
@@ -643,13 +637,15 @@ div.project .box .follow_project:hover {
     color: black;
     filter: progid: DXImageTransform.Microsoft.Alpha(Opacity=70);
     opacity: 0.7;
-    margin-bottom: 3px
+    margin-bottom: 3px;
+    line-height: 2em;
 }
 
 .project_land .project_infos ul li p, .small_project_land .project_infos ul li p {
     text-transform: uppercase;
     color: #838383;
-    font-size: 9px
+    font-size: 9px;
+    line-height: 1em;
 }
 
 .project_land .headline, .small_project_land .headline {
@@ -8026,12 +8022,18 @@ body #page_content .container .more-projects {
 	margin: 35px 0 0 0;
 	font-size: 13px;
 	font-weight: bold;
-	background: url("/assets/catarse_bootstrap/catarse-assets.png") no-repeat scroll 178px -232px transparent;
-	padding: 0px 20px 0 0;
+	padding: 0;
 	text-indent: -25px;
 	text-align: right;
 	width: 200px;
 	line-height: 1em;
+}
+
+body #page_content .container .more-projects:after {
+    content: "\279c";
+	font-size: 100%;
+	padding-left: 5px;
+	font-weight: normal;	
 }
 
 body #page_content .container .more-projects:hover {
@@ -8436,7 +8438,7 @@ body #logos .power a {
 }
 
 .footer {
-    background: #2e172b;
+    background: #303030;
     padding: 3em 0 1.8em
 }
 
@@ -8464,9 +8466,9 @@ body #logos .power a {
     font-weight: bold
 }
 
-.footer-list li {
+/*.footer-list li {
     margin: 0 0 1.5em
-}
+}*/
 
 .footer-list a {
     text-decoration: none;
@@ -13205,8 +13207,8 @@ form#edit_reward .inline-hints {
 [data-namespace="null"][data-controller="users"][data-action="show"] #user_profile .user_social li {
     
     font-size: 12px;
-    padding: 0 0 5px 25px;
-    margin-bottom: 10px;
+    padding: 0 0 0px 25px;
+    margin-bottom: 0px;
     filter: progid: DXImageTransform.Microsoft.Alpha(Opacity=80);
     opacity: 0.8
 }
@@ -13230,17 +13232,17 @@ form#edit_reward .inline-hints {
 
 [data-namespace="null"][data-controller="users"][data-action="show"] #user_profile .user_social li.facebook {
     padding-top: 2px;
-    background: url("/assets/catarse/social_icons.png") left -25px no-repeat
+    background: url("/assets/catarse/social_icons.png") left -15px no-repeat
 }
 
 [data-namespace="null"][data-controller="users"][data-action="show"] #user_profile .user_social li.twitter {
     padding-top: 2px;
-    background: url("/assets/catarse/social_icons.png") left -54px no-repeat
+    background: url("/assets/catarse/social_icons.png") left -45px no-repeat
 }
 
 [data-namespace="null"][data-controller="users"][data-action="show"] #user_profile .tab_container {
     padding-top: 20px;
-    margin-bottom: 20px
+    margin-bottom: 14px
 }
 
 [data-namespace="null"][data-controller="users"][data-action="show"] #user_profile #user_contributed_projects div.contribution_info ul li h5 {
@@ -14470,7 +14472,7 @@ form#edit_reward .inline-hints {
     top: 2px;
     right: 2px;
     border: none;
-    background: #3c9dff url(/assets/catarse_bootstrap/catarse-assets.png) no-repeat -163px -74px;
+    background: #ff024a url(/assets/catarse_bootstrap/catarse-assets.png) no-repeat -163px -74px;
     height: 32px;
     width: 32px;
     text-align: center;
@@ -14484,7 +14486,7 @@ form#edit_reward .inline-hints {
 }
 
 .newsletter .newsletter-submit:hover {
-    background: rgba(60, 157, 255, 0.8) url(/assets/catarse_bootstrap/catarse-assets.png) no-repeat -163px -74px
+    background: rgba(255, 2, 74, 0.8) url(/assets/catarse_bootstrap/catarse-assets.png) no-repeat -163px -74px
 }
 
 .footer-div .newsletter {
