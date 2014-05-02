@@ -10,15 +10,15 @@ header.header
         li.header-nav-li
           = link_to t('layouts.header.discover'), explore_path, :class => 'project'
 
-        li.header-nav-li.search
+        /li.header-nav-li.search
           = form_tag explore_path, :method => 'GET', :class=>'discover-form' do
             = text_field_tag :pg_search, nil, autocomplete: "off", value: params[:pg_search], class: "discover-form-input"
             = submit_tag
 
-        li.header-nav-li
+        /li.header-nav-li
           = link_to t('layouts.header.help'), Configuration[:support_forum], target: :_blank, :class => 'header-nav-item',  id: 'guidelines_header_modal' if Configuration[:support_forum].present?
 
-        li.header-nav-li
+        /li.header-nav-li
           = link_to t('layouts.header.blog'), Configuration['blog_url'], target: :_blank, class: 'header-nav-item' if Configuration['blog_url'].present?
 
         li.header-nav-li.locales

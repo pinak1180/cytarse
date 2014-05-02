@@ -4,46 +4,30 @@
 - project_link = project_by_slug_url(permalink: project.permalink)
 - company_name = ::Configuration[:company_name]
 
-|Olá, #{user.name}!
+|Helo, #{user.name}!
 br
 br
-| Obrigado por iniciar o processo de inscrição de um projeto no #{company_name}! 
-| Este é apenas o passo inicial e quer dizer que você acabou de criar seu 
-| <strong>#{link_to 'rascunho de projeto', project_link, target: '__blank'}</strong> no #{company_name}.
+| Diolch am ddechrau'r broses o greu ymgyrch ar #{company_name}! 
+| Hwn yw'r cam cyntaf un ac mae'r ebost hwn ond yn odi dy fod wedi creu'r prosiect 
+| <strong>#{link_to 'rascunho de projeto', project_link, target: '__blank'}</strong> ar #{company_name}.
 br/
 br/
-| As dicas fundamentais para estruturar o seu projeto podem ser encontradas em 
-| diversos artigos na nossa #{link_to "Central de Suporte do #{company_name}", ::Configuration[:support_forum], target: '__blank'}. 
-| Ela pode ser utilizada como fonte de consulta para a maioria das dúvidas que você terá antes, durante e após a sua campanha. 
-| Mesmo assim resolvemos destacar alguns pontos nesse email. Leia todos com bastante atenção: 
-br/
-= link_to "O Básico do #{company_name}", 'http://suporte.catarse.me/knowledgebase/topics/25760-o-b%C3%A1sico-do-catarse', target: '__blank'
-br/
-= link_to 'Realizadores - primeiros passos (rascunho)', 'http://suporte.catarse.me/knowledgebase/topics/25764-realizadores-primeiros-passos-rascunho-', target: '__blank'
+| Gellir gweld y canllawiau sylfaenol ar gyfer strwythuro dy brosiect ar y wefan  
+| Bydd canllawiau manylach yn ymddagos ar Heliwm wrth i;'r wefan symud yn ei blaen.
+| felly yn y cyfamser cysyllta gyda Rhodri ar post.heliwm@gmail.com er mwyn cael cymorth ar strwythuro dy ymgyrch.    
+| Gall ymgyrch aros ar ffurf drafft am cyhyd ag y mynni cyn dy fod yn barod i'w anfon atom am gadarnhad terfynol. 
 br/
 br/
-|Confira também:
-br/
-= link_to "Quais são todos os passos que envolvem uma campanha no #{company_name}?", 'http://suporte.catarse.me/knowledgebase/articles/160683-quais-s%C3%A3o-todos-os-passos-que-envolvem-uma-campanh', target: '__blank'
-br/
-= link_to "Como promover seu projeto", 'https://docs.google.com/a/catarse.me/document/d/14l3tS-x3wHhYV1xalRugl9tpgcaG9ot7RCvmth-ApH8/edit#heading=h.7yl6fbbvuvm9', target: '__blank'
+| Pan wyt yn ffyddiog dy fod yn barod i fynd, clicia'r botwm 'Cyflwyno Prosiect', a byddwn yn cysylltu â thi.
 br/
 br/
-| Leia esses materiais e depois preencha tudo com bastante calma para aperfeiçoar seu projeto. 
-br/
-| Você pode ficar o tempo que quiser montando a página do seu projeto antes de enviá-lo. 
+| Os oes unrhyw gwestiwn gennyt yna cysyllta gyda ni gan un ai ymateb i'r ebost hwn neu fynd yma #{mail_to ::Configuration[:email_projects]}
 br/
 br/
-| Quando considerar que a sua página de projeto está pronta, basta clicar no botão “ENVIAR PROJETO” que entraremos em contato contigo.
+| A gyda llaw, plis gwna'n siwr dy fod yn ein ychwaengu at dy lyfr cyfeiriadau yn dy wasanaeth ebost fel nad yw ein ebyst yn mynd ar goll:</strong> 
+| #{mail_to ::Configuration[:email_projects]} ac #{mail_to ::Configuration[:email_contact]}. 
 br/
 br/
-| Se ficou com alguma dúvida, entre em contato conosco respondendo este email ou através do email #{mail_to ::Configuration[:email_projects]}
-br/
-br/
-| E por falar nisso, por favor <strong>não esqueça de incluir na sua lista de contatos os e-mails:</strong> 
-| #{mail_to ::Configuration[:email_projects]} e #{mail_to ::Configuration[:email_contact]} para evitar que nossas mensagens caiam na sua caixa de spam devido a filtros do seu email. 
-br/
-br/
-| Um abraço,
+| Hwyl am y tro,
 br/
 = company_name
