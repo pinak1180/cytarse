@@ -485,7 +485,7 @@ DEPENDENCIES
   chartkick
   coffee-rails (~> 4.0.0)
   compass-960-plugin
-  compass-rails (~> 2.0.alpha.0)
+  compass-rails
   coveralls
   database_cleaner
   devise (~> 3.0.2)

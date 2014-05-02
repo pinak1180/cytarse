@@ -858,7 +858,7 @@ Cyn cyflwyno eich prosiect, mae'n werth ystyried rhai pwyntiau pwysig."
       many: "Wedi cefnogi hwn a %{total} prosiect arall"
       one: "Ond wedi cefnogi'r prosiect hwn hyd yma"
       two: "Wedi cefnogi hwn ac 1 prosiect arall"
-    no_name: Unnamed
+    no_name: Di-enw
     google_account: "Cyfrif Google"
   users:
     project:
@@ -871,7 +871,7 @@ Cyn cyflwyno eich prosiect, mae'n werth ystyried rhai pwyntiau pwysig."
       title: "Diffinia dy gyfeiriad ebost"
       submit: "Cadw fy ebost a pharhau"
     show:
-      attention: Attention
+      attention: Sylw
       tabs:
         backed_projects: "Prosiectau a gefnogwyd"
         created_projects: "Prosiectau a gynhyrchwyd"
