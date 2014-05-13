@@ -3,16 +3,16 @@ require 'sidekiq/web'
 Catarse::Application.routes.draw do
 
   devise_for :users, path: '',
-    path_names:   { sign_in: :login, sign_out: :logout, sign_up: :sign_up },
+    path_names:   { sign_in: :mewngofnodi, sign_out: :allgofnodi, sign_up: :ymuno },
     controllers:  { omniauth_callbacks: :omniauth_callbacks, passwords: :passwords }
 
 
   devise_scope :user do
-    post '/sign_up', to: 'devise/registrations#create', as: :sign_up
+    post '/ymuno', to: 'devise/registrations#create', as: :sign_up
   end
 
 
-  get '/thank_you' => "static#thank_you"
+  get '/diolch' => "static#thank_you"
 
 
   check_user_admin = lambda { |request| request.env["warden"].authenticate? and request.env['warden'].user.admin }
@@ -61,13 +61,13 @@ Catarse::Application.routes.draw do
 
   # Static Pages
   get '/sitemap',               to: 'static#sitemap',             as: :sitemap
-  get '/guidelines',            to: 'static#guidelines',          as: :guidelines
-  get "/guidelines_tips",       to: "static#guidelines_tips",     as: :guidelines_tips
-  get "/guidelines_backers",    to: "static#guidelines_backers",  as: :guidelines_backers
-  get "/guidelines_start",      to: "static#guidelines_start",    as: :guidelines_start
+  get '/canllaw', 	        to: 'static#guidelines',          as: :guidelines
+  get "/canllaw_tips",          to: "static#guidelines_tips",     as: :guidelines_tips
+  get "/canllawn_backers",      to: "static#guidelines_backers",  as: :guidelines_backers
+  get "/canllaw_dechrau",       to: "static#guidelines_start",    as: :guidelines_start
 
 
-  get "/explore" => "explore#index", as: :explore
+  get "/darganfod" => "explore#index", as: :explore
 
   namespace :reports do
     resources :backer_reports_for_project_owners, only: [:index]
