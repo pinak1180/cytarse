@@ -101,21 +101,21 @@ cy:
     messages:
       accepted: rhaid cael ei dderbyn
       blank: methu bod yn wag
-      confirmation: ddim yn cyfateb â'r cadarnhad
+      confirmation: "ddim yn cyfateb â'r cadarnhad"
       empty: methu bod yn wag
       equal_to: rhaid bod yn gyfartal â %{count}
       even: rhaid bod yn hafal
       exclusion: wedi ei gadw
       greater_than: rhaid bod yn fwy na %{count}
-      greater_than_or_equal_to: rhaid bod yn fwy na neu'n gyfartal i %{count}
+      greater_than_or_equal_to: "rhaid bod yn fwy na neu'n gyfartal i %{count}"
       inclusion: heb ei gynnwys ar y rhestr
       invalid: yn annilys
       less_than: rhaid bod yn llai na %{count}
-      less_than_or_equal_to: rhaid bod yn llai na neu'n gyfartal i %{count}
-      not_a_number: nid yw'n rhif
+      less_than_or_equal_to: "rhaid bod yn llai na neu'n gyfartal i %{count}"
+      not_a_number: "nid yw'n rhif"
       not_an_integer: rhaid iddo fod yn integer
       odd: rhaid iddo fod yn odrif
-      record_invalid: ! 'Methwyd â dilysu: %{errors}'
+      record_invalid: "! 'Methwyd â dilysu: %{errors}'"
       taken: wedi ei gymryd yn barod
       too_long:
         one: yn rhy hir (uchafswm o 1 cymeriad)
@@ -127,7 +127,7 @@ cy:
         one: yr hyd anghywir (dylai fod yn 1 cymeriad)
         other: yr hyd anghywir (dylai fod yn %{count} cymeriad)
     template:
-      body: ! "Roedd problemau gyda'r maesydd canlynol:"
+      body: "! 'Roedd problemau gyda'r maesydd canlynol:'"
       header:
         one: stopiodd 1 gwall y %{model} rhag cael ei arbed
         other: ! '%{count} gwall wedi atal y %{model} rhag cael ei arbed'

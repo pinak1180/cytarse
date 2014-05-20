@@ -1,11 +1,11 @@
-h2 Cymraeg I want to back, what’s next?
-h3 How can I back this project?
-p First, define the value of your contribution and choose a reward. Then click on “Review and make a payment”  to redirect you to the next page to complete your payment.
-h3 When payment is effected?
-p Once the MoIP or Paypal confirm the transaction (card and bank transfer confirmation is on the same day, lead slips to 4 working days to be confirmed). Then, if the project does not reach #{@project.display_goal} by #{@project.display_expires_at}, you will receive your money back in the form of credits on #{Configuration[:company_name]}.
-h3 Then I get my money back if the project does not go out?
-p Yes! You receive back 100% of what you paid in the form of credits to support other projects on #{Configuration[:company_name]}.
-h3 And if I do not want to use the credits in #{Configuration[:company_name]}?
-p No problem. Just enter the #{link_to t('credits.title'), user_path(current_user, anchor: :credits), :target => :_blank} tab, 60 days after their support and request a chargeback. If you have paid by credit card, the reversal will be done on your next bill. If you paid with debit or bank, the only way to do the chargeback is you open an account on MoIP. Then we transfer the value of our account to yours and from there you transfer to your bank account.
-h3 If the project is funded, how do I get my reward?
-p When your reward is ready, #{link_to @project.user.display_name, user_path(@project.user)} will contact you to arrange delivery.
+h2 Cymraeg Dwi eisiau cefnogi, be nesa?
+h3 Sut alla i gefnogi'r prosiect hwn?
+p Yn gyntaf, meddylia am faint wyt ti eisiau ei roi a dewis dy anrheg diolch. Yna clicia ar “Adolygu a gwneud y taliad”  er mwyn myn â ti at y dudalen nesaf lle galli gadarnhau dy daliad.
+h3 Pryd gaiff y taliad ei weithredu?
+p Unwaith mae Paypal wedi cadarnhau y trosglwyddiad. Yna, os nad yw'r prosiect yn cyrraedd #{@project.display_goal} erbyn #{@project.display_expires_at}, byddi'n derbyn dy arian nôl ar ffurf credydau ar #{Configuration[:company_name]}.
+h3 Felly dwi'n cael fy mhres yn ôl os nad yw'r prosiect yn llwyddo?
+p Wyt! Rwyt ti'n derbyn 100% o be dalais ti ar furf credydau i gefnogi prosiectau eraill ar #{Configuration[:company_name]}.
+h3 A be os nad ydw i eisiau defnyddio credydau ar in #{Configuration[:company_name]}?
+p Dim problem. Jest dos i'r tab #{link_to t('credits.title'), user_path(current_user, anchor: :credits), :target => :_blank}, a gofyn am ad-daliad. Bydd yn cael ei drosglwyddo o PayPal nôl i dy gyfrif banc.
+h3 Os caiff y prosiect ei ariannu, sut ydw i'n cael fy anrheg diolch?
+p Pan mae dy anhreg yn barod, bydd #{link_to @project.user.display_name, user_path(@project.user)} yn cysylltu efo ti i drefnu ei ddanfon atat.
