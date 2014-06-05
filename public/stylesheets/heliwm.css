@@ -9622,20 +9622,20 @@ body #logos .power a {
 
 [data-namespace="null"][data-controller="projects"][data-action="show"] #page_content .sidebar .user_social li {
     filter: progid: DXImageTransform.Microsoft.Alpha(Opacity=80);
-    opacity: 0.8;
+    opacity: 1;
     float: left;
     margin-right: 5px
 }
 
 [data-namespace="null"][data-controller="projects"][data-action="show"] #page_content .sidebar .user_social li a {
-    -webkit-transition: all, 0.5s;
+/*    -webkit-transition: all, 0.5s;
     -moz-transition: all, 0.5s;
     -o-transition: all, 0.5s;
-    transition: all, 0.5s;
+    transition: all, 0.5s; */
     display: block;
     text-indent: -9999em;
     height: 15px;
-    font-size: 12px
+    font-size: 0.778em;
 }
 
 [data-namespace="null"][data-controller="projects"][data-action="show"] #page_content .sidebar .user_social li a.email {
@@ -9651,14 +9651,35 @@ body #logos .power a {
 }
 
 [data-namespace="null"][data-controller="projects"][data-action="show"] #page_content .sidebar .user_social li a.facebook {
-    width: 16px;
-    background: url("/assets/catarse/social_icons.png") left -25px no-repeat
+    width: 22px;
+	height: 22px;
+    background: url("../assets/heliwm/svg/facebook.svg") 0 -22px no-repeat;
+	background-size: 22px;
+	margin: 0 10px 0 20px;
+}
+
+[data-namespace="null"][data-controller="projects"][data-action="show"] #page_content .sidebar .user_social li a.facebook:hover {
+    width: 22px;
+	height: 22px;
+    background: url("../assets/heliwm/svg/facebook.svg") 0 0 no-repeat;
+	background-size: 22px;
+	margin: 0 10px 0 20px;
 }
 
 [data-namespace="null"][data-controller="projects"][data-action="show"] #page_content .sidebar .user_social li a.twitter {
-    width: 16px;
-    background: url("/assets/catarse/social_icons.png") left -54px no-repeat
+    width: 26px;
+	height: 22px;
+    background: url("../assets/heliwm/svg/twitter.svg")  0 -22px no-repeat;
+	background-size: 26px;
 }
+
+[data-namespace="null"][data-controller="projects"][data-action="show"] #page_content .sidebar .user_social li a.twitter:hover {
+    width: 26px;
+	height: 22px;
+    background: url("../assets/heliwm/svg/twitter.svg") 0 0 no-repeat;
+	background-size: 26px;
+}
+
 
 [data-namespace="null"][data-controller="projects"][data-action="show"] #page_content .sidebar #rewards .box {
     background: #f7f7f7;
@@ -9707,20 +9728,21 @@ body #logos .power a {
 /* !EDIT */
 [data-namespace="null"][data-controller="projects"][data-action="show"] #page_content .sidebar #rewards .box em {
     background: url("../assets/heliwm/svg/fingers-crossed.svg") left 7px no-repeat;
-    background-size: 20px;
-    color: #4d535d;
-    font-weight: bold;
-    font-size: 11px;
-    padding: 3px 3px 10px 25px;
-    text-transform: uppercase;
-    display: block;
-    text-shadow: 1px 1px white;
+	background-size: 1.7em;
+	color: #4d535d;
+	font-weight: bold;
+	font-size: 0.778em;
+	padding: 3px 3px 10px 25px;
+/*	text-transform: uppercase;*/
+	display: block;
+	text-shadow: 1px 1px white;
+	text-indent: 10px;
 }
 
 [data-namespace="null"][data-controller="projects"][data-action="show"] #page_content .sidebar #rewards .box p,
 [data-namespace="null"][data-controller="projects"][data-action="show"] #page_content .sidebar #rewards .box .on_the_spot_editing {
     color: #444444;
-    font-size: 0.7em;
+    font-size: 0.778em;
 	line-height: 1.67em;
     padding-bottom: 5px
 }
@@ -9899,7 +9921,9 @@ body #logos .power a {
     line-height: 130%;
     font-style: italic;
     color: #00a99d;
-    text-shadow: 1px 1px white
+    text-shadow: 1px 1px white;
+    font-size: 0.778em;
+	font-weight: 500;
 }
 
 [data-namespace="null"][data-controller="projects"][data-action="show"] #page_content .sidebar .info #pledge {
@@ -9998,15 +10022,16 @@ body #logos .power a {
 
 /* !EDIT */
 [data-namespace="null"][data-controller="projects"][data-action="show"] #page_content .sidebar .info #creator_profile h3 {
-    background: url("../assets/heliwm/svg/person.svg") left 4px no-repeat;
+/*    background: url("../assets/heliwm/svg/person.svg") left 4px no-repeat;
 	background-size: 20px;
+    margin-left: 20px; */
     color: #333333;
     font-weight: 700;
     font-size: 18px;
-    padding-left: 30px;
+    padding-left: 20px;
     display: block;
     padding-bottom: 25px;
-    margin-left: 20px;
+    text-transform: capitalize;
 }
 
 [data-namespace="null"][data-controller="projects"][data-action="show"] #page_content .sidebar .info #creator_profile .avatar {
@@ -10083,20 +10108,32 @@ body #logos .power a {
     padding: 10px 0;
     font-size: 0.778em;
     color: #333333;
-    line-height: 130%
+    line-height: 180%;
+    margin: 10px 0;
 }
 
 [data-namespace="null"][data-controller="projects"][data-action="show"] #page_content .sidebar .info #creator_profile #city p.contribution {
     background: url("../assets/heliwm/svg/fingers-crossed.svg") left 2px no-repeat;
-    text-indent: 20px;
-    padding: 0px
+    background-size: 1.5em;
+	height: 1.7em;
+	text-indent: 20px;
+	padding: 0px 10px;
+}
+
+[data-namespace="null"][data-controller="projects"][data-action="show"] #page_content .sidebar .info #creator_profile #city p.backer {
+    background: url("../assets/heliwm/svg/fingers-crossed.svg") left 2px no-repeat;
+    background-size: 1.5em;
+	height: 1.7em;
+	text-indent: 20px;
+	padding: 0px 10px;
 }
 
 [data-namespace="null"][data-controller="projects"][data-action="show"] #page_content .sidebar .info #creator_profile #city p.city {
-    background: url("../assets/heliwm/svg/fingers-crossed.svg") left 2px no-repeat;
-    text-indent: 20px;
-    padding: 0px;
-    margin-right: 20px
+    background: url("../assets/heliwm/svg/location.svg") left 2px no-repeat;
+    background-size: 1.5em;
+	height: 1.7em;
+	text-indent: 20px;
+	padding: 0px 10px;
 }
 
 [data-namespace="null"][data-controller="projects"][data-action="show"] #page_content #project_edit .bootstrap-twitter a,
