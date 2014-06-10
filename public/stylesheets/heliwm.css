@@ -13227,7 +13227,7 @@ form#edit_reward .inline-hints {
 }
 
 [data-namespace="null"][data-controller="users"][data-action="show"] #user_profile .user_social li.email {
-    background: url("/assets/catarse/social_icons.png") left top no-repeat
+    background: url("/assets/catarse/social_icons.png") left 10px no-repeat
 }
 
 [data-namespace="null"][data-controller="users"][data-action="show"] #user_profile .user_social li.facebook {
