@@ -25,6 +25,7 @@ Catarse::Application.routes.draw do
   end
 
   mount CatarsePaypalExpress::Engine => "/", as: :catarse_paypal_express
+  mount CatarseBraintree::Engine => "/", as: :catarse_braintree
   mount CatarseMoip::Engine => "/", as: :catarse_moip
 
   # Channels

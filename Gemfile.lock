@@ -42,6 +42,14 @@ GIT
   specs:
     cancan (2.0.0.alpha)
 
+PATH
+  remote: vendor/gems/catarse_braintree-2c5b83730cf9
+  specs:
+    catarse_braintree (0.0.1)
+      braintree
+      rails (~> 4.0)
+      slim-rails
+
 GEM
   remote: https://rubygems.org/
   specs:
@@ -99,6 +107,8 @@ GEM
       erubis (>= 2.6.6)
     binding_of_caller (0.7.2)
       debug_inspector (>= 0.0.1)
+    braintree (2.33.1)
+      builder (>= 2.0.0)
     browser (0.2.1)
     builder (3.1.4)
     capybara (2.1.0)
@@ -479,6 +489,7 @@ DEPENDENCIES
   cancan!
   capybara (~> 2.1.0)
   carrierwave (~> 0.8.0)
+  catarse_braintree (= 0.0.1)!
   catarse_mailchimp!
   catarse_moip (~> 2.0.8)
   catarse_paypal_express (~> 2.0.0)
