@@ -24,4 +24,12 @@ class StaticController < ApplicationController
     @successful   ||= Project.includes(:user, :category).visible.successful.order("(projects.expires_at) DESC").limit(3)
   end
 
+  def terms
+    @title = t('static.terms.title')
+  end
+
+  def contact
+    @title = t('static.contact.title')
+  end
+
 end
