@@ -90,7 +90,7 @@ h4 {
 	 color: rgba(0, 168, 154, 1);
 }
 
-a {
+a, a:visited, a:active:visited {
 	 color: rgba(212, 20, 90, 1);
 	 font-family: "Source Sans Pro";
 	 font-style: normal;
@@ -552,15 +552,14 @@ div.project .box .follow_project:hover {
     float: left;
     margin-left: 10px;
     margin-right: 10px;
-    width: auto;
+    width: 70%;
 }
 
 .project_land .project_infos .title, .small_project_land .project_infos .title {
-    height: 120px
+    height: 110px
 }
 
 .project_land .project_infos h4, .small_project_land .project_infos h4 {
-    font-size: 16px;
     color: #4383d1;
     padding: 7px 0 0 0;
     font-weight: 700;
@@ -571,7 +570,6 @@ div.project .box .follow_project:hover {
 .project_land .project_infos h4 a, .small_project_land .project_infos h4 a {
     color: black;
     font-weight: 700;
-    font-size: 18px;
     text-decoration: none;
     -webkit-transition: all, 0.5s;
     -moz-transition: all, 0.5s;
@@ -585,15 +583,15 @@ div.project .box .follow_project:hover {
 
 .project_land .project_infos .author, .small_project_land .project_infos .author {
     color: black;
-    font-size: 13px;
     overflow: hidden;
+    font-size: 0.778em;
     filter: progid: DXImageTransform.Microsoft.Alpha(Opacity=50);
     opacity: 0.5
 }
 
 .project_land .project_infos .status_bar, .small_project_land .project_infos .status_bar {
     background-color: white;
-    width: 202px;
+    width: auto;
     height: 10px;
     overflow: hidden;
     height: 8px;
@@ -624,7 +622,7 @@ background: #ccc;
 .project_land .project_infos ul li, .small_project_land .project_infos ul li {
     float: left;
     min-width: 60px;
-    margin-right: 5px
+    margin-right: 3em;
 }
 
 .project_land .project_infos ul li:last-child, .small_project_land .project_infos ul li:last-child {
@@ -633,7 +631,7 @@ background: #ccc;
 
 .project_land .project_infos ul li h6, .small_project_land .project_infos ul li h6 {
     font-weight: 700;
-    font-size: 12px;
+    font-size: 0.778em;
     color: black;
     filter: progid: DXImageTransform.Microsoft.Alpha(Opacity=70);
     opacity: 0.7;
@@ -644,15 +642,18 @@ background: #ccc;
 .project_land .project_infos ul li p, .small_project_land .project_infos ul li p {
     text-transform: uppercase;
     color: #838383;
-    font-size: 9px;
+    font-size: 0.778em;
     line-height: 1em;
 }
 
 .project_land .headline, .small_project_land .headline {
     margin: 5px 0;
-    font-size: 12px;
-    line-height: 110%;
-    color: black
+line-height: 110%;
+color: black;
+height: 1.5em;
+white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
 }
 
 .project_land .small_contribution_info, .small_project_land .small_contribution_info {
@@ -13186,7 +13187,7 @@ form#edit_reward .inline-hints {
     margin-left: 10px;
     margin-right: 10px;
     width: 700px;
-    padding-right: 60px
+/*    padding-right: 60px */
 }
 
 [data-namespace="null"][data-controller="users"][data-action="show"] #user_profile .section_header .profile_image {
@@ -13231,7 +13232,7 @@ form#edit_reward .inline-hints {
 
 [data-namespace="null"][data-controller="users"][data-action="show"] #user_profile .user_social {
     display: inline;
-    float: left;
+    float: right;
     margin-left: 10px;
     margin-right: 10px;
     width: 160px
@@ -13239,7 +13240,8 @@ form#edit_reward .inline-hints {
 
 [data-namespace="null"][data-controller="users"][data-action="show"] #user_profile .user_social li {
     
-    font-size: 12px;
+    font-size: 0.778em;
+	font-weight: 500;
     padding: 0 0 0px 25px;
     margin-bottom: 0px;
     filter: progid: DXImageTransform.Microsoft.Alpha(Opacity=80);
@@ -13252,7 +13254,8 @@ form#edit_reward .inline-hints {
     -moz-transition: all, 0.5s;
     -o-transition: all, 0.5s;
     transition: all, 0.5s;
-    text-decoration: none
+    text-decoration: none;
+    padding-left: 10px;
 }
 
 [data-namespace="null"][data-controller="users"][data-action="show"] #user_profile .user_social li a:hover {
@@ -13264,13 +13267,22 @@ form#edit_reward .inline-hints {
 }
 
 [data-namespace="null"][data-controller="users"][data-action="show"] #user_profile .user_social li.facebook {
-    padding-top: 2px;
-    background: url("/assets/catarse/social_icons.png") left -15px no-repeat
+    background: url("..assets/heliwm/svg/facebook-blue.svg")  2px 4px no-repeat;
+	background-size: 20px;
 }
 
 [data-namespace="null"][data-controller="users"][data-action="show"] #user_profile .user_social li.twitter {
-    padding-top: 2px;
-    background: url("/assets/catarse/social_icons.png") left -45px no-repeat
+	   
+	/* width: 26px; */
+	/* height: 22px; */
+	   background: url("..assets/heliwm/svg/twitter-blue.svg")  0 2px no-repeat;
+	background-size: 26px;
+}
+
+[data-namespace="null"][data-controller="users"][data-action="show"] #user_profile .user_social li.other {
+	   
+	background: url("..assets/heliwm/svg/world.svg")  2px 2px no-repeat;
+	background-size: 24px;
 }
 
 [data-namespace="null"][data-controller="users"][data-action="show"] #user_profile .tab_container {
@@ -16711,3 +16723,12 @@ input.ui-button {
                 height: 100%
             }
 
+/* !Extra for Login */
+
+.button.action, a.button.action {
+	background: rgba(212, 20, 90, 0.8);
+}
+
+.button.action:hover, a.button.action:hover {
+	background: rgba(212, 20, 90, 1);
+}
