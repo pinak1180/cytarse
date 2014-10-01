@@ -47,7 +47,13 @@ module BackerStateMachineHandler
       end
 
       after_transition confirmed: :requested_refund, do: :after_transition_from_confirmed_to_requested_refund
+
       after_transition confirmed: :canceled, do: :after_transition_from_confirmed_to_canceled
+
+      after_transition do |backer, transition|
+        backer.notify_observers :"from_#{transition.from}_to_#{transition.to}"
+      end
+
     end
 
     def after_transition_from_confirmed_to_canceled

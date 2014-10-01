@@ -33,6 +33,7 @@ gem 'chartkick'
 # Payment engines
 gem 'catarse_paypal_express', '~> 2.0.0'
 gem 'catarse_moip', '~> 2.0.8'
+gem 'catarse_braintree', '0.0.1', path: 'vendor/gems/catarse_braintree-2c5b83730cf9'
 
 # Decorators
 gem 'draper'
