@@ -24,9 +24,9 @@ Catarse::Application.routes.draw do
     mount Sidekiq::Web => '/sidekiq'
   end
 
-  mount CatarsePaypalExpress::Engine => "/", as: :catarse_paypal_express
+  #mount CatarsePaypalExpress::Engine => "/", as: :catarse_paypal_express
   mount CatarseBraintree::Engine => "/", as: :catarse_braintree
-  mount CatarseMoip::Engine => "/", as: :catarse_moip
+  #mount CatarseMoip::Engine => "/", as: :catarse_moip
 
   # Channels
   constraints subdomain: /^(?!www|secure|test|local|cytarse|prawf)(\w+)/ do
