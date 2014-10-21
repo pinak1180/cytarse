@@ -13,7 +13,7 @@ gem 'sidekiq',  '~> 2.13.0'
 gem 'sinatra', require: false # required by sidekiq web interface mounted on /sidekiq
 
 # Turns every field on a editable one
-gem 'best_in_place', github: 'bernat/best_in_place', branch: 'rails-4'
+gem 'best_in_place', github: 'bernat/best_in_place'
 
 # State machine for attributes on models
 gem 'state_machine', require: 'state_machine/core'
