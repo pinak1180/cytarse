@@ -121,6 +121,10 @@ group :development do
   gem 'binding_of_caller'
   # Uncomment only for optimization, should be commented on master branch
   # gem 'rack-mini-profiler'
+
+  # Deployment
+  gem 'capistrano'
+  gem 'capistrano-rails', '~> 1.1'
 end
 
 group :test, :development do
