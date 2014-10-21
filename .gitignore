@@ -2,7 +2,6 @@
 db/*.sqlite3
 log/*.log
 tmp/**/*
-config/database.yml
 db/seeds/my-seeds-local.rb
 db/seeds/my-seeds-heroku.rb
 db/development_structure.sql
@@ -27,3 +26,18 @@ Cookbooks
 
 # MG generated routes file
 routes.txt
+
+
+##
+# Ansible specific stuff
+##
+
+# Don't want ssl certs from ansible
+ansible/roles/ssl/files/null/ssl/certs
+ansible/roles/ssl/files/null/ssl/keys
+
+# Secret files from ansible
+ansible/secret/*.yml
+ansible/secret/access_key.pub
+
+###
