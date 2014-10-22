@@ -2,6 +2,10 @@ require 'sidekiq/web'
 
 Catarse::Application.routes.draw do
 
+  if ENV['MAIL_METHOD'] == 'letter_opener'
+    mount LetterOpenerWeb::Engine, at: "/letter_opener"
+  end
+
   devise_for :users, path: '',
     path_names:   { sign_in: :mewngofnodi, sign_out: :allgofnodi, sign_up: :ymuno },
     controllers:  { omniauth_callbacks: :omniauth_callbacks, passwords: :passwords }
