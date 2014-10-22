@@ -1,0 +1,26 @@
+---
+- name: Provision App
+  hosts: production-app
+  user: root
+  gather_facts: true
+  sudo: true
+
+  vars:
+    domain_name: "{{app_name}}.com"
+    environment_name: production
+    rails_environment_name: production
+
+  vars_files:
+    - vars/common.yml
+    - secret/production.yml
+
+  roles:
+    - user
+    - common
+    - environment_vars
+    - ufw
+    - ruby-2.1.3
+    - nginx
+    - postgres
+    - redis
+    - sidekiq
