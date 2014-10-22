@@ -1,0 +1,4 @@
+---
+  services_to_control:
+    - nginx
+    - sidekiq

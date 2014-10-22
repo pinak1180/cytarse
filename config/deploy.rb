@@ -27,24 +27,24 @@ namespace :db do
 end
 
 namespace :sidekiq do
+  desc 'Status sidekiq'
+  task :status do
+    on roles(:util) do
+      execute '/sbin/status sidekiq'
+    end
+  end
+
   desc 'Start sidekiq'
   task :start do
     on roles(:util) do
-      sudo 'service sidekiq start'
+      execute '/sbin/start sidekiq'
     end
   end
 
-  desc 'Stop sidekiq'
-  task :stop do
-    on roles(:util) do
-      sudo 'service sidekiq stop'
-    end
-  end
-
-  desc 'Restart sidekiq'
+  desc 'Restart or start sidekiq'
   task :restart do
     on roles(:util) do
-      sudo 'service sidekiq restart'
+      execute '/sbin/restart sidekiq || /sbin/start sidekiq'
     end
   end
 end
@@ -52,8 +52,10 @@ end
 namespace :deploy do
   desc 'Restart application'
   task :restart do
+    invoke 'sidekiq:restart'
+
     on roles(:app), in: :sequence, wait: 5 do
-      execute :touch, release_path.join('tmp/restart.txt')
+      execute "touch #{File.join(current_path,'tmp','restart.txt')}"
     end
   end
 

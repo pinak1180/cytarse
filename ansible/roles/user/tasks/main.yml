@@ -2,17 +2,21 @@
 - name: Create the app group
   sudo: yes
   group: name=app
-  
+
 - name: Create an app user
   sudo: yes
   user: shell=/bin/bash name=app comment="App User" group=app
 
-- name: Create a deploy user
-  sudo: yes
-  user: shell=/bin/bash name=deploy comment="Deploy User" group=app groups=sudo,app
-
 - name: Add key for app user
   authorized_key: user=app key="{{ lookup('file', './secret/access_key.pub') }}"
 
-- name: Add key for deploy user
-  authorized_key: user=deploy key="{{ lookup('file', './secret/access_key.pub') }}"
+- name: Allow the app user to start and restart services
+  template: src=allow_service.j2
+            dest=/etc/sudoers.d/{{ item }}
+  with_items: services_to_control
+  notify: Reload init config
+
+- name: Permit the user to run restart jobs
+  lineinfile: dest=/etc/dbus-1/system.d/Upstart.conf
+              line='<policy group="app"><allow send_destination="com.ubuntu.Upstart" send_interface="com.ubuntu.Upstart0_6.Job" send_type="method_call" send_member="Restart" /><allow send_destination="com.ubuntu.Upstart" send_interface="com.ubuntu.Upstart0_6.Job" send_type="method_call" send_member="Start" /></policy>'
+              insertbefore='</busconfig>'

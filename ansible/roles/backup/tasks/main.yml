@@ -1,0 +1,17 @@
+---
+
+- name: Install the backup gem
+  gem: name=backup version=4.1.2 state=present user_install=false
+  tags: debug
+
+- name: Create backup directory
+  file: path=/home/app/Backup/model
+        owner=app
+        group=app
+        state=directory
+
+- name: Write backup model
+  template: src=model.j2
+            dest=/home/app/Backup/model/{{ environment_name }}_backup
+            owner=app
+            group=app

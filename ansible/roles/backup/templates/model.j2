@@ -1,0 +1,64 @@
+# encoding: utf-8
+
+##
+# Backup Generated: production_backup
+# Once configured, you can run the backup with the following command:
+#
+# $ backup perform -t {{ environment_name }}_backup [-c <path_to_configuration_file>]
+#
+Backup::Model.new(:{{ environment_name }}_backup, 'Database backup to S3') do
+  ##
+  # Split [Splitter]
+  #
+  # Split the backup file in to chunks of 250 megabytes
+  # if the backup file size exceeds 250 megabytes
+  #
+  split_into_chunks_of 250
+
+  ##
+  # PostgreSQL [Database]
+  #
+  database PostgreSQL do |db|
+    db.name               = "{{ db_name }}"
+    db.username           = "{{ db_user }}"
+    db.password           = "{{ db_pass }}"
+    db.host               = "127.0.0.1"
+    db.port               = 5432
+  end
+
+  #archive :system do |archive|
+  #
+  #end
+
+  ##
+  # Amazon Simple Storage Service [Storage]
+  #
+  # Available Regions:
+  #
+  #  - ap-northeast-1
+  #  - ap-southeast-1
+  #  - eu-west-1
+  #  - us-east-1
+  #  - us-west-1
+  #
+  store_with S3 do |s3|
+    s3.access_key_id     = "{{ aws_access_key_id }}"
+    s3.secret_access_key = "{{ aws_secret_access_key }}"
+    s3.region            = "eu-west-1"
+    s3.bucket            = "{{environment_name}}_backup"
+    s3.path              = "/backups"
+    s3.keep              = 10
+  end
+
+  encrypt_with OpenSSL do |encryption|
+    encryption.password = '{{ backup_password }}'
+    encryption.base64   = true
+    encryption.salt     = true
+  end
+
+  ##
+  # Gzip [Compressor]
+  #
+  compress_with Gzip
+
+end

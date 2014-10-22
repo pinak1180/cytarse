@@ -1,4 +1,4 @@
-set :branch, 'master'
+set :branch, 'feature/deploy'
 set :rails_env, 'production'
 set :deploy_to, '/home/app/heliwm_staging'
 

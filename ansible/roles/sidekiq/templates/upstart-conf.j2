@@ -12,7 +12,7 @@ respawn limit 3 30
 # TERM is sent by sidekiqctl when stopping sidekiq.  Without declaring these as normal exit codes, it just respawns.
 normal exit 0 TERM
 
-instance $index
+instance 0
 
 env LANG=en_US.UTF-8
 env APP_HOME={{app_directory}}
@@ -27,6 +27,6 @@ exec /bin/bash <<EOT
   exec &> /dev/kmsg
 
   cd $APP_HOME
-  exec bin/sidekiq -i ${index} -P $APP_HOME/tmp/sidekiq.pid -e production -r $APP_HOME -L $APP_HOME/log/sidekiq.log
+  exec bin/sidekiq -i 0 -P $APP_HOME/tmp/sidekiq.pid -e {{ rails_environment_name }} -r $APP_HOME -L $APP_HOME/log/sidekiq.log
 EOT
 end script
