@@ -9,6 +9,7 @@
     domain_name: "{{app_name}}.com"
     environment_name: production
     rails_environment_name: production
+    mail_method: smtp
 
   vars_files:
     - vars/common.yml

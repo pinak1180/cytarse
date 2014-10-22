@@ -58,6 +58,7 @@ gem 'ezcrypto'
 gem 'cancan', github: 'ryanb/cancan', branch: '2.0', ref: 'f1cebde51a87be149b4970a3287826bb63c0ac0b'
 
 # Email marketing
+gem 'letter_opener'
 gem 'catarse_mailchimp', git: 'git://github.com/catarse/catarse_mailchimp', ref: '2ed4f39'
 
 # HTML manipulation and formatting
