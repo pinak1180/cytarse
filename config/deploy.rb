@@ -15,6 +15,16 @@ set :ssh_options, {:forward_agent => true}
 
 SSHKit.config.command_map.prefix[:rake].unshift('source /etc/profile.d/app_env.sh; ')
 
+namespace :db do
+  desc 'Seed the DB'
+  task :seed do
+    on roles(:db) do
+      within current_path do
+        execute :rake, 'db:seed'
+      end
+    end
+  end
+end
 
 namespace :sidekiq do
   desc 'Start sidekiq'
