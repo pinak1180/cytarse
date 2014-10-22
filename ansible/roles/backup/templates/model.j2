@@ -45,7 +45,7 @@ Backup::Model.new(:{{ environment_name }}_backup, 'Database backup to S3') do
     s3.access_key_id     = "{{ aws_access_key_id }}"
     s3.secret_access_key = "{{ aws_secret_access_key }}"
     s3.region            = "eu-west-1"
-    s3.bucket            = "{{environment_name}}_backup"
+    s3.bucket            = "{{ app_name }}-{{environment_name}}-backup"
     s3.path              = "/backups"
     s3.keep              = 10
   end

@@ -5,13 +5,35 @@
   tags: debug
 
 - name: Create backup directory
-  file: path=/home/app/Backup/model
+  file: path=/home/app/Backup/models
+        owner=app
+        group=app
+        state=directory
+
+- name: Create backup logs directory
+  file: path=/home/app/Backup/logs
         owner=app
         group=app
         state=directory
 
 - name: Write backup model
   template: src=model.j2
-            dest=/home/app/Backup/model/{{ environment_name }}_backup
+            dest=/home/app/Backup/models/{{ environment_name }}_backup.rb
             owner=app
             group=app
+
+- name: Write backup config
+  template: src=config.j2
+            dest=/home/app/Backup/config.rb
+            owner=app
+            group=app
+
+- name: Cron job to back up
+  cron: name="Perform backup"
+        hour="6"
+        minute="0"
+        user='app'
+        job="/opt/ruby-2.1.3/bin/backup perform --trigger={{ environment_name }}_backup >> /home/app/Backup/logs/{{ environment_name }}_backup.log"
+
+- name: Log rotate the backup log
+  template: src=backup.j2 dest=/etc/logrotate.d/backup
