@@ -26,9 +26,9 @@ Backup::Model.new(:{{ environment_name }}_backup, 'Database backup to S3') do
     db.port               = 5432
   end
 
-  #archive :system do |archive|
-  #
-  #end
+  archive :system do |archive|
+    archive.add '{{ app_location }}/shared/public/'
+  end
 
   ##
   # Amazon Simple Storage Service [Storage]
