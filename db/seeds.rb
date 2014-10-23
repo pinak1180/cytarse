@@ -75,7 +75,7 @@ puts 'Seeding the database...'
    conf = Configuration.find_or_initialize_by(name: name)
    conf.update_attributes({
      value: value
-   }) if conf.new_record?
+   })
 end
 
 

@@ -9,7 +9,7 @@ begin
       authentication: :plain,
       user_name: Configuration[:sendgrid_user_name],
       password: Configuration[:sendgrid],
-      domain: 'heroku.com'
+      domain: Configuration[:base_domain]
       }
       ActionMailer::Base.delivery_method = :smtp
     end
