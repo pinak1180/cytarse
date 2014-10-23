@@ -6,11 +6,11 @@
   sudo: true
 
   vars:
-    domain_name: "{{app_name}}.com"
+    domain_name: "staging.{{app_name}}.com"
     environment_name: staging
     rails_environment_name: production
     mail_method: letter_opener
-    
+
   vars_files:
     - vars/common.yml
     - secret/staging.yml
