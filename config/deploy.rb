@@ -9,7 +9,7 @@ set :format, :pretty
 set :log_level, :debug
 set :pty, true
 set :linked_files, []
-set :linked_dirs, %w{bin log tmp/pids tmp/cache tmp/sockets vendor/bundle public/system}
+set :linked_dirs, %w{bin log tmp/pids tmp/cache tmp/sockets vendor/bundle public/system public/uploads}
 set :keep_releases, 5
 set :ssh_options, {:forward_agent => true}
 
