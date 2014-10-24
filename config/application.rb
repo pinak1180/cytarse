@@ -29,7 +29,7 @@ module Catarse
     # Default encoding for the server
     config.encoding = "utf-8"
 
-    config.i18n.available_locales = [:en, :cy, :pt]
+    config.i18n.available_locales = [:en, :cy]
 
     config.filter_parameters += [:password, :password_confirmation]
     config.time_zone = 'UTC'

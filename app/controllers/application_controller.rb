@@ -46,7 +46,7 @@ class ApplicationController < ActionController::Base
       current_user.update_attribute :locale, params[:locale] if current_user && params[:locale] != current_user.locale
     elsif request.method == "GET"
       new_locale = (current_user.locale if current_user) || I18n.default_locale
-      redirect_to params.merge(locale: new_locale, only_path: true)
+      I18n.locale = new_locale
     end
   end
 
