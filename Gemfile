@@ -3,7 +3,6 @@ source 'https://rubygems.org'
 ruby '2.1.3'
 
 gem 'rails',    '~> 4.0'
-gem 'mail',     '2.5.3'
 
 # Environment vars and configs
 gem 'dotenv-rails'
@@ -55,7 +54,7 @@ gem 'high_voltage'
 # Authentication and Authorization
 gem 'omniauth'
 gem 'omniauth-twitter'
-gem 'omniauth-facebook', '1.4.0'
+gem 'omniauth-facebook'
 gem 'devise', '~> 3.0.2'
 gem 'ezcrypto'
 
@@ -149,8 +148,8 @@ group :test do
   gem 'selenium-webdriver', '~> 2.35.1'
 end
 
-gem 'sass-rails', '~> 4.0.0'
-gem 'coffee-rails', '~> 4.0.0'
+gem 'sass-rails'
+gem 'coffee-rails'
 gem "compass-rails"
 gem 'uglifier'
 gem 'compass-960-plugin'

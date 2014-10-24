@@ -41,3 +41,7 @@ ansible/secret/*.yml
 ansible/secret/access_key.pub
 
 ###
+
+.env*
+tmp
+vendor
