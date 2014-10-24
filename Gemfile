@@ -88,10 +88,6 @@ gem 'enumerate_it'
 gem 'http_accept_language'
 gem 'routing-filter', '~> 0.4.0.pre'
 
-# Payment
-gem 'moip', github: 'catarse/moip-ruby'
-gem 'httpclient',     '>= 2.2.5'
-
 group :production do
   gem 'google-analytics-rails'
 
@@ -148,7 +144,7 @@ group :test do
   gem 'selenium-webdriver', '~> 2.35.1'
 end
 
-gem 'sass-rails'
+gem 'sass-rails', '4.0.3'
 gem 'coffee-rails'
 gem "compass-rails"
 gem 'uglifier'
