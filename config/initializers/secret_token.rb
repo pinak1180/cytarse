@@ -1,2 +1,1 @@
-Catarse::Application.config.secret_token = ENV['SECRET_KEY_BASE']
 Catarse::Application.config.secret_key_base = ENV['SECRET_KEY_BASE']

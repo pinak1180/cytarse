@@ -2,12 +2,16 @@ source 'https://rubygems.org'
 
 ruby '2.1.3'
 
-gem 'rails',    '4.0.0'
+gem 'rails',    '~> 4.0'
 gem 'mail',     '2.5.3'
+
+# Environment vars and configs
+gem 'dotenv-rails'
+gem 'dotenv-deployment'
 
 gem 'protected_attributes', '~> 1.0.3' # When upgrade to strong_parameters, remove this gem.
 gem 'rails-observers', '~> 0.1.2'
-gem 'activerecord-session_store', '~> 0.0.1'
+gem 'activerecord-session_store'
 
 gem 'sidekiq',  '~> 2.13.0'
 gem 'sinatra', require: false # required by sidekiq web interface mounted on /sidekiq
@@ -19,7 +23,7 @@ gem 'best_in_place', github: 'bernat/best_in_place'
 gem 'state_machine', require: 'state_machine/core'
 
 # paranoid stuff
-gem 'paper_trail', github: 'airblade/paper_trail', branch: 'rails4'
+gem 'paper_trail', github: 'airblade/paper_trail'
 
 # Database and data related
 gem 'pg'
@@ -33,7 +37,9 @@ gem 'chartkick'
 # Payment engines
 # gem 'catarse_paypal_express', '~> 2.0.0'
 # gem 'catarse_moip', '~> 2.0.8'
-gem 'catarse_braintree', '0.0.1', path: 'vendor/gems/catarse_braintree-2c5b83730cf9'
+# gem 'catarse_braintree', '0.0.1', path: 'vendor/gems/catarse_braintree-2c5b83730cf9'
+gem 'catarse_stripe', :git => 'git://github.com/Codebeef/catarse_stripe.git'
+gem 'stripe', :git => 'https://github.com/stripe/stripe-ruby'
 
 # Decorators
 gem 'draper'
@@ -73,13 +79,11 @@ gem 'rmagick'
 
 # Other Tools
 gem 'ranked-model'
-gem 'feedzirra'
 gem 'inherited_resources',        '~> 1.4.1'
 gem 'has_scope', '~> 0.6.0.rc'
 gem 'spectator-validates_email',  require: 'validates_email'
 gem 'video_info', '>= 1.1.1'
 gem 'enumerate_it'
-gem 'httparty', '~> 0.6.1' # this version is required by moip gem, otherwise payment confirmation will break
 
 # Translations
 gem 'http_accept_language'

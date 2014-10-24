@@ -29,8 +29,9 @@ Catarse::Application.routes.draw do
   end
 
   #mount CatarsePaypalExpress::Engine => "/", as: :catarse_paypal_express
-  mount CatarseBraintree::Engine => "/", as: :catarse_braintree
+  #mount CatarseBraintree::Engine => "/", as: :catarse_braintree
   #mount CatarseMoip::Engine => "/", as: :catarse_moip
+  mount CatarseStripe::Engine => "/", :as => "catarse_stripe"
 
   # Channels
   constraints subdomain: /^(?!www|secure|test|local|cytarse|prawf|staging)(\w+)/ do
