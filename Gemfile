@@ -24,6 +24,9 @@ gem 'state_machine', require: 'state_machine/core'
 # paranoid stuff
 gem 'paper_trail', github: 'airblade/paper_trail'
 
+# Errors
+gem 'rollbar', '~> 1.2.4'
+
 # Database and data related
 gem 'pg'
 gem 'postgres-copy'
