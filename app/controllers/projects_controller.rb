@@ -82,6 +82,8 @@ class ProjectsController < ApplicationController
   protected
 
   def check_for_stripe_keys
+    return if @project.user.stripe_userid.blank?
+
     if @project.stripe_userid.nil?
       [:stripe_access_token, :stripe_key, :stripe_userid].each do |field|
         @project.send("#{field.to_s}=", @project.user.send(field).dup)
