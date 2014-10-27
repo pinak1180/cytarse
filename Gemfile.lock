@@ -1,6 +1,6 @@
 GIT
   remote: git://github.com/Codebeef/catarse_stripe.git
-  revision: 514b1d5390742ff360011fb90abba748389dc3ae
+  revision: f1484be78c56f7419bbbfc4d6ab54d4d15e1322d
   specs:
     catarse_stripe (0.2)
       activemerchant (>= 1.17.0)

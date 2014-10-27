@@ -441,7 +441,7 @@ Yn anffodus wnaeth y prosiect %{project_link} wnes ti gefnogi ar Heliwm ddim llw
         error: "Wps. Roedd yna wall wrth brosesu dy gefnogiad. Plis tria eto."
         international:
           description: "Galli ddefnyddio PayPal"
-          important_html: "<p>But if that's not possible, don't worry: you'll always be able to receive your money back. Only, in case your refund is made more than 60 days after your payment, you'll have to pay PayPal's fee, which is 5,4% + R$0,60 per transaction.</p>"
+          important_html: "<p>But if that's not possible, don't worry: you'll always be able to receive your money back. Only, in case your refund is made more than 60 days after your payment, you'll have to pay PayPal's fee, which is 5,4% + £0,60 per transaction.</p>"
           submit: "Talu gyda PayPal"
           title: "Eisiau gwneud taliad?"
         review_with_reward_html: "Byddi di'n rhoi cefnogaeth o <strong>%{value}</strong> a'n derbyn yr anrheg diolch yma:"
