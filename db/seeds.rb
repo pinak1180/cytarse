@@ -3,40 +3,16 @@
 puts 'Seeding the database...'
 
 [
-  { pt: 'Arte', en: 'Art', cy: 'Celf' },
-  { pt: 'Artes plásticas', en: 'Visual Arts', cy: 'Celf Weledol' },
-  { pt: 'Circo', en: 'Circus', cy: 'Syrcas' },
-  { pt: 'Comunidade', en: 'Community', cy: 'Cymuned' },
-  { pt: 'Humor', en: 'Humor', cy: 'Hiwmor' },
-  { pt: 'Quadrinhos', en: 'Comicbooks', cy: 'Llyfrau Comic' },
-  { pt: 'Dança', en: 'Dance', cy: 'Dawns' },
-  { pt: 'Design', en: 'Design', cy: 'Dylunio' },
-  { pt: 'Eventos', en: 'Events', cy: 'Digwyddiadau' },
-  { pt: 'Moda', en: 'Fashion', cy: 'Ffasiwn' },
-  { pt: 'Gastronomia', en: 'Gastronomy', cy: 'Gastronomeg' },
-  { pt: 'Cinema & Vídeo', en: 'Film & Video', cy: 'Ffilm & Fideo' },
-  { pt: 'Jogos', en: 'Games', cy: 'Gemau' },
-  { pt: 'Jornalismo', en: 'Journalism', cy: 'Newyddiadureg' },
-  { pt: 'Música', en: 'Music', cy: 'Cerddoriaeth' },
-  { pt: 'Fotografia', en: 'Photography', cy: 'Ffotograffeg' },
-  { pt: 'Ciência e Tecnologia', en: 'Science & Technology', cy: 'Gwyddoniaeth & Thechnoleg' },
-  { pt: 'Teatro', en: 'Theatre', cy: 'Theatr' },
-  { pt: 'Esporte', en: 'Sport', cy: 'Chwaraeon' },
-  { pt: 'Web', en: 'Web', cy: 'Y We' },
-  { pt: 'Carnaval', en: 'Carnival', cy: 'Carnifal' },
-  { pt: 'Arquitetura & Urbanismo', en: 'Architecture & Urbanism', cy: 'Pensaerniaeth' },
-  { pt: 'Literatura', en: 'Literature', cy: 'Llenyddiaeth' },
-  { pt: 'Mobilidade e Transporte', en: 'Mobility & Transportation', cy: 'Teithio' },
-  { pt: 'Meio Ambiente', en: 'Environment', cy: 'Amgylchedd' },
-  { pt: 'Negócios Sociais', en: 'Social Business', cy: 'Busnes Cymdeithasol' },
-  { pt: 'Educação', en: 'Education', cy: 'Addysg' },
-  { pt: 'Filmes de Ficção', en: 'Fiction Films', cy: 'Ffilmiau Ffuglen' },
-  { pt: 'Filmes Documentários', en: 'Documentary Films', cy: 'Ffilmiau Dogfen' },
-  { pt: 'Filmes Universitários', en: 'Experimental Films', cy: 'Ffilmiau Arbrofol' }
+  { en: 'Art & Design', cy: 'Celf a Dylunio' },
+  { en: 'Music', cy: 'Cerddoriaeth' },
+  { en: 'Publishing & Journalism', cy: 'Cyhoeddi a Newyddiaduraeth' },
+  { en: 'Film & Media', cy: 'Ffilm a Chyfryngau' },
+  { en: 'Welsh Language Promotion', cy: 'Hyrwyddo\'r Gymraeg' },
+  { en: 'Technology', cy: 'Technoleg' },
+  { en: 'Theatre & Performance', cy: 'Theatr a Pherfformio' },
 ].each do |name|
-   category = Category.find_or_initialize_by(name_pt: name[:pt])
+   category = Category.find_or_initialize_by(name_en: name[:en])
    category.update_attributes({
-     name_en: name[:en],
      name_cy: name[:cy]
    })
  end
