@@ -8,6 +8,8 @@ class ProjectsController < ApplicationController
   respond_to :html
   respond_to :json, only: [:index, :show, :update]
 
+  before_action :ensure_stripe_is_setup, only: [:new, :create]
+
   def index
     index! do |format|
       format.html do
@@ -80,6 +82,13 @@ class ProjectsController < ApplicationController
   end
 
   protected
+
+  def ensure_stripe_is_setup
+    if current_user.stripe_userid.blank?
+      flash[:notice] = t('.please_connect_with_stripe')
+      redirect_to(user_path(id: current_user.id, anchor: 'settings'))
+    end
+  end
 
   def check_for_stripe_keys
     return if @project.user.stripe_userid.blank?
