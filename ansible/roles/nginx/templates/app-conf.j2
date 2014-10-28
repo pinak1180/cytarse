@@ -1,7 +1,17 @@
 server {
-  listen               80;
+  listen 80;
+  server_name    {{domain_name}};
+  rewrite        ^ https://$server_name$request_uri? permanent;
+}
+
+server {
+  listen               443;
 
   server_name          {{domain_name}};
   root                 {{app_directory}}/public;
   passenger_enabled    on;
+
+  ssl                  on;
+  ssl_certificate      /etc/nginx/ssl/server.crt;
+  ssl_certificate_key  /etc/nginx/ssl/server.key;
 }

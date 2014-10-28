@@ -5,7 +5,7 @@
         state=directory
 
 - name: Copy over ssl certs
-  copy: src=null/ssl/certs/server.crt
+  copy: src=null/ssl/server.crt
         dest=/etc/nginx/ssl/
         owner=root
         group=root
@@ -13,7 +13,7 @@
   notify: Restart Nginx
 
 - name: Copy over ssl keys
-  copy: src=null/ssl/keys/server.key
+  copy: src=null/ssl/server.key
         dest=/etc/nginx/ssl/
         owner=root
         group=root

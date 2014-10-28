@@ -21,6 +21,7 @@
     - environment_vars
     - ufw
     - ruby-2.1.3
+    - ssl
     - nginx
     - postgres
     - redis

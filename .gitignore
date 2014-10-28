@@ -39,6 +39,7 @@ ansible/roles/ssl/files/null/ssl/keys
 # Secret files from ansible
 ansible/secret/*.yml
 ansible/secret/access_key.pub
+ansible/roles/ssl/files
 
 ###
 
