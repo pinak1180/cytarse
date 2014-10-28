@@ -30,7 +30,7 @@ puts 'Seeding the database...'
   email_system: 'post.heliwm@gmail.com',
   email_no_reply: 'post.heliwm@gmail.com',
   facebook_url: "https://www.facebook.com/pages/Heliwm/290852144409671",
-  facebook_app_id: '247011378836795',
+  facebook_app_id: ENV['FACEBOOK_APP_ID'],
   twitter_url: 'http://twitter.com/heliwm',
   twitter_username: "heliwm",
   mailchimp_url: 'http://heliwm.us3.list-manage.com/subscribe?u=9280b96de279697a8c2103ebd&id=feee12318c',
@@ -62,11 +62,12 @@ Channel.find_or_create_by!(name: "Channel name") do |c|
 end
 
 
-OauthProvider.find_or_create_by!(name: 'facebook') do |o|
-  o.key = ENV['FACEBOOK_APP_ID']
-  o.secret = ENV['FACEBOOK_APP_SECRET']
-  o.path = 'facebook'
-end
+facebook = OauthProvider.find_or_initialize_by(name: 'facebook')
+facebook.update_attributes({
+  key: ENV['FACEBOOK_APP_ID'],
+  secret: ENV['FACEBOOK_APP_SECRET'],
+  path: 'facebook'
+})
 
 puts
 puts '============================================='
