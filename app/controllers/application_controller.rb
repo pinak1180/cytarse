@@ -13,7 +13,6 @@ class ApplicationController < ActionController::Base
   helper_method :channel, :namespace, :referal_link
 
   before_filter :set_locale
-  before_filter :force_http
 
   before_action :referal_it!
 
@@ -63,10 +62,6 @@ class ApplicationController < ActionController::Base
     return_to = session[:return_to]
     session[:return_to] = nil
     (return_to || root_path)
-  end
-
-  def force_http
-    redirect_to(protocol: 'http', host: ::Configuration[:base_domain]) if request.ssl?
   end
 
   def redirect_user_back_after_login
