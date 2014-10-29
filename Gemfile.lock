@@ -33,16 +33,12 @@ GIT
 
 GIT
   remote: git@github.com:Codebeef/catarse_stripe.git
-  revision: b9c39b84046712bb6f827df36049781236eb975a
+  revision: 274abca3046f1ec17261c1aa237051e662f13562
   specs:
-    catarse_stripe (0.2)
-      activemerchant (>= 1.17.0)
-      figaro
-      oauth2
-      omniauth-stripe-connect
-      rails (>= 3.2.11)
+    catarse_stripe (0.0.1)
+      rails (~> 4.0)
+      slim-rails
       stripe
-      stripe_event
 
 GIT
   remote: https://github.com/stripe/stripe-ruby
@@ -66,17 +62,6 @@ GEM
       erubis (~> 2.7.0)
       rack (~> 1.5.2)
       rack-test (~> 0.6.2)
-    active_utils (2.2.3)
-      activesupport (>= 2.3.11)
-      i18n
-    activemerchant (1.44.1)
-      active_utils (~> 2.2.0)
-      activesupport (>= 3.2.14, < 5.0.0)
-      builder (>= 2.1.2, < 4.0.0)
-      i18n (>= 0.6.9)
-      json (~> 1.7)
-      nokogiri (~> 1.4)
-      offsite_payments (~> 2.0.0)
     activemodel (4.0.10)
       activesupport (= 4.0.10)
       builder (~> 3.1.0)
@@ -197,8 +182,6 @@ GEM
     faraday (0.9.0)
       multipart-post (>= 1.2, < 3)
     ffi (1.9.6)
-    figaro (1.0.0)
-      thor (~> 0.14)
     fog (1.24.0)
       fog-brightbox
       fog-core (~> 1.23)
@@ -291,8 +274,6 @@ GEM
     mime-types (2.4.3)
     mini_portile (0.6.0)
     minitest (4.7.5)
-    money (6.3.0)
-      i18n (>= 0.6.4, <= 0.7.0.dev)
     multi_json (1.10.1)
     multi_xml (0.5.5)
     multipart-post (2.0.0)
@@ -310,14 +291,6 @@ GEM
       multi_json (~> 1.3)
       multi_xml (~> 0.5)
       rack (~> 1.2)
-    offsite_payments (2.0.1)
-      active_utils (~> 2.2.0)
-      activesupport (>= 3.2.14, < 5.0.0)
-      builder (>= 2.1.2, < 4.0.0)
-      i18n (~> 0.5)
-      json (~> 1.7)
-      money (< 7.0.0)
-      nokogiri (~> 1.4)
     omniauth (1.2.2)
       hashie (>= 1.2, < 4)
       rack (~> 1.0)
@@ -331,9 +304,6 @@ GEM
       multi_json (~> 1.3)
       oauth2 (~> 1.0)
       omniauth (~> 1.2)
-    omniauth-stripe-connect (2.4.0)
-      omniauth (~> 1.0)
-      omniauth-oauth2 (~> 1.2.0)
     omniauth-twitter (1.1.0)
       multi_json (~> 1.3)
       omniauth-oauth (~> 1.0)
@@ -487,13 +457,10 @@ GEM
       net-scp (>= 1.1.2)
       net-ssh (>= 2.8.0)
     state_machine (1.2.0)
-    stripe_event (1.3.0)
-      activesupport (>= 3.1)
-      stripe (~> 1.6)
     supermodel (0.1.4)
       activemodel (>= 3.0.0.beta)
     tag_helper (0.0.3)
-    temple (0.6.9)
+    temple (0.6.10)
     term-ansicolor (1.3.0)
       tins (~> 1.0)
     therubyracer (0.12.1)
