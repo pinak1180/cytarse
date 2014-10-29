@@ -1,17 +1,4 @@
 GIT
-  remote: git://github.com/Codebeef/catarse_stripe.git
-  revision: 7a2dc10cf88698d6369b6a0b7b63e0993c48df74
-  specs:
-    catarse_stripe (0.2)
-      activemerchant (>= 1.17.0)
-      figaro
-      oauth2
-      omniauth-stripe-connect
-      rails (>= 3.2.11)
-      stripe
-      stripe_event
-
-GIT
   remote: git://github.com/airblade/paper_trail.git
   revision: abdf53ab39144210ecf8c69d5358c63d540bc0f0
   specs:
@@ -43,6 +30,19 @@ GIT
   branch: 2.0
   specs:
     cancan (2.0.0.alpha)
+
+GIT
+  remote: git@github.com:Codebeef/catarse_stripe.git
+  revision: b9c39b84046712bb6f827df36049781236eb975a
+  specs:
+    catarse_stripe (0.2)
+      activemerchant (>= 1.17.0)
+      figaro
+      oauth2
+      omniauth-stripe-connect
+      rails (>= 3.2.11)
+      stripe
+      stripe_event
 
 GIT
   remote: https://github.com/stripe/stripe-ruby
