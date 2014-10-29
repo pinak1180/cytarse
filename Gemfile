@@ -4,6 +4,9 @@ ruby '2.1.3'
 
 gem 'rails',    '~> 4.0'
 
+# Cron
+gem 'whenever', :require => false
+
 # Environment vars and configs
 gem 'dotenv-rails'
 gem 'dotenv-deployment'

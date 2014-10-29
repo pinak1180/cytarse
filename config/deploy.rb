@@ -12,6 +12,7 @@ set :linked_files, []
 set :linked_dirs, %w{bin log tmp/pids tmp/cache tmp/sockets vendor/bundle public/system public/uploads}
 set :keep_releases, 5
 set :ssh_options, {:forward_agent => true}
+set :whenever_identifier, ->{ "#{fetch(:application)}_#{fetch(:stage)}" }
 
 SSHKit.config.command_map.prefix[:rake].unshift('source /etc/profile.d/app_env.sh; ')
 
