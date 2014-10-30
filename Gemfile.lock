@@ -33,7 +33,7 @@ GIT
 
 GIT
   remote: git@github.com:Codebeef/catarse_stripe.git
-  revision: 274abca3046f1ec17261c1aa237051e662f13562
+  revision: ebc5561d2f6ccedaa179c5349641cdab89011908
   specs:
     catarse_stripe (0.0.1)
       rails (~> 4.0)
