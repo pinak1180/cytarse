@@ -1,7 +1,7 @@
 class Category < ActiveRecord::Base
   has_many :projects
-  validates_presence_of :name_pt
-  validates_uniqueness_of :name_pt
+  validates_presence_of :name_en
+  validates_uniqueness_of :name_en
 
   def self.with_projects
     where("exists(select true from projects p where p.category_id = categories.id and p.state not in('draft', 'rejected'))")
