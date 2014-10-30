@@ -18,7 +18,7 @@
   tasks:
     - name: Restart postgresql
       service: name=postgresql state=restarted
-      
+
     - name: Destroy database
       sudo_user: postgres
       postgresql_db:
@@ -28,3 +28,33 @@
         lc_ctype: 'en_US.UTF-8'
         template: 'template0'
         state: absent
+
+    - name: setup database
+      sudo_user: postgres
+      postgresql_db:
+        name: "{{ db_name }}"
+        encoding: 'UTF-8'
+        lc_collate: 'en_US.UTF-8'
+        lc_ctype: 'en_US.UTF-8'
+        template: 'template0'
+        state: present
+
+    - name: grant access for database to user
+      sudo_user: postgres
+      postgresql_user:
+        db: "{{ db_name }}"
+        user: "{{ db_user }}"
+        password: "{{ db_pass }}"
+        role_attr_flags: "NOSUPERUSER"
+        state: present
+      notify: Restart postgresql
+
+    - name: postgres | install trigrams extension
+      command: psql -d {{ db_name }} -c "CREATE EXTENSION IF NOT EXISTS pg_trgm;"
+      sudo: yes
+      sudo_user: postgres
+
+    - name: postgres | install unaccent extension
+      command: psql -d {{ db_name }} -c "CREATE EXTENSION IF NOT EXISTS unaccent;"
+      sudo: yes
+      sudo_user: postgres

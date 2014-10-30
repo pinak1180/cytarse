@@ -15,6 +15,7 @@ puts 'Seeding the database...'
    category.update_attributes({
      name_cy: name[:cy]
    })
+   category.save
  end
 
 {
