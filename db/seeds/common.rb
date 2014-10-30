@@ -35,7 +35,7 @@ puts 'Seeding the database...'
   twitter_username: "heliwm",
   mailchimp_url: 'https://heliwm.us3.list-manage.com/subscribe?u=9280b96de279697a8c2103ebd&id=feee12318c',
   mailchimp_api_key: '0682116d413eaeb2fbb512f48c4d3998-us3',
-  catarse_fee: '0.4',
+  catarse_fee: '0.07',
   support_forum: '',
   uservoice_secret_gadget: 'change_this',
   uservoice_key: 'uservoice_key',
