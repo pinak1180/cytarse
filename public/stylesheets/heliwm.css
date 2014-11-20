@@ -90,6 +90,10 @@ h4 {
 	 color: rgba(0, 168, 154, 1);
 }
 
+p {
+	font-size: 1em;
+}
+
 a, a:visited, a:active:visited {
 	 color: rgba(212, 20, 90, 1);
 	 font-family: "Source Sans Pro";
@@ -116,6 +120,13 @@ q:before, q:after, blockquote:before, blockquote:after {
     content: "";
     content: none
 }
+
+label {
+	color: inherit;
+}
+
+
+
 
 a img {
     border: none
@@ -1180,6 +1191,63 @@ table .span12 {
     width: 924px;
     margin-left: 0
 }
+
+/* !Login / Sign up page */
+
+body#catarse_bootstrap {
+	background: #303030;
+}
+
+.login-box .register_link {
+	color: inherit;
+	font-size: 1.2em;
+}
+
+#catarse_bootstrap > div.content > div:nth-child(2) > div > div > p > strong > a:hover {
+	color: rgba(212, 20, 90, 1);
+}
+
+.login-box .separator p {
+	text-align: center;
+	background: white;
+	color: #79808b;
+	width: 50px;
+	display: block;
+	margin: 0 auto;
+	position: relative;
+	top: -17px;
+}
+
+abbr[title] {
+	border-bottom: none;
+}
+
+.show-password {
+	position: absolute;
+	right: 18px;
+	top: 246px;
+}
+
+.newsletter {
+	display: inline-block;
+	height: 34px;
+	width: 100%;
+	position: relative;
+	text-align: center;
+	padding-top: 1em;
+}
+
+.button.action, a.button.action {
+	background: rgba(212, 20, 90, 0.8);
+}
+
+.button.action:hover, a.button.action:hover {
+	background: rgba(212, 20, 90, 1);
+}
+
+
+
+/* Bootstrap stuff */
 
 #bootstrap-alert.with_small_font, .bootstrap-alert.with_small_font {
     margin-top: 30px
@@ -12344,12 +12412,10 @@ form#edit_reward .inline-hints {
 }
 
 [data-controller="static"] #page_content .container .static_default .title h1 {
-    color: #333333;
     
-    font-size: 24px;
-    padding: 0 0 5px 50px;
-    margin-top: 20px;
-    background: url("/assets/catarse/icon_new.png") left top no-repeat
+    font-size: 4em;
+    padding: 0 0 0.5em 0;
+    
 }
 
 [data-controller="static"] #page_content .container .static_default .title h1.contribution {
@@ -12368,12 +12434,9 @@ form#edit_reward .inline-hints {
 }
 
 [data-controller="static"] #page_content .container .static_default .title h2 {
-    color: #333333;
     
-    font-size: 14px;
-    padding-left: 50px;
-    padding-bottom: 15px;
-    border-bottom: 1px dotted #cccccc
+    font-size: 1.8em;
+    text-align: center;
 }
 
 [data-controller="static"] #page_content .container .static_default .title h2.contribution {
@@ -12389,14 +12452,14 @@ form#edit_reward .inline-hints {
 }
 
 [data-controller="static"] #page_content .container .static_default .title h3 {
-    color: #f28d0b;
-    font-size: 21px;
-    
-    font-style: italic;
-    margin-top: 46px;
-    line-height: 24px;
-    width: 100%;
-    text-align: center
+    color: #d9e021 ;
+	font-size: 1.3em;
+	
+	/* font-style: italic; */
+	/* margin-top: 46px; */
+	/* line-height: 24px; */
+	width: 100%;
+	text-align: center;
 }
 
 [data-controller="static"] #page_content .container .static_default .title h3.contribution {
@@ -12409,13 +12472,13 @@ form#edit_reward .inline-hints {
 
 [data-controller="static"] #page_content .container .static_default .title p {
     
-    font-style: italic;
-    color: #666666;
-    font-size: 16px;
-    text-align: center;
-    line-height: 21px;
-    padding-top: 20px;
-    margin: 0 auto
+	    /* font-style: italic; */
+	/* color: #666666; */
+	/* font-size: 16px; */
+	text-align: center;
+	/* line-height: 21px; */
+	/* padding-top: 20px; */
+	margin: 0 auto;
 }
 
 [data-controller="static"] #page_content .container .static_default .title p.start {
@@ -12476,20 +12539,22 @@ form#edit_reward .inline-hints {
 }
 
 [data-controller="static"] #page_content .container .static_default ul.steps li span {
-    color: #666666;
-    
-    font-weight: bold;
-    font-size: 16px;
-    padding-bottom: 10px;
-    display: block;
-    margin-top: 20px
+    color:  rgba(0, 168, 154, 1);
+
+	font-weight: 600;
+	line-height: 1.2;
+	/* font-size: 16px; */
+	/* padding-bottom: 10px; */
+	display: block;
+	margin-top: 20px;
+	height: 3em;
 }
 
 [data-controller="static"] #page_content .container .static_default ul.steps li p {
     
-    color: #666666;
-    font-size: 12px;
-    line-height: 18px
+	    /* color: #666666; */
+	font-size: 0.778em;
+	line-height: 1.5em;
 }
 
 [data-controller="static"] #page_content .container .static_default ul.steps li.last {
@@ -16722,13 +16787,3 @@ input.ui-button {
                 margin: -1px;
                 height: 100%
             }
-
-/* !Extra for Login */
-
-.button.action, a.button.action {
-	background: rgba(212, 20, 90, 0.8);
-}
-
-.button.action:hover, a.button.action:hover {
-	background: rgba(212, 20, 90, 1);
-}
