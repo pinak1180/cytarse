@@ -109,7 +109,7 @@ group :production do
 
   # Make heroku serve static assets and loggin with stdout
   #gem 'rails_on_heroku'
-  gem 'rails_12factor'
+  #gem 'rails_12factor'
 
   # Monitoring with the new new relic
   gem 'newrelic_rpm', '3.6.5.130'
