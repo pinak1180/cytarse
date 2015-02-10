@@ -43,7 +43,7 @@ Catarse::Application.configure do
   config.force_ssl = true
 
   # Set to :debug to see everything in the log.
-  config.log_level = :info
+  config.log_level = :debug
 
   # Prepend all log lines with the following tags.
   # config.log_tags = [ :subdomain, :uuid ]
@@ -51,11 +51,6 @@ Catarse::Application.configure do
 
   # Use a different logger for distributed setups.
   # config.logger = ActiveSupport::TaggedLogging.new(SyslogLogger.new)
-
-  # https://github.com/ryanb/cancan/issues/511
-  config.logger = Logger.new(STDOUT)
-  config.logger.level = Logger.const_get((ENV["LOG_LEVEL"] || "ERROR").upcase)
-
 
   # Use a different cache store in production.
   # config.cache_store = :mem_cache_store
