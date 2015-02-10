@@ -3,9 +3,10 @@ class PasswordsController < Devise::PasswordsController
   def update
     self.resource = resource_class.reset_password_by_token(resource_params)
 
-    logger.debug '================'
-    logger.debug resource.errors
-    logger.debug '================'
+    logger.info '================'
+    logger.info resource.errors
+    logger.info resource.errors.empty?
+    logger.info '================'
 
     if resource.errors.empty?
       resource.unlock_access! if unlockable?(resource)

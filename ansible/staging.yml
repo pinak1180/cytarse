@@ -9,7 +9,7 @@
     domain_name: "staging.{{app_name}}.com"
     environment_name: staging
     rails_environment_name: production
-    mail_method: letter_opener
+    mail_method: letter_opener_web
 
   vars_files:
     - vars/common.yml
