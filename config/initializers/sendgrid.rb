@@ -1,6 +1,6 @@
 begin
   if Rails.env.production?
-    if ENV['MAIL_METHOD'] == 'letter_opener'
+    if ENV['MAIL_METHOD'] == 'letter_opener_web'
       ActionMailer::Base.delivery_method = :letter_opener_web
     else
       ActionMailer::Base.smtp_settings = {
