@@ -2,7 +2,7 @@ require 'sidekiq/web'
 
 Catarse::Application.routes.draw do
 
-  if ENV['MAIL_METHOD'] == 'letter_opener'
+  if ENV['MAIL_METHOD'] == 'letter_opener_web'
     mount LetterOpenerWeb::Engine, at: "/letter_opener"
   end
 
