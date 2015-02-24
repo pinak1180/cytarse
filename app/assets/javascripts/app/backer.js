@@ -22,7 +22,10 @@ App.addChild('Backer', _.extend({
   clickReward: function(event){
     var option = this.$(event.currentTarget);
     this.selectReward(option);
-    this.value.val(this.reward().minimum_value);
+    
+    if ((this.value.val() == '') || (parseFloat(this.value.val()) < parseFloat(this.reward().minimum_value))) {
+      this.value.val(this.reward().minimum_value)
+    }
   },
 
   reward: function(){
@@ -52,9 +55,8 @@ App.addChild('Backer', _.extend({
     this.value = this.$('#backer_value');
     this.rewards = this.value.data('rewards');
     this.choices = this.$('li.choice');
-    this.credits = this.$('#credits'); 
+    this.credits = this.$('#credits');
     this.selectReward(this.$('input[type=radio]:checked'));
     this.setupForm();
   }
 }, Skull.Form));
-
