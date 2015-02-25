@@ -854,7 +854,7 @@ white-space: nowrap;
     -webkit-box-shadow: rgba(0, 0, 0, 0.75), 4px, -4px, 10px;
     -moz-box-shadow: rgba(0, 0, 0, 0.75), 4px, -4px, 10px;
     box-shadow: rgba(0, 0, 0, 0.75), 4px, -4px, 10px;
-    font-weight: bold;
+    font-weight: 600;
     -webkit-transition: all, 0.3s;
     -moz-transition: all, 0.3s;
     -o-transition: all, 0.3s;
@@ -2068,7 +2068,7 @@ abbr[title] {
 
 .dropdown li .small {
     font-size: 11px;
-    font-weight: bold;
+    font-weight: 600;
     color: #d4145a;
     margin: -10px 0 0px;
     line-height: 15px
@@ -2709,7 +2709,7 @@ abbr[title] {
 .bootstrap-twitter h1, .bootstrap-twitter h2, .bootstrap-twitter h3,
 .bootstrap-twitter h4, .bootstrap-twitter h5, .bootstrap-twitter h6 {
     margin: 0;
-    font-weight: bold;
+    font-weight: 600;
     color: inherit;
     text-rendering: optimizelegibility
 }
@@ -2815,7 +2815,7 @@ abbr[title] {
 }
 
 .bootstrap-twitter dt {
-    font-weight: bold;
+    font-weight: 600;
     line-height: 17px
 }
 
@@ -2972,7 +2972,7 @@ abbr[title] {
 .bootstrap-twitter .label {
     padding: 1px 4px 2px;
     font-size: 10.998px;
-    font-weight: bold;
+    font-weight: 600;
     line-height: 13px;
     color: #ffffff;
     vertical-align: middle;
@@ -3036,7 +3036,7 @@ abbr[title] {
 .bootstrap-twitter .badge {
     padding: 1px 9px 2px;
     font-size: 12.025px;
-    font-weight: bold;
+    font-weight: 600;
     white-space: nowrap;
     color: #ffffff;
     background-color: #999999;
@@ -4964,7 +4964,7 @@ abbr[title] {
     display: block;
     padding: 3px 15px;
     font-size: 11px;
-    font-weight: bold;
+    font-weight: 600;
     line-height: 18px;
     color: #999999;
     text-shadow: 0 1px 0 rgba(255, 255, 255, 0.5);
@@ -6584,7 +6584,7 @@ abbr[title] {
 .bootstrap-twitter .close {
     float: right;
     font-size: 20px;
-    font-weight: bold;
+    font-weight: 600;
     line-height: 18px;
     color: #000000;
     text-shadow: 0 1px 0 #ffffff;
@@ -7124,7 +7124,7 @@ abbr[title] {
 
     .bootstrap-twitter .navbar .nav>li>a, .bootstrap-twitter .navbar .dropdown-menu a {
         padding: 6px 15px;
-        font-weight: bold;
+        font-weight: 600;
         color: #999999;
         -webkit-border-radius: 3px;
         -moz-border-radius: 3px;
@@ -7623,7 +7623,7 @@ span.on_the_spot_editing {
     font-size: 14px;
     line-height: 16px;
     text-shadow: rgba(255, 255, 255, 0.85), 1px, 1px, 0px;
-    font-weight: bold;
+    font-weight: 600;
     padding: 5px 10px;
     border: none;
     -webkit-border-radius: 8px;
@@ -8080,7 +8080,7 @@ body #page_content .container .list-title {
 body #page_content .container .list-title a {
     color: inherit;
 	font-size: inherit;
-    font-weight: bold;
+    font-weight: 600;
     text-decoration: none
 }
 
@@ -8090,7 +8090,7 @@ body #page_content .container .more-projects {
 	text-decoration: none;
 	margin: 35px 0 0 0;
 	font-size: 13px;
-	font-weight: bold;
+	font-weight: 600;
 	padding: 0;
 	text-indent: -25px;
 	text-align: right;
@@ -8787,7 +8787,7 @@ body #logos .power a {
 .sidebar .content .schedule ul.events li a h4 {
     float: left;
     color: black;
-    font-weight: bold;
+    font-weight: 600;
     font-size: 20px;
     margin-right: 10px
 }
@@ -9216,7 +9216,7 @@ body #logos .power a {
     border: none;
     border-radius: 3px;
     display: inline-block;
-    font-weight: bold;
+    font-weight: 600;
     font-size: 15px;
     padding: 0.7em 1.5em;
     background: #3f4752;
@@ -9249,7 +9249,7 @@ body #logos .power a {
 
 [data-namespace="null"][data-controller="projects"][data-action="index"] .channel_banner .text h1 {
     font-size: 2.2em;
-    font-weight: bold;
+    font-weight: 600;
     margin: 2em 0 0.5em 0
 }
 
@@ -9341,7 +9341,7 @@ body #logos .power a {
 }
 
 [data-namespace="null"][data-controller="projects"][data-action="show"] #page_content .update h3 {
-    font-weight: bold;
+    font-weight: 600;
     color: #444444;
     font-size: 16px;
     margin-bottom: 20px
@@ -9797,7 +9797,7 @@ body #logos .power a {
     background: url("../assets/heliwm/svg/fingers-crossed.svg") left 7px no-repeat;
 	background-size: 1.7em;
 	color: #4d535d;
-	font-weight: bold;
+	font-weight: 600;
 	font-size: 0.778em;
 	padding: 3px 3px 10px 25px;
 /*	text-transform: uppercase;*/
@@ -10026,7 +10026,7 @@ body #logos .power a {
 	-o-transition: all, 0.5s;
 	transition: all, 0.5s;
 	text-transform: uppercase;
-	font-weight: bold;
+	font-weight: 600;
 	font-size: 15px;
 	color: white
 }
@@ -11057,7 +11057,7 @@ body #logos .power a {
 
 [data-controller="projects"][data-action="pending_contributions"] #page_content .container .project_content .title h2 strong,
 [data-controller="projects"][data-action="pending"] #page_content .container .project_content .title h2 strong {
-    font-weight: bold;
+    font-weight: 600;
     color: #d4145a
 }
 
@@ -11770,7 +11770,7 @@ form#edit_reward .inline-hints {
     color: #666666;
     float: left;
     
-    font-weight: bold;
+    font-weight: 600;
     font-size: 18px;
     margin-bottom: 20px;
     margin-top: 40px;
@@ -11789,7 +11789,7 @@ form#edit_reward .inline-hints {
 [data-controller="contributions"][data-namespace="projects"][data-action="edit"] div#payment .choose_card .div span {
     color: #666666;
     
-    font-weight: bold;
+    font-weight: 600;
     font-size: 16;
     margin-top: 20px;
     margin-bottom: 20px;
@@ -12573,7 +12573,7 @@ form#edit_reward .inline-hints {
     color: #f28d0b;
     font-size: 18px;
     
-    font-weight: bold;
+    font-weight: 600;
     line-height: 24px;
     margin-left: 20px;
     margin-top: 23px;
@@ -12727,7 +12727,7 @@ form#edit_reward .inline-hints {
     font-size: 14px;
     display: block;
     line-height: 18px;
-    font-weight: bold;
+    font-weight: 600;
     margin-bottom: 10px
 }
 
@@ -12874,7 +12874,7 @@ form#edit_reward .inline-hints {
 
 [data-controller="static"] #page_content .container .static_default .more_questions .why_catarse span {
     
-    font-weight: bold;
+    font-weight: 600;
     font-size: 14px;
     color: white;
     background: #f28e0b;
@@ -12965,7 +12965,7 @@ form#edit_reward .inline-hints {
 
 [data-controller="static"] #page_content .container .static_default .default_text h2 {
     
-    font-weight: bold;
+    font-weight: 600;
     font-size: 18px;
     color: rgba(0, 178, 45, 0.9);
     padding-bottom: 10px
@@ -12973,7 +12973,7 @@ form#edit_reward .inline-hints {
 
 [data-controller="static"] #page_content .container .static_default .default_text h3 {
     
-    font-weight: bold;
+    font-weight: 600;
     font-size: 15px;
     color: rgba(0, 0, 0, 0.9);
     padding-bottom: 5px
@@ -13036,7 +13036,7 @@ form#edit_reward .inline-hints {
     color: white;
     text-shadow: 1px 1px #4c8132;
     
-    font-weight: bold;
+    font-weight: 600;
     font-size: 15px;
     text-indent: 35px;
     -webkit-border-radius: 15px;
@@ -13081,7 +13081,7 @@ form#edit_reward .inline-hints {
     color: white;
     text-shadow: 1px 1px #c8760a;
     
-    font-weight: bold;
+    font-weight: 600;
     font-size: 15px;
     text-indent: 24px;
     -webkit-border-radius: 15px;
@@ -13160,7 +13160,7 @@ form#edit_reward .inline-hints {
     font-size: 14px;
     display: block;
     line-height: 18px;
-    font-weight: bold;
+    font-weight: 600;
     margin-bottom: 10px;
     margin-top: 20px
 }
@@ -13422,7 +13422,7 @@ form#edit_reward .inline-hints {
 
 [data-namespace="null"][data-controller="users"][data-action="show"] #user_profile #user_credits .table_content th {
     
-    font-weight: bold;
+    font-weight: 600;
     font-size: 16px
 }
 
@@ -13878,7 +13878,7 @@ form#edit_reward .inline-hints {
 [data-controller-class="admin::statisticscontroller"][data-action="index"] #page_content .container h2 strong,
 [data-controller-class="channels::admin::projectscontroller"][data-action="index"] #page_content .container h2 strong,
 [data-controller-class="channels::admin::statisticscontroller"][data-action="index"] #page_content .container h2 strong {
-    font-weight: bold;
+    font-weight: 600;
     color: #d4145a
 }
 
@@ -14235,7 +14235,7 @@ form#edit_reward .inline-hints {
 }
 
 .project-box .progress-percent span {
-    font-weight: bold;
+    font-weight: 600;
     font-size: 1.4em;
     line-height: 1.4em;
     position: relative;
@@ -14271,7 +14271,7 @@ form#edit_reward .inline-hints {
 
 .project-box .time-remaining span, .project-box .money-raised span {
     display: block;
-    font-weight: bold;
+    font-weight: 600;
     font-size: 1.4em;
     text-transform: none;
     margin-bottom: 0.2em
@@ -14308,7 +14308,7 @@ form#edit_reward .inline-hints {
     font-size: 0.7em;
 	letter-spacing: 2px;
     text-transform: uppercase;
-    font-weight: bold;
+    font-weight: 600;
     margin: 0;
 }
 
@@ -14324,7 +14324,7 @@ form#edit_reward .inline-hints {
 .main-sidebar-division .post-title {
     color: #79808e;
     font-size: 15px;
-    font-weight: bold;
+    font-weight: 600;
     text-decoration: none;
     line-height: 18px
 }
@@ -14412,7 +14412,7 @@ form#edit_reward .inline-hints {
 
 .header-nav .project {
     color: #d4145a;
-    font-weight: bold;
+    font-weight: 600;
     font-size: 15px
 }
 
@@ -14536,7 +14536,7 @@ form#edit_reward .inline-hints {
 
 .dropdown li .small {
     font-size: 11px;
-    font-weight: bold;
+    font-weight: 600;
     color: #d4145a;
     margin: -10px 0 0px;
     line-height: 15px
@@ -16633,7 +16633,7 @@ input.ui-button {
             .ui-datepicker th {
                 padding: .7em .3em;
                 text-align: center;
-                font-weight: bold;
+                font-weight: 600;
                 border: 0
             }
 
