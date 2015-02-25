@@ -1234,7 +1234,6 @@ abbr[title] {
 	width: 100%;
 	position: relative;
 	text-align: center;
-	padding-top: 1em;
 }
 
 .button.action, a.button.action {
@@ -8533,7 +8532,6 @@ body #logos .power a {
     color: white;
     padding: 0 0 1.25em;
     font-size: 0.8em;
-    font-weight: bold
 }
 
 /*.footer-list li {
