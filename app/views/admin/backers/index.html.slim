@@ -121,7 +121,7 @@
                       i.icon-info-sign
                   td title=backer.project.name
                     = link_to project_by_slug_path(permalink: backer.project.permalink) do
-                      = image_tag backer.project.display_image(:project_thumb_small), class: 'project_img'
+                      = image_tag backer.project.display_image(:project_thumb_small), class: 'project_img', style: 'width: 85px, height: 67px'
                   td title=backer.user.display_name
                     = link_to user_path(backer.user) do
                       = image_tag backer.user.display_image, class: 'user_img'
