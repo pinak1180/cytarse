@@ -1,0 +1,26 @@
+- user = @notification.user
+- project = @notification.project
+- project_link = project_by_slug_url(permalink: project.permalink)
+- company_name = ::Configuration[:company_name]
+
+| Helo # {user.name},
+br /
+br /
+| Yn anffodus, nid yw'r prosiect #{link_to project.name, project_link, target: '__blank'} wedi cael ei dderbyn ar gyfer ymgyrch ar # {company_name}.
+br /
+br /
+| Y rheswm yw nad ydym yn credu bod y prosiect yn cyfateb â'r meini prawf sydd angen eu cyrraedd ar gyfer prosiectau#{company_name}.
+br /
+br /
+| Os oes gennych unrhyw gwestiwn, yna atebwch yr ebost hon yn uniongyrchol neu
+| gysylltwch â ni trwy #{mail_to ::Configuration[:email_projects]}
+br /
+br /
+| Cofiwch bod croeso i chi anfon unrhyw brosiectau eraill ar gyfer ystyriaeth.
+| Tri chynnig i Gymro neu Gymraes!
+| Edrychwch eto ar ein meini prawf ac ar brosiectau eraill er mwyn adeiladu eich hymgyrch nesaf.
+br /
+br /
+| Cofion cynnes,
+br /
+= Company_name
