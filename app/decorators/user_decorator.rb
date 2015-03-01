@@ -31,7 +31,7 @@ class UserDecorator < Draper::Decorator
 
   def display_image_html options={width: 120, height: 120}
     (%{<div class="avatar_wrapper" style="width: #{options[:width]}px; height: #{options[:height]}px">} +
-      h.image_tag(display_image, alt: "User", style: "width: #{options[:width]}px; height: #{options[:height]}") +
+      h.image_tag(display_image, alt: "User", style: "width: #{options[:width]}px; height: #{options[:height]}px") +
       %{</div>}).html_safe
   end
 
