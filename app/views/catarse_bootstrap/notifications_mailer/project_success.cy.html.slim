@@ -1,0 +1,36 @@
+- project = @notification.project
+
+- project_link = project_by_slug_url(permalink: project.permalink)
+- company_name = ::Configuration[:company_name]
+
+| Hwre, #{project.user.name},
+br/
+| Llongyfarchiadau ar lwyddiant eich ymgyrch! 
+br/
+br/
+| Mae eich prosiect #{link_to project.name, project_link} weid cyrraedd ei darged ariannu! 
+br/
+br/
+| Ar ôl dathlu llwyddiant eich ymgyrch ariannu, mae hi nawr yn amser i'r gwaith caled go iawn ddechrau! 
+| Mae gwybodaeth bwysig iawn i chi yma ar beth fydd yn digwydd nesaf.
+br/
+br/
+| <strong>1</strong> - Yn y tab Adroddiadau (sydd ar eich tudalen brosiect) gallwch lawrlwytho 
+| taflen waith gyda <strong>gwybodaeth am gefnogwyr eich prosiect</strong> (Anrheg diolch | Gwerth eu cefnogaeth | Dyddiad cadarnhau cefnogaeth | Enw | E-bost | Cyfeiriad)     
+br/
+br/
+| <strong>2</strong> - Byddwn yn <strong>anfon derbyneb</strong> i chi pan fydd y trosglwyddiad ariannol yn cael ei weithredu. Byddwn yn defnyddio'r wybodaeth sydd yn eich proffeil  ar gyfer hwn.
+br/
+br/
+| <strong>3</strong> - Dyma'r ddolen: {link_to 'Llwyddiant - Beth i wneud nesa?', 'URL yma' }
+| er mwyn deall mwy am y camau nesaf sydd rhaid i chi eu cymryd er mwyn gorffen y prosiect. 
+| Darllenwch hwn yn ofalus a sicrhewch eich bod yn cadw golwg ar beth sydd angen ei wneud ar ôl cwblhau eich ymgyrch ariannu
+br/
+br/
+| Os oes gennych unrhyw gwestoynau yna atebwch yr ebost hon neu ewch i #{mail_to ::Configuration[:email_projects]}
+br/
+br/
+| Llongfarchiadau eto, a phob lwc!
+br/
+| Heliwm
+
