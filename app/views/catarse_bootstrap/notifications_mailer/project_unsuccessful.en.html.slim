@@ -1,0 +1,26 @@
+- project = @notification.project
+
+- project_link = project_by_slug_url(permalink: project.permalink)
+- company_name = ::Configuration[:company_name]
+
+|Hello, #{project.user.display_name},
+br/
+br/
+| Unfortunately, your project #{link_to project.name, project_link } did not reach its funding target set on #{company_name} within the specified time limit.
+br/
+br/
+| All supporter will be notified via email, and no funds will be transferred from their accounts.
+br/
+| Please go here for more info on what happens in unsuccessful projects: #{link_to 'Ask Heliwm', 'http://heliwm.com/holi', target: '__blank' }
+br/
+br/
+| Congratulations however ond your campaign. Even if you did not reach your target, we're sure that you will have got a lot of your campaign either in publicity, building your networks, or maybe in developing the project further.
+br/
+br/
+| Sincere thanks for choosing to use Heliwm. We look forward to seeing your next project!
+br/
+br/
+| Cofion cynnes / All the best,
+br/
+= company_name
+
