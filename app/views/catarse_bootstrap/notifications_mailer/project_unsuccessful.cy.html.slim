@@ -1,0 +1,26 @@
+- project = @notification.project
+
+- project_link = project_by_slug_url(permalink: project.permalink)
+- company_name = ::Configuration[:company_name]
+
+|Helo, #{project.user.display_name},
+br/
+br/
+| Yn anffodus, ni gyrhaeddodd y prosiect #{link_to project.name, project_link } y targed ariannol a osodwyd gennych chi ar #{company_name} o fewn y terfyn amser.
+br/
+br/
+| Bydd pob cefnogwr yn derbyn ebost am hyn, ac ni fydd unrhyw arian yn cael ei drosglwyddo.
+br/
+| Ewch yma am ragor o wybodaeth ar ad-daliadau i brosiectau aflwyddianus: #{link_to 'Holi Heliwm', 'http://heliwm.com/holi', target: '__blank' }
+br/
+br/
+| Llongyfarchiadau mawr ar eich ymgyrch. Efallai na wnaethoch chi gyrraedd eich targed ond rydym yn sicr bod y math hwn o ymgyrch yn rhoi manteision eraill o ran cyhoeddusrwydd a datblygu prosiectau.
+br/
+br/
+| Diolch yn fawr iawn i chi am ddefnyddio Heliwm. Edrychwn ymlaen at weld eich prosiect nesaf chi!
+br/
+br/
+| Cofion cynnes,
+br/
+= company_name
+
