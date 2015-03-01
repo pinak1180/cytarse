@@ -1,0 +1,36 @@
+- project = @notification.project
+
+- project_link = project_by_slug_url(permalink: project.permalink)
+- company_name = ::Configuration[:company_name]
+
+| Oh yes, #{project.user.name},
+br/
+| Congratulations ond a successful campaign! 
+br/
+br/
+| Your project #{link_to project.name, project_link} has reached its funding target. 
+br/
+br/
+| After taking time to celebrate your success, now the hard work starts on realising your project.
+| Here's some important information on what happens next.
+br/
+br/
+| <strong>1</strong> - In the Reports tab (which is located on yopur project page) you can download 
+| a spreadsheet with <strong>information about your supporters</strong> (Reward chosen | Value of the back | Back confirmation date | Name | Email | Address)     
+br/
+br/
+| <strong>2</strong> - We will <strong>issue a receipt</strong> when the funds transfer has taken place. We will use the information on your profile page for this.
+br/
+br/
+| <strong>3</strong> - Here's the link : {link_to 'Successful campaign - what happens next?', 'New URL here' }
+| in order to understand more about the next steps you should take in order to finish the project. 
+| Read this carefully and ensure that you keep an eye on what you have promised to do after the campaign ends and the project starts.
+br/
+br/
+| If you have any questions then please reply to this email or use this link #{mail_to ::Configuration[:email_projects]}
+br/
+br/
+| Llongfarchiadau eto, a phob lwc! Congratulations, and good luck!
+br/
+| Heliwm
+
