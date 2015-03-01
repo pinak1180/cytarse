@@ -1,0 +1,33 @@
+- user = @notification.user
+- project = @notification.project
+
+- project_link = project_by_slug_url(permalink: project.permalink)
+- company_name = ::Configuration[:company_name]
+
+|Shwmai, #{user.name}!
+br
+br
+| Thanks for starting the process of creating a campaign on #{company_name}! 
+| This is the very first stage and this email confirms that you have created your project 
+| <strong>#{link_to 'rascunho de projeto', project_link, target: '__blank'}</strong> on #{company_name}.
+br/
+br/
+| You can see basic guidelines on structuring your project on the website.  
+| More detailed guidelines will be provided as Heliwm moves forward.
+| So, in the meantime, please get in touch with Rhodri by replying to this email or via #{mail_to ::Configuration[:email_projects]} for more support in structuring your project.    
+| A campaign can stay as a draft for as long as you like before it is ready to be submitted to us for final approval. 
+br/
+br/
+| When you're sure that it's ready to go, click the button, 'Submit Your Project', and we'll be in touch with you.
+br/
+br/
+| If you have any questions whatsopever then please contact us here #{mail_to ::Configuration[:email_projects]}
+br/
+br/
+| And by the way, please make sure you add us to your email address book so that oir emails don't get lost:</strong> 
+| #{mail_to ::Configuration[:email_projects]}. 
+br/
+br/
+| Hwyl am y tro,
+br/
+= company_name
