@@ -1,0 +1,39 @@
+- user = @notification.user
+- project = @notification.project
+
+- project_link = project_by_slug_url(permalink: project.permalink)
+- company_name = ::Configuration[:company_name]
+
+|Helo, #{user.name}!
+br
+br
+| Mae Heliwm wedi derbyn eich prosiect #{link_to project.name, project_link, target: '__blank'}
+br/
+br/
+| Yn ystod y 4 diwrnod nesaf byddwn yn edrych ar eich prosiect, er mwyn rhoi ateb i'ch cais i ddefnyddio Heliwm.
+br
+br
+strong Byddwch yn derbyn un o dri ymateb gwahanol: 
+br/
+strong Ateb 1: 
+| Mae eich prosiect drafft wedi cael ei dderbyn ac rydych yn barod i fynd! 
+br/
+| Nawr yr unig beth sydd angen i chi ei wneud yw dewis y dyddiad ac amser ar gyfer lansio'ch prosiect ar Heliwm.
+br/
+br/
+strong Ateb 2: 
+| Mae'n edrych fel bod eich prosiect yn addas ar gyfer defnyddio Heliwm ond efallai ei fod angen ambell i newid cyn lansio. Byddwn yn cysylltu â chi er mwyn trafod y posibliadau, gwneud awgrymiadau neu ateb eich cwestiynau. 
+br/
+strong Ateb 3: 
+| Yn anffodus, nid yw eich prosiect drafft yn cyfateb â meini prawf #{company_name}, felly mae wedi cael ei wrthod. 
+| Byddwn yn anfon ebost atoch yn eich hysbysu am hyn.
+| Gwyddwn bod cael eich gwrthod yn annodd, ond tri chynnig i Gymro/Gymraes - ewch amdani eto gyda syniad gwahanol. Byddwn yn hapus i ateb eich cwestiynau ar addasrwydd prosiect arall ar Heliwm.  
+br/
+br/
+| Cofiwch y gallwch gysylltu â ni'n uniongyrchol drwy ateb yr ebost hwn 
+| neu trwy #{mail_to ::Configuration[:email_projects]}
+br/
+br/
+|Cofion gorau,
+br/
+= company_name
