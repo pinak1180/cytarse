@@ -1,0 +1,39 @@
+- user = @notification.user
+- project = @notification.project
+
+- project_link = project_by_slug_url(permalink: project.permalink)
+- company_name = ::Configuration[:company_name]
+
+|Hi, #{user.name}!
+br
+br
+| Heliwm has received your project #{link_to project.name, project_link, target: '__blank'}
+br/
+br/
+| During the next 4 days we will look at your project in order to ensure it is suitable and eligible to use Heliwm for fundraising.
+br
+br
+strong You will receive one of three different responses: 
+br/
+strong Response 1: 
+| Your project has been accepted and you're ready to go! 
+br/
+| Now all you have to do is choose a date and time to launch your campaign on Heliwm.
+br/
+br/
+strong Response 2: 
+| It looks like your project is eligible to use Heliwm, but it may need tweaking before launch. We'll be intouch to discuss the posibilities, make suggestions and answer any questions you may have. 
+br/
+strong Response 3: 
+| Unfortunately, your project does not meet the eligibility criteria for inclusion on #{company_name}, and therefore has been rejected. 
+| We will inform you of this by email.
+| We don't like rejection either, but as the Welsh say - tri chynnig i Gymro - three attempts for a Welshman! Come back to us with another idea and try again. We're very happy to take your questions on any project's suitability.  
+br/
+br/
+| Remember that you can contact us directly by replying to this email,  
+| or via #{mail_to ::Configuration[:email_projects]}
+br/
+br/
+|All the best,
+br/
+= company_name
