@@ -1,0 +1,25 @@
+- user = @notification.user
+- project = @notification.project
+- project_link = project_by_slug_url(permalink: project.permalink)
+- company_name = ::Configuration[:company_name]
+
+| Hi # {user.name},
+br /
+br /
+| Unfortunately, your project #{link_to project.name, project_link, target: '__blank'} has been rejected for inclusion on #{company_name}.
+br /
+br /
+| The reason for this is that the project does not meet the elgibility criteria for inclusion on #{company_name}.
+br /
+br /
+| If you have any questions or comments whatsoever, then please get in touch by either responding to this email or 
+| contact via #{mail_to ::Configuration[:email_projects]}
+br /
+br /
+| Remember that this does not mean that you cannot submit other projects for consideration.
+| Look again at the eligibility criteria and tyhe other projects in order to plan and build your next campaign.
+br /
+br /
+| All the best,
+br /
+= Company_name
