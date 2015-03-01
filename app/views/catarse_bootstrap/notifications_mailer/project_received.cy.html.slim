@@ -1,0 +1,33 @@
+- user = @notification.user
+- project = @notification.project
+
+- project_link = project_by_slug_url(permalink: project.permalink)
+- company_name = ::Configuration[:company_name]
+
+|Helo, #{user.name}!
+br
+br
+| Diolch am ddechrau'r broses o greu ymgyrch ar #{company_name}! 
+| Hwn yw'r cam cyntaf un ac mae'r ebost hwn ond yn nodi dy fod wedi creu'r prosiect 
+| <strong>#{link_to 'rascunho de projeto', project_link, target: '__blank'}</strong> ar #{company_name}.
+br/
+br/
+| Gellir gweld y canllawiau sylfaenol ar gyfer strwythuro dy brosiect ar y wefan.  
+| Bydd canllawiau manylach yn ymddagos ar Heliwm wrth i'r wefan symud yn ei blaen.
+| Felly yn y cyfamser cysyllta gyda Rhodri ar post.heliwm@gmail.com er mwyn cael cymorth ar strwythuro dy ymgyrch.    
+| Gall ymgyrch aros ar ffurf drafft am cyhyd ag y mynni cyn dy fod yn barod i'w anfon atom am gadarnhad terfynol. 
+br/
+br/
+| Pan wyt yn ffyddiog dy fod yn barod i fynd, clicia'r botwm 'Cyflwyno Prosiect', a byddwn yn cysylltu â thi.
+br/
+br/
+| Os oes unrhyw gwestiwn gennyt yna cysyllta gyda ni gan un ai ymateb i'r ebost hwn neu fynd yma #{mail_to ::Configuration[:email_projects]}
+br/
+br/
+| A gyda llaw, plis gwna'n siwr dy fod yn ein ychwaengu at dy lyfr cyfeiriadau yn dy wasanaeth ebost fel nad yw ein ebyst yn mynd ar goll:</strong> 
+| #{mail_to ::Configuration[:email_projects]} ac #{mail_to ::Configuration[:email_contact]}. 
+br/
+br/
+| Hwyl am y tro,
+br/
+= company_name
