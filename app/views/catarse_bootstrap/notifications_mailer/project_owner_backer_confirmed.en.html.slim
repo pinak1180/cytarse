@@ -1,0 +1,38 @@
+- backer = @notification.backer
+- project = backer.project
+
+- project_link = project_by_slug_url(permalink: project.permalink)
+- company_name = ::Configuration[:company_name]
+
+
+|Hello, <strong>#{project.user.display_name}</strong>!
+br
+br
+|The user #{link_to backer.user.display_name, user_url(backer.user)} has just contributed towards your project #{link_to project.name, project_link, target: '__blank'}! 
+br
+br
+|Here's some information about the back:
+br
+br
+|<strong>Value of the back:</strong> #{backer.display_value}
+- if backer.reward.present?
+  br
+  br
+  |<strong>Reward chosen:</strong> #{backer.reward.display_description}
+br
+br
+|<strong>Supporter email:</strong> #{backer.user.email}
+br
+br
+|See your other backers #{link_to 'here', project_by_slug_url(permalink: project.permalink, anchor: 'backers')}
+br
+br
+| Communicate with them via an update #{link_to 'novidades', project_by_slug_url(permalink: project.permalink, anchor: 'updates')}
+br
+br
+| And download a spreadsheet with the information about them #{link_to 'here!', project_by_slug_url(permalink: project.permalink, anchor: 'reports')}
+br
+br
+|Hwyl a fflag,
+br
+= company_name
