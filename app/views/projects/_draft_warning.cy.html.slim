@@ -8,32 +8,27 @@ br
       #project_warning_text
         br/
         br/
-        | Er mwyn golygu dy brosiect cer at y tab <strong>golygu</strong>, newidia yr hyn sydd angen yna clicia <strong>diweddar</strong>.
+        | Er mwyn golygu dy brosiect cer at y <strong>tab golygu</strong>, newidia yr hyn sydd angen yna clicia <strong>diweddaru</strong>.
         | Galli di ychwanegu anhregion diolch yn syth i'r golofn lle mae'n nhw'n cael eu dangos ar y dde. Jest clicia <strong>Ychwanegu Anrheg Diolch</strong>. 
         br/
         br/
         strong Pwysig!
         br/
-        | Bydd dy brosiect yn cael ei anfon ar gyfer gwerthusiad gan Heliwm pan fyddi di'n gwasgu <strong>anfoncyflwyno dy brosiect</strong>. Byddwn yn gwerthuso dy brosiect yn seiliedig ar yr hyn sydd gen ti yn dy brosiect drafft. 
-        | Bydd yn eglur am yr hyn mae dy brosiect yn ceisio eiu gyflawni. Nid oes angen <strong>fideo</strong> ar gyfer gwertyhusiad, dim ond ar gyfer mynd a'r ymgyrch yn fyw. 
+        | Bydd dy brosiect yn cael ei anfon ar gyfer gwerthusiad gan Heliwm pan fyddi di'n gwasgu <strong>cyflwyno dy brosiect</strong>. Byddwn yn gwerthuso dy brosiect yn seiliedig ar yr hyn sydd gen ti yn dy brosiect drafft. 
+        | Bydd yn eglur am yr hyn mae dy brosiect yn ceisio ei gyflawni. Nid oes angen <strong>fideo</strong> ar gyfer gwerthusiad, dim ond ar gyfer mynd a'r ymgyrch yn fyw. 
         | Cofia edrych ar yr adran #{link_to 'Holi Heliwm', 'http://heliwm.com/holi', target: '__blank'} er mwyn cael gwybodaeth bellach am gamau gwahanol y broses.
         br/
         br/
-        strong Datrys problemau:
-        br/
-        | Confira: #{link_to 'Realizadores - Primeiros Passos', 'http://suporte.catarse.me/knowledgebase/topics/25764-realizadores-primeiros-passos-pr%C3%A9-projeto-', target: '__blank'}
-      br/
-      br/
       .bootstrap-twitter
-        = link_to 'Enviar para curadoria', send_to_analysis_project_path(@project), class: 'btn btn-large'
+        = link_to 'Cyflwyno dy brosiect i'w werthuso', send_to_analysis_project_path(@project), class: 'btn btn-large'
 - else
   #project_warning.bootstrap-alert
     .alert.alert-warning
-      Rhybudd! MAe'r prosiect hwn dal ar ffurf drafft.
+      Rhybudd! Mae'r prosiect hwn dal ar ffurf drafft.
       #toggle_warning
         = link_to '(cuddio)', '#'
       #project_warning_text
         br/
         br/
-        | Nid yw'r proseict hwn yn gallu derbyn cefnogaeth ariannol eto, ac nid yw'r tudalennau hyn yn orffenedig.Este projeto ainda não está apto a receber contribuições financeiras e as informações dessa página não são definitivas. 
+        Nid yw'r prosict hwn yn gallu derbyn cefnogaeth ariannol eto, ac nid yw'r tudalennau hyn yn orffenedig.
         Cymrwch olwg ar y dudalen a gadewch eich adborth ar gyfer y cynhyrchwyr yn y <strong>Tab Sylwadau</strong>. Bydd eich barn yn helpu i wella'r prosiect!
