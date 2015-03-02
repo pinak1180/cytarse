@@ -2,24 +2,23 @@ br
 - if can? :update, @project
   #project_warning.bootstrap-alert
     .alert.alert-warning
-      i Cymraeg Seu projeto está em análise.
+      Mae eich prosiect yn cael ei werthuso.
       #toggle_warning
-        = link_to '(minimizar informações)', '#'
+        = link_to '(cuddio'r wybodaeth hwn)', '#'
       #project_warning_text
         br/
         br/
-        | Estamos avaliando as informações do seu rascunho, entraremos em contato em até 2 dias úteis =) 
-        | Lembre-se de preencher as informações do #{link_to 'seu perfil', user_path(@project.user)} no Catarse
-        strong Solução de problemas:
+        | Rydym yn gwerthuso'r drafft rydych chi wedi ei anfon atom, a byddwn yn cysylltu â chi o fewn 4 diwrnod gwaith.  
+        | Cofiwch lenwi'r wybodaeth yma #{link_to 'seu perfil', user_path(@project.user)} ar Heliwm
+        strong Datrys problemau:
         br/
-        = link_to 'Socorro! | Já passaram 2 dias úteis e não tive noticias da curadoria, o que fazer?', 'http://suporte.catarse.me/knowledgebase/articles/274766-socorro-j%C3%A1-mandei-h%C3%A1-dois-dias-%C3%BAteis-e-a-curado', target: '__blank'
 - else
   #project_warning.bootstrap-alert
     .alert.alert-warning
-      i Atenção! Este projeto ainda não está no ar! O Realizador responsável está fazendo ajustes! 
+      Dalier sylw! Mae'r proseict hwn yn aros i'w lansio tra bod cynhyrchydd y prosiect yn gwneud newidiadau terfynol. 
       #toggle_warning
-        = link_to '(minimizar informações)', '#'
+        = link_to '(cuddio'r wybodaeth hwn)', '#'
       #project_warning_text
         br/
         br/
-        | Aproveite para dar uma olhada na página e deixe seu feedback para o(a) realizador(a) ali na <strong>Aba Comentários</strong>. Ajude a melhorar o projeto com a sua opinião! 
+        | Cymrwch olwg ar y dudalen a gadewch eich adborth ar gyfer y cynhyrchwyr yn y <strong>Tab Sylwadau</strong>. Bydd eich barn yn helpu i wella'r prosiect! 
