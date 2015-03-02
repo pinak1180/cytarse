@@ -1,0 +1,38 @@
+- backer = @notification.backer
+- project = backer.project
+
+- project_link = project_by_slug_url(permalink: project.permalink)
+- company_name = ::Configuration[:company_name]
+
+
+|Helo, <strong>#{project.user.display_name}</strong>!
+br
+br
+|Mae'r defnyddiwr #{link_to backer.user.display_name, user_url(backer.user)} newydd gyfrannu tuag at y prosiect #{link_to project.name, project_link, target: '__blank'}! 
+br
+br
+| Dyma chydig wybodaeth am y gefnogaeth:
+br
+br
+|<strong>Gwerth y cefnogiad:</strong> #{backer.display_value}
+- if backer.reward.present?
+  br
+  br
+  |<strong>Anrheg diolch a ddewiswyd:</strong> #{backer.reward.display_description}
+br
+br
+|<strong>E-bost y cefnogwr:</strong> #{backer.user.email}
+br
+br
+| Gweld dy gefnogwyr eraill #{link_to 'aqui', project_by_slug_url(permalink: project.permalink, anchor: 'backers')}
+br
+br
+| Cyfathreba gyda nhw #{link_to 'novidades', project_by_slug_url(permalink: project.permalink, anchor: 'updates')}
+br
+br
+| A lawrlwytha daenlenni gyda'r holl wybodaeth amdanyn nhw #{link_to 'yma!', project_by_slug_url(permalink: project.permalink, anchor: 'reports')}
+br
+br
+|Hwyl a fflag,
+br
+= company_name
