@@ -29,6 +29,11 @@ module Catarse
     # Default encoding for the server
     config.encoding = "utf-8"
 
+    # Enable locale fallbacks for I18n (makes lookups for any locale fall back to
+    # the I18n.default_locale when a translation can not be found).
+    config.i18n.load_path += Dir[Rails.root.join('config', 'locales', '**', '*.{rb,yml}')]
+    config.i18n.fallbacks = true
+    config.i18n.default_locale = :cy
     config.i18n.enforce_available_locales = false
     config.i18n.available_locales = [:en, :cy]
 
