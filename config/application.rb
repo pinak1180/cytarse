@@ -29,6 +29,7 @@ module Catarse
     # Default encoding for the server
     config.encoding = "utf-8"
 
+    config.i18n.enforce_available_locales = false
     config.i18n.available_locales = [:en, :cy]
 
     config.filter_parameters += [:password, :password_confirmation]
