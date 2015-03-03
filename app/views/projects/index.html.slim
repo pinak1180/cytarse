@@ -3,34 +3,6 @@
 #page_content
   .container
     .main
-      - if current_user && @projects_near.present?
-        section.near_projects.list
-          header
-            h2.list-title= t('sections.near.title')
-            = link_to t('main.links.near'), explore_path(anchor: "near_of/" ) + current_user.address_state, class: "more-projects"
-          .projects
-            == render @projects_near
-
-      section.selected_projects.list
-        header
-          h2.list-title= t('sections.recommended.title')
-          = link_to t('main.links.recommended'), explore_path(anchor: :recommended), class: "more-projects"
-        .projects
-          == render @recommends
-
-      / section.channel_projects.list
-        header
-          h2.list-title= t('sections.channels.title')
-          = link_to t('main.links.channels'), root_url(subdomain: 'asas'), class: "more-projects"
-        .projects
-          == render @channel_projects
-
-      / section.expiring_projects.list
-        header
-          h2.list-title= t('sections.expiring.title')
-          = link_to t('main.links.expiring'), explore_path(anchor: :expiring), class: "more-projects"
-        .projects
-          == render @expiring
 
       / section.recents_projects.list
         header
