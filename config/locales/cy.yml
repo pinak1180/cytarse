@@ -51,7 +51,7 @@ cy:
     address_zip_code: 'Côd post'
     anonymous: 'Dienw'
   edit_project: "Golyga'r prosiect"
-  facebook_locale: 'en_GB'
+  facebook_locale: 'cy_GB'
   or: neu
   no: "Nac ydw"
   yes: "Ydw"
@@ -104,7 +104,7 @@ cy:
       submit: "Dechrau dy brosiect"
       discover: "Darganfod prosiectau"
     texts:
-      copyleft: "Gwnaed a chariad."
+      copyleft: "Gwnaed yng Nghymru gan Nwdls Cyf."
   main:
     links:
       channels: "Darganfod Sianel Asas"
@@ -117,7 +117,7 @@ cy:
     titles:
       blog: blog
       facebook: "wyt ti wedi hoffi'n tudalen facebook eto?"
-      newsletter: "tanysgrifia i'n newddion"
+      newsletter: "tanysgrifia i'n newyddion"
       faq: "oes cwestiwn gen ti?"
       schedule: calendr
     placeholders:
@@ -256,7 +256,7 @@ cy:
     show:
       backed: cefnogwyd
       reached: cyrhaeddwyd
-  error: "Wpsi! Roedd na wall. Plis tria eto."
+  error: "Wps! Galwch Gari Tryfan! Roedd na wall. Plis tria eto."
   explore:
     index:
       near: "Gerllaw"
@@ -275,7 +275,7 @@ cy:
     hints:
       backer:
         credits: "Mae gen ti <strong>%{credits}</strong> mewn credydau a galli di gefnogi prosiectau hyd at yr uchafswm yma heb orfod gwneud taliad ychwanegol."
-        value: "Dewis di'r swm ;) gan dechrau gyda £5, mae unrhyw swm yn gwneud gwahaniaeth."
+        value: "Dewis faint rwyt ti am ei roi o £1 i fyny. Mae unrhyw swm yn gwneud gwahaniaeth."
       project:
         video_url_edit: 'Gluda URL dy fideo Vimeo/Youtube.'
         about: "Dwed wrthyn ni beth ysbrydolodd chi i greu'r prosiect. Byddwch yn ddi-duedd a diffuant, gan gyflwyno eich darllenwyr gyda rhywbeth sy'n apelio atyn nhw tra'n bod yn onest iawn am obeithion y prosiect!"
@@ -310,7 +310,7 @@ cy:
         first_backers: "Rhestrwch eich cefnogwyr cyntaf *"
         about: "Am y prosiect. Sut fyddwch chi'n gwario'r arian yma?"
         expires_at: "Beth yw eich dyddiad terfyn ar gyfer cyrraedd eich targed ariannol?"
-        goal: "Faint o arian ydych chieisiau codi? (rhifau yn unig)"
+        goal: "Faint o arian ydych chi eisiau codi? (rhifau yn unig)"
         name: "Enw'r prosiect"
         online_days: 'Sawl Diwrnod Ymgyrch?'
         video_url: Fideo
@@ -385,13 +385,13 @@ Yn anffodus wnaeth y prosiect %{project_link} wnes ti gefnogi ar Heliwm ddim llw
       expired: "wedi gorffen"
       failed: "heb ei ariannu"
       successful: "wedi ei ariannu"
-      waiting_confirmation: yn aros
-      waiting_funds: yn aros
-      not_reached_goal: yn aros
-      reached_goal: "wedi ei ariannu"
+      waiting_confirmation: "aros am gadarnhad"
+      waiting_funds: "aros am gadarnhad"
+      not_reached_goal: "heb gyrraed targed"
+      reached_goal: "wedi cyrraedd targed"
       draft: "drafft"
   projects:
-    send_to_analysis: "Anfonwyd dy brosiect at ein tîm"
+    send_to_analysis: "Anfonwyd dy brosiect at ein tîm er mwyn ei werthuso"
     box:
       by: gan
       when: yn
@@ -413,7 +413,7 @@ Yn anffodus wnaeth y prosiect %{project_link} wnes ti gefnogi ar Heliwm ddim llw
         anonymous_description: "Wedi penderfynu aros yn anhysbys"
         no_reward: "Nid yw'r cefnogwr yma wedi dewis anrheg diolch"
       review:
-        error: "Wps. Roedd gwall wrth gofrestru dy cefnogiad. Plis tria eto."
+        error: "Wps. Roedd gwall wrth gofrestru dy gefnogaeth. Plis tria eto."
       show:
         error: "Wps. Alli di ond cael mynediad at y dudalen hon ar ôl cefnogi prosiect."
         moip_message: "Mae dy drosglwyddiad wedi ei 'Awdurdodi' a dy gôd PayPal yw “%{code}″.<br>Os oes gen ti unrhyw gwestiwn am y trafodiad ariannol hwn, cysyllt gyda Moip yn uniongyrchol."
@@ -464,7 +464,7 @@ Yn anffodus wnaeth y prosiect %{project_link} wnes ti gefnogi ar Heliwm ddim llw
     form:
       permalink_hint: 'Symleiddia URL dy brosiect. Cofia bod angen i gefnogwyr ei gofio er mwyn gallu rhannu dy brosiect.'
       add_reward: "Ychwanegu anrheg diolch"
-      important_html: "Noder y bydd Heliwmyn codi 9% os yw dy brosiect yn llwyddianus. Ychwanega hwn at gyllideb dy brosiect er mwyn gweithredu dy brosiect heb unrhyw broblemau."
+      important_html: "Noder y bydd Heliwm yn cymeryd ffi o 7% os yw dy brosiect yn llwyddianus. Ychwanega hwn at gyllideb dy brosiect er mwyn gweithredu dy brosiect heb unrhyw broblemau."
       project_warning:
         content_html: "Eisiau i dy brosiect gael ei ddewis? Paid anghofio darllen %{link}."
         help_link: "ein canllawiau"
@@ -484,30 +484,30 @@ Yn anffodus wnaeth y prosiect %{project_link} wnes ti gefnogi ar Heliwm ddim llw
       can_finish: "Gallu gorffen?"
       finished: "Wedi gorffen?"
       home_page: "Tudalen gartref?"
-      id: Id
-      name: Enw
+      id: "Id"
+      name: "Enw"
       no_projects: "Heb ddod o hyd i brosiectau."
-      order: Trefn
+      order: "Trefn"
       project: Prosiect
-      slug: Slyg
+      slug: "Slyg"
       recommended: "Wedi argymell?"
       rejected: "Wedi gwrthod?"
-      submit: Chwilio
+      submit: "Chwilio"
       title: "Rheoli prosiect"
-      user: Defnyddiwr
+      user: "Defnyddiwr"
       visible: "Gweladwy?"
     pending_backers:
-      anonymous: Dienw?
-      confirmed: "Wedi cadarnhau?"
-      credits: "Credydau a ddefnyddiwyd?"
-      id: Id
-      key: Allwedd
+      anonymous: "Dienw"
+      confirmed: "Wedi cadarnhau"
+      credits: "Credydau a ddefnyddiwyd"
+      id: "Id"
+      key: "Allwedd"
       no_backers: "Heb ddod o hyd i gefnogwyr."
-      project: Prosiect
+      project: "Prosiect"
       refunded: "Ad-dalwyd?"
       requested_refund: "Ad-daliad wedi ei hawlio?"
-      reward: Anrheg diolch
-      submit: Chwilio
+      reward: "Anrheg diolch"
+      submit: "Chwilio"
       title: "Rheolaeth cefnogwyr"
       total_backed: cefnogwyd
       total_backers: cefnogwyr
@@ -872,7 +872,7 @@ Cyn cyflwyno eich prosiect, mae'n werth ystyried rhai pwyntiau pwysig."
       title: "Diffinia dy gyfeiriad ebost"
       submit: "Cadw fy ebost a pharhau"
     show:
-      attention: Sylw
+      attention: "Dalier sylw"
       tabs:
         backed_projects: "Prosiectau a gefnogwyd"
         created_projects: "Prosiectau a gynhyrchwyd"
