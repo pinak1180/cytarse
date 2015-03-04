@@ -27,9 +27,9 @@ strong
   |Pledged amount: #{backer.value}
   br
   - if backer.reward
-    |Choosen reward value: #{backer.reward.minimum_value}
+    |Chosen reward value: #{backer.reward.minimum_value}
     br
-    |Choosen reward: #{backer.reward.description}
+    |Chosen reward: #{backer.reward.description}
     br
   |Pledge date: #{backer.created_at.strftime("%d/%m/%Y")}
   br
@@ -39,10 +39,10 @@ strong
 |If you want to talk to #{backer.project.user.name}, send an email to #{mail_to backer.project.user.email}
 br
 br
-|If you have any other questions, access our #{link_to('FAQ', "#{Configuration[:base_url]}/faq")} or send an email to #{mail_to Configuration[:email_contact]}
+|If you have any other questions, access our #{link_to 'Ask Heliwm', faq_page_path, target: '_blank'}".html_safe or send an email to #{mail_to Configuration[:email_contact]}
 br
 br
 |A big hug,
 br
 br
-|#{Configuration[:company_name]} team
+|#{Configuration[:company_name]}
