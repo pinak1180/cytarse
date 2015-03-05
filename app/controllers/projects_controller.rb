@@ -9,6 +9,7 @@ class ProjectsController < ApplicationController
   respond_to :json, only: [:index, :show, :update]
 
   before_action :ensure_stripe_is_setup, only: [:new, :create]
+  before_action :ensure_user_has_less_than_max_projects, only: [:new, :create]
 
   def index
     index! do |format|
@@ -18,15 +19,15 @@ class ProjectsController < ApplicationController
           return render partial: 'project', collection: @projects, layout: false
         else
           @title = t("site.title")
-          if current_user && current_user.recommended_projects.present?
-            @recommends = current_user.recommended_projects.limit(4)
-          else
-            @recommends = ProjectsForHome.recommends
-          end
+          # if current_user && current_user.recommended_projects.present?
+          #   @recommends = current_user.recommended_projects.limit(4)
+          # else
+          #   @recommends = ProjectsForHome.recommends
+          # end
 
-          @channel_projects = Project.from_channels([1]).order_for_search.limit(3)
-          @projects_near = Project.with_state('online').near_of(current_user.address_state).order("random()").limit(3) if current_user
-          @expiring = ProjectsForHome.expiring
+          #@channel_projects = Project.from_channels([1]).order_for_search.limit(3)
+          #@projects_near = Project.with_state('online').near_of(current_user.address_county).order("random()").limit(3) if current_user
+          #@expiring = ProjectsForHome.expiring
           @recent   = ProjectsForHome.recents
         end
       end
@@ -82,6 +83,13 @@ class ProjectsController < ApplicationController
   end
 
   protected
+
+  def ensure_user_has_less_than_max_projects
+    if current_user.projects.online_or_waiting.count > User::MAX_PROJECTS
+      flash[:error] = t('only_n_projects_allowed', scope: 'flashes.user', total: User::MAX_PROJECTS)
+      redirect_to root_path
+    end
+  end
 
   def ensure_stripe_is_setup
     if current_user.stripe_userid.blank?

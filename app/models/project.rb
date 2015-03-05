@@ -82,6 +82,8 @@ class Project < ActiveRecord::Base
     where("EXISTS (SELECT true FROM channels_projects cp WHERE cp.project_id = projects.id AND cp.channel_id = ?)", channels)
   }
 
+  scope :online_or_waiting, -> { with_states(['online', 'draft']) }
+
   attr_accessor :accepted_terms
 
   validates_acceptance_of :accepted_terms, on: :create

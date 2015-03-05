@@ -1,0 +1,5 @@
+---
+cy:
+  flashes:
+    user:
+      only_n_projects_allowed: You may only have %{total} draft or online projects at any one time

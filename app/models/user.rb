@@ -2,6 +2,8 @@
 
 
 class User < ActiveRecord::Base
+  MAX_PROJECTS = 2
+  
   # Include default devise modules. Others available are:
   # :token_authenticatable, :encryptable, :confirmable, :lockable, :timeoutable and :omniauthable
   # :validatable
