@@ -72,6 +72,7 @@ Catarse::Application.routes.draw do
   get "/canllawn_backers",      to: "static#guidelines_backers",  as: :guidelines_backers
   get "/canllaw_dechrau",       to: "static#guidelines_start",    as: :guidelines_start
   get "/holi",                  to: "static#faq", as: :faq_page
+  get "/contact",               to: "static#contact", as: :contact_page
 
   # static t&cs, contact
   get "/termau", to: 'static#terms', as: :terms
