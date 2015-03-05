@@ -1,7 +1,7 @@
 .bootstrap-twitter
   .alert.alert-info
     p
-      = "In order to learn about how to structure a campaig please contact Heliwm directly, or go to #{link_to 'Ask Heliwm', "#{http://heliwm.com/en/faq", target: '_blank'}".html_safe
+      = "In order to learn about how to structure a campaign please contact Heliwm directly, or go to #{link_to 'Ask Heliwm', faq_page_path, target: '_blank'}".html_safe
 .bootstrap-form
   = semantic_form_for @project do |form|
     = form.inputs do

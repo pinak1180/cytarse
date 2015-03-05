@@ -1,7 +1,7 @@
 .bootstrap-twitter
   .alert.alert-info
     p
-      = "Er mwyn dysgu rhagor am sut i strwythuro dy brosiect cysyllta gyda ni'n uniongyrchol neu cer i adran #{link_to 'Holi Heliwm', "#http://heliwm.com/cy/holi", target: '_blank'}".html_safe
+      = "Er mwyn dysgu rhagor am sut i strwythuro dy brosiect cysyllta gyda ni'n uniongyrchol neu cer i adran #{link_to 'Holi Heliwm', faq_page_path, target: '_blank'}".html_safe
 .bootstrap-form
   = semantic_form_for @project do |form|
     = form.inputs do
