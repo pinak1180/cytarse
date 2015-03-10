@@ -270,7 +270,7 @@ cy:
       title: "Ffeindia brosiectau anhygoel"
     title: "Pori'r prosiectau"
     project:
-      empty: "Bww, wnaethon ni ddim dod o hyd i brosiect gyda'r testun nes ti chwilio amdano. Be am drio un arall?"
+      empty: "Bww, fe fethon ni dod o hyd i brosiect gyda'r testun nes ti chwilio amdano. Be am drio un arall?"
   formtastic:
     hints:
       backer:
@@ -341,7 +341,7 @@ cy:
       logout: Allgofnodi
       my_credits: "Fy nghredydau"
   not_informed: "heb adael iddo wybod"
-  notify_locale: "Wnaethon ni adnabod dy iaith oddi wrth dy borwr. Os fase'n well gen ti iaith arall, clicia ar un o'r ieithoedd ar y dde."
+  notify_locale: "Adnabyddwyd dy iaith oddi wrth dy borwr. Os fase'n well gen ti iaith arall, clicia ar un o'r ieithoedd ar y dde."
   on_the_spot:
     cancel: Canslo
     ok: OK
@@ -377,7 +377,7 @@ Roedd y prosiect rwyt ti wedi cefnogi wedi bod yn llwyddiant ar Heliwm ac wedi c
       unsuccessful:
         email_subject: "Ni ariannwyd y prosiect %{project_name} ar Heliwm."
         email_text: "
-Yn anffodus wnaeth y prosiect %{project_link} wnes ti gefnogi ar Heliwm ddim llwyddo i gyrraedd ei darged ariannol o fewn y cyfnod ymgyrch felly ni chafodd ei ariannu.<br><br>Felly, yn sgil hyn, mae gen ti <strong>%{value}</strong> mewn credydau ar gael i gefnogi prosiectau eraill. Galli di weld prosiectau %{project_category} eraill yn %{explore_category_link}.<br><br>Galli di hefyd ofyn am ad-daliad drwy glicio %{credits_link}. Cofia dy fod ti wedi cofrestru i ddefnyddio Heliwm gyda %{user_provider}. Os gei di broblemau gyda'r broses hon, plis paid oedi mewn anfon ebost at <a href=\"mail_to:post.heliwm@gmail.com\" style=\"color: #008800;\">post.heliwm@gmail.com</a> gyda'r pwnc \"Ad-daliad - problem mewngofnodi\".<br><br>Os am unrhyw reswm yr hoffet gysylltu â %{project_owner_name}, yna anfon ebost at %{project_owner_email}.<br><br>Os oes gen ti unrhyw broblem arall, yna plis edrych ar ein tudalen Cwestiwn ac Ateb, neu ebostia <a href=\"mail_to:post.heliwm@gmail.com\" style=\"color: #008800;\">post.heliwm@gmail.com</a>.<br>"
+Yn anffodus ni lwyddodd y prosiect %{project_link} wnes ti gefnogi ar Heliwm i gyrraedd ei darged ariannol o fewn y cyfnod ymgyrch felly ni chafodd ei ariannu.<br><br>Felly, yn sgil hyn, mae gen ti <strong>%{value}</strong> mewn credydau ar gael i gefnogi prosiectau eraill. Galli di weld prosiectau %{project_category} eraill yn %{explore_category_link}.<br><br>Galli di hefyd ofyn am ad-daliad drwy glicio %{credits_link}. Cofia dy fod ti wedi cofrestru i ddefnyddio Heliwm gyda %{user_provider}. Os gei di broblemau gyda'r broses hon, plis paid oedi mewn anfon ebost at <a href=\"mail_to:post.heliwm@gmail.com\" style=\"color: #008800;\">post.heliwm@gmail.com</a> gyda'r pwnc \"Ad-daliad - problem mewngofnodi\".<br><br>Os am unrhyw reswm yr hoffet gysylltu â %{project_owner_name}, yna anfon ebost at %{project_owner_email}.<br><br>Os oes gen ti unrhyw broblem arall, yna plis edrych ar ein tudalen Cwestiwn ac Ateb, neu ebostia <a href=\"mail_to:post.heliwm@gmail.com\" style=\"color: #008800;\">post.heliwm@gmail.com</a>.<br>"
         notification_text: "Rwyt ti wedi derbyn %{value} mewn credydau er mwyn cefnogi prosiectau eraill, neu galli di hawlio ad-daliad %{link}."
         unsuccessful_text: "Doedd y prosiect %{link} wnes ti gefnogi ddim yn llwyddianus. Tro nesa gobeithio!"
     video_regex_validation: "dim ond URLau o fideos Vimeo a YouTube ellir eu defnyddio"
@@ -401,10 +401,10 @@ Yn anffodus wnaeth y prosiect %{project_link} wnes ti gefnogi ar Heliwm ddim llw
       display_status:
         reached_goal: "Bydd y prosiect hwn yn llwyddianus ac wedi ei ariannu ar %{date}"
         not_reached_goal: "Fydd y prosiect hwn ond yn cael ei ariannu os ceir cefnogaeth i  fwy na %{goal} erbyn %{date}"
-        failed: "Wnaeth y prosiect hwn ddim cyrraedd y targed o %{goal} tan %{date} a ni chafodd ei ariannu"
+        failed: "Ni lwyddodd y prosiect hwn i gyrraedd y targed o %{goal} erbyn %{date} a ni chafodd ei ariannu"
         successful: "Roedd y prosiect hwn yn llwyddianus a cafodd ei ariannu ar %{date}"
         waiting_funds: "Aros am gadarnhad taliadau i wybod os gafodd y prosiect hwn ei ariannu."
-        draft: "Mae'r prosiect hwn mewn drafft ac nid yw'n agored i gefnogwyr eto."
+        draft: "Mae'r prosiect hwn ar ffurf drafft ac nid yw'n agored i gefnogwyr eto."
       reached_of: "Wedi cyrraedd o"
       submit: "Cefnoga'r prosiect yma"
     backers:
