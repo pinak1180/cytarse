@@ -288,12 +288,12 @@ cy:
         headline: "Rhowch grynodeb o'r prosiect mewn 140 cymeriad. Hwn fydd cyswllt cyntaf pobl gyda'r prosiect, cyn hyd yn oed gweld y fideo. Byddwch yn greadigol, clir ac uniongyrchol."
         name: "Byddwch mor ddi-duedd ag y gallwch. Gadwch unrhyw esbonio i'r adran Am y Prosiect."
         uploaded_image: "Llwytha ddelwedd 512x400 (.jpg)."
-        video_url: "Gluda URL o fideo <a href=\"http://youtube.com\" target=\"_blank\">YouTube</a> neu <a href=\"http://vimeo.com\" target=\"_blank\">Vimeo</a>. Mae gan YouTube rwydwaith well, ond does dim hysbysebion ar Vimeo. Does dim rhyngwyneb Cymraeg ar yr un yn anffodus! <strong>Sicrhewch bod safon cynhyrchu eich fideo mor uchel ag sydd bosib a'ifod wedi ei gynhyrchu yn benodol ar gyfer eich ymgyrch</strong>. Os mae un peth sydd yn nodweddu prosiectau sydd yn cyrraedd eu targed, yna'r fideo yw hwnnw. Mae hynny'n werth ei ystyried!"
+        video_url: "Gluda URL o fideo <a href=\"http://youtube.com\" target=\"_blank\">YouTube</a> neu <a href=\"http://vimeo.com\" target=\"_blank\">Vimeo</a>. Mae gan YouTube rwydwaith well, ond does dim hysbysebion ar Vimeo. Does dim rhyngwyneb Cymraeg ar yr un yn anffodus!<br/><strong>Sicrhewch bod safon cynhyrchu eich fideo mor uchel ag sydd bosib a'i fod wedi ei gynhyrchu yn benodol ar gyfer eich ymgyrch</strong>. Os mae un peth sydd yn nodweddu prosiectau sydd yn cyrraedd eu targed, yna'r fideo yw hwnnw."
       reward:
         description: "Disgrifiwch yr anrheg diolch fyddwch chi'n ei roi mewn ffordd fydd yn codi awydd pobl i gefnogi'ch prosiect. Peidiwch bod yn swil!"
         maximum_backers: "Os ydy nifer eich anrhegion diolch yn gyfyngedig, dwedwch beth yw'r uchafswm cefnogwyr."
-        minimum_value: "Hwn yw'r isafswm er mwyn dewis yr anrheg diolch hwn."
-        days_to_delivery: "Cyfanswm dyddiau i anfon yr anrheg diolch."
+        minimum_value: "Hwn yw isafswm y cyfraniad ariannol er mwyn dewis yr anrheg diolch hwn."
+        days_to_delivery: "Amcan o'r amser gymerith i anfon yr anrheg diolch."
     labels:
       backer:
         anonymous: "Dwisio nghefnogaeth i fod yn ddienw."
