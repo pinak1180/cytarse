@@ -610,7 +610,7 @@ Ar ôl llenwi'r ffurflen isod byddi di'n derbyn tudalen prosiect ar ffurf drafft
       rewards: "Pa anrhegion fyddwch chi'n eu cynnig er mwyn diolch i gefnogwyr am roi arian?"
       rewards_hint: "Rydyn ni'n credu taw'r ffordd orau i ysbrydoli pobl i gefnogi prosiect yw cynnig anrhegion diolch gwych a chreadigol! Mae pawb yn hoffi cael rhywbeth sydd yn nifer cyfyngedig, eitemau unigryw a phrofiadau gwych (partion, losin, teithiau balŵn!). Treulia chydig o amser yn meddwl o ddifrif am beth fyddai'n atyniadol fel anrhegion diolch i bobl sydd yn cefnogi a bydd mwy o bobl â diddordeb."
       submit: "Cadw drafft"
-      subtitle: "Dyma'r amser! Gwiredda dy syniadau! Dwed wrthyn ni beth ti am wneud…"
+      subtitle: "Ffwrdd â ni felly, dwed wrthyn ni beth wyt ti am wneud…"
       title: "Anfon dy brosiect"
     twitter:
       take_a_look: "Edrycha ar y prosiect %{name} ar @Heliwm"
