@@ -387,8 +387,8 @@ Yn anffodus ni lwyddodd y prosiect %{project_link} wnes ti gefnogi ar Heliwm i g
       successful: "wedi ei ariannu"
       waiting_confirmation: "aros am gadarnhad"
       waiting_funds: "aros am gadarnhad"
-      not_reached_goal: "heb gyrraed targed"
-      reached_goal: "wedi cyrraedd targed"
+      not_reached_goal: "heb gyrraedd ei darged"
+      reached_goal: "wedi cyrraedd ei darged"
       draft: "drafft"
   projects:
     send_to_analysis: "Anfonwyd dy brosiect at ein tîm er mwyn ei werthuso"
@@ -399,11 +399,11 @@ Yn anffodus ni lwyddodd y prosiect %{project_link} wnes ti gefnogi ar Heliwm i g
       title: "Meysydd gweinyddol"
     back_project:
       display_status:
-        reached_goal: "Bydd y prosiect hwn yn llwyddianus ac wedi ei ariannu ar %{date}"
-        not_reached_goal: "Fydd y prosiect hwn ond yn cael ei ariannu os ceir cefnogaeth i  fwy na %{goal} erbyn %{date}"
+        reached_goal: "Roedd y prosiect hwn yn llwyddianus a cafodd ei ariannu ar %{date}"
+        not_reached_goal: "Fydd y prosiect hwn ond yn cael ei ariannu os ceir cefnogaeth o fwy na %{goal} erbyn %{date}"
         failed: "Ni lwyddodd y prosiect hwn i gyrraedd y targed o %{goal} erbyn %{date} a ni chafodd ei ariannu"
         successful: "Roedd y prosiect hwn yn llwyddianus a cafodd ei ariannu ar %{date}"
-        waiting_funds: "Aros am gadarnhad taliadau i wybod os gafodd y prosiect hwn ei ariannu."
+        waiting_funds: "Mae'r prosiect hwn yn aros am gadarnhad taliadau i wybod os gafodd y prosiect hwn ei ariannu."
         draft: "Mae'r prosiect hwn ar ffurf drafft ac nid yw'n agored i gefnogwyr eto."
       reached_of: "Wedi cyrraedd o"
       submit: "Cefnoga'r prosiect yma"
@@ -413,7 +413,7 @@ Yn anffodus ni lwyddodd y prosiect %{project_link} wnes ti gefnogi ar Heliwm i g
         anonymous_description: "Wedi penderfynu aros yn anhysbys"
         no_reward: "Nid yw'r cefnogwr yma wedi dewis anrheg diolch"
       review:
-        error: "Wps. Roedd gwall wrth gofrestru dy gefnogaeth. Plis tria eto."
+        error: "Wps. Roedd gwall wrth brosesu dy gefnogaeth. Plis tria eto."
       show:
         error: "Wps. Alli di ond cael mynediad at y dudalen hon ar ôl cefnogi prosiect."
         moip_message: "Mae dy drosglwyddiad wedi ei 'Awdurdodi' a dy gôd PayPal yw “%{code}″.<br>Os oes gen ti unrhyw gwestiwn am y trafodiad ariannol hwn, cysyllt gyda Moip yn uniongyrchol."
