@@ -1,19 +1,36 @@
 class RewardDecorator < Draper::Decorator
   decorates :reward
   include Draper::LazyHelpers
+  include AutoHtml
 
-  def display_deliver_prevision
-    I18n.l((source.project.expires_at + source.days_to_delivery.days), format: :prevision)
+  def display_deliver_estimate
+    I18n.l(source.deliver_at, format: :estimate)
   rescue
-    source.days_to_delivery
+    source.deliver_at
   end
 
   def display_remaining
-    I18n.t('reward.display_remaining', remaining: source.remaining, maximum: source.maximum_backers).html_safe
+    I18n.t('rewards.index.display_remaining', remaining: source.remaining, maximum: source.maximum_contributions)
   end
 
   def name
-    "<div class='reward_minimum_value'>#{source.minimum_value > 0 ? source.display_minimum+'+' : I18n.t('reward.dont_want')}</div><div class='reward_description'>#{html_escape(source.description)}</div>#{'<div class="sold_out">' + I18n.t('reward.sold_out') + '</div>' if source.sold_out?}<div class='clear'></div>".html_safe
+    deliver = %{
+        <div class="fontsize-smallest fontcolor-secondary">
+          Estimativa de entrega:&nbsp;#{source.display_deliver_estimate || I18n.t('projects.contributions.no_estimate')}
+        </div>
+    }
+    %{
+      <label data-minimum-value="#{source.minimum_value > 0 ? source.minimum_value.to_i : '10'}" class="w-form-label fontsize-large fontweight-semibold" for="contribution_reward#{source.id && "_#{source.id}"}">#{source.minimum_value > 0 ? source.display_minimum+'+' : I18n.t('rewards.index.dont_want')}</label>
+      <div>
+        <span class="badge badge-success fontsize-smaller">#{I18n.t('projects.contributions.you_selected')}</span>
+      </div>
+      <p class="fontsize-small u-margintop-20">
+      #{html_escape(source.description)}
+      </p>
+      <div class="fontsize-smallest fontcolor-secondary">
+        #{source.id ? deliver : ''}
+      </div>
+    }.html_safe
   end
 
   def display_minimum
@@ -31,11 +48,11 @@ class RewardDecorator < Draper::Decorator
   def last_description
     if source.versions.present?
       reward = source.versions.last.reify(has_one: true)
-      auto_link(simple_format(reward.description), html: {target: :_blank})
+      auto_html(reward.description) { simple_format; link(target: '_blank') }
     end
   end
 
   def display_description
-    auto_link(simple_format(source.description), html: {target: :_blank})
+    auto_html(source.description){ html_escape; simple_format; link(target: '_blank', class: 'alt-link') }
   end
 end

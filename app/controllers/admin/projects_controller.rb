@@ -1,14 +1,14 @@
 class Admin::ProjectsController < Admin::BaseController
-  add_to_menu "admin.projects.index.menu", :admin_projects_path
+  layout 'catarse_bootstrap'
 
   has_scope :by_user_email, :by_id, :pg_search, :user_name_contains, :with_state, :by_category_id, :order_by
-  has_scope [:between_created_at, :between_expires_at, :between_online_date, :between_updated_at, :goal_between], using: [ :start_at, :ends_at ], allow_blank: true
+  has_scope :between_created_at, :between_expires_at, :between_online_date, :between_updated_at, :goal_between, using: [ :start_at, :ends_at ]
 
   before_filter do
-    @total_projects = Project.count
+    @total_projects = Project.count(:all)
   end
 
-  [:approve, :reject, :push_to_draft].each do |name|
+  [:approve, :reject, :push_to_draft, :push_to_trash, :push_to_online].each do |name|
     define_method name do
       @project = Project.find params[:id]
       @project.send("#{name.to_s}!")
@@ -27,6 +27,7 @@ class Admin::ProjectsController < Admin::BaseController
 
   protected
   def collection
-    @projects = apply_scopes(end_of_association_chain).with_project_totals.without_state('deleted').page(params[:page])
+    @scoped_projects = apply_scopes(end_of_association_chain).with_project_totals.without_state('deleted')
+    @projects = @scoped_projects.page(params[:page])
   end
 end

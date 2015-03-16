@@ -7,9 +7,9 @@ begin
       address: 'smtp.sendgrid.net',
       port: '587',
       authentication: :plain,
-      user_name: Configuration[:sendgrid_user_name],
-      password: Configuration[:sendgrid],
-      domain: Configuration[:base_domain]
+      user_name: CatarseSettings.get_without_cache(:sendgrid_user_name),
+      password: CatarseSettings.get_without_cache(:sendgrid),
+      domain: CatarseSettings.get_without_cache(:base_domain)
       }
       ActionMailer::Base.delivery_method = :smtp
     end

@@ -1,6 +1,6 @@
-require 'spec_helper'
+require 'rails_helper'
 
-describe UserUploader do
+RSpec.describe UserUploader do
   include CarrierWave::Test::Matchers
   let(:user){ FactoryGirl.create(:user) }
 
@@ -17,7 +17,12 @@ describe UserUploader do
 
   describe '#thumb_avatar' do
     subject{ @uploader.thumb_avatar }
-    it{ should have_dimensions(119, 121) }
+    it{ is_expected.to have_dimensions(119, 121) }
+  end
+
+  describe '#thumb_facebook' do
+    subject{ @uploader.thumb_facebook }
+    it{ is_expected.to have_dimensions(512, 400) }
   end
 
 end

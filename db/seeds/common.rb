@@ -51,25 +51,18 @@ puts 'Seeding the database...'
   github_url: '',
   contato_url: ''
 }.each do |name, value|
-   conf = Configuration.find_or_initialize_by(name: name)
+   conf = CatarseSettings.find_or_initialize_by(name: name)
    conf.update_attributes({
      value: value
    })
 end
 
 
-Channel.find_or_create_by!(name: "Channel name") do |c|
-  c.permalink = "sample-permalink"
-  c.description = "Lorem Ipsum"
+OauthProvider.find_or_create_by!(name: 'facebook') do |o|
+  o.key = ENV['FACEBOOK_APP_ID'],
+  o.secret = ENV['FACEBOOK_APP_SECRET'],
+  o.path = 'facebook'
 end
-
-
-facebook = OauthProvider.find_or_initialize_by(name: 'facebook')
-facebook.update_attributes({
-  key: ENV['FACEBOOK_APP_ID'],
-  secret: ENV['FACEBOOK_APP_SECRET'],
-  path: 'facebook'
-})
 
 puts
 puts '============================================='
@@ -95,6 +88,8 @@ Configuration.all.each do |conf|
   a = conf.attributes
   puts "  #{a['name']}: #{a['value']}"
 end
+
+Rails.cache.clear
 
 puts '---------------------------------------------'
 puts 'Done!'

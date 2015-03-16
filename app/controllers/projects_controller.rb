@@ -1,9 +1,12 @@
 # coding: utf-8
 class ProjectsController < ApplicationController
-  load_and_authorize_resource only: [ :new, :create, :update, :destroy, :send_to_analysis ]
+  after_filter :verify_authorized, except: %i[index video video_embed embed embed_panel about_mobile]
+  after_filter :redirect_user_back_after_login, only: %i[index show]
+  before_action :authorize_and_build_resources, only: %i[edit show]
+
   inherit_resources
   has_scope :pg_search, :by_category_id, :near_of
-  has_scope :recent, :expiring, :successful, :recommended, :not_expired, type: :boolean
+  has_scope :recent, :expiring, :successful, :in_funding, :recommended, :not_expired, type: :boolean
 
   respond_to :html
   respond_to :json, only: [:index, :show, :update]
@@ -14,75 +17,149 @@ class ProjectsController < ApplicationController
   def index
     index! do |format|
       format.html do
-        if request.xhr?
-          @projects = apply_scopes(Project).visible.order_for_search.includes(:project_total, :user, :category).page(params[:page]).per(6)
-          return render partial: 'project', collection: @projects, layout: false
-        else
-          @title = t("site.title")
-          # if current_user && current_user.recommended_projects.present?
-          #   @recommends = current_user.recommended_projects.limit(4)
-          # else
-          #   @recommends = ProjectsForHome.recommends
-          # end
-
-          #@channel_projects = Project.from_channels([1]).order_for_search.limit(3)
-          #@projects_near = Project.with_state('online').near_of(current_user.address_county).order("random()").limit(3) if current_user
-          #@expiring = ProjectsForHome.expiring
-          @recent   = ProjectsForHome.recents
-        end
+        return render_index_for_xhr_request if request.xhr?
+        projects_for_home
       end
     end
   end
 
   def new
-    new! do
-      @title = t('projects.new.title')
-      @project.rewards.build
-    end
+    @project = Project.new user: current_user
+    authorize @project
+    @project.rewards.build
   end
 
   def create
-    @project = current_user.projects.new(params[:project])
+    @project = Project.new params[:project].merge(user: current_user)
+    authorize @project
+    if @project.save
+      redirect_to edit_project_path(@project, anchor: 'home')
+    else
+      render :new
+    end
+  end
 
-    create! { project_by_slug_path(@project.permalink) }
+  def destroy
+    authorize resource
+    destroy!
   end
 
   def send_to_analysis
-    resource.send_to_analysis
-    flash[:notice] = t('projects.send_to_analysis')
-    redirect_to project_by_slug_path(@project.permalink)
+    authorize resource
+    resource_action :send_to_analysis
+  end
+
+  def publish
+    authorize resource
+    resource_action :push_to_online
   end
 
   def update
-    update!(notice: t('projects.update.success')) { project_by_slug_path(@project.permalink, anchor: 'edit') }
+    authorize resource
+    valid = resource.valid?
+
+    resource.attributes = permitted_params[:project]
+
+    if resource.save(validate: valid && should_use_validate)
+      flash[:notice] = t('project.update.success')
+    else
+      flash[:notice] = t('project.update.failed')
+      build_dependencies
+      return render :edit
+    end
+
+    if params[:anchor]
+      redirect_to edit_project_path(@project, anchor: params[:anchor])
+    else
+      redirect_to edit_project_path(@project, anchor: 'home')
+    end
   end
 
   def show
-    @title = resource.name
     fb_admins_add(resource.user.facebook_id) if resource.user.facebook_id
-    @updates_count = resource.updates.count
-    @update = resource.updates.where(id: params[:update_id]).first if params[:update_id].present?
     check_for_stripe_keys
   end
 
   def video
     project = Project.new(video_url: params[:url])
     render json: project.video.to_json
+  rescue VideoInfo::UrlError
+    render json: nil
   end
 
-  %w(embed video_embed).each do |method_name|
-    define_method method_name do
-      @title = resource.name
-      render layout: 'embed'
-    end
+  def embed
+    resource
+    render partial: 'card', layout: 'embed', locals: {embed_link: true}
   end
 
   def embed_panel
-    @title = resource.name
-    render layout: false
+    resource
+    render partial: 'project_embed'
+  end
+
+  def about_mobile
+    resource
   end
 
   protected
+  def authorize_and_build_resources
+    authorize resource
+    build_dependencies
+  end
+
+  def build_dependencies
+    @posts_count = resource.posts.count(:all)
+    @user = resource.user
+    @user.links.build
+    @post =  (params[:project_post_id].present? ? resource.posts.where(id: params[:project_post_id]).first : resource.posts.build)
+    @rewards = @project.rewards.rank(:row_order)
+    @rewards = @project.rewards.build unless @rewards.present?
+    @budget = resource.budgets.build
+
+    resource.build_account unless resource.account
+  end
+
+  def resource_action action_name
+    if resource.send(action_name)
+      if referal_link.present?
+        resource.update_attribute :referal_link, referal_link
+      end
+
+      flash[:notice] = t("projects.#{action_name.to_s}")
+      redirect_to edit_project_path(@project, anchor: 'home')
+    else
+      flash.now[:notice] = t("projects.#{action_name.to_s}_error")
+      build_dependencies
+      render :edit
+    end
+  end
+
+  def render_index_for_xhr_request
+    @projects = apply_scopes(Project.visible.order_status)
+      .most_recent_first
+      .includes(:project_total, :user, :category)
+      .page(params[:page]).per(6)
+
+    render partial: 'projects/card',
+      collection: @projects,
+      layout: false,
+      locals: {ref: "explore", wrapper_class: 'w-col w-col-4 u-marginbottom-20'}
+  end
+
+  def projects_for_home
+    @recommends = ProjectsForHome.recommends.includes(:project_total)
+    @projects_near = Project.with_state('online').near_of(current_user.address_state).order("random()").limit(3).includes(:project_total) if current_user
+    @expiring = ProjectsForHome.expiring.includes(:project_total)
+    @recent   = ProjectsForHome.recents.includes(:project_total)
+  end
+
+  def should_use_validate
+    (resource.online? || resource.failed? || resource.successful? || permitted_params[:project][:permalink].present?)
+  end
+
+  def permitted_params
+    params.permit(policy(resource).permitted_attributes)
+  end
 
   def ensure_user_has_less_than_max_projects
     if current_user.projects.online_or_waiting.count > User::MAX_PROJECTS

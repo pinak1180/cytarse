@@ -11,6 +11,7 @@
 // GO AFTER THE REQUIRES BELOW.
 //
 //= require ./lib/jquery.js
+//= require ./lib/jquery.brbanks.js
 //= require jquery_ujs
 //= require ./lib/jquery-ui.js
 //= require best_in_place
@@ -18,6 +19,9 @@
 //= require ./lib/backbone.js
 //= require ./lib/skull.js
 //= require ./app/app.js
+//= require ./lib/jquery.sticky.js
+//= require ./lib/jquery.smooth-scroll.js
+//= require cocoon
 //= require_tree ./lib
 //= require_tree ./app
 

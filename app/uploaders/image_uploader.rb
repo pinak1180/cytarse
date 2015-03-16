@@ -8,7 +8,7 @@ class ImageUploader < CarrierWave::Uploader::Base
   end
 
   def self.choose_storage
-    (Rails.env.production? and Configuration[:aws_access_key]) ? :fog : :file
+    CatarseSettings.get_without_cache(:aws_access_key).present? ? :fog : :file
   end
 
   storage choose_storage
@@ -21,4 +21,5 @@ class ImageUploader < CarrierWave::Uploader::Base
     "#{Rails.root}/tmp/uploads"
   end
 
+  process quality: 80
 end

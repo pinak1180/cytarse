@@ -1,17 +1,17 @@
-require 'spec_helper'
+require 'rails_helper'
 
-describe UserObserver do
+RSpec.describe UserObserver do
 
   describe "after_create" do
     before do
-      UserObserver.any_instance.should_receive(:after_create).and_call_original
-      Notification.unstub(:notify_once)
+      expect_any_instance_of(UserObserver).to receive(:after_create).and_call_original
     end
 
-    let(:user) { create(:user) }
+    let(:user) { build(:user) }
 
     it "send new user registration notification" do
-      Notification.should_receive(:notify_once).with(:new_user_registration, user, {user_id: user.id}, {user: user})
+      expect(user).to receive(:notify).with(:new_user_registration)
+      user.save
     end
   end
 

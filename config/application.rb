@@ -44,8 +44,8 @@ module Catarse
       g.test_framework :rspec, fixture: false, views: false
     end
     config.active_record.observers = [
-      :backer_observer, :user_observer,
-      :update_observer, :project_observer, :payment_notification_observer
+      :contribution_observer, :user_observer, :project_post_observer, :project_observer, :payment_notification_observer,
+      :mixpanel_observer, '::CatarseMonkeymail::MonkeyProjectObserver',
     ]
 
     # Enable the asset pipeline

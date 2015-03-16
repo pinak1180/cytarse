@@ -1,46 +1,41 @@
-require 'spec_helper'
+require 'rails_helper'
 
-describe Statistics do
+RSpec.describe Statistics, type: :model do
   before do
     create(:project, state: 'successful')
-    create(:project, state: 'draft') 
+    create(:project, state: 'draft')
     project = create(:project, state: 'online')
-    create(:backer, state: 'confirmed', project: project )
-    create(:backer, project: project)
+    create(:contribution, state: 'confirmed', project: project )
+    create(:contribution, project: project)
   end
 
   describe "#total_users" do
     subject{ Statistics.first.total_users }
-    it{ should == User.count }
+    it{ is_expected.to eq(User.count) }
   end
 
-  describe "#total_backs" do
-    subject{ Statistics.first.total_backs }
-    it{ should == Backer.with_state('confirmed').count }
+  describe "#total_contributions" do
+    subject{ Statistics.first.total_contributions }
+    it{ is_expected.to eq(Contribution.with_state('confirmed').count) }
   end
 
-  describe "#total_backers" do
-    subject{ Statistics.first.total_backers }
-    it{ should == User.backers.count }
-  end
-
-  describe "#total_backed" do
-    subject{ Statistics.first.total_backed }
-    it{ should == Backer.with_state('confirmed').sum(:value) }
+  describe "#total_contributed" do
+    subject{ Statistics.first.total_contributed}
+    it{ is_expected.to eq(Contribution.with_state('confirmed').sum(:value)) }
   end
 
   describe "#total_projects" do
     subject{ Statistics.first.total_projects }
-    it{ should == Project.visible.count }
+    it{ is_expected.to eq(Project.visible.count) }
   end
 
   describe "#total_projects_success" do
     subject{ Statistics.first.total_projects_success }
-    it{ should == Project.successful.count }
+    it{ is_expected.to eq(Project.successful.count) }
   end
 
   describe "#total_projects_online" do
     subject{ Statistics.first.total_projects_online }
-    it{ should == Project.with_state('online').count }
+    it{ is_expected.to eq(Project.with_state('online').count) }
   end
 end

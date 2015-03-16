@@ -1,7 +1,15 @@
 class Category < ActiveRecord::Base
+  has_notifications
   has_many :projects
+  has_many :category_followers
+  has_many :users, through: :category_followers
+
   validates_presence_of :name_en
   validates_uniqueness_of :name_en
+
+  scope :with_projects_on_this_week, -> {
+    joins(:projects).merge(Project.with_state('online').of_current_week).uniq
+  }
 
   def self.with_projects
     where("exists(select true from projects p where p.category_id = categories.id and p.state not in('draft', 'rejected'))")
@@ -13,5 +21,15 @@ class Category < ActiveRecord::Base
 
   def to_s
     self.send('name_' + I18n.locale.to_s)
+  end
+
+  def total_online_projects
+    @total_online_projects ||= self.projects.with_state('online').count
+  end
+
+  def deliver_projects_of_week_notification
+    self.users.to_send_category_notification(self.id).each do |user|
+      self.notify(:categorized_projects_of_the_week, user, self)
+    end
   end
 end

@@ -1,4 +1,4 @@
-describe("FeedbackSupport", function() {
+RSpec.describe("FeedbackSupport", function() {
   var view;
 
   beforeEach(function() {
@@ -14,11 +14,11 @@ describe("FeedbackSupport", function() {
     });
 
     it("should call fadeIn on feedback opened", function() {
-      expect(view.$feedbackSupportOpened.fadeIn).wasCalled();
+      expect(view.$feedbackSupportOpened.fadeIn).toHaveBeenCalled();
     });
 
     it("should call fadeOut on feedback closed", function() {
-      expect(view.$feedbackSupportClosed.fadeOut).wasCalled();
+      expect(view.$feedbackSupportClosed.fadeOut).toHaveBeenCalled();
     });
   });
 
@@ -31,11 +31,11 @@ describe("FeedbackSupport", function() {
     });
 
     it("should call fadeOut on feedback opened", function() {
-      expect(view.$feedbackSupportOpened.fadeOut).wasCalled();
+      expect(view.$feedbackSupportOpened.fadeOut).toHaveBeenCalled();
     });
 
     it("should call fadeIn on feedback closed", function() {
-      expect(view.$feedbackSupportClosed.fadeIn).wasCalled();
+      expect(view.$feedbackSupportClosed.fadeIn).toHaveBeenCalled();
     });
   });
 });

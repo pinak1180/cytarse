@@ -1,107 +1,35 @@
-require 'spec_helper'
+require 'rails_helper'
 
-describe RewardsController do
+RSpec.describe RewardsController, type: :controller do
   subject{ response }
-  let(:project) { FactoryGirl.create(:project) }
-  let(:reward) { FactoryGirl.create(:reward, project: project) }
+  let(:project){ create(:project) }
+  let(:reward){ create(:reward, project: project) }
+  let(:user){ nil }
 
-  shared_examples_for "GET rewards index" do
-    before { get :index, project_id: project.id, locale: :pt }
-    it { should be_success }
+  before do
+    allow(controller).to receive(:current_user).and_return(user)
   end
 
-  shared_examples_for "POST rewards create" do
-    before { post :create, project_id: project.id, reward: { description: 'Lorem ipsum', minimum_value: 10, days_to_delivery: 10 }, locale: :pt }
-    it { project.rewards.should_not be_empty}
+  describe "GET index" do
+    before do
+      get :index, project_id: project.id, locale: :pt
+    end
+    it{ is_expected.to be_successful }
   end
 
-  shared_examples_for "POST rewards create without permission" do
-    before { post :create, project_id: project.id, reward: { description: 'Lorem ipsum', minimum_value: 10, days_to_delivery: 10 }, locale: :pt }
-    it { project.rewards.should be_empty}
-  end
+  describe "POST sort" do
+    before do
+      post :sort, project_id: project.id, id: reward.id, reward: {row_order_position: 1}, locale: :pt
+    end
 
-  shared_examples_for "PUT rewards update" do
-    before { put :update, project_id: project.id, id: reward.id, reward: { description: 'Amenori ipsum' }, locale: :pt }
-    it {
-      reward.reload
-      reward.description.should == 'Amenori ipsum'
-    }
-  end
+    context "when user is not logged in" do
+      it{ is_expected.to redirect_to new_user_registration_path }
+    end
 
-  shared_examples_for "PUT rewards update without permission" do
-    before { put :update, project_id: project.id, id: reward.id, reward: { description: 'Amenori ipsum' }, locale: :pt }
-    it {
-      reward.reload
-      reward.description.should == 'Foo bar'
-    }
-  end
-
-  shared_examples_for "DELETE rewards destroy" do
-    before { delete :destroy, project_id: project.id, id: reward.id, locale: :pt }
-    it { project.rewards.should be_empty}
-  end
-
-  shared_examples_for "DELETE rewards destroy without permission" do
-    before { delete :destroy, project_id: project.id, id: reward.id, locale: :pt }
-    it { project.rewards.should_not be_empty}
-  end
-
-  context "When current_user is a guest" do
-    before { controller.stub(:current_user).and_return(nil) }
-
-    it_should_behave_like "GET rewards index"
-    it_should_behave_like "POST rewards create without permission"
-    it_should_behave_like "PUT rewards update without permission"
-    it_should_behave_like "DELETE rewards destroy without permission"
-  end
-
-  context "When current_user is a project owner" do
-    before { controller.stub(:current_user).and_return(project.user) }
-
-    it_should_behave_like "GET rewards index"
-    it_should_behave_like "POST rewards create"
-    it_should_behave_like "PUT rewards update"
-    it_should_behave_like "DELETE rewards destroy"
-
-    context "When reward already have backers" do
-      before { FactoryGirl.create(:backer, state: 'confirmed', project: project, reward: reward) }
-
-      context "can't update the minimum value" do
-        before { put :update, project_id: project.id, id: reward.id, reward: { minimum_value: 15, description: 'Amenori ipsum' }, locale: :pt }
-        it {
-          reward.reload
-          reward.minimum_value.should_not eq(15.0)
-        }
-      end
-
-      context "can update the description and maximum backers" do
-        before do
-          put :update, project_id: project.id, id: reward.id, reward: { maximum_backers: 99, description: 'lorem ipsum'}, locale: :pt
-          reward.reload
-        end
-
-        it { expect(reward.description).to eq('lorem ipsum') }
-        it { expect(reward.maximum_backers).to eq(99) }
-      end
-
+    context "when user is project owner" do
+      let(:user){ project.user }
+      it{ is_expected.to be_successful }
     end
   end
 
-  context "when current_user is admin" do
-    before { controller.stub(:current_user).and_return(FactoryGirl.create(:user, admin: true))}
-
-    it_should_behave_like "GET rewards index"
-    it_should_behave_like "POST rewards create"
-    it_should_behave_like "PUT rewards update"
-    it_should_behave_like "DELETE rewards destroy"
-  end
-
-  context "When current_user is a registered user" do
-    before { controller.stub(:current_user).and_return(FactoryGirl.create(:user)) }
-
-    it_should_behave_like "GET rewards index"
-    it_should_behave_like "POST rewards create without permission"
-    it_should_behave_like "PUT rewards update without permission"
-    it_should_behave_like "DELETE rewards destroy without permission"
-  end
 end

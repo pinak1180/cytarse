@@ -1,17 +1,42 @@
-require 'spec_helper'
+require 'rails_helper'
 
-describe PaymentNotification do
+RSpec.describe PaymentNotification, type: :model do
   describe "Associations" do
-    it{ should belong_to :backer }
+    it{ is_expected.to belong_to :contribution }
   end
 
   describe "#extra_data" do
     let(:test_hash){{"test_hash" => 1}}
     before do
-      @p = PaymentNotification.new(backer_id: FactoryGirl.create(:backer).id, extra_data: test_hash)
+      @p = PaymentNotification.new(contribution_id: FactoryGirl.create(:contribution).id, extra_data: test_hash)
       @p.save!
     end
     subject{ @p.extra_data }
-    it{ should == test_hash }
+    it{ is_expected.to eq(test_hash) }
   end
+
+  describe "#deliver_process_notification" do
+    before do
+      expect(ContributionNotification).to receive(:notify_once)
+    end
+
+    subject do
+      create(:payment_notification, contribution: create(:contribution, project: create(:project)))
+    end
+
+    it("should notify the contribution"){ subject.deliver_process_notification }
+  end
+
+  describe "#deliver_slip_canceled_notification" do
+    before do
+      expect(ContributionNotification).to receive(:notify_once)
+    end
+
+    subject do
+      create(:payment_notification, contribution: create(:contribution, project: create(:project)))
+    end
+
+    it("should notify the contribution"){ subject.deliver_slip_canceled_notification }
+  end
+
 end

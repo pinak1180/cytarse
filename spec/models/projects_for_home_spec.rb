@@ -1,6 +1,9 @@
-require 'spec_helper'
+require 'rails_helper'
 
-describe ProjectsForHome do
+RSpec.describe ProjectsForHome, type: :model do
+  describe "association" do
+    it{ is_expected.to have_one :project_total } 
+  end
   describe '.recommends' do
     before do
       4.times { create(:project, recommended: true, state: 'online') }
@@ -9,8 +12,8 @@ describe ProjectsForHome do
 
     subject { ProjectsForHome.recommends }
 
-    it { should have(3).itens }
-    it { should_not include(@not_recommended_01) }
+    it { is_expected.to have(3).itens }
+    it { is_expected.not_to include(@not_recommended_01) }
   end
 
   describe '.recents' do
@@ -21,8 +24,8 @@ describe ProjectsForHome do
 
     subject { ProjectsForHome.recents }
 
-    it { should have(3).itens }
-    it { should_not include(@not_recents_01) }
+    it { is_expected.to have(3).itens }
+    it { is_expected.not_to include(@not_recents_01) }
   end
 
   describe '.expiring' do
@@ -33,12 +36,12 @@ describe ProjectsForHome do
 
     subject { ProjectsForHome.expiring }
 
-    it { should have(3).itens }
-    it { should_not include(@not_expiring_01) }
+    it { is_expected.to have(3).itens }
+    it { is_expected.not_to include(@not_expiring_01) }
   end
 
   describe "to_partial_path" do
     subject{ ProjectsForHome.new.to_partial_path }
-    it{ should == 'projects/project' }
+    it{ is_expected.to eq('projects/project') }
   end
 end

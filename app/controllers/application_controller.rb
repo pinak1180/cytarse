@@ -3,28 +3,50 @@ class ApplicationController < ActionController::Base
   include Concerns::ExceptionHandler
   include Concerns::MenuHandler
   include Concerns::SocialHelpersHandler
+  include Concerns::AnalyticsHelpersHandler
+  include Pundit
 
-  layout :use_catarse_boostrap
-  # protect_from_forgery
+  layout 'catarse_bootstrap'
+  protect_from_forgery
 
-  before_filter :redirect_user_back_after_login, unless: :devise_controller?
   before_filter :configure_permitted_parameters, if: :devise_controller?
 
-  helper_method :channel, :namespace, :referal_link
+  helper_method :referal_link, :render_projects, :should_show_beta_banner?, :render_feeds
 
   before_filter :set_locale
 
   before_action :referal_it!
 
-  def channel
-    Channel.find_by_permalink(request.subdomain.to_s)
-  end
+  before_action :force_www
 
   def referal_link
     session[:referal_link]
   end
 
+  def render_projects collection, ref, locals = {}
+    render_to_string partial: 'projects/card', collection: collection, locals: {ref: ref}.merge!(locals)
+  end
+
+  def render_feeds collection, locals = {}
+    render_to_string partial: 'users/feeds/feed', collection: collection, locals: locals
+  end
+
+  def should_show_beta_banner?
+    current_user.nil? || current_user.projects.empty?
+  end
+
+  def should_show_beta_banner?
+    current_user.nil? || current_user.projects.empty?
+  end
+
   private
+
+  def force_www
+    if request.subdomain.blank? && Rails.env.production?
+      return redirect_to url_for(params.merge(subdomain: 'www'))
+    end
+  end
+
   def referal_it!
     session[:referal_link] = params[:ref] if params[:ref].present?
   end
@@ -33,29 +55,14 @@ class ApplicationController < ActionController::Base
     return redirect_to page_path("bad_browser") if (!browser.modern? || browser.ie9?) && controller_name != 'pages'
   end
 
-  def namespace
-    names = self.class.to_s.split('::')
-    return "null" if names.length < 2
-    names[0..(names.length-2)].map(&:downcase).join('_')
-  end
-
   def set_locale
     if params[:locale]
       I18n.locale = params[:locale]
-      current_user.update_attribute :locale, params[:locale] if current_user && params[:locale] != current_user.locale
+      current_user.try(:change_locale, params[:locale])
     elsif request.method == "GET"
       new_locale = (current_user.locale if current_user) || I18n.default_locale
       I18n.locale = new_locale
     end
-  end
-
-  def use_catarse_boostrap
-    devise_controller? ? 'catarse_bootstrap' : 'application'
-  end
-
-  def redirect_back_or_default(default)
-    redirect_to(session[:return_to] || default)
-    session[:return_to] = nil
   end
 
   def after_sign_in_path_for(resource_or_scope)
@@ -74,9 +81,5 @@ class ApplicationController < ActionController::Base
     devise_parameter_sanitizer.for(:sign_up) do |u|
       u.permit(:name, :email, :password, :newsletter)
     end
-  end
-
-  def current_ability
-    @current_ability ||= Ability.new(current_user, { channel: channel })
   end
 end

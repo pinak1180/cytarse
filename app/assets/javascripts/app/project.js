@@ -1,5 +1,5 @@
 App.addChild('Project', _.extend({
-  el: '#main_content[data-action="show"][data-controller-name="projects"]',
+  el: 'body[data-action="show"][data-controller-name="projects"]',
 
   events: {
     'click #toggle_warning a' : 'toggleWarning',
@@ -10,11 +10,12 @@ App.addChild('Project', _.extend({
     this.$warning = this.$('#project_warning_text');
     this.$embed= this.$('#project_embed');
     this.route('about');
-    this.route('updates');
-    this.route('backers');
+    this.route('posts');
+    this.route('contributions');
     this.route('comments');
     this.route('edit');
     this.route('reports');
+    this.route('metrics');
   },
 
   toggleWarning: function(){
@@ -29,16 +30,23 @@ App.addChild('Project', _.extend({
   },
 
   followRoute: function(name){
-    var $tab = this.$('nav#project_menu a[href="' + window.location.hash + '"]');
+    var $tab = this.$('nav a[href="' + window.location.hash + '"]');
     if($tab.length > 0){
-      this.onTabClick({ target: $tab });
+      this.onTabClick({ currentTarget: $tab });
+      var tabs = ['metrics_link'];
+
+      if($.inArray($tab.prop('id'), tabs) !== -1) {
+        $('#project-sidebar').hide();
+      } else {
+        $('#project-sidebar').show();
+      }
     }
   },
 
   loadEmbed: function() {
     var that = this;
 
-    if(this.$embed.find('.loader').length > 0) {
+    if(this.$embed.is(':empty')) {
       $.get(this.$embed.data('path')).success(function(data){
         that.$embed.html(data);
       });

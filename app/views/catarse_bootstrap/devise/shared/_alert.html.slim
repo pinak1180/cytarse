@@ -1,11 +1,9 @@
 - if flash[:alert].present?
-  .alert-box.alert.animated.shake
-    .large-12.large-centered.columns
-      h3= t('failure_title')
-      p= flash[:alert]
+  .card.card-error.u-radius.zindex-10.u-marginbottom-30
+    .fontsize-smaller.fontweight-bold.u-marginbottom-10= t('failure_title')
+    .fontsize-smaller = flash[:alert]
 - elsif resource.errors.present?
-  .alert-box.alert.animated.shake
-    .large-12.large-centered.columns
-      h3= t('failure_title')
-      - resource.errors.messages.each do |message|
-        p= message[1].to_sentence
+  .card.card-error.u-radius.zindex-10.u-marginbottom-30
+    .fontsize-smaller.fontweight-bold.u-marginbottom-10= t('failure_title')
+    - resource.errors.messages.each do |message|
+      .fontsize-smaller = message[1].to_sentence.html_safe

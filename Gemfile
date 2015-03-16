@@ -1,8 +1,8 @@
 source 'https://rubygems.org'
 
-ruby '2.1.3'
+ruby '2.2.1'
 
-gem 'rails',    '~> 4.0'
+gem 'rails', '~> 4.1.6'
 
 # Cron
 gem 'whenever', :require => false
@@ -11,15 +11,17 @@ gem 'whenever', :require => false
 gem 'dotenv-rails'
 gem 'dotenv-deployment'
 
-gem 'protected_attributes', '~> 1.0.3' # When upgrade to strong_parameters, remove this gem.
+
+#gem 'catarse_api', path: '~/code/catarse_api'
+gem 'catarse_api', github: 'catarse/catarse_api'
+gem 'protected_attributes', '~> 1.0.5' # When upgrade to strong_parameters, remove this gem.
 gem 'rails-observers', '~> 0.1.2'
 gem 'activerecord-session_store'
 
-gem 'sidekiq',  '~> 2.13.0'
-gem 'sinatra', require: false # required by sidekiq web interface mounted on /sidekiq
+gem 'sidekiq',  '~> 3.1.3'
 
 # Turns every field on a editable one
-gem 'best_in_place', github: 'bernat/best_in_place'
+gem "best_in_place", :git => "git://github.com/bernat/best_in_place", ref: "ee95961e639022e6aa528704b8cb4789596ea61b"
 
 # State machine for attributes on models
 gem 'state_machine', require: 'state_machine/core'
@@ -31,28 +33,34 @@ gem 'paper_trail', github: 'airblade/paper_trail'
 gem 'rollbar', '~> 1.2.4'
 
 # Database and data related
-gem 'pg'
+gem 'pg', '0.17.1'
 gem 'postgres-copy'
 gem 'pg_search'
+gem 'i18n_alchemy'
 
 gem 'schema_plus'
-gem 'schema_associations'
 gem 'chartkick'
+gem 'catarse_settings_db', '>= 0.1.0'
+
+# Notifications
+gem 'user_notifier', '~> 0.0.5'
+
+# Mixpanel for backend tracking
+gem 'mixpanel-ruby'
 
 # Payment engines
-# gem 'catarse_paypal_express', '~> 2.0.0'
-# gem 'catarse_moip', '~> 2.0.8'
-# gem 'catarse_braintree', '0.0.1', path: 'vendor/gems/catarse_braintree-2c5b83730cf9'
 gem 'catarse_stripe', :git => 'git@github.com:Codebeef/catarse_stripe.git'
 gem 'stripe', :git => 'https://github.com/stripe/stripe-ruby'
+gem 'catarse_contribution_validator', github: 'catarse/catarse_contribution_validator'
 
 # Decorators
 gem 'draper'
 
 # Frontend stuff
-gem 'slim-rails', '~> 1.1.1'
+gem 'slim-rails'
 gem 'jquery-rails'
 gem 'browser'
+gem "cocoon"
 
 # Static pages
 gem 'high_voltage'
@@ -60,43 +68,43 @@ gem 'high_voltage'
 # Authentication and Authorization
 gem 'omniauth'
 gem 'omniauth-twitter'
-gem 'omniauth-facebook'
-gem 'devise', '~> 3.0.2'
+gem 'omniauth-facebook', '1.4.0'
+gem 'devise'
 gem 'ezcrypto'
-
-# See https://github.com/ryanb/cancan/tree/2.0 for help about this
-# In resume: this version of cancan allow checking for authorization on specific fields on the model
-gem 'cancan', github: 'ryanb/cancan', branch: '2.0', ref: 'f1cebde51a87be149b4970a3287826bb63c0ac0b'
+gem 'pundit'
 
 # Email marketing
 gem 'letter_opener_web', '~> 1.2.0'
-gem 'catarse_mailchimp', git: 'git://github.com/catarse/catarse_mailchimp', ref: '2ed4f39'
+gem 'catarse_monkeymail', '>= 0.1.6'
 
 # HTML manipulation and formatting
-gem 'formtastic',   '~> 2.2.1'
 gem 'simple_form'
-gem "auto_html",    '= 1.4.2'
+gem 'mail_form'
+gem "auto_html"
+gem "RedCloth"
 gem 'kaminari'
+gem 'redactor-rails'
 
 # Uploads
-gem 'carrierwave', '~> 0.8.0'
-gem 'rmagick'
+gem 'carrierwave', '~> 0.10.0'
+gem "mini_magick"
+gem 'rmagick', :require => 'RMagick'
 
 # Other Tools
+gem 'to_xls'
 gem 'ranked-model'
+gem 'feedjira'
 gem 'inherited_resources',        '~> 1.4.1'
 gem 'has_scope', '~> 0.6.0.rc'
 gem 'spectator-validates_email',  require: 'validates_email'
 gem 'video_info', '>= 1.1.1'
-gem 'enumerate_it'
+gem 'httparty', '~> 0.6.1' # this version is required by moip gem, otherwise payment confirmation will break
 
 # Translations
 gem 'http_accept_language'
 gem 'routing-filter', '~> 0.4.0.pre'
 
 group :production do
-  gem 'google-analytics-rails'
-
   # Gem used to handle image uploading
   gem 'fog', '>= 1.3.1'
 
@@ -112,7 +120,7 @@ group :production do
   #gem 'rails_12factor'
 
   # Monitoring with the new new relic
-  gem 'newrelic_rpm', '3.6.5.130'
+  gem 'newrelic_rpm'
 
   # Using dalli and memcachier have not presented significative performance gains
   # Probably this is due to our pattern of cache usage
@@ -125,6 +133,7 @@ group :development do
   gem 'foreman'
   gem 'better_errors'
   gem 'binding_of_caller'
+  gem 'thin'
   # Uncomment only for optimization, should be commented on master branch
   # gem 'rack-mini-profiler'
 
@@ -134,36 +143,33 @@ group :development do
 end
 
 group :test, :development do
-  gem 'rspec-rails', '~> 2.14.0'
+  gem 'rspec-rails', '~> 3.1'
+  gem 'rspec-mocks'
+  gem 'rspec-its'
+  gem 'rspec-collection_matchers'
   gem 'pry'
+  gem 'jasmine-rails'
 end
 
 group :test do
+  gem 'fakeweb'
   gem 'poltergeist'
   gem 'launchy'
   gem 'database_cleaner'
   gem 'shoulda'
   gem 'factory_girl_rails'
-  gem 'capybara',   '~> 2.1.0'
-  gem 'jasmine'
+  gem 'capybara',   '~> 2.2.0'
   gem 'coveralls', require: false
-  gem 'selenium-webdriver', '~> 2.35.1'
+  gem 'selenium-webdriver'
 end
 
-gem 'sass-rails', '4.0.3'
-gem 'coffee-rails'
+gem 'sass-rails', '~> 4.0.0'
+gem 'coffee-rails', '~> 4.0.0'
 gem "compass-rails"
 gem 'uglifier'
 gem 'compass-960-plugin'
-gem 'therubyracer'
+gem 'sprockets', '~> 2.10.1'
 
 # FIXME: Not-anymore-on-development
 # Gems that are with 1 or more years on the vacuum
 gem 'weekdays'
-gem "rack-timeout"
-
-# TODO: Take a look on dependencies. Why not auto_html?
-gem 'rails_autolink', '~> 1.1.0'
-
-# TODO: Take a look on dependencies
-gem "RedCloth"

@@ -46,3 +46,4 @@ ansible/roles/ssl/files
 .env*
 tmp
 vendor
+.rvmrc

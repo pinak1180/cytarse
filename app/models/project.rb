@@ -1,69 +1,86 @@
 # coding: utf-8
 class Project < ActiveRecord::Base
-  schema_associations
+  include PgSearch
 
   include Shared::StateMachineHelpers
-  include ProjectStateMachineHandler
-  include ActionView::Helpers::TextHelper
-  include PgSearch
-  extend CatarseAutoHtml
+  include Shared::Queued
+
+  include Project::StateMachineHandler
+  include Project::VideoHandler
+  include Project::CustomValidators
+  include Project::RemindersHandler
+  include Project::ErrorGroups
+
+  has_notifications
 
   mount_uploader :uploaded_image, ProjectUploader
-  mount_uploader :video_thumbnail, ProjectUploader
 
-  delegate :display_status, :display_progress, :display_image, :display_expires_at, :remaining_text, :time_to_go,
-    :display_pledged, :display_goal, :remaining_days, :display_video_embed_url, :progress_bar, :successful_flag,
-    to: :decorator
+  delegate  :display_online_date, :display_status, :progress, :display_progress,
+            :display_image, :display_expires_at, :remaining_text, :time_to_go,
+            :display_pledged, :display_goal, :remaining_days, :progress_bar,
+            :status_flag, :state_warning_template, :display_card_class, :display_errors, to: :decorator
 
-
-  has_and_belongs_to_many :channels
+  belongs_to :user
+  belongs_to :category
   has_one :project_total
+  has_one :account, class_name: "ProjectAccount", inverse_of: :project
   has_many :rewards
-  accepts_nested_attributes_for :rewards
+  has_many :contributions
+  has_many :posts, class_name: "ProjectPost", inverse_of: :project
+  has_many :budgets, class_name: "ProjectBudget", inverse_of: :project
+  has_many :unsubscribes
 
-  catarse_auto_html_for field: :about, video_width: 600, video_height: 403
+  accepts_nested_attributes_for :rewards, allow_destroy: true, reject_if: -> (x) { x[:description].blank? || x[:minimum_value].blank? }
+  accepts_nested_attributes_for :user
+  accepts_nested_attributes_for :account
+  accepts_nested_attributes_for :posts, allow_destroy: true#, reject_if: ->(x) { x[:title].blank? || x[:comment].blank? }
+  accepts_nested_attributes_for :budgets, allow_destroy: true, reject_if: ->(x) { x[:name].blank? || x[:value].blank? }
 
-  pg_search_scope :pg_search, against: [
-      [:name, 'A'],
-      [:headline, 'B'],
-      [:about, 'C']
-    ],
-    associated_against:  {user: [:name, :address_city ]},
-    using: {tsearch: {dictionary: "portuguese"}},
+  pg_search_scope :pg_search,
+    against: "full_text_index",
+    using: {
+      tsearch: {
+        dictionary: "portuguese",
+        tsvector_column: "full_text_index"
+      }
+    },
     ignoring: :accents
 
   # Used to simplify a has_scope
   scope :successful, ->{ with_state('successful') }
-  scope :with_project_totals, -> { joins('LEFT OUTER JOIN project_totals pt ON pt.project_id = projects.id') }
+  scope :with_project_totals, -> { joins('LEFT OUTER JOIN project_totals ON project_totals.project_id = projects.id') }
 
   scope :by_progress, ->(progress) { joins(:project_total).where("project_totals.pledged >= projects.goal*?", progress.to_i/100.to_f) }
   scope :by_user_email, ->(email) { joins(:user).where("users.email = ?", email) }
   scope :by_id, ->(id) { where(id: id) }
   scope :by_goal, ->(goal) { where(goal: goal) }
+  scope :by_category_id, ->(id) { where(category_id: id) }
   scope :by_online_date, ->(online_date) { where("online_date::date = ?", online_date.to_date) }
   scope :by_expires_at, ->(expires_at) { where("projects.expires_at::date = ?", expires_at.to_date) }
   scope :by_updated_at, ->(updated_at) { where("updated_at::date = ?", updated_at.to_date) }
   scope :by_permalink, ->(p) { without_state('deleted').where("lower(permalink) = lower(?)", p) }
-  scope :by_category_id, ->(id) { where(category_id: id) }
+  scope :recommended, -> { where(recommended: true) }
+  scope :in_funding, -> { not_expired.with_states(['online']) }
   scope :name_contains, ->(term) { where("unaccent(upper(name)) LIKE ('%'||unaccent(upper(?))||'%')", term) }
   scope :user_name_contains, ->(term) { joins(:user).where("unaccent(upper(users.name)) LIKE ('%'||unaccent(upper(?))||'%')", term) }
   scope :near_of, ->(address_state) { where("EXISTS(SELECT true FROM users u WHERE u.id = projects.user_id AND lower(u.address_state) = lower(?))", address_state) }
   scope :to_finish, ->{ expired.with_states(['online', 'waiting_funds']) }
-  scope :visible, -> { without_states(['draft', 'rejected', 'deleted']) }
+  scope :visible, -> { without_states(['draft', 'rejected', 'deleted', 'in_analysis', 'approved']) }
   scope :financial, -> { with_states(['online', 'successful', 'waiting_funds']).where("projects.expires_at > (current_timestamp - '15 days'::interval)") }
-  scope :recommended, -> { where(recommended: true) }
   scope :expired, -> { where("projects.expires_at < current_timestamp") }
   scope :not_expired, -> { where("projects.expires_at >= current_timestamp") }
   scope :expiring, -> { not_expired.where("projects.expires_at <= (current_timestamp + interval '2 weeks')") }
   scope :not_expiring, -> { not_expired.where("NOT (projects.expires_at <= (current_timestamp + interval '2 weeks'))") }
   scope :recent, -> { where("(current_timestamp - projects.online_date) <= '5 days'::interval") }
-  scope :order_for_search, ->{ reorder("
+  scope :ordered, -> { order(created_at: :desc)}
+  scope :order_status, ->{ order("
                                      CASE projects.state
                                      WHEN 'online' THEN 1
                                      WHEN 'waiting_funds' THEN 2
                                      WHEN 'successful' THEN 3
                                      WHEN 'failed' THEN 4
-                                     END ASC, projects.online_date DESC, projects.created_at DESC") }
+                                     END ASC")}
+  scope :most_recent_first, ->{ order("projects.online_date DESC, projects.created_at DESC") }
   scope :order_for_admin, -> {
     reorder("
             CASE projects.state
@@ -74,28 +91,32 @@ class Project < ActiveRecord::Base
             END ASC, projects.online_date DESC, projects.created_at DESC")
   }
 
-  scope :backed_by, ->(user_id){
-    where("id IN (SELECT project_id FROM backers b WHERE b.state = 'confirmed' AND b.user_id = ?)", user_id)
+  scope :with_contributions_confirmed_today, -> {
+    joins(:contributions).merge(Contribution.confirmed_today).uniq
   }
 
-  scope :from_channels, ->(channels){
-    where("EXISTS (SELECT true FROM channels_projects cp WHERE cp.project_id = projects.id AND cp.channel_id = ?)", channels)
+  scope :of_current_week, -> {
+    where("
+      projects.online_date AT TIME ZONE '#{Time.zone.tzinfo.name}' >= (current_timestamp AT TIME ZONE '#{Time.zone.tzinfo.name}' - '7 days'::interval)
+    ")
   }
 
   scope :online_or_waiting, -> { with_states(['online', 'draft']) }
 
   attr_accessor :accepted_terms
 
+  # Draft state validtions
+  PROJECTS_WITH_EXTENDED_DEADLINE = [9431, 9317, 9493, 9845, 9643, 9524, 8552, 9353, 9746, 9619, 8975, 9442, 9799, 8994, 9257, 9544, 9637, 9181, 9545, 8728, 9300, 9972]
   validates_acceptance_of :accepted_terms, on: :create
-
-  validates :video_url, presence: true, if: ->(p) { p.state_name == 'online' }
-  validates_presence_of :name, :user, :category, :about, :headline, :goal, :permalink
+  validates_presence_of :name, :user, :category, :permalink
   validates_length_of :headline, maximum: 140
-  validates_numericality_of :online_days, less_than_or_equal_to: 60
-  validates_uniqueness_of :permalink, allow_blank: true, case_sensitive: false
-  validates_format_of :permalink, with: /\A(\w|-)*\z/, allow_blank: true
-  validates_format_of :video_url, with: /(https?\:\/\/|)(youtu(\.be|be\.com)|vimeo).*+/, message: I18n.t('project.video_regex_validation'), allow_blank: true
-  validate :permalink_cant_be_route, allow_nil: true
+  validates_numericality_of :online_days, less_than_or_equal_to: 60, greater_than: 0, if: ->(p){ p.online_days.present? && PROJECTS_WITH_EXTENDED_DEADLINE.exclude?(p.id) }
+  validates_numericality_of :online_days, less_than_or_equal_to: 65, greater_than: 0, if: ->(p){ p.online_days.present? && PROJECTS_WITH_EXTENDED_DEADLINE.include?(p.id) }
+  validates_numericality_of :goal, greater_than: 9, allow_blank: true
+  validates_uniqueness_of :permalink, case_sensitive: false
+  validates_format_of :permalink, with: /\A(\w|-)*\Z/
+
+  validates_with StateValidator
 
   [:between_created_at, :between_expires_at, :between_online_date, :between_updated_at].each do |name|
     define_singleton_method name do |starts_at, ends_at|
@@ -108,19 +129,32 @@ class Project < ActiveRecord::Base
   end
 
   def self.order_by(sort_field)
-    return scoped unless sort_field =~ /^\w+(\.\w+)?\s(desc|asc)$/i
+    return self.all unless sort_field =~ /^\w+(\.\w+)?\s(desc|asc)$/i
     order(sort_field)
   end
 
-  def self.finish_projects!
-    to_finish.each do |resource|
-      Rails.logger.info "[FINISHING PROJECT #{resource.id}] #{resource.name}"
-      resource.finish
-    end
+  def has_blank_service_fee?
+    contributions.with_state(:confirmed).where("payment_service_fee IS NULL OR payment_service_fee = 0").present?
+  end
+
+  def can_show_account_link?
+    ['online', 'waiting_funds', 'successful', 'approved'].include? state
+  end
+
+  def can_show_funding_period?
+    ['online', 'waiting_funds', 'successful', 'failed'].include? state
+  end
+
+  def can_update_account?
+    account.invalid? || ['online', 'waiting_funds', 'successful', 'failed'].exclude?(state)
+  end
+
+  def can_show_preview_link?
+    ['draft', 'approved', 'rejected', 'in_analysis'].include? state
   end
 
   def subscribed_users
-    User.subscribed_to_updates.subscribed_to_project(self.id)
+    User.subscribed_to_posts.subscribed_to_project(self.id)
   end
 
   def decorator
@@ -128,27 +162,27 @@ class Project < ActiveRecord::Base
   end
 
   def expires_at
-    online_date && (online_date + online_days.days).end_of_day
-  end
-
-  def video
-    @video ||= VideoInfo.get(self.video_url) if self.video_url.present?
+    @expires_at ||= Project.where(id: self.id).pluck('projects.expires_at').first
   end
 
   def pledged
-    project_total ? project_total.pledged : 0.0
+    project_total.try(:pledged).to_f
   end
 
-  def total_backers
-    project_total ? project_total.total_backers : 0
+  def total_contributions
+    project_total.try(:total_contributions).to_i
   end
 
   def total_payment_service_fee
-    project_total ? project_total.total_payment_service_fee : 0.0
+    project_total.try(:total_payment_service_fee).to_f
   end
 
   def selected_rewards
-    rewards.sort_asc.where(id: backers.with_state('confirmed').map(&:reward_id))
+    rewards.sort_asc.where(id: contributions.with_state('confirmed').map(&:reward_id))
+  end
+
+  def accept_contributions?
+    online? && !expired?
   end
 
   def reached_goal?
@@ -160,69 +194,55 @@ class Project < ActiveRecord::Base
   end
 
   def in_time_to_wait?
-    backers.with_state('waiting_confirmation').count > 0
-  end
-
-  def progress
-    return 0 if goal == 0.0
-    ((pledged / goal * 100).abs).round(pledged.to_i.size).to_i
-  end
-
-  def update_video_embed_url
-    self.video_embed_url = self.video.embed_url if self.video.present?
-  end
-
-  def download_video_thumbnail
-    self.video_thumbnail = open(self.video.thumbnail_large) if self.video_url.present? && self.video
-  rescue OpenURI::HTTPError => e
-    Rails.logger.info "-----> #{e.inspect}"
-  rescue TypeError => e
-    Rails.logger.info "-----> #{e.inspect}"
-  end
-
-  def pending_backers_reached_the_goal?
-    pledged_and_waiting >= goal
+    contributions.with_state('waiting_confirmation').present?
   end
 
   def pledged_and_waiting
-    backers.with_states(['confirmed', 'waiting_confirmation']).sum(:value)
-  end
-
-  def permalink_cant_be_route
-    errors.add(:permalink, I18n.t("activerecord.errors.models.project.attributes.permalink.invalid")) if Project.permalink_on_routes?(permalink)
-  end
-
-  def self.permalink_on_routes?(permalink)
-    permalink && self.get_routes.include?(permalink.downcase)
+    contributions.with_states(['confirmed', 'waiting_confirmation']).sum(:value)
   end
 
   def new_draft_recipient
-    email = last_channel.try(:email) || ::Configuration[:email_projects]
-    User.where(email: email).first
-  end
-
-  def last_channel
-    @last_channel ||= channels.last
-  end
-
-  def notification_type type
-    channels.first ? "#{type}_channel".to_sym : type
+    User.find_by_email CatarseSettings[:email_projects]
   end
 
   def should_fail?
     expired? && !reached_goal?
   end
 
-  private
-  def self.between_dates(attribute, starts_at, ends_at)
-    return scoped unless starts_at.present? && ends_at.present?
-    where("projects.#{attribute}::date between to_date(?, 'dd/mm/yyyy') and to_date(?, 'dd/mm/yyyy')", starts_at, ends_at)
+  def notify_owner(template_name, params = {})
+    notify_once(
+      template_name,
+      self.user,
+      self,
+      params
+    )
   end
 
-  def self.get_routes
-    routes = Rails.application.routes.routes.map do |r|
-      r.path.spec.to_s.split('/').second.to_s.gsub(/\(.*?\)/, '')
+  def notify_to_backoffice(template_name, options = {}, backoffice_user = User.find_by(email: CatarseSettings[:email_payments]))
+    if backoffice_user
+      notify_once(
+        template_name,
+        backoffice_user,
+        self,
+        options
+      )
     end
-    routes.compact.uniq
+  end
+
+  def already_deployed?
+    self.online? || self.successful? || self.failed? || self.waiting_funds?
+  end
+
+  def expires_fragments *fragments
+    base = ActionController::Base.new
+    fragments.each do |fragment|
+      base.expire_fragment([fragment, id])
+    end
+  end
+
+  private
+  def self.between_dates(attribute, starts_at, ends_at)
+    return all unless starts_at.present? && ends_at.present?
+    where("(projects.#{attribute} AT TIME ZONE '#{Time.zone.tzinfo.name}')::date between to_date(?, 'dd/mm/yyyy') and to_date(?, 'dd/mm/yyyy')", starts_at, ends_at)
   end
 end

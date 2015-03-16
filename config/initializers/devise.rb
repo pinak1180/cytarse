@@ -1,6 +1,8 @@
 # Use this hook to configure devise mailer, warden hooks and so forth.
 # Many of these configuration options can be set straight in your model.
 Devise.setup do |config|
+  require 'securerandom'
+  config.secret_key = CatarseSettings.get_without_cache(:secret_key_base) || SecureRandom.hex(64)
   # ==> Mailer Configuration
   # Configure the e-mail address which will be shown in Devise::Mailer,
   # note that it will be overwritten if you use your own mailer class with default "from" parameter.
@@ -164,7 +166,7 @@ Devise.setup do |config|
   # Time interval you can reset your password with a reset password key.
   # Don't put a too small interval or your users won't have the time to
   # change their passwords.
-  config.reset_password_within = 48.hours
+  config.reset_password_within = 5.days
 
   # ==> Configuration for :encryptable
   # Allow you to use another encryption algorithm besides bcrypt (default). You can use
@@ -215,8 +217,10 @@ Devise.setup do |config|
     config.omniauth 'facebook', 'dummy_key', 'dummy_secret', scope: ''
   else
     begin
-      OauthProvider.all.each do |p|
-        config.omniauth p.name, p.key, p.secret, scope: p.scope
+      if ActiveRecord::Base.connection.table_exists? 'oauth_providers'
+        OauthProvider.all.each do |p|
+          config.omniauth p.name, p.key, p.secret, scope: p.scope
+        end
       end
     rescue Exception => e
       puts "problem while using OauthProvider model:\n '#{e.message}'"

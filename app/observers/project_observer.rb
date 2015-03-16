@@ -1,114 +1,94 @@
 class ProjectObserver < ActiveRecord::Observer
   observe :project
 
-  def after_validation(project)
-    if project.video_url.present? && project.video_url_changed?
-      project.download_video_thumbnail
-      project.update_video_embed_url
+  def after_save(project)
+    if project.try(:video_url_changed?)
+      ProjectDownloaderWorker.perform_async(project.id)
     end
+
+    if project.try(:online_date_changed?) && project.online_date.present? && project.approved?
+      project.remove_scheduled_job('ProjectSchedulerWorker')
+      ProjectSchedulerWorker.perform_at(project.online_date, project.id)
+    end
+
+    project.expires_fragments(
+      'project-funding_period',
+      'project-stats',
+      'project-about',
+      'project-rewards'
+    )
   end
 
   def after_create(project)
-    Notification.notify_once(
-      project.notification_type(:project_received),
-      project.user,
-      {project_id: project.id, channel_id: project.last_channel.try(:id)},
-      {project: project, channel: project.last_channel}
-    )
+    deliver_default_notification_for(project, :project_received)
+    InactiveDraftWorker.perform_at(1.day.from_now, project.id)
   end
 
   def from_draft_to_in_analysis(project)
-    if (user = project.new_draft_recipient)
-      Notification.notify_once(
-        project.notification_type(:new_draft_project),
-        user,
-        {project_id: project.id, channel_id: project.last_channel.try(:id)},
-        {
-          project: project, 
-          channel: project.last_channel,
-          origin_email: project.user.email, 
-          origin_name: project.user.display_name
-        }
-      )
-    end
+    project.notify_to_backoffice(:new_draft_project, {
+      from_email: project.user.email,
+      from_name: project.user.display_name
+    }, project.new_draft_recipient)
 
-    Notification.notify_once(
-      project.notification_type(:in_analysis_project), 
-      project.user, 
-      {project_id: project.id, channel_id: project.last_channel.try(:id)}, 
-      {project: project, channel: project.last_channel}
-    )
+    deliver_default_notification_for(project, :in_analysis_project)
+
+    project.update_attributes({ sent_to_analysis_at: DateTime.now })
   end
 
   def from_online_to_waiting_funds(project)
-    Notification.notify_once(
-      :project_in_wainting_funds,
-      project.user,
-      {project_id: project.id},
-      project: project
-    )
+    project.notify_owner(:project_in_waiting_funds, { from_email: CatarseSettings[:email_projects] })
   end
 
   def from_waiting_funds_to_successful(project)
-    Notification.notify_once(
-      :project_success,
-      project.user,
-      {project_id: project.id},
-      {project: project}
-    )
+    project.notify_owner(:project_success, from_email: CatarseSettings[:email_projects])
+
     notify_admin_that_project_reached_deadline(project)
+    notify_admin_that_project_is_successful(project)
     notify_users(project)
   end
 
+  def from_in_analysis_to_approved(project)
+    project.notify_owner(:project_approved, { from_email: CatarseSettings[:email_projects] })
+  end
+
   def notify_admin_that_project_reached_deadline(project)
-    if (user = User.where(email: ::Configuration[:email_payments]).first)
-      Notification.notify_once(
-        :adm_project_deadline,
-        user,
-        {project_id: project.id},
-        project: project,
-        origin_email: Configuration[:email_system],
-        project: project
-      )
-    end
+    project.notify_to_backoffice(:adm_project_deadline, { from_email: CatarseSettings[:email_system] })
+  end
+
+  def notify_admin_that_project_is_successful(project)
+    redbooth_user = User.find_by(email: CatarseSettings[:email_redbooth])
+    project.notify_once(:redbooth_task, redbooth_user) if redbooth_user
   end
 
   def from_in_analysis_to_rejected(project)
-    Notification.notify_once(
-      project.notification_type(:project_rejected),
-      project.user,
-      {project_id: project.id, channel_id: project.last_channel.try(:id)},
-      {project: project, channel: project.last_channel}
-    )
+    project.update_attributes({ rejected_at: DateTime.now })
   end
 
-  def from_in_analysis_to_online(project)
-    Notification.notify_once(
-      project.notification_type(:project_visible),
-      project.user,
-      {project_id: project.id, channel_id: project.last_channel.try(:id)},
-      {project: project, channel: project.last_channel}
-    )
+  def from_in_analysis_to_draft(project)
+    project.update_attributes({ sent_to_draft_at: DateTime.now })
+  end
+
+  def from_approved_to_online(project)
+    deliver_default_notification_for(project, :project_visible)
+    project.update_attributes({
+      online_date: DateTime.now,
+      audited_user_name: project.user.full_name,
+      audited_user_cpf: project.user.cpf,
+      audited_user_moip_login: project.user.moip_login,
+      audited_user_phone_number: project.user.phone_number
+    })
   end
 
   def from_online_to_failed(project)
     notify_users(project)
 
-    project.backers.with_state('waiting_confirmation').each do |backer|
-      Notification.notify_once(
-        :pending_backer_project_unsuccessful,
-        backer.user,
-        {backer_id: backer.id},
-        {backer: backer, project: project }
-      )
+    project.contributions.with_state('waiting_confirmation').each do |contribution|
+      contribution.notify_to_contributor(:pending_contribution_project_unsuccessful)
     end
 
-    Notification.notify_once(
-      :project_unsuccessful,
-      project.user,
-      {project_id: project.id, user_id: project.user.id},
-      {project: project}
-    )
+    request_refund_for_failed_project(project)
+
+    project.notify_owner(:project_unsuccessful, { from_email: CatarseSettings[:email_projects] })
   end
 
   def from_waiting_funds_to_failed(project)
@@ -117,35 +97,35 @@ class ProjectObserver < ActiveRecord::Observer
   end
 
   def notify_users(project)
-    project.backers.with_state('confirmed').each do |backer|
-      unless backer.notified_finish
-        Notification.notify_once(
-          (project.successful? ? :backer_project_successful : :backer_project_unsuccessful),
-          backer.user,
-          {backer_id: backer.id},
-          backer: backer,
-          project: project,
-        )
-        backer.update_attributes({ notified_finish: true })
+    project.contributions.with_state('confirmed').each do |contribution|
+      unless contribution.notified_finish
+        template_name = project.successful? ? :contribution_project_successful : contribution.notification_template_for_failed_project
+        contribution.notify_to_contributor(template_name)
+
+        if contribution.credits? && project.failed?
+          contribution.notify_to_backoffice(:requested_refund_for_credits)
+        end
+
+        contribution.update_attributes({ notified_finish: true })
       end
     end
   end
 
-  def sync_with_mailchimp(project)
-    begin
-      user = project.user
-      mailchimp_params = { EMAIL: user.email, FNAME: user.name, CITY: user.address_city, STATE: user.address_state }
+  private
 
-      if project.successful?
-        CatarseMailchimp::API.subscribe(mailchimp_params, Configuration[:mailchimp_successful_projects_list])
-      end
-
-      if project.failed?
-        CatarseMailchimp::API.subscribe(mailchimp_params, Configuration[:mailchimp_failed_projects_list])
-      end
-    rescue Exception => e
-      Rails.logger.info "-----> #{e.inspect}"
+  def request_refund_for_failed_project(project)
+    project.contributions.with_state('confirmed').each do |contribution|
+      contribution.request_refund
     end
   end
 
+  def deliver_default_notification_for(project, notification_type)
+    project.notify_owner(
+      notification_type,
+      {
+        from_email: CatarseSettings[:email_projects],
+        from_name: CatarseSettings[:company_name]
+      }
+    )
+  end
 end

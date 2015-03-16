@@ -1,23 +1,16 @@
-App.addChild('Payment', _.extend({
-  el: '#project_review #payment',
-
-  events: {
-    'click #payment_menu a' : 'onTabClick'
-  },
+App.addChild('Payment', {
+  el: '#payment-engines',
 
   activate: function(){
-    this.onTabClick({target: this.$('#payment_menu a:first')});
-    this.on('selectTab', this.updatePaymentMethod);
+    var that = this;
+    $.get(this.$("#engine").data('path')).success(function(data){
+      that.$("#engine").html(data);
+    });
   },
 
-  updatePaymentMethod: function() {
-    var $selected_tab = this.$('#payment_menu a.selected');
-    $.post(this.$el.data('update-info-path'), {
-      backer: {
-        payment_method: $selected_tab.prop('id')
-      }
-    })
+  show: function(){
+    this.$el.slideDown('slow');
   }
 
-}, Skull.Tabs));
+});
 

@@ -112,7 +112,7 @@ pt:
       invalid: "não é válido"
       less_than: "deve ser menor que %{count}"
       less_than_or_equal_to: "deve ser menor ou igual a %{count}"
-      not_a_number: "não é um número"
+      not_a_number: "aceita somente números"
       not_an_integer: "não é um número inteiro"
       odd: "deve ser ímpar"
       record_invalid: "A validação falhou: %{errors}"
@@ -144,7 +144,7 @@ pt:
         unit: £
     format:
       delimiter: "."
-      precision: 3
+      precision: 2
       separator: ","
       significant: false
       strip_insignificant_zeros: false
@@ -195,12 +195,12 @@ pt:
   time:
     am: am
     formats:
-      prevision: "%B/%Y"
+      estimate: "%B/%Y"
       simple: "%d/%m/%Y, %H:%M h"
       default: "%A, %d de %B de %Y, %H:%M h"
       long: "%A, %d de %B de %Y, %H:%M h"
       short: "%d/%m, %H:%M h"
-      updates: "%d %b %Y"
+      posts: "%d %b %Y"
     pm: pm
   # remove these aliases after 'activemodel' and 'activerecord' namespaces are removed from Rails repository
   activemodel:

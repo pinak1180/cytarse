@@ -1,40 +1,27 @@
-= content_for :title, t('pages.login.titles.site')
+- content_for :title, t('.titles.site')
 
-= render 'devise/shared/header'
-
-.row
-  .large-5.large-centered.columns
-    .box.login-box.animated.fadeIn
-      h2.text-center= t 'pages.login.titles.header'
-      p.text-center.register_link
-        = t 'pages.login.no_account_html', link: link_to(t('pages.login.links.register'), new_user_registration_path)
-      hr
-
-      .large-11.columns.large-centered
-        = link_to t('pages.login.form.inputs.facebook'), user_omniauth_authorize_path(provider: :facebook, locale: nil), class: [:button, :facebook, 'large-12', 'columns']
+.w-container
+  = render 'devise/shared/header'
+  .w-row
+    .w-col.w-col-12.u-text-center
+      .fontweight-semibold.fontsize-large.u-marginbottom-10= t '.titles.header'
+  .w-container
+    .w-row
+      .w-col.w-col-6.box-login.w-col-push-3
+        .fontsize-small.u-text-center.u-marginbottom-10
+          span.fontcolor-secondary=>t ('.no_account_html')
+          = link_to t('.links.register'), new_user_registration_path, class: 'alt-link fontweight-semibold'
+        .login-fb
+          = link_to t('.form.inputs.facebook'), user_omniauth_authorize_path(provider: :facebook, locale: nil), class: 'btn btn-medium btn-fb'
         .separator
-          p
-            = t('or')
-
-      .clearfix
-
-      .large-11.large-centered.columns
-        = form_for(resource, as: resource_name, url: session_path(resource_name)) do |f|
-          = render 'devise/shared/alert'
-          p
-            = f.label :email
-            = f.text_field :email, class: [:login, :email], required: true, type: :email, tabindex: 1
-
-          div.password
-            = f.label :password
-            = link_to t('pages.login.links.forgot_password'), new_password_path(resource_name), class: 'hint'
-            = f.password_field :password, class: [:login], required: true, tabindex: 2
-          .text-left
-            = f.check_box :remember_me, checked: true
-            = f.label :remember_me, t('pages.login.form.labels.remember_me')
-
-          .large-7.columns.large-centered
-            = f.submit t('pages.login.form.inputs.submit'), class: [:button, :action, 'large-12', 'columns']
-
-          .clearfix
-
+          .text.or= t('or')
+        .w-form
+          = simple_form_for resource, as: resource_name, url: session_path(resource_name), html: {novalidate: true}, class: 'email-form' do |form|
+            = render 'devise/shared/alert'
+            = form.input :email, as: :email, label: t('.email'), input_html: { class: 'w-input text-field' }, required: false
+            = link_to t('.links.forgot_password'), new_password_path(resource_name), class: 'fontsize-smallest link-hidden fontcolor-secondary u-right'
+            = form.input :password, as: :password, label: t('.form.inputs.password'), input_html: { class: 'w-input text-field' }
+            .u-marginbottom-10
+              = form.input_field :remember_me, as: :boolean, boolean_style: :inline, class: 'checkbox-fix', checked: true
+              label.w-form-label.fontsize-smallest= t('.form.labels.remember_me')
+            = form.button :submit, t('.form.inputs.submit'), class:'btn btn-medium'
