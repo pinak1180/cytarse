@@ -68,7 +68,7 @@
               - @projects.each do |project|
                 tr id=project.id class=cycle("even", "odd")
                   td= link_to project.name, project_by_slug_path(permalink: project.permalink), target: '_blank'
-                  td= link_to (project.user.moip_login.blank? ? 'Não preenchido' : project.user.moip_login), user_path(project.user, anchor: :settings), target: '_blank'
+                  td= link_to (project.user.nickname.blank? ? 'Não preenchido' : project.user.nickname), user_path(project.user, anchor: :settings), target: '_blank'
                   td= project.display_goal
                   td= project.display_pledged
                   td= number_to_currency project.total_payment_service_fee, precision: 2
@@ -94,6 +94,3 @@
                       span.label= project.state
       = paginate @projects
   .clearfix
-
-
-
