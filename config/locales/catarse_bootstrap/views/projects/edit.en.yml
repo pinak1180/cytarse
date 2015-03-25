@@ -1,0 +1,220 @@
+---
+en:
+  projects:
+    dashboard_basics:
+      category: Category
+      category_label: Explore and inspire other projects in the same category as yours.
+      form:
+        submit: Save
+      name: Project Name
+      name_label: The more direct the better. Do not exceed 50 characters
+      online_date: Entry in the air
+      online_days: Deadline for collection
+      online_days_label: You can choose between 1 and 60 days for your campaign. Check out the guide
+        of directors for tips on deadlines.
+      project_start: Fill out the information below
+      project_start_subtitle: The data reported in this section may not be modified when the project
+        goes live. Fill out carefully and review before launching the project.
+      url: URL design
+      url_label: It is the address of your project should be easy to remember. Avoid underline, hyphen
+        and symbols
+      user_id: User ID
+      value: Amount to be raised
+      value_secondary: Plan a consistent goal with your project proposes. Review your budget and do
+        not forget to include the rate of 13% charged by Catharsis if your project is successful
+    dashboard_home_templates:
+      approved:
+        subtitle_html: To place your project in the air is only requires you to fill in the required
+          data in tab %{link1}. It is important to know that we charge a fee of 13% of the total amount
+          collected only for successful projects. Understand %{link2}.
+        title: "%{name}, your project has been approved!"
+      draft:
+        study_title: Felt need to study more to build your project? Check out the links in the box
+          to the side.
+        subtitle: The more careful and well formatted for a project, the greater the chances of it
+          being successful in your fundraising campaign. Before you send your project to our analysis,
+          complete all the tabs above fondly. You can save the changes and return to the project draft
+          over again. When everything is ready, click the SEND button and we will contact you to assess
+          your project.
+        title: "%{name}, build your project!"
+      failed:
+        questions: We also send an email to you with two short questions. If you have time and head,
+          it would be great if you could take a look. Your feedback helps us build a catharsis better
+          and nicer to you.
+        subtitle_html: Your project does not hit the target and we know that this is not the best
+          of feelings. But do not be discouraged. Face the process as a learning and be sure to entertain
+          a second attempt. Do not worry, all your supporters will receive the money back. %{link}.
+        title: "%{name}, do not be discouraged!"
+      in_analysis:
+        subtitle_html: Thank you very much! Our team will review the entire contents of your project
+          and up to 4 business days you will receive an email informing if it was approved, refused
+          or whether it will continue in analysis for some time so you can make suggested adjustments.
+          Take advantage of this period to collect feedback with close people!
+        title: "%{name}, you sent your project for analysis and receive our response within 4 working
+          days"
+      online:
+        explanation_html: "<div class='fontsize-base u-marginbottom-40 card card-terciary'><p class='fontweight-bold'>
+          With the project in the air, some information can not be edited </p><p> You can not change:
+          <br> - Its funding goal; <br> - The deadline; <br> - The URL of the project; <br> - The
+          user project owner. </p><p class='fontweight-bold'> Need more information about campaign
+          process? See the box on the side. </p><p> The pequisa %{link1} is also great source of data
+          on the Brazilian scene. A good read on %{link2} can be inspiring. There you will find stories
+          of successful projects and campaign advice. </p></div>"
+        subtitle_html: Your project is in the air and your campaign will end on the day 23hs59min59s
+          %{date}. Until that day and time you may receive support. Remember, it's all-or-nothing
+          and you just take the proceeds to hit the target that was set. Visit our %{link2} for further
+          questions!
+        title: "%{name}, your campaign is in the air!"
+      project_numbers:
+        backed: raised
+        contributions: support
+        financed: funded
+        left: other
+      rejected:
+        subtitle_html: You sent your project for analysis of Catharsis and we understand that it is
+          not according to the site profile. Having a refused project does not prevent you send new
+          projects for review or rephrase your current project. Talk with our customer service! We
+          recommend that you take a good look at the %{link1} and %{link2}.
+        title: "%{name} unfortunately was not this time."
+      status: 'Status:'
+      successful:
+        header1: 'And do not forget: Transparency is everything.'
+        header2: 'Be sure to read:'
+        subtitle_html: His project was successful and now is the time to start working relationship
+          with their supporters! Special attention to the delivery of rewards. Prometheus? Deliver!
+          Be sure to look at %{link1} post-project section and inquire about %{link2}.
+        title: "%{name}, celebrate you deserve!"
+        transparent_html: Keep informed supporter is to maintain a happy supporter. Even if you go
+          inform you of a failure or setback. Supporters are happy %{link}. So use and abuse (always
+          in moderation) of new tab. What you write there comes straight in the emails of your supporters
+          box. No longer will begin delivering rewards? On the "reports" you download information
+          so you can make the rewards delivery management of your project.
+      waiting_funds:
+        failed: 'Do not hit the target:'
+        good_luck: Good luck!
+        header: 'From here your project can hit the target or not. See what happens in each case:'
+        subtitle_html: His project was completed in %{expires} and is awaiting confirmation slips
+          and payments. Due to the due date of bills, projects that had last minute support are for
+          up to 4 days in that status, starting from the project completion date. %{link}.
+        success: 'Hit the target:'
+        title: "%{name}, we are processing the final payments."
+    dashboard_posts:
+      discard: Discard
+      old_posts: Old news
+      only_to_backers: I want this novelty is only visible to supporters.
+      publish: Post new
+      title: Write a novelty
+      warning: All published news is sent directly to their supporters by email. Review and the post
+        before publishing.
+    dashboard_preview:
+      header_subtitle: It's time for feedback!
+      header_text: Share the link below with your friends and enjoy the moment to make fine adjustments
+        to help in your campaign.
+    dashboard_project:
+      about: Project Description
+      about_hint_html: Contact with passion and clarity about what will be done. Possible answer any
+        questions about how the money will be used, who is behind the project, as and when the project
+        will be delivered. Transparency attracts more supporters. Remember, your project will be accessed
+        by ordinary people who decide whether or not to support your project. Caprice!
+      budget_hint_html: How your funds are used? The more transparency the better. Show steps and
+        processes are involved in the use of these resources. A list of the main items of the budget
+        or even a pie chart will very well here.
+      budget_label: Project budget
+      budgets_hint_html: Enter a list of the main items of the budget. Do not need to minute details,
+        just an overview. His supporters will like to know where their money is going. There is no
+        rule as the amount of items in the list, but usually 5 usually a good number!
+      budgets_label: Details of the budget
+      card: Card design
+      card_subtitle: You know that project cardzinho that appears on the home and search? So is beautiful
+        here in this part because they say that the first impression is the one that is!
+      headline: Project call
+      headline_hint: Will be used in the project card, along with the above picture (thumbnail). A
+        maximum of 100 characters.
+      image: Design Image
+      image_hint: This image will be used as the thumbnail of your project (PNG, JPG size 600 x 340)
+      links_title: Useful links
+      start: Tell the story of your project!
+      start_subtitle: Think in the project narrative. It is she who will charm people and bring supporters.
+        A good video and description are differences!
+      submit: Save
+      video_url: Video URL
+      video_url_hint: Link your video on Vimeo or Youtube.
+    dashboard_reward:
+      add_reward: Add reward
+      reward: Reward
+      subtitle: This is your show of gratitude to the supporters. Remember to include the cost of
+        rewards in your budget. Prometheus, DELIVERED!
+      title: Create and edit your rewards here
+    dashboard_user_about:
+      about_hint: Use this space if you want to better describe you, your company or your institution.
+        Want to give credit to partners? Using a corporate video? This space is yours and use it as
+        you wish. All of this information will appear in Aba About on your Public Profile.
+      about_label: About you
+      facebook_link_hint: Paste the link to your profile
+      facebook_link_label: Facebook profile
+      name_hint: Your public name, visible to all as a project of the author.
+      name_label: Name
+      other_link_hint: Include links to help supporters to understand why you are the right person
+        to do this project.
+      other_link_label: Presence on the Internet
+      submit: Save
+      subtitle: Supporters want to learn more about the project directors. Links that help tell your
+        story are always welcome.
+      title: Tell us more about you!
+      twitter_hint: Paste the link to your profile
+      twitter_label: Twitter profile
+      uploaded_image_hint: This image will be used as the thumbnail of your profile (PNG, JPG ideal
+        size 280 x 280)
+      uploaded_image_label: Profile image
+    dashboard_user_settings:
+      account_subtitle_html: 'We need the data below to make a financial transfer for successful projects.
+        <b>WARNING: The CPF / CNPJ listed in the registration data and bank details must be the same.</b>'
+      account_title: Bank details
+      submit: Save
+      subtitle_html: With the form below complete, your project will be ready to air. After completing
+        the filling, then click Save. Review. If everything is ok, just press the Post button and
+        start your campaign!
+      title: Registration and banking data
+      user_data_subtitle_html: 'We need the data below for the issuance of Tax Notes for successful
+        projects. <b>WARNING: The CPF / CNPJ listed in the registration data and bank details must
+        be the same.</b>'
+      user_data_title: Registration data and address
+    edit:
+      about_you_tab: About you
+      account_tab: Account
+      basics_tab: Basic
+      leave_link_html: Exit from the control panel
+      posts_tab: News
+      preview_tab: Preview
+      project_tab: Project
+      publish: Publish
+      reports_tab: Reports
+      rewards_tab: Rewards
+      send: Send
+      start_tab: Begin
+    reward_fields:
+      available: Quantity Available
+      deliver_at: 'Estimated delivery:'
+      description: 'Description:'
+      edit: Edit reward
+      index:
+        contributions_to_confirm:
+          one: 1 support in term of confirmation.
+          other: "%{count} support in term of confirmation."
+        display_remaining: "%{remaining} of %{maximum} available"
+        dont_want: I do not want reward
+        edit_reward: Edit reward
+        limited: Limited
+        new_reward: Sign reward
+        reward_deliver_time: "<B> Delivery Estimates: </ b> %{estimate}"
+        reward_title: For %{minimum} or more
+        select_reward: Select this reward
+        sold_out: Exhausted
+      info_box: Describe the value of the reward and put a real delivery date forecast for the supporters.
+        You can also limit a reward and when the limit is reached it appears as EXHAUSTED. If you
+        want to change the order that the rewards appear in your project, just do this by dragging
+        them up or down.
+      limit_reward: Limit reward
+      minimum_value: 'Value:'
+      reward: Reward
+      submit: Save

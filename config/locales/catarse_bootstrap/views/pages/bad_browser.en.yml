@@ -1,0 +1,5 @@
+en:
+  pages:
+    bad_browser:
+      text: 'Heliwm requires a modern browser. Please upgrade.'
+      title: Update your browser

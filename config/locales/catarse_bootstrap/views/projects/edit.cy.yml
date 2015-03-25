@@ -1,0 +1,229 @@
+---
+cy:
+  projects:
+    dashboard_basics:
+      category: Categori
+      category_label: Archwiliwch ac ysbrydoli prosiectau eraill yn yr un categori â chi.
+      form:
+        submit: Cadw
+      name: Enw'r Prosiect
+      name_label: Po fwyaf gyfarwyddo'r yn well. Peidiwch â fwy na 50 cymeriadau
+      online_date: Mynediad yn yr awyr
+      online_days: Dyddiad cau ar gyfer casgliad
+      online_days_label: Gallwch ddewis rhwng 1 a 60 diwrnod ar gyfer eich ymgyrch. Edrychwch ar y
+        canllaw cyfarwyddwyr i gael awgrymiadau ar derfynau amser.
+      project_start: Llenwch y wybodaeth isod
+      project_start_subtitle: Efallai na fydd y data a adroddwyd yn yr adran hon yn cael ei addasu
+        pan fydd y prosiect yn mynd yn fyw. Llenwch ofalus ac yn adolygu cyn lansio'r prosiect.
+      url: Dylunio URL
+      url_label: Mae'n dylai'r cyfeiriad eich prosiect fod yn hawdd i'w gofio. Dylech osgoi tanlinellu,
+        cysylltnod a symbolau
+      user_id: ID Defnyddiwr
+      value: Swm i'w godi
+      value_secondary: Cynlluniwch nod gyson â eich prosiect yn cynnig. Adolygwch eich cyllideb a
+        pheidiwch ag anghofio cynnwys y gyfradd o 13% a godir gan catharsis os yw eich prosiect yn
+        llwyddiannus
+    dashboard_home_templates:
+      approved:
+        subtitle_html: I osod eich prosiect yn yr awyr yn unig yn ei gwneud yn ofynnol i chi lenwi
+          y data sydd ei angen yn %{link1} tab. Mae'n bwysig gwybod ein bod yn codi ffi o 13% o gyfanswm
+          y swm a gasglwyd yn unig ar gyfer prosiectau llwyddiannus. Deall %{link2}.
+        title: "%{name}, mae eich prosiect wedi ei gymeradwyo!"
+      draft:
+        study_title: Teimlo angen i astudio mwy i adeiladu eich prosiect? Edrychwch ar y dolenni yn
+          y blwch i'r ochr.
+        subtitle: Po fwyaf gofalus a fformatio dda ar gyfer prosiect, y mwyaf yw'r siawns y ei fod
+          yn llwyddiannus yn eich ymgyrch codi arian. Cyn i chi anfon eich prosiect at ein dadansoddiad,
+          gwblhau'r holl y tabiau uchod annwyl. Gallwch arbed y newidiadau a dychwelyd i'r prosiect
+          drafft ar ôl tro. Pan fydd popeth yn barod, cliciwch ar y botwm ANFON a byddwn yn cysylltu
+          â chi i asesu eich prosiect.
+        title: "%{name}, adeiladu eich prosiect!"
+      failed:
+        questions: Rydym hefyd yn anfon e-bost i chi gyda dau gwestiwn byr. Os oes gennych chi amser
+          a pen, byddai'n wych pe gallech gymryd golwg. Mae eich adborth yn ein helpu i greu catharsis
+          gwell ac yn brafiach i chi.
+        subtitle_html: Nid yw eich prosiect yn cyrraedd y targed ac rydym yn gwybod nad yw hyn yw'r
+          gorau o deimladau. Ond peidiwch â digalonni. Wyneb y broses fel ddysgu a gofalwch eich bod
+          yn diddanu ail ymgais. Peidiwch â phoeni, bydd eich holl gefnogwyr yn derbyn yr arian yn
+          ôl. %{link}.
+        title: "%{name}, peidiwch â digalonni!"
+      in_analysis:
+        subtitle_html: Diolch yn fawr iawn! Bydd ein tîm yn adolygu'r holl gynnwys eich prosiect a
+          hyd at 4 diwrnod busnes, byddwch yn derbyn e-bost yn rhoi gwybod pe bai'n cael ei gymeradwyo,
+          ei wrthod neu a fydd yn parhau yn y dadansoddiad am beth amser er mwyn i chi wneud addasiadau
+          a awgrymwyd. Manteisiwch ar y cyfnod hwn i gasglu adborth gyda phobl sy'n agos!
+        title: "%{name}, byddwch yn anfon eich prosiect ar gyfer dadansoddi a derbyn ein hymateb o
+          fewn 4 diwrnod gwaith"
+      online:
+        explanation_html: "<div class='fontsize-base u-marginbottom-40 card card-terciary'><p class='fontweight-bold'>
+          Gyda'r prosiect yn yr awyr, ni all rhywfaint o wybodaeth yn cael ei olygu </p><p> Ni allwch
+          newid: <br> - Ei nod ariannu; <br> - Y dyddiad cau; <br> - Mae URL y prosiect; <br> - Y
+          perchennog prosiect defnyddiwr. </p><p class='fontweight-bold'> Angen mwy o wybodaeth am
+          broses yr ymgyrch? Gweler y blwch ar yr ochr. </p><p> Mae'r %{link1} pequisa hefyd yn ffynhonnell
+          wych o ddata ar yr olygfa Brasil. Gall darllen da ar %{link2} fod yn ysbrydoledig. Mae yna
+          byddwch yn dod o hyd i straeon o brosiectau llwyddiannus a chyngor ymgyrch. </p></div>"
+        subtitle_html: Mae eich prosiect yn yr awyr, a bydd eich ymgyrch yn dod i ben ar y diwrnod
+          23hs59min59s %{date}. Hyd nes y diwrnod hwnnw ac amser efallai y byddwch yn derbyn cefnogaeth.
+          Cofiwch, mae'r cyfan-neu-ddim a 'ch jyst yn cymryd yr elw i gyrraedd y targed a osodwyd.
+          Ewch i'n %{link2} i gwestiynau pellach!
+        title: "%{name}, eich ymgyrch yn yr awyr!"
+      project_numbers:
+        backed: Codwyd
+        contributions: cefnogaeth
+        financed: a ariennir
+        left: eraill
+      rejected:
+        subtitle_html: Rydych yn anfon eich prosiect ar gyfer dadansoddi catharsis ac rydym yn deall
+          nad yw'n unol â'r proffil safle. Nid yw cael prosiect ei wrthod yn atal eich bod yn anfon
+          prosiectau newydd ar gyfer adolygu neu aralleirio eich prosiect ar hyn o bryd. Siaradwch
+          â'n gwasanaeth i gwsmeriaid! Rydym yn argymell eich bod yn cymryd golwg dda ar y %{link1}
+          a %{link2}.
+        title: "%{name} yn anffodus nid oedd y tro hwn."
+      status: 'Statws:'
+      successful:
+        header1: 'A pheidiwch ag anghofio: Mae tryloywder yn bopeth.'
+        header2: 'Byddwch yn siwr i ddarllen:'
+        subtitle_html: Ei prosiect yn llwyddiannus a nawr yw'r amser i ddechrau perthynas waith gyda'u
+          cefnogwyr! Sylw arbennig at gyflwyno gwobrau. Prometheus? Gyflawni! Byddwch yn siwr i edrych
+          ar yr adran ar ôl y prosiect %{link1} ac yn holi am %{link2}.
+        title: "%{name}, dathlu rydych yn ei haeddu!"
+        transparent_html: Cadwch cefnogwr gwybodus yw cynnal yn gefnogwr hapus. Hyd yn oed os byddwch
+          yn mynd gwybod i chi o fethiant neu ergyd. Cefnogwyr yn %{link} hapus. Felly, defnyddio
+          a cham-drin (bob amser yn gymedrol) o'r tab newydd. Yr hyn a ysgrifennwch fod yn dod yn
+          syth yn y negeseuon e-bost eich bocs cefnogwyr. Na 'n bellach yn dechrau cyflwyno gwobrau?
+          Ar y "adroddiadau" chi lawrlwytho gwybodaeth fel y gallwch wneud y rheoli cyflwyno gwobrau
+          eich prosiect.
+      waiting_funds:
+        failed: 'Peidiwch â daro y targed:'
+        good_luck: Pob lwc!
+        header: 'O''r fan hon gall eich prosiect yn cyrraedd y targed ai peidio. Weld beth sy''n digwydd
+          ym mhob achos:'
+        subtitle_html: Ei brosiect ei gwblhau yn %{expires} ac yn aros am gadarnhad slipiau a thaliadau.
+          Oherwydd y dyddiad dyledus o filiau, prosiectau sy'n cael cefnogaeth munud olaf ar gyfer
+          hyd at 4 diwrnod yn statws hwnnw, gan ddechrau o ddyddiad cwblhau'r prosiect. %{link}.
+        success: 'Cyrraedd y targed:'
+        title: "%{name}, rydym yn prosesu'r taliadau terfynol."
+    dashboard_posts:
+      discard: Taflu
+      old_posts: Hen newyddion
+      only_to_backers: Rwyf am newydd-deb hyn ond yn weladwy i gefnogwyr.
+      publish: "Ôl newydd"
+      title: Ysgrifennwch newydd-deb
+      warning: Mae'r holl newyddion a gyhoeddwyd yn cael ei anfon yn uniongyrchol at eu cefnogwyr
+        drwy e-bost. Adolygu ac mae'r swydd cyn cyhoeddi.
+    dashboard_preview:
+      header_subtitle: Mae'n amser ar gyfer adborth!
+      header_text: Rhannwch y ddolen isod gyda'ch ffrindiau a mwynhau'r hyn o bryd i wneud addasiadau
+        mân i helpu yn eich ymgyrch.
+    dashboard_project:
+      about: Disgrifiad o'r Prosiect
+      about_hint_html: Cysylltwch gydag angerdd ac eglurdeb ynghylch yr hyn a gaiff ei wneud. Ateb
+        posibl unrhyw gwestiynau am sut y bydd yr arian yn cael ei ddefnyddio, pwy sydd y tu ôl i'r
+        prosiect, fel a phryd y bydd y prosiect yn cael ei gyflwyno. Mae tryloywder yn denu mwy o
+        gefnogwyr. Cofiwch, bydd eich prosiect yn cael ei defnyddio gan bobl gyffredin sy'n penderfynu
+        p'un ai i gefnogi eich prosiect. Caprice!
+      budget_hint_html: Sut mae eich arian yn cael eu defnyddio? Mae mwy o dryloywder y gorau. Dangos
+        y camau a phrosesau yn cael eu cynnwys yn y defnydd o adnoddau hyn. Mae rhestr o'r prif eitemau
+        y gyllideb neu hyd yn oed siart cylch a fydd yn dda iawn yma.
+      budget_label: Cyllideb y prosiect
+      budgets_hint_html: Rhowch lawr rhesr o brif eitemau y gyllideb. Nid oes angen manylion funud,
+        dim ond trosolwg. Bydd ei gefnogwyr yn hoffi gwybod ble mae eu harian yn mynd. Nid oes rheol
+        gan fod y swm o eitemau yn y rhestr, ond fel arfer 5 Fel arfer, mae nifer dda!
+      budgets_label: Manylion y gyllideb
+      card: Dylunio Cerdyn
+      card_subtitle: Rydych yn gwybod bod cardzinho prosiect sy'n ymddangos ar y cartref a chwilio?
+        Felly, yn hardd yma yn y rhan hon gan eu bod yn dweud bod yr argraff gyntaf yw'r un sy'n!
+      headline: Galwad Prosiect
+      headline_hint: A fydd yn cael ei ddefnyddio yn y cerdyn prosiect, ynghyd â'r llun uchod (bawd).
+        Mae uchafswm o 100 o nodau.
+      image: Dylunio Delwedd
+      image_hint: Bydd y ddelwedd yn cael ei ddefnyddio fel y bawd eich prosiect (PNG, maint JPG 600
+        x 340)
+      links_title: Dolenni defnyddiol
+      start: Adrodd stori eich prosiect!
+      start_subtitle: Meddyliwch yn y naratif prosiect. Mae'n hi pwy fydd pobl yn swyn a dod â chefnogwyr.
+        Mae fideo da a disgrifiad gwahaniaethau!
+      submit: Cadw
+      video_url: Fideo URL
+      video_url_hint: Cysylltu eich fideo ar Vimeo neu Youtube.
+    dashboard_reward:
+      add_reward: Ychwanegu gwobr
+      reward: Gwobrwyo
+      subtitle: Mae hyn yn eich sioe o ddiolchgarwch i'r cefnogwyr. Cofiwch gynnwys y gost o wobrau
+        yn eich cyllideb. Prometheus, A DDARPERIR!
+      title: Creu a golygu eich gwobrwyo yma
+    dashboard_user_about:
+      about_hint: Defnyddiwch y gofod hwn os ydych am i ddisgrifio eich bod yn well, eich cwmni neu'ch
+        sefydliad. Eisiau i roi credyd i bartneriaid? Gan ddefnyddio fideo corfforaethol? Mae hyn
+        gofod yn eich un chi a'i ddefnyddio fel y dymunwch. Bydd yr holl wybodaeth hon yn ymddangos
+        yn Aba Ynglyn ar eich Proffil Cyhoeddus.
+      about_label: Amdanoch chi
+      facebook_link_hint: Gludwch y dolen i'ch proffil
+      facebook_link_label: Proffil Facebook
+      name_hint: Eich enw gyhoeddus, yn weladwy i bawb fel prosiect yr awdur.
+      name_label: Enw
+      other_link_hint: Yn cynnwys cysylltiadau i helpu cefnogwyr i ddeall pam mai chi yw'r person
+        iawn i wneud y prosiect hwn.
+      other_link_label: Presenoldeb ar y Rhyngrwyd
+      submit: Cadw
+      subtitle: Cefnogwyr eisiau dysgu mwy am y cyfarwyddwyr prosiect. Cysylltiadau sy'n helpu i adrodd
+        eich stori Mae croeso bob amser.
+      title: Dywedwch fwy wrthym amdanoch chi!
+      twitter_hint: Gludwch y dolen i'ch proffil
+      twitter_label: Twitter Proffil
+      uploaded_image_hint: Bydd y ddelwedd yn cael ei ddefnyddio fel y bawd eich proffil (PNG, JPG
+        maint delfrydol 280 x 280)
+      uploaded_image_label: Delwedd Proffil
+    dashboard_user_settings:
+      account_subtitle_html: Mae arnom angen y data isod i wneud trosglwyddiad ariannol ar gyfer prosiectau
+        llwyddiannus <b>RHYBUDD:. Mae'n rhaid i'r CPF / CNPJ a restrir yn y data cofrestru a manylion
+        banc fod yr un fath.</b>
+      account_title: Manylion Banc
+      submit: Cadw
+      subtitle_html: Gyda'r ffurflen isod gyflawn, bydd eich prosiect yn barod i aer. Ar ôl cwblhau'r
+        llenwi, yna cliciwch Save. Adolygu. Os yw popeth yn iawn, dim ond pwyswch y botwm Post a dechrau
+        eich ymgyrch!
+      title: Data cofrestru a bancio
+      user_data_subtitle_html: Mae arnom angen y data isod ar gyfer y issuance o Nodiadau Treth ar
+        gyfer prosiectau llwyddiannus <b>RHYBUDD:. Mae'n rhaid i'r CPF / CNPJ a restrir yn y data
+        cofrestru a manylion banc fod yr un fath.</b>
+      user_data_title: Data cofrestru a chyfeiriad
+    edit:
+      about_you_tab: Amdanoch chi
+      account_tab: Cyfrif
+      basics_tab: Sylfaenol
+      leave_link_html: Gadewch oddi wrth y panel rheoli
+      posts_tab: Newyddion
+      preview_tab: Rhagolwg
+      project_tab: Prosiect
+      publish: Cyhoeddi
+      reports_tab: Adroddiadau
+      rewards_tab: Gwobrau
+      send: Anfon
+      start_tab: Dechrau
+    reward_fields:
+      available: Nifer Ar gael
+      deliver_at: 'Amcangyfrif cyflwyno:'
+      description: 'Disgrifiad:'
+      edit: Golygu gwobrwyo
+      index:
+        contributions_to_confirm:
+          one: 1 cefnogaeth yn y tymor o gadarnhad.
+          other: cefnogaeth %{count} yn nhermau cadarnhau.
+        display_remaining: "%{remaining} o %{maximum} sydd ar gael"
+        dont_want: Dydw i ddim eisiau gwobrwyo
+        edit_reward: Golygu gwobrwyo
+        limited: Cyfyngedig
+        new_reward: Gwobrwyo Arwyddion
+        reward_deliver_time: "<B> Amcangyfrifon Cyflenwi: </ b> %{estimate}"
+        reward_title: Am %{minimum} neu fwy
+        select_reward: Dewiswch wobr hon
+        sold_out: Blino'n lân
+      info_box: Disgrifiwch gwerth y wobr ac yn rhoi dyddiad cyflwyno gwirioneddol rhagolwg ar gyfer
+        yr gefnogwyr. Gallwch hefyd gyfyngu gwobr a phan fydd y cyfyngiad yn cael ei gyrraedd mae'n
+        ymddangos mor flinedig. Os ydych am newid y drefn y mae'r gwobrau yn ymddangos yn eich prosiect,
+        dim ond gwneud hyn drwy lusgo i fyny neu i lawr.
+      limit_reward: Gwobrwyo Terfyn
+      minimum_value: 'Gwerth:'
+      reward: Gwobrwyo
+      submit: Cadw

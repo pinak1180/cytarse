@@ -1,0 +1,19 @@
+en:
+  explore:
+    index:
+      success_follow: "You will now receive a weekly list of new projects in %{name}"
+      success_unfollow: "You no longer follow %{name}"
+      follow: Follow
+      unfollow: Unfollow
+      following: Following
+      categories: Categories
+      expiring: Expiring
+      in_funding: In funding
+      near: Nearby
+      quick_explore: Quick search
+      recent: Recent
+      recommended: Recommended
+      subtitle: Explore projects, find those that touch your heart, and make it happen!
+      successful: Successful
+      title: Find amazing Projects
+    title: Explore projects

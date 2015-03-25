@@ -1,0 +1,49 @@
+en:
+  projects:
+    index_header:
+      subtitle: Finance projects collaboratively and become part of something greater. Promote a collective catharsis! You're the missing piece in this story.
+      title: Make projects that you believe in happen!
+    index:
+      title: 'Heliwm'
+      back_a_project: 'Back a project'
+      banner_title: 'Put your projects to paper'
+      see_all: 'See all'
+      near_you: 'Near you'
+      recents: Recent
+      blog: Blog
+      expiring: Expiring
+      recommended: Recommended
+      banner_subtitle: 'Music, comics, cinema, social impact, technology and more. Meet, get inspired and support projects.'
+      box:
+        by: by
+        when: when
+      banner: "Check out the search"
+      explore: "Explore projects"
+      links:
+        channels: "Discover channels"
+        recommended: "Discover recommended projects"
+        expiring: "Discover expiring projects"
+        recents: "Discover recent projects"
+        near: "Discover projects near you"
+      sidebar:
+        titles:
+          blog: blog
+          facebook: "Facebook"
+          newsletter: "Newsletter"
+          faq: "FAQ"
+          schedule: Schedule
+        placeholders:
+          email: "Enter your email"
+        buttons:
+          newsletter: Send
+      sections:
+        near:
+          title: 'Nearby'
+        recommended:
+          title: 'Recommended'
+        expiring:
+          title: "Expiring"
+        recents:
+          title: "Recent"
+        channels:
+          title: 'Channels'

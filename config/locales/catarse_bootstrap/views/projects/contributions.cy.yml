@@ -1,0 +1,105 @@
+---
+cy:
+  projects:
+    contributions:
+      checkout:
+        no_credits: Nid oes gennych ddigon o gredydau i wneud y cymorth hwn i chi.
+        success: Mae eu cefnogaeth yn llwyddiannus. Diolch yn fawr iawn!
+      contribute_text:
+        credits_tab: Fy credydau
+      contribution:
+        anonymous_contribution: Anonymous cefnogwr
+        anonymous_description: Dewis aros incognito
+        no_reward: Nid yw hyn gefnogwr wnaeth ddewis unrhyw wobr
+      edit:
+        anonymous_confirmation: Ni fydd gwerth eich cefnogaeth yn cael ei datgelu i unrhyw un ac eithrio'r
+          perchennog prosiect. Dim ond y tendrwr bydd yn cael mynediad at y wybodaeth hon, ni waeth
+          a yw eich buddsoddiad yn gyhoeddus neu'n ddienw.
+        anonymous_confirmation_title: A ydych yn sicr eich bod am eich cefnogaeth i fod yn ddienw?
+        anonymous_contribution: Rwyf am fy nghefnogaeth i fod yn ddienw
+        choose_payment: Dewiswch y dull talu
+        choose_payment_subtitle: TALU DIOGEL
+        cpf: 'I barhau, os gwelwch yn dda:'
+        credits_notice_html: Bydd hyn yn cael ei dalu gyda'u hawliadau. Ar ôl cadarnhad, byddwch yn
+          gyda chydbwysedd <strong>%{credits}</strong> mewn benthyciadau i gefnogi prosiectau eraill.
+        credits_preview_html: Ydych yn berchen <strong>%{credits}</strong> mewn credydau i wneud y
+          cymorth hwn <strong>tan y diwrnod 10/11,</strong> fel y <a href='http://blog.catarse.me/simplificacao-dos-reembolsos-e-o-fim-dos-creditos/'
+          target='__blank'>rheolau newydd</a> a ryddhawyd gan anhwylder.
+        credits_submit: Gwneud Taliad
+        credits_title: Talu gyda chredydau
+        form_labels:
+          payment_card_date: Ddod i ben (mm / bb)
+          payment_card_flag: Baner
+          payment_card_installments: Lleiniau
+          payment_card_name: Yr enw ar y cerdyn credyd
+          payment_card_number: Rhif Cerdyn
+          payment_card_source: Penfras. Diogelwch
+          payment_card_source_short: CGS
+          user_another_card: Defnyddiwch gerdyn credyd arall
+        installment_with_tax: heb log
+        insufficient_credits: Ydych yn berchen credydau %{credits}. Nid yw hyn gwerth yn ddigon i
+          gyflawni'r wrth gefn, os gwelwch yn dda dewiswch dulliau eraill o dalu.
+        live_in_brazil: Rwy'n byw ym Mrasil. (Uncheck 'os yw eich cefnogaeth yn rhyngwladol)
+        number_card: Data Cerdyn
+        owner_card: Data deilydd y cerdyn
+        pagarme_warning_html: Mae'r catharsis yn gam profi dull newydd o dalu sy'n hwyluso cymorth
+          ariannol a'r ad-daliad posibl y symiau i gefnogwyr. Felly, rydym yn rhybuddio bod angen
+          data ychwanegol yn ychwanegol at y rhai a grybwyllir yn y Telerau Defnyddio i gefnogi'r
+          prosiect hwn. Os bydd unrhyw anawsterau, cysylltwch â ni drwy e-bost %{mailto}. Diolch U.
+        page-title: Cefnogi'r %{name}
+        payment_account: Talu trwy Ddebyd Uniongyrchol
+        payment_boleto: Talu gyda boletus
+        payment_card: Talu gyda cherdyn credyd
+        payment_save_card: Rwyf am arbed fy ngherdyn credyd i hwyluso cefnogaeth yn y dyfodol.
+        payment_slip_disclaimer: Os na fydd y prosiect yn llwyddiannus, byddwn yn ad-dalu eich cefnogaeth.
+          Bydd y manylion banc a nodir yma yn cael ei ddefnyddio ar gyfer hyn.
+        review_errors: Mae peth gwybodaeth ar goll neu na chyflwynir adroddiad gywir, yn gywir i'r
+          holl feysydd mewn coch a tesnte eto
+        review_errors_title: Gwiriwch y data a adroddwyd
+        review_with_reward_html: 'Byddwch yn cynorthwyo gyda <strong>%{value}</strong> ac yn ennill
+          y gwobrau canlynol:'
+        reward_sold_out: Mae hyn wobr yn blino'n lân. Dechrau cymorth newydd.
+        select_account: 'Byddwch yn cael eich ailgyfeirio at wefan eich banc:'
+        select_boleto: 'I barhau, os gwelwch yn dda dewiswch:'
+        submit:
+          credits: Cadarnhau
+          moip: Gwneud taliad drwy MoIP
+        subtitle: Bydd y rhain yn y data ei adrodd i'r trefnydd prosiect.
+        title: Cwblhewch ac adolygu'r data ar gyfer talu
+        transaction_error: Gwrthododd Trafodiad, os gwelwch yn dda ddyblu wirio eich data neu cysylltwch
+          â'r cyhoeddwr banc / cerdyn am ragor o wybodaeth.
+        you_are_about_html: Rydych ar fin ymuno â'r grŵp sy'n gwneud popeth ar gyfer %{link} ddigwydd.
+      new:
+        choose_reward: Dewiswch y wobr ac wedyn gwerth y gefnogaeth
+        choose_value: Nodwch swm eich cefnogaeth.
+        minimum_disclaimer: O £ <span id = "lleiafswm-werth"> 10 </ span> yn wych;)
+        next_step: Adolygu a gwneud taliad
+        no_reward: Diolch U. Fi jyst eisiau helpu'r prosiect.
+        page-title: Cefnogi'r %{name}
+        title: Oohh yeah!
+        you_have_credits: Mae gennych <strong> %{credits} </ strong> yn gredydau i wneud y cymorth
+          hwn.
+      no_estimate: Ddim ar gael
+      review:
+        Credits: Credydau
+        MoIP: MoIP
+        PayPal: PayPal
+        error: Wps. Digwyddodd gwall wrth gofrestru eu cefnogaeth. Ceisiwch eto.
+      selected_reward:
+        edit: Golygu
+        review_without_reward_html: Byddwch yn cynorthwyo gyda <strong>%{value}</strong> ac nad ydych
+          am i unrhyw gwobr am eu cefnogaeth.
+        reward: Gwobrwyo a ddewiswyd
+        value: Swm Cymorth
+      show:
+        header_subtitle: Heb i chi efallai nad oedd yn cael cyfle prosiect hwn. Croeso i'r tîm!
+        header_title: 'Diolch yn fawr iawn! : D'
+        moip_message: Mae gwirio eich trafodiad yn mynd rhagddo a chod MoIP yw "%{code}". Filmography
+          Os oes gennych unrhyw gwestiynau ynghylch y trafodiad, cysylltwch â MoIP. Bydd e-bost yn
+          cael ei anfon pan fydd y taliad yn cael ei gadarnhau.
+        recommended_projects: 'Efallai y byddwch hefyd yn mwynhau prosiectau hyn:'
+        text_subtitle: Dywedwch wrth bawb beth yr ydych yn unig oedd
+        text_title_html: Yr ydych yn awr yn rhan o'r grŵp sy'n gwneud popeth ar gyfer y prosiect %{link}
+          ddigwydd.
+        title: Diolch yn fawr iawn i chi
+      you_selected: Rydych wedi dewis hyn!

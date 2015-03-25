@@ -1,0 +1,20 @@
+en:
+  layouts:
+    header:
+      blog: Blog
+      discover: Explore
+      faq: FAQ
+      help: Help
+      profile: My Profile
+      projects: My Projects
+      signin: Login
+      signup: Signup
+      submit: Submit a project
+      search: Search projects
+    login:
+      login_with_facebook: Login with Facebook
+    user:
+      my_contributions: My Contributions
+      logout: Logout
+      my_credits: My Credits
+      refund_link: Refund

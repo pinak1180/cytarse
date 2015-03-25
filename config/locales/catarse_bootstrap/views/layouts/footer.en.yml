@@ -1,0 +1,32 @@
+en:
+  layouts:
+    footer:
+      links:
+        jobs: Work with us
+        blog: Blog
+        contact: Contact
+        press: Press
+        discover: Explore projects
+        start: 'How it works'
+        expiring: Expiring
+        facebook: Facebook
+        faq: FAQ
+        guides: Guides
+        feedback: Feedback
+        github: Github
+        instagram: Instagram
+        near: Nearby
+        privacy: Privacy
+        recents: Recents
+        recommended: Recommended
+        submit: Submit your project
+        terms: Terms and Conditions
+        twitter: Twitter
+      texts:
+        copyleft: Made with love
+      titles:
+        about: About
+        contact: Contact
+        newsletter: Newsletter
+        sitemap: Sitemap
+        social: Social

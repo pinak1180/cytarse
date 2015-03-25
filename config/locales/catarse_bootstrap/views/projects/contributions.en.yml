@@ -1,0 +1,104 @@
+---
+en:
+  projects:
+    contributions:
+      checkout:
+        no_credits: You do not have enough credits to make this support.
+        success: Their support was successful. Thank you very much!
+      contribute_text:
+        credits_tab: My credits
+      contribution:
+        anonymous_contribution: Anonymous supporter
+        anonymous_description: Chose to remain incognito
+        no_reward: This supporter did not select any reward
+      edit:
+        anonymous_confirmation: The value of your support will not be disclosed to anyone other than
+          the project owner. Only the tenderer will have access to this information, regardless of
+          whether your investment is public or anonymous.
+        anonymous_confirmation_title: Are you sure you want your support to be anonymous?
+        anonymous_contribution: I want my support to be anonymous
+        choose_payment: Choose the payment method
+        choose_payment_subtitle: SECURE PAYMENT
+        cpf: 'To continue, please:'
+        credits_notice_html: This will be paid with their claims. After confirmation, you will get
+          a <strong>%{credits}</strong> balance in loans to support other projects.
+        credits_preview_html: You own <strong>%{credits}</strong> in credits to make this support
+          <strong>until the day 10/11,</strong> as <a href='http://blog.catarse.me/simplificacao-dos-reembolsos-e-o-fim-dos-creditos/'
+          target='__blank'>new rules</a> released by Catharsis.
+        credits_submit: Make Payment
+        credits_title: Pay with credits
+        form_labels:
+          payment_card_date: Expiration (mm / yy)
+          payment_card_flag: Flag
+          payment_card_installments: Plots
+          payment_card_name: The name on credit card
+          payment_card_number: Card number
+          payment_card_source: Cod. Security
+          payment_card_source_short: CVC
+          user_another_card: Use another credit card
+        installment_with_tax: without interest
+        insufficient_credits: You own %{credits} credits. This value is not enough to perform the
+          backup, please choose other means of payment.
+        live_in_brazil: I live in Brazil. (Uncheck if your support is international)
+        number_card: Card data
+        owner_card: Cardholder data
+        pagarme_warning_html: The Catharsis is in testing phase of a new means of payment that facilitate
+          financial support and the possible repayment of the amounts to supporters. Thus, we warn
+          that extra data is required in addition to those mentioned in the Terms of Use to support
+          this project. If any difficulties, please contact us by email %{mailto}. Thank U.
+        page-title: Support the %{name}
+        payment_account: Payment by Direct Debit
+        payment_boleto: Payment with boletus
+        payment_card: Payment with credit card
+        payment_save_card: I want to save my credit card to facilitate future support.
+        payment_slip_disclaimer: If the project is not successful, we will refund your support. The
+          bank details entered here will be used for this.
+        review_errors: Some information is missing or not reported correctly, correct all the fields
+          in red and tesnte again
+        review_errors_title: Check the data reported
+        review_with_reward_html: 'You will support with <strong>%{value}</strong> and earn the following
+          rewards:'
+        reward_sold_out: This reward is exhausted. Start a new support.
+        select_account: 'You will be redirected to your bank''s website:'
+        select_boleto: 'To continue, please select:'
+        submit:
+          credits: Confirm
+          moip: Make payment by MoIP
+        subtitle: These data will be reported to the project organizer.
+        title: Complete and review the data for payment
+        transaction_error: Transaction refused, please double check your data or contact the bank
+          / card issuer for more information.
+        you_are_about_html: You are about to join the group that does everything for %{link} happen.
+      new:
+        choose_reward: Choose the reward and then the value of support
+        choose_value: Enter the amount of your support.
+        minimum_disclaimer: From £ <span id = "minimum-value"> 10 </ span> is great;)
+        next_step: Review and make payment
+        no_reward: Thank U. I just want to help the project.
+        page-title: Support the %{name}
+        title: Oohh yeah!
+        you_have_credits: You have <strong> %{credits} </ strong> in credits to make this support.
+      no_estimate: Not available
+      review:
+        Credits: Credits
+        MoIP: MoIP
+        PayPal: PayPal
+        error: Ooops. An error occurred while registering their support. Please try again.
+      selected_reward:
+        edit: Edit
+        review_without_reward_html: You will support with <strong>%{value}</strong> and do not want
+          any reward for their support.
+        reward: Selected Reward
+        value: Support amount
+      show:
+        header_subtitle: Without you maybe this project did not have a chance. Welcome to the team!
+        header_title: 'Thank you very much! : D'
+        moip_message: The verification of your transaction is in progress and MoIP code is "%{code}".
+          Filmography If you have any questions regarding the transaction, please contact MoIP. An
+          email will be sent when the payment is confirmed.
+        recommended_projects: 'You may also enjoy these projects:'
+        text_subtitle: Tell everyone what you just did
+        text_title_html: You are now part of the group that does everything for the project %{link}
+          happen.
+        title: Thank you very much
+      you_selected: You chose this!

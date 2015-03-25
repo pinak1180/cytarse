@@ -1,0 +1,96 @@
+en:
+  projects:
+    metrics:
+      titles:
+        confirmed_by_day: 'Total daily confirmed support'
+        confirmed_amount_by_day: 'Total contributions per day'
+        address_state: 'Total support confirmed by State'
+    reminder:
+      ok: 'Ok! We will send you a reminder via email 48 hours before the end of the campaign'
+      active_btn: 'Remind me of this project'
+      deactive_btn: 'Do not want to be remembered'
+    send_to_analysis: Your project has been sent to our team.
+    send_to_analysis_error: Error sending project for analysis. Please complete all required fields.
+    push_to_online: Your project is online!
+    push_to_online_error: Error while placing the online project. Please complete all required fields.
+    twitter:
+      take_a_look: Check out the project %{name} on Heliwm
+    video_embed:
+      a_project_by_html: A project %{link}
+    posts:
+      project_post:
+        unavailable: This post is only available to supporters.
+        contribute: Contribute
+        unavailable_contribute: this post to view it.
+        destroy: Delete post
+        destroy_confirmation: Do you want to remove this post?
+      new:
+        notice: Novidade enviada com sucesso!
+        comment: Texto da sua Novidade
+        exclusive: Visível apenas para apoiadores
+        submit: Enviar Novidade
+        title: Título da sua Novidade
+        warning: Lembrando que todo post de novidade vai diretamente para o email de
+          seus apoiadores. Por isso, revise bem seu texto antes de enviá-lo.
+    project_reports:
+      all_contributions_without_reward: Baixar relatório de todos os apoiadores
+        que não selecionaram uma recompensa
+      link_reports_confirmed: Baixar relatório de todos os apoiadores confirmados
+      link_reports_waiting_confirmation: Baixar relatório de todos os apoiadores
+        com boleto impresso
+      link_reward: Baixar relatório dos apoiadores da recompensa de %{value}
+    project_about:
+      embed: < embed >
+      embed_title: Incorpore este projeto no seu site
+      active_btn: ' Lembrar-me'
+      deactive_btn: ' Lembrete ativo'
+    show:
+      menu:
+        panel_html: "&nbsp;&nbsp;Painel de controle"
+        about: Sobre
+        add_reward: Adicionar recompensa
+        comments: Comentários
+        contributions: Apoios
+        metrics: Métricas
+        edit: Edição
+        reports: Relatórios
+        posts: Novidades
+    project_main:
+      share: "Compartilhe"
+      tweet: "Tweet"
+      contribute_project:
+        display_status:
+          approved: "Esse projeto já foi aprovado pelo Catarse. Em breve ele entrará no ar e estará pronto para receber apoios."
+          reached_goal: "Este projeto será bem-sucedido e financiado em %{date}"
+          not_reached_goal: "Este projeto só será financiado se pelo menos %{goal} forem atingidos até %{date}"
+          failed: "Este projeto não atingiu o mínimo de %{goal} até %{date} e não foi financiado"
+          rejected: "Este projeto não foi aceito. Não é possível realizar um apoio."
+          in_analysis: "Este projeto está em análise e ainda não está aberto para receber apoios."
+          successful: "Este projeto foi bem-sucedido e foi financiado em %{date}"
+          waiting_funds: "Aguardando a confirmação de boletos para saber se este projeto será financiado."
+          draft: "Este projeto é apenas um rascunho e ainda não pode receber apoios."
+        submit: Apoiar este projeto
+      project_by: projeto por
+      funding_period: Período de campanha
+      project_header:
+        subtitle_html: "Um projeto de %{link}"
+        without_city: "Um projeto de"
+        with_city: "Um projeto de %{category_name} por %{author} em %{city}"
+      menu:
+        about: Sobre
+        add_reward: Adicionar recompensa
+        comments: Comentários
+        contributions: Apoios
+        metrics: Métricas
+        edit: Edição
+        reports: Relatórios
+        posts: Novidades
+      no_rewards_warning: Não viaje! Pense em como irá entregá-las e coloque tudo
+        isso no orçamento. Prometeu?! CUMPRA! :D
+      no_rewards_warning_title: Crie aqui suas recompensas
+      contribution_states:
+        confirmed: "Confirmados"
+        pending: "Pendentes"
+      sidebar:
+        contributions: apoios
+        goal: atingidos de %{total}

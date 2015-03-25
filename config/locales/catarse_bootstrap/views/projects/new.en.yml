@@ -1,0 +1,31 @@
+en:
+  projects:
+    new:
+      page-title: "Start your project"
+
+      faq:
+        titles:
+          support: "Support"
+          know_more: "Learn more"
+
+        links:
+          criteria: "Selection criteria"
+          suport_central: "Support center"
+          support_contact: "Contact us"
+          how_it_works: "How it works"
+          money: "How will I get the money?"
+          selection: "How are projects selected?"
+          all_or_nothing: "Why All or Nothing?"
+
+      form:
+        blocks:
+          first:
+            title: "You're Welcome!"
+            description: "Complete the information below to start the draft of your project."
+
+        info:
+          permalink: http://heliwm.com/
+          goal: £
+          online_days: days
+
+        submit: "Save and continue"
