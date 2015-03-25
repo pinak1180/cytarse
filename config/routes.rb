@@ -1,3 +1,5 @@
+require 'sidekiq/web'
+
 Catarse::Application.routes.draw do
 
   if ENV['MAIL_METHOD'] == 'letter_opener_web'
@@ -21,20 +23,11 @@ Catarse::Application.routes.draw do
 
   filter :locale, exclude: /\/auth\//
 
-<<<<<<< HEAD
-  # Mountable engines
-  constraints check_user_admin do
-    mount Sidekiq::Web => '/sidekiq'
-  end
-
   #mount CatarsePaypalExpress::Engine => "/", as: :catarse_paypal_express
   #mount CatarseBraintree::Engine => "/", as: :catarse_braintree
   #mount CatarseMoip::Engine => "/", as: :catarse_moip
   mount CatarseStripe::Engine => "/", :as => "catarse_stripe"
 
-
-  # Root path should be after channel constraints
-  root to: 'projects#index'
 
   # Static Pages
   get '/sitemap',               to: 'static#sitemap',             as: :sitemap
@@ -118,8 +111,6 @@ Catarse::Application.routes.draw do
   # Root path should be after channel constraints
   root to: 'projects#index'
 
-  get "/explore" => "explore#index", as: :explore
-
   namespace :reports do
     resources :contribution_reports_for_project_owners, only: [:index]
   end
@@ -128,6 +119,13 @@ Catarse::Application.routes.draw do
   resources :feedbacks, only: [:create]
 
   namespace :admin do
+
+    # Sidekiq
+    check_user_admin = lambda { |request| request.env["warden"].authenticate? and request.env['warden'].user.admin }
+    constraints check_user_admin do
+      mount Sidekiq::Web => 'sidekiq'
+    end
+
     resources :projects, only: [ :index, :update, :destroy ] do
       member do
         put 'approve'
