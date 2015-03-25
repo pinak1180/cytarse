@@ -18,7 +18,8 @@ gem 'protected_attributes', '~> 1.0.5' # When upgrade to strong_parameters, remo
 gem 'rails-observers', '~> 0.1.2'
 gem 'activerecord-session_store'
 
-gem 'sidekiq',  '~> 3.1.3'
+gem 'sinatra'
+gem 'sidekiq', require: nil
 
 # Turns every field on a editable one
 gem "best_in_place", :git => "git://github.com/bernat/best_in_place", ref: "ee95961e639022e6aa528704b8cb4789596ea61b"
@@ -31,6 +32,9 @@ gem 'paper_trail', github: 'airblade/paper_trail'
 
 # Errors
 gem 'rollbar', '~> 1.2.4'
+
+# Monitoring
+gem 'newrelic_rpm'
 
 # Database and data related
 gem 'pg', '0.17.1'
@@ -119,9 +123,6 @@ group :production do
   #gem 'rails_on_heroku'
   #gem 'rails_12factor'
 
-  # Monitoring with the new new relic
-  gem 'newrelic_rpm'
-
   # Using dalli and memcachier have not presented significative performance gains
   # Probably this is due to our pattern of cache usage
   # + the lack of concurrent procs in our deploy
@@ -140,6 +141,8 @@ group :development do
   # Deployment
   gem 'capistrano'
   gem 'capistrano-rails', '~> 1.1'
+
+  gem 'i18n-tasks', '~> 0.7.13'
 end
 
 group :test, :development do
