@@ -1,49 +1,52 @@
+---
 en:
   projects:
-    project:
-      contributed: raised
-      reached: Reached
-      progress_html: "<span>%{percent}%</span> funded"
-      time_remaining_small_html:
-        one: "<div class='fontsize-smallest lineheight-tightest'>%{count} %{unit}</div> <div class='fontsize-smallest lineheight-tightest'>remainder</div>"
-        other: "<div class='fontsize-smallest lineheight-tightest'>%{count} %{unit}</div> <div class='fontsize-smallest lineheight-tightest'>remaining</div>"
-      time_remaining_html:
-        one: "<span>%{count} %{unit}</span> remainder"
-        other: "<span>%{count} %{unit}</span> restantes"
-      pledged_html: "<span>%{value}</span> raised"
-      display_status:
-        online: 'online'
-        expired: "expired"
-        rejected: "rejected"
-        failed: "not funded"
-        successful: funded
-        approved: approved
-        reached_goal: funded
-        waiting_confirmation: waiting
-        waiting_funds: waiting
-        not_reached_goal: waiting
-        draft: "draft"
-        in_analysis: "in analysis"
     card:
       by: by
-      remaining:
-        one: "remainder"
-        other: "remaining"
       contributed: raised
-      reached: reached
-      progress_html: "<span>%{percent}%</span> funded"
-      time_remaining_html:
-        one: "<span>%{count} %{unit}</span> remainder"
-        other: "<span>%{count} %{unit}</span> remaining"
-      pledged_html: "<span>%{value}</span> raised"
       display_status:
-        expired: "expired"
-        rejected: "rejected"
-        failed: "not funded"
-        successful: funded
-        approved: approved
-        reached_goal: funded
-        waiting_funds: waiting
+        approved: okay
+        draft: draft
+        expired: finalized
+        failed: Unfunded
+        in_analysis: analyzed
         not_reached_goal: waiting
-        draft: "draft"
-        in_analysis: "in analysis"
+        reached_goal: funded
+        rejected: rejected
+        successful: Successful
+        waiting_funds: Waiting slips
+      pledged_html: "<span>%{value}</span> raised"
+      progress_html: "<span>%{percent}%</span> funded"
+      reached: reached
+      remaining:
+        one: remainder
+        other: other
+      time_remaining_html:
+        one: "<Span> %{count} %{unit} </ span> rest"
+        other: "<Span> %{count} %{unit} </ span> remaining"
+    project:
+      contributed: raised
+      display_status:
+        approved: okay
+        draft: draft
+        expired: finalized
+        failed: not funded
+        in_analysis: analyzed
+        not_reached_goal: waiting
+        online: online
+        reached_goal: funded
+        rejected: refused
+        successful: funded
+        waiting_confirmation: waiting
+        waiting_funds: waiting
+      pledged_html: "<span>%{value}</span> raised"
+      progress_html: "<span>%{percent}%</span> funded"
+      reached: reached
+      time_remaining_html:
+        one: "<Span> %{count} %{unit} </ span> rest"
+        other: "<Span> %{count} %{unit} </ span> remaining"
+      time_remaining_small_html:
+        one: "<Div class = 'fontsize-smallest LineHeight-tightest'> %{count} %{unit} </ div> <div
+          class = 'LineHeight-tightest-smallest fontsize'> rest </ div>"
+        other: "<Div class = 'fontsize-smallest LineHeight-tightest'> %{count} %{unit} </ div> <div
+          class = 'LineHeight-tightest-smallest fontsize'> other </ div>"

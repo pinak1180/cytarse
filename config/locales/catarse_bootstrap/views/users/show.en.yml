@@ -1,0 +1,119 @@
+---
+en:
+  users:
+    card:
+      author_website: Website
+      contact_author: Send Message
+      facebook_profile: Facebook Profile
+      twitter_profile: Twitter profile
+    credit_cards:
+      index:
+        brand: Operator
+        last_digits: Card
+        remove: Remove
+        title: Credit cards
+    credits:
+      index:
+        contribution_date: Support Date
+        current_credits_html: Your current balance is <span id="current_credits">%{credits}</span>
+          credits.
+        important_html: For all reimbursement rules and procedures, <a href='http://suporte.catarse.me/hc/pt-br/articles/202365507-Regras-e-funcionamento-dos-reembolsos-estornos'
+          target='_blank'>click here</a> . Any questions, please visit our <a href='http://suporte.catarse.me'
+          target='_blank'>support</a> .
+        insufficient_credits: You do not have enough credits to achieve this reversal.
+        project: Project
+        refunded: Confirmed request. We will contact you within 4 working days.
+        refunds_title: Support that may have made reversal
+        request_refund: Request reversal
+        requested_refund: Asked reversal
+        status: Status
+        title: My credits
+        value: Value
+      modal:
+        accept_btn: Yes, I request a refund for my support
+        link: Rules and Operations of refunds / rebates
+        reject_btn: No, I want to keep my credits
+        text: 'Learn how the refund process Catharsis:'
+        title: You really want to request a refund of your support?
+      refund:
+        cannot_refund: This support can not be reversed.
+        error: Oops. An error occurred while requesting its reversal.
+        no_credits: You do not have enough credits to achieve this reversal.
+        refunded: This support has been reversed.
+        requested_refund: Have you applied for this chargeback support.
+      title: My credits
+    current_user_fields:
+      bank_account_hint: Your bank data will be used to perform a full refund of your support, if
+        the project does not reach 100% of the target.
+      bank_account_title: Bank details
+      bio_limit: 140 characters
+      change_password: Change my password
+      current_password_hint: "<I> For the password to be changed you need to confirm your current
+        password. </ I>"
+      deactivate: Disable my account
+      deactivate_confirm: You want to disable this account?
+      deactivate_hint: All your support will be converted into anonymous support, your data will not
+        be visible, you will exit the system and your account will be permanently disabled.
+      deactivate_notice: The %{name} account has been disabled.
+      email_hint: Your email is used only to send Catharsis of communications and projects you support.
+        He will not be visible in your profile. When you support a project, we will give your email
+        to the project owner so it can provide the rewards.
+      email_tooltip: Click here to fill in your email ...
+      facebook_link: facebook profile (full link)
+      gravatar_hint_html: You can also change your photo using the %{link} with your email. <br> It
+        is as simple as sending an image and already works for other sites as well;)
+      local_avatar: My avatar
+      my_data: My data
+      my_facebook: Integration with facebook
+      newsletter: I want to receive news from Catharsis by email
+      other_link: link its website
+      password_hint: "<I> Leave blank if you do not want to change your password. </ I>"
+      social_info: Contact Information
+      submit: Send
+      submit_text: Choose your image
+      twitter: twitter (user)
+      update_social_info: Update information
+      updated: Your information has been updated
+    failed_reactivation: The link reactivation is invalid, please contact our team.
+    project:
+      confirmed: Confirmed
+      refunded: Refunded
+      requested_refund: Requested reimbursement
+      tell_about_this_contribution: Tell the world about your support!
+      waiting_confirmation: Waiting for confirmation
+    reactivated: Welcome back, your account has been reactivated.
+    show:
+      attention: Heads Up
+      contributions:
+        anonymous: Anonymous support.
+        no_contributions: "%{name} not backed any project yet. But we know it's only a matter of time!
+          : D"
+        no_contributions_current_user_html: You have not backed any project. How about <a href="/">start
+          now</a> ?
+        no_reward: You have not selected any reward
+        title: Projects that %{name} has supported
+        title_current_user: Projects already supported
+        your_reward: Your reward
+      projects:
+        here: here
+        no_projects: "%{name} not yet any project on Catharsis. Does inspiration will hit one of these?"
+        no_projects_current_user_html: You have not started any project on Catharsis. Let the inspiration
+          hit and click %{link} to start!
+        title: "%{name} projects"
+        title_current_user: My Projects
+      tabs:
+        comments: Reviews
+        contributed_projects: Supported projects
+        created_projects: Projects created
+        credit_cards: Credit cards
+        credits: Credits
+        settings: Preferences
+        unsubscribes: Notifications
+      user_social:
+        email: Send me an email
+        facebook: Facebook profile
+        twitter: Profile on twitter
+    unsubscribes:
+      posts: I want to receive updates of projects
+      projects_in_reminder: 'Projects with active reminder:'
+      title: 'Choosing which projects you want to receive notifications:'

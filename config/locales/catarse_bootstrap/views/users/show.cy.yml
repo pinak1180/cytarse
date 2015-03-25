@@ -1,0 +1,119 @@
+---
+cy:
+  users:
+    card:
+      author_website: Gwefan
+      contact_author: Anfon Neges
+      facebook_profile: Proffil Facebook
+      twitter_profile: Twitter Proffil
+    credit_cards:
+      index:
+        brand: Gweithredwr
+        last_digits: Cerdyn
+        remove: Tynnwch
+        title: Cardiau credyd
+    credits:
+      index:
+        contribution_date: Cymorth Dyddiad
+        current_credits_html: Mae eich balans presennol yw credydau <span id="current_credits">%{credits}.</span>
+        important_html: Ar gyfer yr holl reolau a gweithdrefnau ad-dalu, <a href='http://suporte.catarse.me/hc/pt-br/articles/202365507-Regras-e-funcionamento-dos-reembolsos-estornos'
+          target='_blank'>cliciwch yma</a> . Unrhyw gwestiynau, ewch i'n <a href='http://suporte.catarse.me'
+          target='_blank'>cefnogaeth</a> .
+        insufficient_credits: Nid oes gennych ddigon o gredydau i ennill gwrthdroad hon i chi.
+        project: Prosiect
+        refunded: Cais gadarnhau. Byddwn yn cysylltu â chi o fewn 4 diwrnod gwaith.
+        refunds_title: Cymorth a allai fod wedi gwneud gwrthdroad
+        request_refund: Cais gwrthdroad
+        requested_refund: Gwrthdroad Ofynnir
+        status: Statws
+        title: Fy credydau
+        value: Gwerth
+      modal:
+        accept_btn: Ydw, yr wyf yn gofyn am ad-daliad am fy nghefnogaeth
+        link: Rheolau a Gweithrediadau o ad-daliadau / ad-daliadau
+        reject_btn: Na, yr wyf am gadw fy credydau
+        text: 'Dysgwch sut mae''r broses ad-daliad catharsis:'
+        title: Chi wir am ofyn am ad-daliad o'ch cefnogaeth?
+      refund:
+        cannot_refund: Ni all y gefnogaeth yn cael ei wrthdroi.
+        error: Wps. Digwyddodd gwall wrth ofyn am ei gwrthdroad.
+        no_credits: Nid oes gennych ddigon o gredydau i ennill gwrthdroad hon i chi.
+        refunded: Mae'r gefnogaeth hon wedi cael ei wrthdroi.
+        requested_refund: Ydych chi wedi gwneud cais am y cymorth chargeback.
+      title: Fy credydau
+    current_user_fields:
+      bank_account_hint: Bydd eich data banc yn cael ei ddefnyddio i berfformio ad-daliad llawn o'ch
+        cefnogaeth, os nad yw'r prosiect yn cyrraedd 100% o'r targed.
+      bank_account_title: Manylion Banc
+      bio_limit: 140 o gymeriadau
+      change_password: Newid fy nghyfrinair
+      current_password_hint: "<I> Ar gyfer y cyfrinair i gael ei newid bydd angen i chi gadarnhau
+        eich cyfrinair cyfredol. </ I>"
+      deactivate: Analluoga fy nghyfrif
+      deactivate_confirm: Rydych am i analluogi cyfrif hwn?
+      deactivate_hint: Bydd eich cefnogaeth yn cael ei droi'n gefnogaeth ddienw, ni fydd eich data
+        yn weladwy, byddwch yn gadael y system a bydd eich cyfrif yn anabl yn barhaol.
+      deactivate_notice: Mae'r cyfrif %{name} wedi ei analluogi.
+      email_hint: Mae eich e-bost yn cael ei ddefnyddio yn unig i anfon catharsis o gyfathrebu a phrosiectau
+        yn eich cefnogi. Ni fydd yn weladwy yn eich proffil. Pan fyddwch yn cefnogi prosiect, byddwn
+        yn rhoi eich e-bost i berchennog y prosiect fel y gall ddarparu'r gwobrau.
+      email_tooltip: Cliciwch yma i lenwi eich e-bost ...
+      facebook_link: Proffil facebook (dolen llawn)
+      gravatar_hint_html: Gallwch hefyd newid eich llun gan ddefnyddio'r %{link} gyda'ch e-bost. <br>
+        Mae mor syml ag anfon delwedd ac mae eisoes yn gweithio ar gyfer safleoedd eraill yn ogystal;)
+      local_avatar: Mae fy avatar
+      my_data: Fy data
+      my_facebook: Integreiddio gyda facebook
+      newsletter: Rwyf am dderbyn newyddion oddi wrth catharsis drwy e-bost
+      other_link: cysylltu ei gwefan
+      password_hint: "<I> Gadewch yn wag os nad ydych am newid eich cyfrinair. </ I>"
+      social_info: Gwybodaeth Gyswllt
+      submit: Anfon
+      submit_text: Dewiswch eich delwedd
+      twitter: twitter (defnyddiwr)
+      update_social_info: Gwybodaeth Diweddariad
+      updated: Mae eich gwybodaeth wedi cael ei ddiweddaru
+    failed_reactivation: Mae'r ailysgogiad cyswllt yn annilys, cysylltwch â'n tîm.
+    project:
+      confirmed: Cadarnhau
+      refunded: Ad-dalu
+      requested_refund: Ad-daliad gofynnodd
+      tell_about_this_contribution: Dywedwch wrth y byd am eich cefnogaeth!
+      waiting_confirmation: Aros am gadarnhad
+    reactivated: Croeso yn ôl, eich cyfrif wedi cael ei ailgychwyn.
+    show:
+      attention: Penaethiaid Up
+      contributions:
+        anonymous: Cefnogaeth dienw.
+        no_contributions: "%{name} Nid yw cefnogi unrhyw brosiect hyd yma. Ond rydym yn gwybod ei
+          fod ond mater o amser yn unig! : D"
+        no_contributions_current_user_html: Nid ydych wedi cefnogi unrhyw brosiect. Beth am <a href="/">ddechrau
+          nawr</a> ?
+        no_reward: Nid ydych wedi dewis unrhyw wobr
+        title: Prosiectau sydd %{name} wedi cefnogi
+        title_current_user: Prosiectau a gefnogwyd yn barod
+        your_reward: Eich gwobr
+      projects:
+        here: yma
+        no_projects: "%{name} nad ydynt eto unrhyw brosiect ar anhwylder. A yw y bydd ysbrydoliaeth
+          daro un o'r rhain?"
+        no_projects_current_user_html: Nid ydych wedi dechrau unrhyw brosiect ar anhwylder. Gadewch
+          yr ysbrydoliaeth taro a chliciwch %{link} i ddechrau!
+        title: Prosiectau %{name}
+        title_current_user: Fy Prosiectau
+      tabs:
+        comments: Adolygiadau
+        contributed_projects: Prosiectau a gefnogir
+        created_projects: Prosiectau a grëwyd
+        credit_cards: Cardiau credyd
+        credits: Credydau
+        settings: Dewisiadau
+        unsubscribes: Hysbysiadau
+      user_social:
+        email: Anfon e-bost ataf
+        facebook: Proffil Facebook
+        twitter: Proffil ar twitter
+    unsubscribes:
+      posts: Rwyf am i dderbyn diweddariadau o brosiectau
+      projects_in_reminder: 'Prosiectau â atgoffa gweithredol:'
+      title: 'Dewis pa brosiectau ydych am dderbyn hysbysiadau:'

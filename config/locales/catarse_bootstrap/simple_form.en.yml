@@ -1,0 +1,62 @@
+---
+en:
+  simple_form:
+    collections:
+      project:
+        traffic_sources:
+          eight: I did an internet search on collective funding / alternative forms of funding
+          five: article in a blog
+          four: from a project that was picking up on the platform
+          nine: Other
+          one: I've had another project in Catharsis
+          seven: in a class / course / lecture / event
+          six: a story in the press (news portal on the internet, TV, newspaper, magazine)
+          three: indication friend / colleague / professional contact
+          two: indication of a person who has had a project in Catharsis
+    hints:
+      project:
+        about_html: Contact with passion and clarity about what will be done. Possible answer any
+          questions about how the money will be used, who is behind the project, as and when the project
+          will be delivered. Transparency attracts more supporters. Remember, your project will be
+          accessed by ordinary people who decide whether or not to support your project. Caprice!
+        category: Choose the most appropriate to your project.
+        goal: Plan a consistent goal with your project proposes. Review your budget and do not forget
+          to include the rate of 13% charged by Catharsis if your project is successful.
+        headline: Phrase in the project card to call supporters. Must be at most 100 characters, well
+          summarize the project.
+        name: Give a name that people will remember easily. Do not exceed 50 characters.
+        online_days: You can choose between 1 and 60 days for your campaign. Check out the guide of
+          directors for tips on deadlines.
+        permalink: Prefer something simple, straightforward and well identify your project. Try not
+          to use hyphen, underscore etc.
+        select: Select an option
+        traffic_sources: How did you meet Catharsis?
+        uploaded_image: This image will be used as the thumbnail of your project (PNG, JPG size 600
+          x 340)
+        video_url: Link your video on Vimeo or Youtube <br/>.
+    prompts:
+      project:
+        category: Select a category
+        select: Select an option
+        traffic_sources: How did you meet Catharsis?
+    validation_texts:
+      bank_account:
+        account: What is the account number?
+        account_digit: What is the check digit?
+        agency: What is the agency's number?
+        bank_id: Select a bank
+        owner_document: Enter a CPF or CNPJ valid for the account holder
+        owner_name: Enter a name with a minimum of 5 and a maximum of 30 letters
+      contribution:
+        address_city: Enter the city name
+        address_number: Enter the address number
+        address_phone_number: Enter the phone number
+        address_state: Select a state
+        address_street: Enter the street name
+        address_zip_code: Enter the zip code
+        payer_document: Please enter a valid CPF or CNPJ
+        payer_email: Please enter a valid email address
+        payer_name: Please type the name of supporter
+      reward:
+        description: Enter a description for the reward
+        minimum_value: Enter a minimum value greater than or equal to 10

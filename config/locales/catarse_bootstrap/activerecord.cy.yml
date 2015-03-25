@@ -1,0 +1,279 @@
+---
+cy:
+  activerecord:
+    attributes:
+      bank_account:
+        account: Rhif y Cyfrif
+        account_digit: Cyfrif Digid
+        agency: Asiantaeth
+        agency_digit: Asiantaeth Digid
+        bank: Banc
+        bank_id: Banc
+        owner_document: CPF / CNPJ y deiliad
+        owner_name: Deiliad y Cerdyn Enw
+      channel:
+        description: Disgrifiad
+        ga_code: Cod analytics
+        how_it_works: Sut mae'n gweithio
+        image: Delwedd Newydd
+        name: Enw
+        video_url: Fideo
+      channel_partner:
+        image: Delwedd
+        name: Enw
+        url: Gwefan
+      channel_post:
+        body: Cynnwys
+        title: Teitl
+        visible: Post (Gwiriwch os ydych am i gyhoeddi'r newyddion hyn)
+      contribution:
+        address_city: City
+        address_complement: Ategol
+        address_neighbourhood: Neighborhood
+        address_number: Nifer
+        address_phone_number: Ffôn
+        address_state: Y Wladwriaeth
+        address_street: Stryd
+        address_zip_code: ZIP COD
+        country: Gwlad
+        payer_document: CPF neu CNPJ
+        payer_email: E-bost
+        payer_name: Enw llawn
+        project: prosiect
+        reward: gwobrwyo
+        value: Gwerth cymorth
+      project:
+        about_html: Disgrifiad o'r Prosiect
+        budget: Cyllideb y prosiect
+        category: Categori
+        channels: Sianeli
+        expires_at: Ffrâm Amser
+        first_contributions: Pwy yw'r bobl gyntaf y byddwch yn gofyn i gefnogi eich prosiect?
+        goal: Swm i'w godi
+        headline: Ymadrodd
+        image_url: Image URL
+        more_links: Dywedwch wrth dolenni i bobl wybod mwy am eich prosiect a'i hanes.
+        name: Enw'r Prosiect
+        online_days: Dyddiad cau ar gyfer casgliad
+        permalink: Cysylltu eich prosiect
+        traffic_sources: Sut wnaethoch chi gyfarfod catharsis?
+        uploaded_image: Dylunio Delwedd
+        user_id: ID Defnyddiwr
+        video_url: Fideo URL
+      project_account:
+        account: Rhif y Cyfrif
+        account_digit: Cyfrif Digid
+        account_type: Math o gyfrif
+        address_city: City
+        address_complement: Ategol
+        address_neighbourhood: Neighborhood
+        address_number: Nifer
+        address_state: Y Wladwriaeth
+        address_street: Cyfeiriad
+        address_zip_code: ZIP COD
+        agency: Asiantaeth
+        agency_digit: Asiantaeth Digid
+        bank: Banc
+        bank_id: Banc
+        cpf: CPF / CNPJ
+        email: E-bost
+        full_name: Enw llawn / Enw Cwmni
+        owner_document: CPF / CNPJ y deiliad
+        owner_name: Deiliad y Cerdyn Enw
+        phone_number: Ffôn
+        state_inscription: Cofrestru Wladwriaeth
+      project_post:
+        comment: Testun
+        title: Teitl
+      reward:
+        deliver_at: Amcangyfrif cyflenwi
+      user:
+        address_city: City
+        address_complement: Ategol
+        address_neighbourhood: Neighborhood
+        address_number: Nifer
+        address_state: Y Wladwriaeth
+        address_street: Cyfeiriad
+        address_zip_code: ZIP COD
+        bio: Mini Bio
+        cpf: CPF / CNPJ
+        cpf_hint: "(?)"
+        cpf_hint_title: Bydd Anfoneb yn cael ei gyhoeddi ar gyfer y ddogfen hon
+        current_password: Cyfrinair cyfredol
+        email: E-bost
+        full_name: Enw llawn / Enw Cwmni
+        id: ID
+        moip_login: Mewngofnodi MoIP
+        moip_login_hint: "(Sut i greu cyfrif)"
+        name: Llysenw
+        newsletter: Rwyf am dderbyn newyddion o catharsis
+        password: Cyfrinair
+        password_confirmation: Cadarnhad cyfrinair
+        phone_number: Ffôn
+        reset_password_token: Cysylltu i ail-greu cyfrinair
+        state_inscription: Cofrestru Wladwriaeth
+    errors:
+      models:
+        bank_account:
+          attributes:
+            account:
+              blank: Ni all Na cyfrif fod yn wag
+            account_digit:
+              blank: Ni all digid cyfrif fod yn wag
+              invalid: Digid asiantaeth annilys
+            agency:
+              blank: Ni all yr Asiantaeth fod yn wag
+              invalid: Asiantaeth Annilys
+            bank:
+              blank: Ni all y Banc fod yn wag
+            owner_document:
+              blank: Ni all deiliad Rhagolwg Pensiwn Cyfunol / CNPJ fod yn wag
+              invalid: Annilys CPF / CNPJ
+            owner_name:
+              blank: Ni all enw'r Holder fod yn wag
+        contribution: Cefnogaeth arbed Gwall
+        project:
+          attributes:
+            about_html:
+              blank: Ni all y disgrifiad o'r prosiect fod yn wag
+            budget:
+              blank: Ni all y gyllideb prosiect fod yn wag
+            category:
+              blank: Rhaid i chi ddewis categori ar gyfer eich prosiect
+            goal:
+              blank: Ni all y gwerth y nod fod yn wag
+              greater_than: Mae'n rhaid i'r nod fod yn fwy na 9
+              not_a_number: Targed casglu yn unig yn derbyn rhifau
+            headline:
+              blank: Ni all y arwyddair y prosiect fydd yn wag
+              too_long: Mae'r ymadrodd dal yn rhy hir. Gallwch ddefnyddio uchafswm o 140 o gymeriadau.
+            name:
+              blank: Ni all yr enw prosiect fod yn wag
+            online_days:
+              blank: Ni all y cyfnod storio yn wag
+              greater_than: Mae'n rhaid i'r dyddiad cau ar gyfer casglu fod yn fwy na 0 diwrnod
+              not_a_number: Dylai'r dyddiad cau ar gyfer casglu fod nifer o ddyddiau
+            permalink:
+              blank: Ni all y URL y prosiect fydd yn wag
+              invalid: URL y dyluniad yn annilys
+              taken: Mae hyn yn URL prosiect eisoes yn bodoli
+            uploaded_image:
+              blank: Ni all y cynllun fod yn wag
+            video_url:
+              blank: Ni all y fideo o'r prosiect fod yn wag
+        project_account:
+          attributes:
+            account:
+              blank: Ni all Rhif Cyfrif Defnyddiwr fod yn wag
+            account_digit:
+              blank: Ni all cyfrif defnyddiwr Digid fod yn wag
+            account_type:
+              blank: Ni all Math o gyfrif fod yn wag
+            address_city:
+              blank: Ni all y ddinas Defnyddiwr fod yn wag
+            address_number:
+              blank: Ni all rhif yn gyfeiriad y defnyddiwr yn wag
+            address_state:
+              blank: Ni all wladwriaeth Defnyddiwr fod yn wag
+            address_street:
+              blank: Ni all cyfeiriad Defnyddiwr fod yn wag
+            address_zip_code:
+              blank: Ni all CEP Defnyddiwr fod yn wag
+            agency:
+              blank: Ni all yr Asiantaeth Defnyddiwr fod yn wag
+            agency_digit:
+              blank: Ni all asiantaeth defnyddiwr Digid fod yn wag
+            bank:
+              blank: Ni all Defnyddiwr Banc fod yn wag
+            cpf:
+              blank: Ni all CPF Defnyddiwr fod yn wag
+            email:
+              blank: Ni all Defnyddiwr E-bost fod yn wag
+            full_name:
+              blank: Ni all enw cwmni Defnyddiwr fod yn wag
+            owner_document:
+              blank: Ni all CPF / CNPJ deiliad defnyddiwr fod yn wag
+              not_same: Nid yw CPF / CNPJ cofrestru a manylion banc a gwblhawyd yn gyfartal.
+            owner_name:
+              blank: Ni all enw'r deiliad Defnyddiwr yn wag
+            phone_number:
+              blank: Ni all ffôn Defnyddiwr fod yn wag
+        user:
+          attributes:
+            about:
+              blank: Ynglŷn nad ydych yn gallu bod yn wag
+            current_password:
+              invalid: Nid cyfrinair cyfredol yn ddilys
+            email:
+              blank: Ni all e-bost fod yn wag
+              invalid: Mae'r cyfeiriad e-bost yn annilys
+              not_found: Nid yw'r e-bost wedi ei gofrestru, edrychwch ar y cyfeiriad neu gofrestru
+                eich hun
+              taken: Mae'r neges e-bost wedi ei gofrestru eisoes, mewngofnodi
+            name:
+              blank: Ni all enw defnyddiwr fod yn wag
+            password:
+              blank: Ni all y cyfrinair fod yn wag
+              confirmation: Nid oedd y cyfrinair a'r cadarnhad cyfrinair cwrdd yn gyfartal
+              too_short: Mae'r cyfrinair chi ddewis yn rhy fyr
+            reset_password_token:
+              invalid: Tocyn dod i ben. Ewch i <a class="alt-link"> href = "/ cyfrinair / newydd"
+                reset </a> cyfrinair ac yn brydlon eto ar gyfer y ailosod cyfrinair.
+            uploaded_image:
+              blank: Ni all image Defnyddiwr fod yn wag
+    models:
+      bank_account: Manylion Banc
+      category: Categori
+      channel: Sianel
+      contribution: Sketchpad
+      project: Prosiect
+      reward: Gwobrwyo
+  channels:
+    back_to_news: "← Yn ôl i Newyddion"
+    edit: Diweddariad Sianel
+    follow: Dilynwch y sianel
+    following: Yn dilyn
+    image_hint: Uchafswm maint (600x121px)
+    subscribed: "%{count} yn dilyn y sianel"
+    unfollow: Unfollow
+  channels_subscribers:
+    created: Nawr eich bod yn dilyn y %{channel}
+    deleted: Rydych yn methu â dilyn y %{channel}
+  contribution:
+    project_should_be_online: Ni allwch gefnogi'r prosiect nad yw yn yr awyr
+    reward_must_be_from_project: Mae'n rhaid i fod o'r un dyluniad
+    should_not_contribute_if_maximum_contributions_been_reached: wedi cyrraedd ei nifer mwyaf o gefnogwyr
+    value_must_be_at_least_rewards_value: Dylai fod o leiaf %{minimum_value} gyfer y wobr a ddewiswyd
+  contribution_report_to_project_owner:
+    address_number: Nifer
+    address_state: Y Wladwriaeth
+    anonymous: Anhysbys
+    city: City
+    complement: Ategol
+    confirmed_at: Dyddiad cadarnhad taliad
+    contribution_value: Swm Cymorth
+    cpf: CPF y cefnogwr
+    deliver_at: Dyddiad cyflwyno'r wobr
+    neighbourhood: Neighborhood
+    payer_email: E-bostiwch y dull o dalu
+    payment_method: Dull o dalu
+    reward_description: Disgrifiad Gwobrwyo
+    service_fee: Cyfradd catharsis
+    street: Stryd
+    user_email: Proffil E-bost catharsis
+    user_full_name: Enw llawn y cefnogwr
+    user_name: Cyfenw cefnogwr
+    zip_code: ZIP COD
+  project:
+    delete:
+      posts: Wedi dileu Newydd-deb yn llwyddiannus
+    update:
+      failed: Nid oedd y wybodaeth ei arbed, gwirio bod pob maes yn cael eu llenwi yn gywir
+      success: Mae'r wybodaeth wedi'i diweddaru
+    video_regex_validation: Youtube neu Vimeo yn unig URLs yn cael eu derbyn
+  user:
+    contributions_text:
+      many: Cefnogi hyn ac yn fwy %{total} brosiectau eraill
+      one: Dim ond gyda chefnogaeth y prosiect hwn hyd yn hyn
+      two: Cefnogi hyn ac 1 brosiect arall
+    no_name: Ddienw

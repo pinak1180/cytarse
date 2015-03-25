@@ -1,0 +1,29 @@
+---
+cy:
+  rewards:
+    form:
+      available: Nifer Ar gael
+      deliver_at: 'Amcangyfrif cyflwyno:'
+      description: 'Disgrifiad:'
+      edit: Golygu gwobrwyo
+      info_box: Gallwch gyfyngu ar y swm sydd ar gael am wobr. Unwaith y bydd y terfyn yn cael ei
+        gyrraedd, bydd y wobr yn cael ei marcio fel wedi blino'n lân. Mae'r rhagolwg cyflwyno yw'r
+        dyddiad yr ydych yn bwriadu ei gyflwyno i wobrwyo gefnogwyr. Os ydych am newid trefn y gwobrau,
+        dim ond eu llusgo yma. Rhowch gynnig!
+      limit_reward: Gwobrwyo Terfyn
+      minimum_value: 'Gwerth Isafswm:'
+      reward: Gwobrwyo
+      submit: Cadw
+    index:
+      contributions_to_confirm:
+        one: 1 cefnogaeth yn y tymor o gadarnhad.
+        other: cefnogaeth %{count} yn nhermau cadarnhau.
+      display_remaining: "%{remaining} o %{maximum} sydd ar gael"
+      dont_want: Dydw i ddim eisiau gwobrwyo
+      edit_reward: Golygu gwobrwyo
+      limited: Cyfyngedig
+      new_reward: Gwobrwyo Arwyddion
+      reward_deliver_time: "<B> Amcangyfrifon Cyflenwi: </ b> %{estimate}"
+      reward_title: Am %{minimum} neu fwy
+      select_reward: Dewiswch wobr hon
+      sold_out: Blino'n lân

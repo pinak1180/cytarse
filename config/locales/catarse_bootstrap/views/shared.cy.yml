@@ -1,0 +1,27 @@
+---
+cy:
+  shared:
+    accept_terms_html: Rwyf wedi darllen ac yn cytuno â'r %{link}.
+    footer_channel:
+      contact: Cyswllt
+      how_channels_work: Deall y Sianeli mewn catharsis
+      how_it_works: Sut mae %{name}
+      how_works: Sut mae'n gweithio
+      privacy_policy: Polisi Preifatrwydd
+      terms: Telerau defnyddio
+      what_is_channel: Beth yw sianelau?
+    header_big:
+      projects: Fy Prosiectau
+    header_channel:
+      contact: Cyswllt
+      how_work: Sut mae'n gweithio
+      logout: Cofrestrwch Allan
+      my_credits: Fy credydau
+      partners: Partneriaid
+      posts: Newyddion
+      profile: Mae fy proffil
+      signin: Mewngofnodi
+      signup: Cofrestru
+      submit: Anfon prosiect
+    load_more: Llwytho mwy
+    terms: telerau defnyddio

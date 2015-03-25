@@ -1,0 +1,28 @@
+---
+en:
+  rewards:
+    form:
+      available: Quantity Available
+      deliver_at: 'Estimated delivery:'
+      description: 'Description:'
+      edit: Edit reward
+      info_box: You can limit the amount available for a reward. Once the limit is reached, the reward
+        will be marked as EXHAUSTED. The delivery forecast is the date you intend to deliver to reward
+        supporters. If you want to change the order of rewards, just drag them here. Try!
+      limit_reward: Limit reward
+      minimum_value: 'Minimum value:'
+      reward: Reward
+      submit: Save
+    index:
+      contributions_to_confirm:
+        one: 1 support in term of confirmation.
+        other: "%{count} support in term of confirmation."
+      display_remaining: "%{remaining} of %{maximum} available"
+      dont_want: I do not want reward
+      edit_reward: Edit reward
+      limited: Limited
+      new_reward: Sign reward
+      reward_deliver_time: "<B> Delivery Estimates: </ b> %{estimate}"
+      reward_title: For %{minimum} or more
+      select_reward: Select this reward
+      sold_out: Exhausted

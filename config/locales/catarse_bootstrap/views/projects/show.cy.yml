@@ -1,0 +1,99 @@
+---
+cy:
+  projects:
+    metrics:
+      titles:
+        address_state: Cyfanswm gefnogaeth gadarnhau gan y Wladwriaeth
+        confirmed_amount_by_day: Cyfanswm cyfraniadau y dydd
+        confirmed_by_day: Cyfanswm gefnogaeth cadarnhau bob dydd
+    posts:
+      new:
+        comment: Testun o'ch Newydd-deb
+        exclusive: Gweladwy yn unig i gefnogwyr
+        notice: Llwyddiannus a anfonwyd Newydd!
+        submit: Anfon Newydd-deb
+        title: Crynodeb o'r Eich Newydd
+        warning: Dwyn i gof bod yn mynd i gyd swydd newydd yn uniongyrchol i'r e-bost ei gefnogwyr.
+          Mor dda adolygu eich testun cyn ei hanfon.
+      project_post:
+        contribute: Cymorth
+        destroy: Tynnwch Newydd-deb
+        destroy_confirmation: Ydych chi eisiau i gael gwared ar y newyddion hyn?
+        unavailable: Mae hyn newydd-deb ond ar gael i gefnogwyr.
+        unavailable_contribute: y prosiect hwn i'w weld.
+    project_about:
+      active_btn: " Cofiwch fi"
+      deactive_btn: " Atgoffa Active"
+      embed: "<Embed>"
+      embed_title: Gwreiddio prosiect hwn ar eich safle
+    project_main:
+      contribute_project:
+        display_status:
+          approved: Mae'r prosiect hwn wedi ei gymeradwyo gan anhwylder. Cyn bo hir, bydd yn aer a
+            bydd yn barod i gael cymorth.
+          draft: Mae'r cynllun yn unig yw drafft ac yn dal i fethu derbyn cefnogaeth.
+          failed: Nid yw hyn prosiect yn cyrraedd y %{goal} lleiaf i %{date} ac ni chafodd ei ariannu
+          in_analysis: Mae'r prosiect hwn yn cael ei adolygu ac nid yw'n agored i gael cymorth hyd
+            yma.
+          not_reached_goal: Bydd y prosiect hwn yn unig yn cael ei ariannu os bydd o leiaf %{goal}
+            yn cael eu cyflawni erbyn %{date}
+          reached_goal: Bydd y prosiect hwn yn llwyddiannus ac a ariennir yn %{date}
+          rejected: Nid yw hyn prosiect ei dderbyn. Ni allwch berfformio wrth gefn.
+          successful: Mae'r prosiect hwn yn llwyddiannus a chafodd ei ariannu yn %{date}
+          waiting_funds: Aros am gadarnhad llithro i wybod os bydd y prosiect hwn yn cael ei ariannu.
+        submit: Gefnogi'r prosiect hwn
+      contribution_states:
+        confirmed: Cadarnhau
+        pending: Tra'n aros
+      funding_period: Cyfnod yr ymgyrch
+      menu:
+        about: Ynglŷn
+        add_reward: Ychwanegu gwobr
+        comments: Adolygiadau
+        contributions: Cefnogi
+        edit: Argraffiad
+        metrics: Metrics
+        posts: Newyddion
+        reports: Adroddiadau
+      no_rewards_warning: 'Peidiwch â theithio! Meddyliwch am sut y byddwch yn eu cyflwyno ac yn rhoi
+        hyn i gyd yn y gyllideb. Prometheus?! DDILYN! : D'
+      no_rewards_warning_title: Creu yma eich gwobrwyo
+      project_by: dylunio gan
+      project_header:
+        subtitle_html: Mae prosiect %{link}
+        with_city: Mae prosiect %{category_name} gan %{author} yn %{city}
+        without_city: Mae prosiect
+      share: Share Mae'n
+      sidebar:
+        contributions: cefnogaeth
+        goal: "%{total} cyrraedd"
+      tweet: Tweet
+    project_reports:
+      all_contributions_without_reward: Lawrlwytho adroddiad o'r holl gefnogwyr nad oedd yn dewis
+        gwobr
+      link_reports_confirmed: Lawrlwytho adroddiad i gyd gadarnhau gefnogwyr
+      link_reports_waiting_confirmation: Lawrlwytho adroddiad o'r holl gefnogwyr gyda thocyn hargraffu
+      link_reward: Lawrlwytho adroddiad gefnogwyr o wobrwyo %{value}
+    push_to_online: Mae eich prosiect yn ar-lein!
+    push_to_online_error: Gwall wrth osod y prosiect ar-lein. Cwblhewch pob maes gofynnol.
+    reminder:
+      active_btn: Cofiwch fi prosiect hwn
+      deactive_btn: Peidiwch â eisiau cael ei gofio
+      ok: Iawn! Byddwn yn anfon nodyn atgoffa atoch drwy e-bost 48 awr cyn diwedd yr ymgyrch
+    send_to_analysis: Mae eich prosiect wedi cael ei anfon at ein tîm.
+    send_to_analysis_error: Gwall prosiect anfon i'w dadansoddi. Cwblhewch pob maes gofynnol.
+    show:
+      menu:
+        about: Ynglŷn
+        add_reward: Ychwanegu gwobr
+        comments: Adolygiadau
+        contributions: Cefnogi
+        edit: Argraffiad
+        metrics: Metrics
+        panel_html: Panel Rheoli
+        posts: Newyddion
+        reports: Adroddiadau
+    twitter:
+      take_a_look: Edrychwch ar incatarse prosiect %{name}
+    video_embed:
+      a_project_by_html: Mae prosiect %{link} mewn

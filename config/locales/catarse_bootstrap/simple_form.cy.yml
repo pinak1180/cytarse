@@ -1,0 +1,63 @@
+---
+cy:
+  simple_form:
+    collections:
+      project:
+        traffic_sources:
+          eight: Fe wnes chwilio ar y rhyngrwyd ar gyllid ar y cyd / mathau eraill o gyllid
+          five: erthygl mewn blog
+          four: o brosiect a oedd yn pigo i fyny ar y llwyfan
+          nine: Arall
+          one: Rwyf wedi cael brosiect arall yn catharsis
+          seven: mewn dosbarth / cwrs / darlith / digwyddiad
+          six: stori yn y wasg (porth newyddion ar y rhyngrwyd, teledu, papur newydd, cylchgrawn)
+          three: ffrind arwydd / cydweithiwr / cyswllt proffesiynol
+          two: arwydd o berson sydd wedi cael prosiect yn catharsis
+    hints:
+      project:
+        about_html: Cysylltwch gydag angerdd ac eglurdeb ynghylch yr hyn a gaiff ei wneud. Ateb posibl
+          unrhyw gwestiynau am sut y bydd yr arian yn cael ei ddefnyddio, pwy sydd y tu ôl i'r prosiect,
+          fel a phryd y bydd y prosiect yn cael ei gyflwyno. Mae tryloywder yn denu mwy o gefnogwyr.
+          Cofiwch, bydd eich prosiect yn cael ei defnyddio gan bobl gyffredin sy'n penderfynu p'un
+          ai i gefnogi eich prosiect. Caprice!
+        category: Dewiswch y mwyaf priodol ar gyfer eich prosiect.
+        goal: Cynlluniwch nod gyson â eich prosiect yn cynnig. Adolygwch eich cyllideb a pheidiwch
+          ag anghofio cynnwys y gyfradd o 13% a godir gan catharsis os yw eich prosiect yn llwyddiannus.
+        headline: Ymadrodd yn y cerdyn prosiect i alw gefnogwyr. Rhaid iddo fod ar y mwyaf 100 o nodau,
+          wel grynhoi y prosiect.
+        name: Rhowch enw y bydd pobl yn cofio yn hawdd. Peidiwch â fwy na 50 cymeriadau.
+        online_days: Gallwch ddewis rhwng 1 a 60 diwrnod ar gyfer eich ymgyrch. Edrychwch ar y canllaw
+          cyfarwyddwyr i gael awgrymiadau ar derfynau amser.
+        permalink: Well gen rhywbeth syml, syml ac yn dda nodi eich prosiect. Ceisiwch beidio â defnyddio
+          cysylltnod, tanlinellu ac ati
+        select: Dewis yr
+        traffic_sources: Sut wnaethoch chi gyfarfod catharsis?
+        uploaded_image: Bydd y ddelwedd yn cael ei ddefnyddio fel y bawd eich prosiect (PNG, maint
+          JPG 600 x 340)
+        video_url: Cysylltu eich fideo ar Vimeo neu Youtube <br/>.
+    prompts:
+      project:
+        category: Dewiswch gategori
+        select: Dewis yr
+        traffic_sources: Sut wnaethoch chi gyfarfod catharsis?
+    validation_texts:
+      bank_account:
+        account: Beth yw'r rhif y cyfrif?
+        account_digit: Beth yw'r digid gwirio?
+        agency: Beth yw rhif yr asiantaeth?
+        bank_id: Dewiswch banc
+        owner_document: Rhowch CPF neu CNPJ dilys ar gyfer deiliad y cyfrif
+        owner_name: Rhowch enw gydag o leiaf 5 ac uchafswm o 30 o lythyrau
+      contribution:
+        address_city: Rhowch enw'r ddinas
+        address_number: Rhowch rif cyfeiriad
+        address_phone_number: Rhowch y rhif ffôn
+        address_state: Dewiswch wladwriaeth
+        address_street: Rhowch enw'r stryd
+        address_zip_code: Rhowch y cod zip
+        payer_document: Rhowch CPF neu CNPJ dilys
+        payer_email: Rhowch gyfeiriad e-bost dilys
+        payer_name: Teipiwch enw'r cefnogwr
+      reward:
+        description: Rhowch ddisgrifiad ar gyfer y wobr
+        minimum_value: Rhowch werth lleiafswm fwy na neu'n hafal i 10

@@ -1,0 +1,23 @@
+---
+cy:
+  shared:
+    feedback:
+      button: Rhoi adborth
+      inputs:
+        close: Cau
+        submit: Anfon adborth
+      placeholders:
+        email: E-bost
+        text: Teipiwch eich adborth
+      texts:
+        content: 'Yn y misoedd diwethaf rydym wedi bod yn ddydd a nos yn gweithio mewn cyfres o newidiadau
+          yn y llwyfan, y manylir arnynt yn y <targed = ''_ wag'' href = ''http: //blog.catarse.me/os-passos-para-um-novo-
+          catharsis / ''class ='' ​​dolen-tanlinellu "> ar ôl </a> arbennig. Byddai''n anhygoel pe
+          gallem glywed oddi wrthych beth yw eich barn am y trawsnewidiad hwn. Filmography Rhyddhau
+          y ferf!'
+        response:
+          content: Rydym yn gwerthfawrogi pob adborth a dderbyniwyd. Methu ymateb i bob un yn unigol,
+            ond yn gwrando'n ofalus pob adolygiad ac awgrymiadau. Bydd eich sylwadau yn sicr yn bwysig
+            iawn yn ein taith gerdded, ac yn ein helpu i wella eich profiad yma yn catharsis yn barhaus.
+          title: Wow! Diolch filmography;)
+        title: Rhowch y pleser o ei air ni!

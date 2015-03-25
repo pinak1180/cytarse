@@ -1,0 +1,52 @@
+---
+cy:
+  projects:
+    card:
+      by: gan
+      contributed: Codwyd
+      display_status:
+        approved: iawn
+        draft: drafft
+        expired: gwblhau
+        failed: Heb ei ariannu
+        in_analysis: Dadansoddwyd
+        not_reached_goal: aros
+        reached_goal: a ariennir
+        rejected: gwrthod
+        successful: Llwyddiannus
+        waiting_funds: Slipiau Aros
+      pledged_html: Cododd <span>%{value}</span>
+      progress_html: "<span>%{percent}%</span> a ariennir"
+      reached: cyrraedd
+      remaining:
+        one: gweddill
+        other: eraill
+      time_remaining_html:
+        one: "<Rhychwant> %{count} %{unit} </ span> gorffwys"
+        other: "<Rhychwant> %{count} %{unit} </ span> weddill"
+    project:
+      contributed: Codwyd
+      display_status:
+        approved: iawn
+        draft: drafft
+        expired: gwblhau
+        failed: Nid ariennir
+        in_analysis: Dadansoddwyd
+        not_reached_goal: aros
+        online: ar-lein
+        reached_goal: a ariennir
+        rejected: Gwrthodwyd
+        successful: a ariennir
+        waiting_confirmation: aros
+        waiting_funds: aros
+      pledged_html: Cododd <span>%{value}</span>
+      progress_html: "<span>%{percent}%</span> a ariennir"
+      reached: cyrraedd
+      time_remaining_html:
+        one: "<Rhychwant> %{count} %{unit} </ span> gorffwys"
+        other: "<Rhychwant> %{count} %{unit} </ span> weddill"
+      time_remaining_small_html:
+        one: "<Ddosbarth Div = 'fontsize-lleiaf LineHeight-tynnaf'> %{count} %{unit} </ div> <div
+          class = 'LineHeight-tynnaf-lleiaf fontsize'> gorffwys </ div>"
+        other: "<Ddosbarth Div = 'fontsize-lleiaf LineHeight-tynnaf'> %{count} %{unit} </ div> <div
+          class = 'LineHeight-tynnaf-lleiaf fontsize'> eraill </ div>"

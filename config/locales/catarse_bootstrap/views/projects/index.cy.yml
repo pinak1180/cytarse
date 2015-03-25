@@ -1,0 +1,52 @@
+---
+cy:
+  projects:
+    index:
+      back_a_project: Cefnogi prosiect
+      banner: Edrychwch ar y chwiliad
+      banner_subtitle: Cerddoriaeth, comics, sinema, effaith gymdeithasol, technoleg a mwy. Cwrdd,
+        cael prosiectau ysbrydoledig a chymorth.
+      banner_title: Cymerwch dyluniadau papur!
+      blog: Catharsis Blog
+      box:
+        by: gan
+        when: mewn
+      expiring: Yn y darn terfynol
+      explore: Archwilio prosiectau
+      links:
+        channels: Dewch i ddarganfod y Wings Gamlas
+        expiring: Dewch i ddarganfod prosiectau i lawr y darn
+        near: Dewch i ddarganfod prosiectau yn eich ardal chi
+        recents: Darganfod prosiectau diweddar
+        recommended: Prosiectau Darganfod a argymhellir
+      near_you: Yn eich ardal chi
+      recents: Diweddar
+      recommended: A Argymhellir
+      sections:
+        channels:
+          title: Adenydd Sianel
+        expiring:
+          title: Yn y darn terfynol
+        near:
+          title: Ger Me
+        recents:
+          title: Diweddar
+        recommended:
+          title: A Argymhellir
+      see_all: Gweld pob
+      sidebar:
+        buttons:
+          newsletter: Anfon
+        placeholders:
+          email: Rhowch eich cyfeiriad e-bost
+        titles:
+          blog: blog
+          facebook: eisoes yn hoffi ein hwynebu?
+          faq: "'Ail amheuaeth?"
+          newsletter: Tanysgrifiwch i'n newyddion
+          schedule: agenda
+      title: Catharsis
+    index_header:
+      subtitle: Prosiectau cyllid ar y cyd ac yn dod yn rhan o rywbeth mwy. Hyrwyddo catharsis ar
+        y cyd! Rydych yn y darn ar goll yn y stori hon.
+      title: Wneud iddo ddigwydd yn y prosiectau yr ydych yn credu

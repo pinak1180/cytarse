@@ -1,0 +1,27 @@
+---
+cy:
+  projects:
+    new:
+      faq:
+        links:
+          all_or_nothing: Pam yr holl neu unrhyw beth?
+          criteria: Meini Prawf Dethol
+          how_it_works: Gan fod y gwaith catharsis?
+          money: Sut y byddaf yn cael yr arian?
+          selection: Sut mae prosiectau a ddewiswyd?
+          suport_central: Cymorth Center
+          support_contact: Cysylltwch â ni
+        titles:
+          know_more: Dysgwch fwy
+          support: Holder
+      form:
+        blocks:
+          first:
+            description: Cwblhewch y wybodaeth isod i gychwyn y drafft eich prosiect.
+            title: Rydych Croeso!
+        info:
+          goal: "£"
+          online_days: diwrnod
+          permalink: http://catarse.me/
+        submit: Achub a Parhau
+      page-title: Dechreuwch eich prosiect

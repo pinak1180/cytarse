@@ -1,31 +1,27 @@
+---
 en:
   projects:
     new:
-      page-title: "Start your project"
-
       faq:
-        titles:
-          support: "Support"
-          know_more: "Learn more"
-
         links:
-          criteria: "Selection criteria"
-          suport_central: "Support center"
-          support_contact: "Contact us"
-          how_it_works: "How it works"
-          money: "How will I get the money?"
-          selection: "How are projects selected?"
-          all_or_nothing: "Why All or Nothing?"
-
+          all_or_nothing: Why All or Nothing?
+          criteria: Selection Criteria
+          how_it_works: As the Catharsis work?
+          money: How will I get the money?
+          selection: How are projects selected?
+          suport_central: Support Center
+          support_contact: Contact us
+        titles:
+          know_more: Learn more
+          support: Holder
       form:
         blocks:
           first:
-            title: "You're Welcome!"
-            description: "Complete the information below to start the draft of your project."
-
+            description: Complete the information below to start the draft of your project.
+            title: You Welcome!
         info:
-          permalink: http://heliwm.com/
-          goal: £
+          goal: "£"
           online_days: days
-
-        submit: "Save and continue"
+          permalink: http://catarse.me/
+        submit: Save and Continue
+      page-title: Start your project

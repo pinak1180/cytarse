@@ -1,0 +1,27 @@
+---
+en:
+  shared:
+    accept_terms_html: I have read and agree with the %{link}.
+    footer_channel:
+      contact: Contact
+      how_channels_work: Understand the Channels in Catharsis
+      how_it_works: How does %{name}
+      how_works: How it works
+      privacy_policy: Privacy Policy
+      terms: Terms of use
+      what_is_channel: What are channels?
+    header_big:
+      projects: My Projects
+    header_channel:
+      contact: Contact
+      how_work: How it works
+      logout: Sign Out
+      my_credits: My credits
+      partners: Partners
+      posts: News
+      profile: My profile
+      signin: Login
+      signup: Register
+      submit: Send project
+    load_more: Load more
+    terms: terms of use
