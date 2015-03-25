@@ -1,110 +1,386 @@
 cy:
-  admin: &admin
-    confirm_dialog: "Wyt ti'n siwr?"
-    projects:
+  admin:
+    actions:
+      confirm: Cadarnhau
+    confirm_dialog: Ydych chi'n siwr?
+    contributions:
       index:
-        menu: 'Projectau'
-        by_state: 'Yn ôl sir'
-        between_created_at: 'Crewyd am rhwng'
-        submit: 'Hidlo'
-        send_to_trash: 'Dileu'
-        send_to_draft: 'Anfon at DRAFFT!'
-        reject: 'Gwrthod!'
-        approve: 'Derbyn!'
-        order_asc: 'Amcan esg'
-        order_desc: 'Amcan disg'
-        order_created_at: 'Dyddiad derbyn'
-        last_modification: 'Diweddariad dwetha'
-    financials:
-      index:
-        menu: 'Ariannol'
-        submit: 'Hidlo'
-        by_state: 'Yn ôl sir'
-        by_progress: Yn ôl lle mae arni %
-    users:
-      index:
-        title: "Rheolaeth cefnogwyr"
-        menu: Defnyddwyr
-        credits: Credydau
-        credits_view: "Credydau wedi eu cyfrif"
-        id: ID
-        key: Allwedd
-        submit: Chwilio
-        has_credits_difference: "Gwahaniaeth rhwng credydau"
-        total_backed: cefnogwyd
-        total_backers: cefnogwyr
-        total_backs: cefnogiadau
+        acquirer: Gweithredwr
+        anonymous: Anonymous?
+        between_values: Gwerthoedd rhwng
+        by_state: Y Wladwriaeth
+        cancel: Diddymu cymorth
+        confirm_contribution: Cadarnhau cefnogaeth
+        confirmed: Cadarnhau?
+        contribution: Cymorth
+        credits_html: Used credydau?
+        details:
+          acquirer_name: Cwmni cerdyn
+          acquirer_tid: TID Gweithredwr
+          created_at: Dechreuwyd ym
+          installments: Lleiniau
+          normal_email: E-bostiwch y catharsis
+          payer_email: E-bostiwch y dull o dalu
+          payment_choice: Dewis Talu
+          payment_id: ID Talu
+          payment_method: Dull o dalu
+        id: Id
+        key: Allweddol
+        menu: Cefnogi
+        no_contributions: Hyd i unrhyw gefnogwr.
+        no_reward: Heb wobr
+        payer_email: E-bostiwch y dull o dalu
+        payment_id: Taliad id
+        payment_tax: Dull talu'r ffi
+        pending_to_refund: Chargebacks rhagorol
+        placeholders:
+          acquirer: Enw'r cwmni cerdyn
+          payment_id: Allweddol, mae'r dull o adnabod dalu neu weithredwr TID '
+          project: Paraddolenni neu brosiect enw
+          user: ID, Enw, E-bost neu daliad Mail
+        project: Prosiect
+        project_state: Prosiect y Wladwriaeth
+        push_to_trash: Dileu cymorth
+        refund_and_hide: Gwrthdroad ac nid ydynt yn dangos cefnogaeth.
+        refund_contribution: Cefnogaeth Reverse
+        refunded: Gwrthdroad wneud?
+        request_refund: I wneud cais am ad-daliad uniongyrchol
+        requested_refund: Gofynnwyd i gwrthdroad?
+        reward: Gwobrwyo
+        send_refund_request_contribution: Anfon cais ad-daliad
+        state: Y Wladwriaeth
+        submit: Ymchwil
+        title: Rheoli Cymorth
+        total_contributed: a gasglwyd
+        total_contribution: cefnogaeth
+        total_contributions: cefnogwyr
         total_users: defnyddwyr
-        total_credits: credydau
-        total_credits_view: "credydau wedi eu cyfri"
+        unconfirm_contribution: Cefnogaeth Disconfirm
         user: Defnyddiwr
+        user_email: E-bost a ddefnyddir mewn catharsis
         value: Gwerth
-        provider: Darparwr
-    backers:
       messages:
         successful:
-          confirm: 'Cadarnhawyd y cefnogwr!'
-          pendent: 'Cefnogwr wedi ei ddad-wneud!'
-          refund: 'Cefnogwr wedi ei ad-dalu!'
-          change_reward: 'Newidwyd yr Anrheg!'
-          hide: 'Cuddiwyd y cefnogwr!'
-          cancel: 'Canslwyd y cefnogwr!'
-          push_to_trash: 'Dilewyd y cefnogwr!'
+          cancel: Llwyddo i ganslo cefnogaeth!
+          change_reward: A addaswyd yn llwyddiannus gwobr!
+          confirm: Cadarnhau yn llwyddiannus cefnogaeth!
+          hide: Yn llwyddiannus cudd cefnogaeth!
+          pendent: Llwyddo i desconfirmado cefnogaeth!
+          push_to_trash: Llwyddo i ddileu cefnogaeth!
+          refund: Llwyddo i wyrdroi cefnogaeth!
+      show:
+        contribution_info: Cyfraniad o %{key} gwybodaeth
+        created_at: Dechreuwyd ym
+        payer_email: Fodd E-bost o dalu a ddefnyddir mewn
+        payment_choice: Dewis Talu
+        payment_fee: Cyfradd o ddulliau o dalu
+        payment_id: ID y taliad
+        payment_method: Dull o dalu
+        successful: llwyddiannus
+        user_email: E-bost a ddefnyddir mewn catharsis
+    filter:
+      title: Hidlau
+    financials:
       index:
-        push_to_trash: 'Dileu cefnogwr'
-        cancel: 'Canslo cefnogwr'
-        refund_and_hide: 'Ad-dalu a chuddio'
-        backer_info: 'Gwybodaeth cefnogwr %{key}'
-        payment_id: 'ID Talu'
-        payment_method: 'Dull talu'
-        payment_fee: 'Ffi y dull talu'
-        payment_choice: 'Dewisiad talu'
-        payer_email: 'Ebost talwr'
-        user_email: 'Ebost defnyddiwr Heliwm'
-        pending_to_refund: 'Aros i gael ei ad-dalu'
-        created_at: 'Crewyd ar'
-        title: "Rheoli cefnogwyr"
-        menu: Cefnogwyd
-        anonymous: Di-enw?
-        confirmed: Cadarnhawyd?
-        credits: "Credydau wedi eu defnyddio?"
+        between_expires_at: Darfod rhwng
+        by_progress: Ar gyfer cynnydd%
+        by_state: Gan y Wladwriaeth
+        contribution_report: Cefnogwyr Adroddiad
+        details:
+          address: Cyfeiriad
+          bank_data: Manylion Banc
+          document: CPF / CNPJ
+          email: E-bost
+          name: Enw corfforaethol
+          permalink: Dylunio Paraddolenni
+          phone_number: Ffôn
+          state_inscription: Arysgrif wladwriaeth
+        expires_at: Diwedd
+        goal: Nod
         id: ID
-        key: Allwedd
-        no_backers: "Heb ffeindio cefnogwyr."
+        menu: Rel. Ariannol
+        name: Teitl
+        online_date: Mynd ar yr awyr
+        pledged: Wedi cyrraedd
+        recommended: A Argymhellir?
+        repass_value: VL. Trosglwyddo
+        search_report: Adroddiad chwilio
+        state: Y Wladwriaeth
+        submit: hidlo
+        title: Adroddiadau Ariannol
+        total_catarse_fee: Cyfradd catharsis
+        total_payment_service_fee: Cyfradd AS
+        total_projects: prosiectau
+        user: Defnyddiwr MoIP
+        user_id: ID Defnyddiwr
+        zero_fee: Cefnogi unrhyw dâl?
+    projects:
+      index:
+        approve: Yn cymeradwyo!
+        between_created_at: Crëwyd rhwng
+        between_expires_at: Darfod rhwng
+        between_online_date: Mynd i mewn i'r awyr rhwng
+        between_updated_at: Diweddarwyd rhwng
+        by_category: Yn ôl Categori
+        by_user_email: Cyfarwyddwr E-bost
+        category: Categori
+        expires_at: Gorffeniadau ar
+        goal: Nod
+        goal_between: Meta rhwng
+        id: ID
+        last_modification: Diwygiad Diweddaraf
+        menu: Prosiectau admin
+        name: Teitl
+        no_projects: Dim prosiectau hyd i
+        online_date: Mynd ar yr awyr
+        order_asc: Targed Isaf
+        order_created_at: Ddyddiad anfon
+        order_date: Ddyddiad anfon
+        order_desc: Nod Uchaf
+        order_table: Tabl Trefnu
+        pledged: Wedi cyrraedd
         project: Prosiect
-        refunded: Ad-dalwyd?
-        requested_refund: "Wedi gofyn am ad-daliad?"
-        reward: Anrheg
-        no_reward: "Dim anrheg"
-        submit: Chwilio
-        total_backed: cefnogwyd
-        total_backers: cefnogwyr
-        total_backs: cefnogiadau
+        recommended: A Argymhellir?
+        reject: Trowch Up Trwyn Un'S Ar!
+        send_to_draft: Dywedwch DRAFFT!
+        send_to_trash: Dileu
+        state: Y Wladwriaeth
+        submit: hidlo
+        title: Rheoli prosiect
+        total_contributions: Cefnogi
+        total_projects: prosiectau
+        user: Defnyddiwr
+        user_id: ID Defnyddiwr
+        with_state: Gan y Wladwriaeth
+    statistics:
+      charts:
+        current_period: Diwethaf 8 heb.
+        last_year: Flwyddyn flaenorol
+      contributions_by_week:
+        title: Gwerth Cymorth gadarnhau gan yr wythnos
+      index:
+        menu: Ystadegau
+        title: Ystadegau
+        total_contributed: Casglu
+        total_contributions: Cefnogi
+        total_contributors: Cefnogwyr
+        total_projects: Prosiectau
+        total_projects_online: Ar-lein
+        total_projects_success: Llwyddiannus
         total_users: Defnyddwyr
+      projects_by_week:
+        title: Drafftiau Crëwyd yr wythnos
+      projects_in_analysis_by_week:
+        title: Prosiectau a gyflwynwyd ar gyfer guradu yr wythnos
+    users:
+      index:
+        credits: Credydau
+        credits_view: Credydau cyfrifo
+        has_credits_difference: Anghysondeb yn y credydau
+        id: Id
+        key: Allweddol
+        menu: Cefnogwyr
+        payer_email: Taliad E-bost
+        provider: Darparwr
+        submit: Ymchwil
+        title: Rheoli Cefnogwyr
+        total_contributed: Cyfanswm cymorth
+        total_contributions: cefnogaeth
+        total_credits: credydau
+        total_credits_view: credydau cyfrifo
+        total_users: defnyddwyr
         user: Defnyddiwr
         value: Gwerth
-    statistics:
-      index:
-        menu: "Ystadegau"
-        title: "Ystadegau"
-        total_users: "Defnyddwyr"
-        total_backs: "Cefnogwyd"
-        total_backers: "Cefnogwyr"
-        total_backed: "Cefnogiadau"
-        total_projects: "Prosiectau"
-        total_projects_success: "Llwyddianus"
-        total_projects_online: "Arlein"
-      projects_by_week:
-        title: "Prosiectau anfonwyd yn ôl wythnos"
-        current_period: "8 wythnos dwetha"
-        previous_period: "8 wythnos flaenorol"
-        last_year: "Llynedd"
-      backers_by_week:
-        title: "Gwerth cefnogiadau wedi cadarnhau yn ôl wythnos"
-        current_period: "8 wythnos dwetha"
-        previous_period: "8 wytynos flaenorol"
-        last_year: "Llynedd"
-
   channels:
     admin:
-      <<: *admin
+      actions:
+        confirm: Cadarnhau
+      confirm_dialog: Ydych chi'n siwr?
+      contributions:
+        index:
+          acquirer: Gweithredwr
+          anonymous: Anonymous?
+          between_values: Gwerthoedd rhwng
+          by_state: Y Wladwriaeth
+          cancel: Diddymu cymorth
+          confirm_contribution: Cadarnhau cefnogaeth
+          confirmed: Cadarnhau?
+          contribution: Cymorth
+          credits_html: Used credydau?
+          details:
+            acquirer_name: Cwmni cerdyn
+            acquirer_tid: TID Gweithredwr
+            created_at: Dechreuwyd ym
+            installments: Lleiniau
+            normal_email: E-bostiwch y catharsis
+            payer_email: E-bostiwch y dull o dalu
+            payment_choice: Dewis Talu
+            payment_id: ID Talu
+            payment_method: Dull o dalu
+          id: Id
+          key: Allweddol
+          menu: Cefnogi
+          no_contributions: Hyd i unrhyw gefnogwr.
+          no_reward: Heb wobr
+          payer_email: E-bostiwch y dull o dalu
+          payment_id: Taliad id
+          payment_tax: Dull talu'r ffi
+          pending_to_refund: Chargebacks rhagorol
+          placeholders:
+            acquirer: Enw'r cwmni cerdyn
+            payment_id: Allweddol, mae'r dull o adnabod dalu neu weithredwr TID '
+            project: Paraddolenni neu brosiect enw
+            user: ID, Enw, E-bost neu daliad Mail
+          project: Prosiect
+          project_state: Prosiect y Wladwriaeth
+          push_to_trash: Dileu cymorth
+          refund_and_hide: Gwrthdroad ac nid ydynt yn dangos cefnogaeth.
+          refund_contribution: Cefnogaeth Reverse
+          refunded: Gwrthdroad wneud?
+          request_refund: I wneud cais am ad-daliad uniongyrchol
+          requested_refund: Gofynnwyd i gwrthdroad?
+          reward: Gwobrwyo
+          send_refund_request_contribution: Anfon cais ad-daliad
+          state: Y Wladwriaeth
+          submit: Ymchwil
+          title: Rheoli Cymorth
+          total_contributed: a gasglwyd
+          total_contribution: cefnogaeth
+          total_contributions: cefnogwyr
+          total_users: defnyddwyr
+          unconfirm_contribution: Cefnogaeth Disconfirm
+          user: Defnyddiwr
+          user_email: E-bost a ddefnyddir mewn catharsis
+          value: Gwerth
+        messages:
+          successful:
+            cancel: Llwyddo i ganslo cefnogaeth!
+            change_reward: A addaswyd yn llwyddiannus gwobr!
+            confirm: Cadarnhau yn llwyddiannus cefnogaeth!
+            hide: Yn llwyddiannus cudd cefnogaeth!
+            pendent: Llwyddo i desconfirmado cefnogaeth!
+            push_to_trash: Llwyddo i ddileu cefnogaeth!
+            refund: Llwyddo i wyrdroi cefnogaeth!
+        show:
+          contribution_info: Cyfraniad o %{key} gwybodaeth
+          created_at: Dechreuwyd ym
+          payer_email: Fodd E-bost o dalu a ddefnyddir mewn
+          payment_choice: Dewis Talu
+          payment_fee: Cyfradd o ddulliau o dalu
+          payment_id: ID y taliad
+          payment_method: Dull o dalu
+          successful: llwyddiannus
+          user_email: E-bost a ddefnyddir mewn catharsis
+      filter:
+        title: Hidlau
+      financials:
+        index:
+          between_expires_at: Darfod rhwng
+          by_progress: Ar gyfer cynnydd%
+          by_state: Gan y Wladwriaeth
+          contribution_report: Cefnogwyr Adroddiad
+          details:
+            address: Cyfeiriad
+            bank_data: Manylion Banc
+            document: CPF / CNPJ
+            email: E-bost
+            name: Enw corfforaethol
+            permalink: Dylunio Paraddolenni
+            phone_number: Ffôn
+            state_inscription: Arysgrif wladwriaeth
+          expires_at: Diwedd
+          goal: Nod
+          id: ID
+          menu: Rel. Ariannol
+          name: Teitl
+          online_date: Mynd ar yr awyr
+          pledged: Wedi cyrraedd
+          recommended: A Argymhellir?
+          repass_value: VL. Trosglwyddo
+          search_report: Adroddiad chwilio
+          state: Y Wladwriaeth
+          submit: hidlo
+          title: Adroddiadau Ariannol
+          total_catarse_fee: Cyfradd catharsis
+          total_payment_service_fee: Cyfradd AS
+          total_projects: prosiectau
+          user: Defnyddiwr MoIP
+          user_id: ID Defnyddiwr
+          zero_fee: Cefnogi unrhyw dâl?
+      projects:
+        index:
+          approve: Yn cymeradwyo!
+          between_created_at: Crëwyd rhwng
+          between_expires_at: Darfod rhwng
+          between_online_date: Mynd i mewn i'r awyr rhwng
+          between_updated_at: Diweddarwyd rhwng
+          by_category: Yn ôl Categori
+          by_user_email: Cyfarwyddwr E-bost
+          category: Categori
+          expires_at: Gorffeniadau ar
+          goal: Nod
+          goal_between: Meta rhwng
+          id: ID
+          last_modification: Diwygiad Diweddaraf
+          menu: Prosiectau admin
+          name: Teitl
+          no_projects: Dim prosiectau hyd i
+          online_date: Mynd ar yr awyr
+          order_asc: Targed Isaf
+          order_created_at: Ddyddiad anfon
+          order_date: Ddyddiad anfon
+          order_desc: Nod Uchaf
+          order_table: Tabl Trefnu
+          pledged: Wedi cyrraedd
+          project: Prosiect
+          recommended: A Argymhellir?
+          reject: Trowch Up Trwyn Un'S Ar!
+          send_to_draft: Dywedwch DRAFFT!
+          send_to_trash: Dileu
+          state: Y Wladwriaeth
+          submit: hidlo
+          title: Rheoli prosiect
+          total_contributions: Cefnogi
+          total_projects: prosiectau
+          user: Defnyddiwr
+          user_id: ID Defnyddiwr
+          with_state: Gan y Wladwriaeth
+      statistics:
+        charts:
+          current_period: Diwethaf 8 heb.
+          last_year: Flwyddyn flaenorol
+        contributions_by_week:
+          title: Gwerth Cymorth gadarnhau gan yr wythnos
+        index:
+          menu: Ystadegau
+          title: Ystadegau
+          total_contributed: Casglu
+          total_contributions: Cefnogi
+          total_contributors: Cefnogwyr
+          total_projects: Prosiectau
+          total_projects_online: Ar-lein
+          total_projects_success: Llwyddiannus
+          total_users: Defnyddwyr
+        projects_by_week:
+          title: Drafftiau Crëwyd yr wythnos
+        projects_in_analysis_by_week:
+          title: Prosiectau a gyflwynwyd ar gyfer guradu yr wythnos
+      users:
+        index:
+          credits: Credydau
+          credits_view: Credydau cyfrifo
+          has_credits_difference: Anghysondeb yn y credydau
+          id: Id
+          key: Allweddol
+          menu: Cefnogwyr
+          payer_email: Taliad E-bost
+          provider: Darparwr
+          submit: Ymchwil
+          title: Rheoli Cefnogwyr
+          total_contributed: Cyfanswm cymorth
+          total_contributions: cefnogaeth
+          total_credits: credydau
+          total_credits_view: credydau cyfrifo
+          total_users: defnyddwyr
+          user: Defnyddiwr
+          value: Gwerth
