@@ -1,0 +1,16 @@
+---
+cy:
+  devise:
+    passwords:
+      edit:
+        form:
+          hint:
+            password_length: Isafswm 6 nod
+          inputs:
+            submit: Achub a nodi'r
+          labels:
+            password: Cyfrinair Newydd
+            password_confirmation: Cadarnhad cyfrinair
+        titles:
+          header: Gosod cyfrinair newydd
+          site: Osod cyfrinair newydd

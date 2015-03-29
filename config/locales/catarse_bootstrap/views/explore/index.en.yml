@@ -1,19 +1,20 @@
+---
 en:
   explore:
     index:
-      success_follow: "You will now receive a weekly list of new projects in %{name}"
-      success_unfollow: "You no longer follow %{name}"
-      follow: Follow
-      unfollow: Unfollow
-      following: Following
       categories: Categories
-      expiring: Expiring
-      in_funding: In funding
-      near: Nearby
-      quick_explore: Quick search
+      expiring: In the final stretch
+      follow: Follow
+      following: followers
+      in_funding: Up in the air
+      near: Near Me
+      quick_explore: Quick Search
       recent: Recent
       recommended: Recommended
-      subtitle: Explore projects, find those that touch your heart, and make it happen!
+      subtitle: Explore the projects, find those that touch your heart and make it happen!
+      success_follow: Now you follow the category and will receive weekly a list of new projects %{name}
+      success_unfollow: You failed to follow this category %{name}
       successful: Successful
-      title: Find amazing Projects
-    title: Explore projects
+      title: Find amazing projects
+      unfollow: Unfollow
+    title: Explore the projects

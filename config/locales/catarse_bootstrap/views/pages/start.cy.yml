@@ -1,0 +1,37 @@
+---
+cy:
+  pages:
+    start:
+      header:
+        money: Roi i brosiectau a gyhoeddwyd yma
+        people: Mae pobl wedi cefnogi prosiect o leiaf 01 yn catharsis
+        success: Brosiectau wedi'u hariannu catharsis
+      learn-more: Dysgwch fwy
+      page-title: Gan fod y gwaith catharsis?
+      people:
+        content: Cynhyrchu eich prosiect gyda gofal ac ar amser. Cynllunio ymgyrch da yn ffactor tyngedfennol
+          i lwyddiant eu cyllid ar y cyd. Rydym yn cynnig ystod o ddeunyddiau i'ch helpu chi!
+        link: Dysgwch faint o gefnogwyr bydd angen i chi ysgogi
+        title: Astudio a chynllun
+      start:
+        content: Mae'n bwysig i ddechrau yn rhywle. Mae cam cyntaf gwych i drawsnewid eich syniad
+          yn brosiect ariannu ar y cyd yn llofnodi drafft yn anhwylder. Byddwn yma i'ch helpu.
+        link: Dysgwch fwy am y camau cyntaf prosiect
+        title: Dechreuwch eich prosiect
+      submit: Dechreuwch eich prosiect
+      time:
+        content: Cyfathrebu'n dda yn ystod ei ymgyrch ac yn dda yn trin eich cefnogwyr! Maent yn y
+          cryfder eich prosiect ac maent fydd yn wir yn pennu llwyddiant neu fethiant yr ymgyrch!
+          Mae'r catharsis yn ffordd i chi fynd at bobl sy'n caru eu gwaith, ehangu'r rhwydwaith hwn
+          ac yn ffurfio gyhoeddus.
+        link: Dysgwch sut mae ein cyfradd yn helpu i gadw catharsis
+        title: Ysgogi cefnogwyr
+      title: Ariannu eich prosiect ar y cyd
+      work:
+        content: Pwy sy'n gosod y nod o godi arian ac amser ymgyrch yw i chi. Dewiswch rhwng 1 a 60
+          diwrnod i gynnal ei ymgyrch i chwilio am gefnogwyr. Os byddwch yn cyrraedd eich nod ariannol,
+          yn cael y swm a gasglwyd. Fel arall bawb a gefnogodd yn derbyn yr arian yn ôl. Rydym yn
+          codi ffi o 13% o'r cyfanswm a gesglir yn unig prosiectau sydd wedi cyrraedd neu ragori ar
+          y nod.
+        link: Derbyn cyngor ymgyrchoedd llwyddiannus ar Catarse
+        title: Mae'n Holl neu'r Dim byd

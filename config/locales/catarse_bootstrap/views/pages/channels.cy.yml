@@ -1,0 +1,96 @@
+---
+cy:
+  admin:
+    confirmations:
+      destroy: A ydych yn sicr eich bod am ddileu?
+    filter:
+      between_created_at: Crëwyd rhwng
+      by_id: Drwy id
+      by_payment_method: Dull o dalu
+      order_table: Tabl Trefnu
+      pg_search: Prosiect
+      submit: Hidlo
+      title: Hidlo
+      user_name_contains: Defnyddiwr
+      with_state: Gyda wladwriaeth
+    followers:
+      index:
+        download: Rhestr Lawrlwytho
+        title: Dilynwyr
+    followers_menu: Dilynwyr
+    management:
+      no_partners: Dim partner cofrestredig
+      no_posts: Dim newydd-deb cofrestredig
+      title: Rheoli
+      total: prosiectau gwerth cyfanswm o
+    menu: Safoni Sianel
+    partners:
+      back_to_list: "← Yn ôl i reoli partneriaid"
+      edit:
+        edit_title: Golygu partner
+      form:
+        hint_image: Maint y ddelwedd 370x320
+        save_submit: Cadw
+      index:
+        new_button: Ychwanegu Partner
+        table:
+          actions: Camau Gweithredu
+          created_at: Crëwyd
+          image: Delwedd
+          name: Enw
+          url: Gwefan
+        title: Rheoli partneriaid
+      new:
+        add_partner: Partner Adiconar
+    partners_menu: Golygu partneriaid
+    posts:
+      back_to_list: "← Yn ôl i reoli newyddion"
+      edit:
+        edit_news: Golygu Newydd-deb
+      form:
+        save_submit: Achub a Rhagolwg
+      index:
+        new_post_button: Creu newydd
+        table:
+          actions: Camau Gweithredu
+          created_at: Crëwyd
+          published_at: Cyhoeddwyd yn
+          title: Teitl newydd-deb
+        title: Rheoli newyddion
+      new:
+        create_news: Creu newydd
+      update:
+        published_message: Roedd ei newyddion ei gyhoeddi a'i bostio i sianelu ddilynwyr.
+      warning_html: Dwyn i gof bod yr holl newyddion a gyhoeddwyd yn mynd yn uniongyrchol i'r e-bost
+        o'i ddilynwyr. Mor dda adolygu eich testun cyn ei hanfon.
+    posts_menu: Rheoli newyddion
+    profile_menu: Golygu Sianel
+    statistics:
+      title: Ystadegau Sianel
+      total_subscribers: Cyfanswm nifer y tanysgrifwyr
+    statistics_menu: Ystadegau
+    table:
+      approve: Yn cymeradwyo
+      category: Categori
+      confirmation: Ydych chi'n siŵr eich bod am ddileu'r prosiect hwn?
+      contributed_projects: Prosiectau a gefnogir
+      created_projects: Crëwyd prosiect
+      destroy_action: Dileu
+      edit_action: Golygu
+      expires_at: Diwedd
+      goal: Nod
+      name: Teitl
+      online_date: Cyhoeddi
+      pledged: Wedi cyrraedd
+      publish_action: Cyhoeddi
+      put_online: I'r aer
+      recommended: Argymell
+      reject: Trowch Up Trwyn Un'S Ar
+      send_to_draft: Anfon i ddrafftio
+      send_to_trash: PROSIECT Dileu
+      show_action: Ddychmygu
+      state: Y Wladwriaeth
+      total_contributions: Cefnogi
+      unpublish_action: Peidio a chyhoeddi'r
+      user: Defnyddiwr
+      user_id: Defnyddiwr

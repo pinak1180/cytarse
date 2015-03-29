@@ -1,0 +1,25 @@
+---
+cy:
+  devise:
+    registrations:
+      new:
+        form:
+          hint:
+            password_length: Isafswm 6 nod
+          inputs:
+            facebook: Mewngofnodi gyda Facebook
+            submit: Rydych yn cofrestru
+          labels:
+            accept: Pan fyddwch yn cofrestru, byddwch yn derbyn ein href="%{terms_url}" <a telerau
+              target="_blank"> class="alt-link" defnydd ac </a> <dosbarth = "alt-ddolen" href = "%{privacy_url}"
+              targed = "_ wag"> polisi preifatrwydd </a>
+            name: Enw llawn
+            newsletter: Rwyf am dderbyn newyddion o catharsis yn fy e-bost
+            password: Cyfrinair
+            show_password: Gweld cyfrinair
+        have_account_html: Eisoes wedi cyfrif?
+        links:
+          login: Mewngofnodi
+        titles:
+          header: Cofrestru
+          site: Cofrestru

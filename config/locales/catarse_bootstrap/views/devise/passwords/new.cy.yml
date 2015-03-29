@@ -1,0 +1,17 @@
+---
+cy:
+  devise:
+    passwords:
+      new:
+        form:
+          inputs:
+            submit: Ailddiffinio
+          labels:
+            email: Ar ôl mynd i mewn eich cyfeiriad e-bost, byddwn yn anfon hysbysiad gyda chyfarwyddiadau
+              ar sut i ailosod eich cyfrinair
+        links:
+          register: Cofrestru
+        no_account_html: Dim cyfrif?
+        titles:
+          header: Cyfrinair Ailosod
+          site: Cyfrinair Ailosod

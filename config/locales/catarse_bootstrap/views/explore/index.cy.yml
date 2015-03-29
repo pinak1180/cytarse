@@ -1,0 +1,22 @@
+---
+cy:
+  explore:
+    index:
+      categories: Categorïau
+      expiring: Yn y darn terfynol
+      follow: Dilynwch
+      following: ddilynwyr
+      in_funding: I fyny yn yr awyr
+      near: Ger Me
+      quick_explore: Chwilio Cyflym
+      recent: Diweddar
+      recommended: A Argymhellir
+      subtitle: Archwiliwch y prosiectau, yn dod o hyd rhai sy'n cyffwrdd eich calon ac yn gwneud
+        iddo ddigwydd!
+      success_follow: Nawr eich bod yn dilyn y categori a byddant yn derbyn yn wythnosol rhestr o
+        brosiectau newydd %{name}
+      success_unfollow: Rydych yn methu â dilyn y %{name} categori
+      successful: Llwyddiannus
+      title: Dod o hyd i brosiectau anhygoel
+      unfollow: Unfollow
+    title: Archwiliwch y prosiectau

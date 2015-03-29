@@ -1,32 +1,33 @@
+---
 en:
   layouts:
     footer:
       links:
-        jobs: Work with us
         blog: Blog
         contact: Contact
-        press: Press
         discover: Explore projects
-        start: 'How it works'
-        expiring: Expiring
+        expiring: In the final stretch
         facebook: Facebook
-        faq: FAQ
-        guides: Guides
+        faq: Help
         feedback: Feedback
         github: Github
+        guides: Guide of Directors
         instagram: Instagram
-        near: Nearby
-        privacy: Privacy
-        recents: Recents
+        jobs: Work with us
+        near: Near Me
+        press: Press
+        privacy: Privacy Policy
+        recents: Recent
         recommended: Recommended
-        submit: Submit your project
-        terms: Terms and Conditions
+        start: How it works
+        submit: Start your project
+        terms: Terms of use
         twitter: Twitter
       texts:
-        copyleft: Made with love
+        copyleft: Made with love.
       titles:
-        about: About
-        contact: Contact
-        newsletter: Newsletter
-        sitemap: Sitemap
-        social: Social
+        about: Help
+        contact: You welcome
+        newsletter: Subscribe to our news
+        sitemap: Browse
+        social: Social networks

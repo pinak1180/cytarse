@@ -1,3 +1,4 @@
+---
 en:
   layouts:
     header:
@@ -5,16 +6,16 @@ en:
       discover: Explore
       faq: FAQ
       help: Help
-      profile: My Profile
+      profile: My data
       projects: My Projects
-      signin: Login
-      signup: Signup
-      submit: Submit a project
       search: Search projects
+      signin: Login
+      signup: Register
+      submit: Start your project
     login:
-      login_with_facebook: Login with Facebook
+      login_with_facebook: Login with your facebook account
     user:
-      my_contributions: My Contributions
-      logout: Logout
-      my_credits: My Credits
-      refund_link: Refund
+      logout: Sign Out
+      my_contributions: My support
+      my_credits: Credit balance
+      refund_link: Request reimbursement

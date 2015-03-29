@@ -1,0 +1,7 @@
+---
+cy:
+  pages:
+    bad_browser:
+      text: 'I lywio drwy''r catharsis a sicrhau bod popeth yn gweithio iawn, mae angen i chi ddefnyddio
+        fersiwn mwy cyfredol eich porwr neu osod un o''r porwyr isod:'
+      title: Diweddarwch eich porwr

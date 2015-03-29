@@ -1,94 +1,96 @@
+---
 en:
   admin:
-    menu: "Channel moderation"
-    followers_menu: "Followers"
-    statistics_menu: "Statistics"
-    profile_menu: "Edit channel"
-    partners_menu: "Edit partners"
-    statistics:
-      title: 'Channel statistics'
-      total_subscribers: 'Total number of subscribers'
     confirmations:
       destroy: Are you sure you want to delete?
     filter:
       between_created_at: Created between
       by_id: By id
-      order_table: Order table
+      by_payment_method: Method of payment
+      order_table: Sort table
       pg_search: Project
       submit: Filter
       title: Filter
-      user_name_contains: Username
+      user_name_contains: User
       with_state: With state
-      by_payment_method: Payment method
     followers:
       index:
         download: Download list
         title: Followers
+    followers_menu: Followers
     management:
       no_partners: No registered partner
-      no_posts: No posts
+      no_posts: No registered novelty
       title: Management
-      total: Projects totaling
+      total: projects totaling
+    menu: Channel moderation
     partners:
       back_to_list: "← Back to manage partners"
-      new:
-        add_partner: Add partner
       edit:
         edit_title: Edit partner
       form:
         hint_image: Image size 370x320
         save_submit: Save
       index:
-        new_button: Add partner
+        new_button: Add Partner
         table:
-          created_at: Created at
+          actions: Actions
+          created_at: Created
           image: Image
           name: Name
-          url: Site
-          actions: Actions
-        title: Manage partners
-    posts:
-      back_to_list: "← Back to manage posts"
+          url: Website
+        title: Managing partners
       new:
-        create_news: Create post
+        add_partner: Adiconar partner
+    partners_menu: Edit partners
+    posts:
+      back_to_list: "← Back to manage news"
       edit:
-        edit_news: Edit post
+        edit_news: Edit Novelty
+      form:
+        save_submit: Save and Preview
       index:
-        new_post_button: New post
+        new_post_button: Create new
         table:
           actions: Actions
-          created_at: Created at
-          published_at: Published at
-          title: Post title
-        title: Manage posts
-      form:
-        save_submit: Save and preview
+          created_at: Created
+          published_at: Published in
+          title: Title novelty
+        title: Manage news
+      new:
+        create_news: Create new
       update:
-        published_message: Post published and sent to channel followers
-      warning_html: Remember that all published posts go directly to followers. Please review your post carefully before sending.
-      posts_menu: Manage posts
+        published_message: His news was published and mailed to channel followers.
+      warning_html: Recalling that all published news goes directly to the email of his followers.
+        So well review your text before sending it.
+    posts_menu: Manage news
+    profile_menu: Edit Channel
+    statistics:
+      title: Channel statistics
+      total_subscribers: Total number of subscribers
+    statistics_menu: Statistics
     table:
       approve: Approve
       category: Category
       confirmation: Are you sure you want to delete this project?
       contributed_projects: Supported projects
-      created_projects: Created projects
+      created_projects: Created project
       destroy_action: Delete
       edit_action: Edit
-      expires_at: Expires at
+      expires_at: End
       goal: Goal
       name: Title
-      online_date: Published
-      pledged: Pledged
+      online_date: Publication
+      pledged: Reached
       publish_action: Publish
-      recommended: Recommended
-      reject: Reject
+      put_online: To air
+      recommended: Recommend
+      reject: Turn Up One'S Nose At
       send_to_draft: Send to draft
-      put_online: Put online
-      send_to_trash: Delete project
-      show_action: View
+      send_to_trash: DELETE PROJECT
+      show_action: Visualize
       state: State
-      total_contributions: Contributions
+      total_contributions: Supports
       unpublish_action: Unpublish
       user: User
-      user_id: User ID
+      user_id: User

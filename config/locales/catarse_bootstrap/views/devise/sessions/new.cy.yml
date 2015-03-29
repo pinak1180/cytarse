@@ -1,0 +1,20 @@
+---
+cy:
+  devise:
+    sessions:
+      new:
+        form:
+          inputs:
+            facebook: Mewngofnodi gyda Facebook
+            password: Cyfrinair
+            submit: Mewngofnodi
+          labels:
+            remember_me: Arhoswch mewngofnodi
+        links:
+          forgot_password: Wedi anghofio fy nghyfrinair
+          password: Cyfrinair
+          register: Cofrestru
+        no_account_html: Dim cyfrif?
+        titles:
+          header: Mewngofnodi
+          site: Mewngofnodi

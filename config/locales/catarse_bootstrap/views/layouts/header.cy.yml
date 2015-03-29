@@ -1,0 +1,21 @@
+---
+cy:
+  layouts:
+    header:
+      blog: Blog
+      discover: Archwiliwch
+      faq: Cwestiynau Cyffredin
+      help: Help
+      profile: Fy data
+      projects: Fy Prosiectau
+      search: Prosiectau Chwilio
+      signin: Mewngofnodi
+      signup: Cofrestru
+      submit: Dechreuwch eich prosiect
+    login:
+      login_with_facebook: Mewngofnodi gyda'ch cyfrif facebook
+    user:
+      logout: Cofrestrwch Allan
+      my_contributions: Fy nghefnogaeth
+      my_credits: Balans credyd
+      refund_link: Cais am ad-daliad

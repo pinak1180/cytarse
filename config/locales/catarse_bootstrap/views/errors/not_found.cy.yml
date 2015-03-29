@@ -1,0 +1,6 @@
+---
+cy:
+  errors:
+    not_found:
+      text: Efallai eich bod wedi camdeipio'r cyfeiriad neu efallai y bydd y dudalen wedi symud.
+      title: Ni allem ddod o hyd i gyfeiriad hwn :(

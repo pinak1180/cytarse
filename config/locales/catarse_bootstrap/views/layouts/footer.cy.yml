@@ -1,0 +1,33 @@
+---
+cy:
+  layouts:
+    footer:
+      links:
+        blog: Blog
+        contact: Cyswllt
+        discover: Archwilio prosiectau
+        expiring: Yn y darn terfynol
+        facebook: Facebook
+        faq: Help
+        feedback: Adborth
+        github: Github
+        guides: Canllaw Cyfarwyddwyr
+        instagram: Instagram
+        jobs: Gweithio gyda ni
+        near: Ger Me
+        press: Wasg
+        privacy: Polisi Preifatrwydd
+        recents: Diweddar
+        recommended: A Argymhellir
+        start: Sut mae'n gweithio
+        submit: Dechreuwch eich prosiect
+        terms: Telerau defnyddio
+        twitter: Twitter
+      texts:
+        copyleft: Wedi'i wneud gyda chariad.
+      titles:
+        about: Help
+        contact: Rydych yn croesawu
+        newsletter: Tanysgrifiwch i'n newyddion
+        sitemap: Pori
+        social: Rhwydweithiau cymdeithasol
