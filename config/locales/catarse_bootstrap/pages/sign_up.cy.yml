@@ -1,7 +1,7 @@
 cy:
   pages:
     sign_up:
-      have_account_html: "Oes gen ti gyfrif? <strong>%{link}</strong>"
+      have_account_html: "Oes gen ti gyfrif?"
       titles:
         site: 'Cofrestru'
         header: 'Cofrestru'
@@ -11,11 +11,10 @@ cy:
         labels:
           show_password: "Arddangos dy gyfrinair"
           name: "Enw"
-          password: "Cyfrinair" 
+          password: "Cyfrinair"
           newsletter: "Rwyf am dderbyn cylchlythyr Heliwm"
         hint:
           password_length: "Rhaid bod yn o leiaf 6 nodyn"
         inputs:
           submit: "Cofrestru"
           facebook: "Cofrestru gyda Facebook"
-

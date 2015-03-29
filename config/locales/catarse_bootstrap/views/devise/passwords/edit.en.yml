@@ -13,4 +13,3 @@ en:
             password_confirmation: 'Re-enter password'
           inputs:
             submit: 'Save and log me in'
-
