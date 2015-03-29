@@ -59,8 +59,8 @@ end
 
 
 OauthProvider.find_or_create_by!(name: 'facebook') do |o|
-  o.key = ENV['FACEBOOK_APP_ID'],
-  o.secret = ENV['FACEBOOK_APP_SECRET'],
+  o.key = ENV['FACEBOOK_APP_ID']
+  o.secret = ENV['FACEBOOK_APP_SECRET']
   o.path = 'facebook'
 end
 
