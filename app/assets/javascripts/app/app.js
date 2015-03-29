@@ -4,6 +4,7 @@ var App = window.App = Skull.View.extend({
   events: {
     "click #close-global-alert" : "closeAlert",
     "click a#user-menu" : "toggleMenu",
+    "click a#locale-menu" : "toggleLocaleMenu",
     "click a.mobile-menu-link" : "mobileMenu",
     "click .zendesk_widget" : "showWidget",
     "click #pg_search_submit" : "searchProject"
@@ -44,6 +45,7 @@ var App = window.App = Skull.View.extend({
     this.openAlert();
     this.$(".best_in_place").best_in_place();
     this.$dropdown = this.$('.dropdown-list.user-menu');
+    this.$locale_dropdown = this.$('.dropdown-list.locale-menu');
     this.flash();
     this.notices();
     Backbone.history.start({pushState: false});
@@ -80,6 +82,11 @@ var App = window.App = Skull.View.extend({
 
   toggleMenu: function(){
     this.$dropdown.toggleClass('w--open');
+    return false;
+  },
+
+  toggleLocaleMenu: function(){
+    this.$locale_dropdown.toggleClass('w--open');
     return false;
   },
 
