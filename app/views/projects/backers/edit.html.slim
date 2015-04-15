@@ -44,7 +44,7 @@
                 = form.input :address_zip_code, as: :string, input_html: {autocomplete: 'off'}, required: true
                 = form.input :address_city, as: :string, required: true
                 = form.input :address_county, as: :select, collection: State.array, required: true
-                = form.input :address_country, as: :select, collection: Country.array, required: true
+                = form.input :address_country, as: :string, required: true
           .submit
             fieldset.accept_terms
               = check_box_tag 'accept'
