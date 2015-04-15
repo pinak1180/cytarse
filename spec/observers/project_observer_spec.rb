@@ -102,7 +102,7 @@ describe ProjectObserver do
 
       it 'subscribe project owner to successful projects mailchimp list' do
         CatarseMailchimp::API.should_receive(:subscribe).with({ EMAIL: user.email, FNAME: user.name,
-          CITY: user.address_city, STATE: user.address_state }, 'OwnerListId')
+          CITY: user.address_city, STATE: user.address_county }, 'OwnerListId')
       end
 
       after { project.finish }
@@ -111,7 +111,7 @@ describe ProjectObserver do
     context 'when project is unsuccesful' do
       it 'subscribe project owner to failed projects mailchimp list' do
         CatarseMailchimp::API.should_receive(:subscribe).with({ EMAIL: user.email, FNAME: user.name,
-          CITY: user.address_city, STATE: user.address_state }, 'UnsuccesfulListId')
+          CITY: user.address_city, STATE: user.address_county }, 'UnsuccesfulListId')
       end
 
       after { project.finish }

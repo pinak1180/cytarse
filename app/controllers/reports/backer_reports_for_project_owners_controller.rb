@@ -16,12 +16,12 @@ class Reports::BackerReportsForProjectOwnersController < Reports::BaseController
         user_email as "#{I18n.t('backer_report_to_project_owner.user_email')}",
         payer_email as "#{I18n.t('backer_report_to_project_owner.payer_email')}",
         payment_method as "#{I18n.t('backer_report_to_project_owner.payment_method')}",
-        street as "#{I18n.t('backer_report_to_project_owner.address_street')}",
-        complement as "#{I18n.t('backer_report_to_project_owner.address_complement')}",
-        address_number as "#{I18n.t('backer_report_to_project_owner.address_number')}",
-        neighbourhood as "#{I18n.t('backer_report_to_project_owner.address_neighbourhood')}",
+        street as "#{I18n.t('backer_report_to_project_owner.address_1')}",
+        address_2 as "#{I18n.t('backer_report_to_project_owner.address_2')}",
+        neighbourhood as "#{I18n.t('backer_report_to_project_owner.address_3')}",
         city as "#{I18n.t('backer_report_to_project_owner.address_city')}",
-        state as "#{I18n.t('backer_report_to_project_owner.address_state')}",
+        county as "#{I18n.t('backer_report_to_project_owner.address_county')}",
+        country as "#{I18n.t('backer_report_to_project_owner.address_country')}",
         zip_code as "#{I18n.t('backer_report_to_project_owner.address_zip_code')}",
         CASE WHEN anonymous='t' THEN '#{I18n.t('yes')}'
             WHEN anonymous='f' THEN '#{I18n.t('no')}'

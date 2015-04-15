@@ -85,24 +85,26 @@ class Backer < ActiveRecord::Base
   end
 
   def update_current_billing_info
-    self.address_street = user.address_street
-    self.address_number = user.address_number
-    self.address_neighbourhood = user.address_neighbourhood
+    self.address_1 = user.address_1
+    self.address_2 = user.address_2
+    self.address_3 = user.address_3
     self.address_zip_code = user.address_zip_code
     self.address_city = user.address_city
-    self.address_state = user.address_state
+    self.address_county = user.address_county
+    self.address_country = user.address_country
     self.address_phone_number = user.phone_number
     self.payer_document = user.cpf
   end
 
   def update_user_billing_info
     user.update_attributes({
-      address_street: address_street,
-      address_number: address_number,
-      address_neighbourhood: address_neighbourhood,
+      address_1: address_1,
+      address_2: address_2,
+      address_3: address_3,
       address_zip_code: address_zip_code,
       address_city: address_city,
-      address_state: address_state,
+      address_county: address_county,
+      address_country: address_country,
       phone_number: address_phone_number,
       cpf: payer_document
     })

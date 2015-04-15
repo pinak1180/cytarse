@@ -24,18 +24,18 @@ class ProjectObserver < ActiveRecord::Observer
         user,
         {project_id: project.id, channel_id: project.last_channel.try(:id)},
         {
-          project: project, 
+          project: project,
           channel: project.last_channel,
-          origin_email: project.user.email, 
+          origin_email: project.user.email,
           origin_name: project.user.display_name
         }
       )
     end
 
     Notification.notify_once(
-      project.notification_type(:in_analysis_project), 
-      project.user, 
-      {project_id: project.id, channel_id: project.last_channel.try(:id)}, 
+      project.notification_type(:in_analysis_project),
+      project.user,
+      {project_id: project.id, channel_id: project.last_channel.try(:id)},
       {project: project, channel: project.last_channel}
     )
   end
@@ -134,7 +134,7 @@ class ProjectObserver < ActiveRecord::Observer
   def sync_with_mailchimp(project)
     begin
       user = project.user
-      mailchimp_params = { EMAIL: user.email, FNAME: user.name, CITY: user.address_city, STATE: user.address_state }
+      mailchimp_params = { EMAIL: user.email, FNAME: user.name, CITY: user.address_city, STATE: user.address_county }
 
       if project.successful?
         CatarseMailchimp::API.subscribe(mailchimp_params, Configuration[:mailchimp_successful_projects_list])

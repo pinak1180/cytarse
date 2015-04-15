@@ -1,5 +1,5 @@
 - if current_user
-  #nearOfData data-state="#{current_user.address_state}"
+  #nearOfData data-state="#{current_user.address_county}"
 
 #page_content
   .container
@@ -32,7 +32,7 @@
                 = t('.successful')
             - if current_user
               li
-                a.explore-link[href="#near_of/#{current_user.address_state}"]
+                a.explore-link[href="#near_of/#{current_user.address_county}"]
                   = t('.near')
 
         - unless @categories.empty?

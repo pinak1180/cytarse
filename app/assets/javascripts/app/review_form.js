@@ -23,13 +23,12 @@ App.addChild('ReviewForm', _.extend({
     var backer_data = {
       payer_name: this.$('#user_full_name').val(),
       payer_email: this.$('#user_email').val(),
-      address_street: this.$('#user_address_street').val(),
-      address_number: this.$('#user_address_number').val(),
-      address_complement: this.$('#user_address_complement').val(),
-      address_neighbourhood: this.$('#user_address_neighbourhood').val(),
+      address_1: this.$('#user_address_1').val(),
+      address_2: this.$('#user_address_2').val(),
+      address_3: this.$('#user_address_3').val(),
       address_zip_code: this.$('#user_address_zip_code').val(),
       address_city: this.$('#user_address_city').val(),
-      address_state: this.$('#user_address_state').val(),
+      address_county: this.$('#user_address_county').val(),
       address_phone_number: this.$('#user_phone_number').val()
     }
     $.post(this.$el.data('update-info-path'), {

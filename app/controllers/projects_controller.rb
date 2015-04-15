@@ -19,15 +19,16 @@ class ProjectsController < ApplicationController
           return render partial: 'project', collection: @projects, layout: false
         else
           @title = t("site.title")
-          # if current_user && current_user.recommended_projects.present?
-          #   @recommends = current_user.recommended_projects.limit(4)
-          # else
-          #   @recommends = ProjectsForHome.recommends
-          # end
 
-          #@channel_projects = Project.from_channels([1]).order_for_search.limit(3)
-          #@projects_near = Project.with_state('online').near_of(current_user.address_county).order("random()").limit(3) if current_user
-          #@expiring = ProjectsForHome.expiring
+          if current_user && current_user.recommended_projects.present?
+            @recommends = current_user.recommended_projects.limit(4)
+          else
+            @recommends = ProjectsForHome.recommends
+          end
+
+          @channel_projects = Project.from_channels([1]).order_for_search.limit(3)
+          @projects_near = Project.with_state('online').near_of(current_user.address_county).order("random()").limit(3) if current_user
+          @expiring = ProjectsForHome.expiring
           @recent   = ProjectsForHome.recents
         end
       end

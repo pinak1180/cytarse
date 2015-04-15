@@ -76,7 +76,7 @@ describe Backer do
         address_neighbourhood: 'test area',
         address_zip_code: 'test zipcode',
         address_city: 'test city',
-        address_state: 'test state',
+        address_county: 'test state',
         phone_number: 'test phone',
         cpf: 'test doc number'
       })
@@ -90,7 +90,7 @@ describe Backer do
     its(:address_neighbourhood){ should eq(user.address_neighbourhood) }
     its(:address_zip_code){ should eq(user.address_zip_code) }
     its(:address_city){ should eq(user.address_city) }
-    its(:address_state){ should eq(user.address_state) }
+    its(:address_county){ should eq(user.address_county) }
     its(:address_phone_number){ should eq(user.phone_number) }
     its(:payer_document){ should eq(user.cpf) }
   end
@@ -105,7 +105,7 @@ describe Backer do
         address_neighbourhood: backer.address_neighbourhood,
         address_zip_code: backer.address_zip_code,
         address_city: backer.address_city,
-        address_state: backer.address_state,
+        address_county: backer.address_county,
         phone_number: backer.address_phone_number,
         cpf: backer.payer_document
       }
